@@ -64,3 +64,7 @@ The child [S025 correction audit](https://github.com/jfairfaxball-348/sunflower-
 ## P001-S026 — between-audit restricted result registered (parent STATUS ONLY)
 
 Child S026 one-global-original-heavy nonprivate-light exact-kernel t/(9m²) individual edge bound recorded with TRUE in-final-H 2/singleton/EMPTY witnesses, SAME-ASSISTANT ONLY. Not a universal R3/TIK theorem, original novelty, Lean or publication milestone. Child S025 fifth correction audit and S005/S010/S015/S020 audits remain complete; next substantive fifth audit S030; parent programme substantive S001 remains unexecuted and its independent audit cadence unchanged.
+
+
+## P001-S028 — between-audits child scoped positive (parent STATUS ONLY)
+The S028 original single-Q-per-block petal-first individual-edge t/((3m−2)(m−1)) positive is a same-assistant scoped result and is not an R3 or full every-k TIK proof. The S025 mandatory S021–S025 correction audit and earlier fifth/tenth/fifteenth/twentieth audits remain complete. The next mandatory CHILD fifth-session correction audit is S030, not carried out during S028 status registration. Parent programme S001 remains unexecuted.

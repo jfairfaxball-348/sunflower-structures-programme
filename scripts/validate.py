@@ -67,6 +67,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S025"] = ("P001-S026", ["NONPRIVATE_MIXED_SUPPORT_EDGE_REFINEMENT"])
     expected_successors["P001-S026"] = ("P001-S027", ["MULTIHUB_NONPRIVATE_DIRECT_EDGE_AGGREGATION"])
     expected_successors["P001-S027"] = ("P001-S028", ["PETAL_FIRST_MULTIHUB_COLLISION_AWARE_SELECTION"])
+    expected_successors["P001-S028"] = ("P001-S029", ["PETAL_FIRST_TWO_HEAVY_PAIR_CERTIFICATES"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -446,6 +447,27 @@ def check_registration(state, projects, receipt):
         assert child["main_validation"]["head_sha"] == child["main_commit"]
         assert child["main_validation"]["conclusion"] == "success"
         assert (ROOT / "sessions/P001-S027/REGISTRATION.md").is_file()
+
+    if receipt["session"] == "P001-S028":
+        assert receipt["registration_kind"] == "P001_S028_PETAL_FIRST_ONE_Q_PER_BLOCK_DIRECT_EDGE_STATUS_ONLY"
+        assert audit["session_outcome"] == "S028_MULTIHUB_ONE_Q_PER_BLOCK_PETAL_FIRST_DIRECT_EDGE_3_PROVED_SAME_ASSISTANT"
+        assert audit["s028_frozen_C512_proved"]
+        assert audit["s028_stronger_restricted_bound"] == "t/((3m-2)*(m-1)) >= t/(3m^2)"
+        assert audit["s028_original_Q_fixed"] and audit["s028_original_one_Q_per_block"] and audit["s028_nonprivate_light_allowed"]
+        assert audit["s028_all_final_exact_pair_singleton_empty_certified_symbolically"]
+        assert audit["s028_same_assistant_only"] and not audit["s028_unrestricted_direct_edge_proved"] and not audit["s028_full_tik_proved"]
+        assert audit["independent_mathematical_review"] is False and audit["full_tik_proved"] is False
+        assert audit["s028_future_only"] is False and audit["s029_future_only"] is True
+        assert project["last_child_session"] == "P001-S028"
+        assert project["s028_frozen_multihub_C512_proved"]
+        assert project["s028_one_Q_per_block_nonprivate_light_bound"] == "t/((3m-2)*(m-1)) >= t/(3m^2)"
+        assert child["final_head_validation"] and all(
+            z["head_sha"] == child["merged_pr"]["head_sha"] and z["conclusion"] == "success"
+            and z["jobs"] and all(j["conclusion"] == "success" for j in z["jobs"])
+            for z in child["final_head_validation"])
+        assert child["main_validation"]["head_sha"] == child["main_commit"]
+        assert child["main_validation"]["conclusion"] == "success"
+        assert (ROOT / "sessions/P001-S028/REGISTRATION.md").is_file()
 
     expected_session, expected_objectives = expected_successors[receipt["session"]]
     assert next_step["session"] == expected_session and next_step["objectives"] == expected_objectives

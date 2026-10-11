@@ -53,3 +53,7 @@ No new paper theorem or manuscript: child's single-original-heavy Q={a}, nonpriv
 ## P001-S027 status only
 
 No publication- or formalisation-ready theorem. Child frozen multi-original-Q C=512 partial-edge claim remains UNPROVED/UNREFUTED; an earlier universal whole-original-support-thin-first *method* is now refuted on S023 nested projective plane even when partial petals are permitted AFTER that step. The same family retains a dense exact-in-H valid unthinned alternative. P001 remains INVESTIGATING / NOVELTY_UNCERTAIN / NOT_STARTED / IDEA. No independent mathematics or novelty review, new N1/N2, Lean, manuscript or outreach. S028 future; parent mathematical S001 unexecuted.
+
+
+## P001-S028 status only
+The child restricted one original Q vertex/block petal-first t/((3m−2)(m−1)) internally witnessed edge bound is a SAME-ASSISTANT auxiliary mathematical result. P001 full all-k TIK and R3 remain unproved, independently reviewed novel theorem count remains zero, publication status IDEA, formalisation NOT_STARTED. No manuscript, source-intensive N1/N2, correspondence or submission; child S029 FUTURE, parent S001 UNEXECUTED.
