@@ -68,3 +68,6 @@ Child S026 one-global-original-heavy nonprivate-light exact-kernel t/(9m²) indi
 
 ## P001-S028 — between-audits child scoped positive (parent STATUS ONLY)
 The S028 original single-Q-per-block petal-first individual-edge t/((3m−2)(m−1)) positive is a same-assistant scoped result and is not an R3 or full every-k TIK proof. The S025 mandatory S021–S025 correction audit and earlier fifth/tenth/fifteenth/twentieth audits remain complete. The next mandatory CHILD fifth-session correction audit is S030, not carried out during S028 status registration. Parent programme S001 remains unexecuted.
+
+## P001-S029 — S030 audit must remain future
+S029 contributes a restricted A-mass individual-edge extension and a **method-only** B representative obstruction, but no complete two-Q C512 proof or counterexample and no full R3/TIK. All completed S005, S010, S015, S020 and S025 child correction audits stand; the next mandatory S026–S030 fifth-session correction audit must be performed during **new separately invoked child S030 only**, never in S029 status registration. Parent S001 programme mathematics remains UNEXECUTED; parent programme audit schedule unchanged.

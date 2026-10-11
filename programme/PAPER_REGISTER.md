@@ -57,3 +57,6 @@ No publication- or formalisation-ready theorem. Child frozen multi-original-Q C=
 
 ## P001-S028 status only
 The child restricted one original Q vertex/block petal-first t/((3m−2)(m−1)) internally witnessed edge bound is a SAME-ASSISTANT auxiliary mathematical result. P001 full all-k TIK and R3 remain unproved, independently reviewed novel theorem count remains zero, publication status IDEA, formalisation NOT_STARTED. No manuscript, source-intensive N1/N2, correspondence or submission; child S029 FUTURE, parent S001 UNEXECUTED.
+
+## P001-S029 status only
+Child original two-Q A-submass positive and B Hall/simple graph analysis do not amount to a universal two-Q C512 theorem. A weighted K_(m−1,m−1) example discredits ONLY representative-only pruning, with valid original multi-petal escape; no R3/every-k TIK, independent review, novelty re-audit, formalisation or publishable manuscript. P001 INVESTIGATING, publication IDEA, formal NOT_STARTED. S030 mandatory fifth-session child audit FUTURE; parent S001 remains unexecuted.
