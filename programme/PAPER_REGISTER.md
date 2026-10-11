@@ -49,3 +49,7 @@ A same-assistant combinatorial result on a restricted private-light <=2-original
 ## P001-S026 status only
 
 No new paper theorem or manuscript: child's single-original-heavy Q={a}, nonprivate light same-assistant t/(9m²) edge extraction is a restricted mathematical intermediate with unresolved novelty and unverified independent proof. Unrestricted R3 and all-k TIK remain unproved. P001 still INVESTIGATING / NOVELTY_UNCERTAIN / NOT_STARTED formalisation / IDEA publication; standalone S027 future; parent mathematical S001 unexecuted.
+
+## P001-S027 status only
+
+No publication- or formalisation-ready theorem. Child frozen multi-original-Q C=512 partial-edge claim remains UNPROVED/UNREFUTED; an earlier universal whole-original-support-thin-first *method* is now refuted on S023 nested projective plane even when partial petals are permitted AFTER that step. The same family retains a dense exact-in-H valid unthinned alternative. P001 remains INVESTIGATING / NOVELTY_UNCERTAIN / NOT_STARTED / IDEA. No independent mathematics or novelty review, new N1/N2, Lean, manuscript or outreach. S028 future; parent mathematical S001 unexecuted.

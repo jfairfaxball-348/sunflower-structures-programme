@@ -1,39 +1,39 @@
 {
   "schema_version": 1,
-  "session": "P001-S026",
+  "session": "P001-S027",
   "project_id": "P001",
   "observed_on": "2026-10-11",
   "parent": {
     "repository": "jfairfaxball-348/sunflower-structures-programme",
     "repository_id": 1412469441,
-    "starting_main": "731f71fcefba1cc23fb9b10a449b9fc4ee26f734"
+    "starting_main": "789b673fb083ac8978e850d4d2dfc410f5098aa3"
   },
   "child": {
     "repository": "jfairfaxball-348/sunflower-internal-kernel-extraction",
     "repository_id": 1412820282,
     "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction",
-    "main_commit": "aa8333271d24d636b41157da286c6bb1d432d124",
-    "tree_sha": "849e4c982ebc3601374d916aa357b9da18fe75cd",
+    "main_commit": "b7a2d8a75516b7e547cc02b710bc0a23b1eb3aac",
+    "tree_sha": "ad8637dec4d0c67404d9197b99e165374eb59933",
     "manifest_path": "project_manifest.json",
     "merged_pr": {
-      "number": 28,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/28",
+      "number": 29,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/29",
       "merged": true,
-      "merged_at": "2026-10-11T16:41:30Z",
-      "head_sha": "4bbc4acdaad47da8dced0cb652c4de9ebda9a4a0",
-      "merge_sha": "aa8333271d24d636b41157da286c6bb1d432d124"
+      "merged_at": "2026-10-11T17:08:25Z",
+      "head_sha": "9704f18a5fb35189e4749faffaa2ef2406a64d83",
+      "merge_sha": "b7a2d8a75516b7e547cc02b710bc0a23b1eb3aac"
     },
     "final_head_validation": [
       {
-        "run_id": 38156468117,
-        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38156468117",
+        "run_id": 38158359789,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38158359789",
         "event": "pull_request",
-        "head_sha": "4bbc4acdaad47da8dced0cb652c4de9ebda9a4a0",
+        "head_sha": "9704f18a5fb35189e4749faffaa2ef2406a64d83",
         "status": "completed",
         "conclusion": "success",
         "jobs": [
           {
-            "id": 114520366295,
+            "id": 114525895880,
             "name": "validate",
             "status": "completed",
             "conclusion": "success",
@@ -56,15 +56,15 @@
       }
     ],
     "main_validation": {
-      "run_id": 38156518024,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38156518024",
+      "run_id": 38158424393,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38158424393",
       "event": "push",
-      "head_sha": "aa8333271d24d636b41157da286c6bb1d432d124",
+      "head_sha": "b7a2d8a75516b7e547cc02b710bc0a23b1eb3aac",
       "status": "completed",
       "conclusion": "success",
       "jobs": [
         {
-          "id": 114520513577,
+          "id": 114526087873,
           "name": "validate",
           "status": "completed",
           "conclusion": "success",
@@ -86,19 +86,19 @@
       ]
     },
     "last_completed_substantive_session": {
-      "session": "P001-S026",
-      "main_commit": "aa8333271d24d636b41157da286c6bb1d432d124",
+      "session": "P001-S027",
+      "main_commit": "b7a2d8a75516b7e547cc02b710bc0a23b1eb3aac",
       "merged_pr": {
-        "number": 28,
-        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/28",
+        "number": 29,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/29",
         "merged": true,
-        "merged_at": "2026-10-11T16:41:30Z",
-        "head_sha": "4bbc4acdaad47da8dced0cb652c4de9ebda9a4a0",
-        "merge_sha": "aa8333271d24d636b41157da286c6bb1d432d124"
+        "merged_at": "2026-10-11T17:08:25Z",
+        "head_sha": "9704f18a5fb35189e4749faffaa2ef2406a64d83",
+        "merge_sha": "b7a2d8a75516b7e547cc02b710bc0a23b1eb3aac"
       },
       "main_validation": {
-        "run_id": 38156518024,
-        "job_id": 114520513577,
+        "run_id": 38158424393,
+        "job_id": 114526087873,
         "conclusion": "success"
       }
     }
@@ -125,7 +125,7 @@
     "new_theorems": 0,
     "formal_verifications": 0,
     "publications": 0,
-    "session_outcome": "S026_SINGLE_GLOBAL_ORIGINAL_HEAVY_HUB_NONPRIVATE_EDGE_T_OVER_9M2_SAME_ASSISTANT",
+    "session_outcome": "S027_FULL_SUPPORT_THIN_FIRST_METHOD_REFUTED_MULTIHUB_DIRECT_EDGE_512_UNPROVED",
     "r3_literature_status": "STATUS_UNCERTAIN",
     "independent_mathematical_review": false,
     "bsel_universal_proved": false,
@@ -221,7 +221,7 @@
     "s023_input_sha256": "31fbef162594de01bab0cd525c51f74de7bcb15063029fa1a54b2cf5944c80d8",
     "s023_private_light_s021_not_contradicted": true,
     "s023_q_empty_s022_not_contradicted": true,
-    "outgoing_parent_ci": "S026 status-only parent FINAL-HEAD programme-integrity PR and postmerge main PUSH workflow/jobs to be inspected AFTER PR/merge, not self-certified.",
+    "outgoing_parent_ci": "S027 parent STATUS ONLY final HEAD programme-integrity PR and postmerge main PUSH checks must be independently inspected after hosting, not self-certified.",
     "s024_frozen_direct_edge_512_proved": false,
     "s024_frozen_direct_edge_512_refuted": false,
     "s024_q_plane_exact_edge_optimum": "(m-1)*(m^2-2*m+2)",
@@ -255,35 +255,53 @@
     "s025_input_archive_commit": "492f9752a7b10bffd4c2a8e04f41ca1374dd2417",
     "s025_frozen_gate_commit": "da5de8f3bfc875870f687d5547b45976a6afc54b",
     "s026_future_only": false,
-    "s027_future_only": true,
+    "s027_future_only": false,
     "s026_single_original_Q_edge_bound": "t/(9*m^2)",
     "s026_exact_Q_singleton_required": true,
     "s026_light_support_overlap_allowed": true,
     "s026_final_H_pair_singleton_empty_certified": true,
     "s026_same_assistant_symbolic_only": true,
     "s026_unrestricted_direct_edge_512_proved": false,
-    "s026_full_tik_proved": false
+    "s026_full_tik_proved": false,
+    "s028_future_only": true,
+    "s027_original_Q_fixed": true,
+    "s027_one_Q_per_block": true,
+    "s027_nonprivate_light_allowed": true,
+    "s027_frozen_multihub_512_proved": false,
+    "s027_frozen_multihub_512_refuted": false,
+    "s027_full_support_thin_first_refuted": true,
+    "s027_q1024_m": 1026,
+    "s027_q1024_t": 1102737050625,
+    "s027_q1024_thinned_optimum": 1026,
+    "s027_q1024_min_required": 2047,
+    "s027_same_family_full_valid_edges": 1076891650,
+    "s027_same_assistant_symbolic_only": true,
+    "s027_fifth_audit_due": "S030",
+    "s027_full_tik_proved": false,
+    "s027_input_sha256": "f19536cc72c22ee3417531f9327f1cf9477ecb1123539be080b2546ca73b172b",
+    "s027_archive_commit": "cc3000a2307b99c3dbfb89e19dc81349eb953953",
+    "s027_frozen_gate_commit": "0913cf4ff31400139d36f0b63f9d9ad7b24fcf6d"
   },
   "next_child_obligation": {
-    "session": "P001-S027",
+    "session": "P001-S028",
     "objectives": [
-      "MULTIHUB_NONPRIVATE_DIRECT_EDGE_AGGREGATION"
+      "PETAL_FIRST_MULTIHUB_COLLISION_AWARE_SELECTION"
     ],
     "open_status": "STATUS_UNCERTAIN",
     "executed": false,
-    "interpretation": "A NEW separately owner-invoked future child mathematical gate: multi-original-heavy, one-Q-per-original-block, arbitrary nonprivate light DIRECT edge bound with simultaneous final exact 2/1/EMPTY certificates; NOT executed in S026."
+    "interpretation": "A NEW future separately owner-invoked bounded child petal-first nonprivate multi-original-Q direct-edge extraction gate; S027 refuted only full-original-light-support-thin-first, not frozen direct-edge C=512; NOT EXECUTED."
   },
   "parent_programme_session_executed": false,
   "parent_registration_ci": [
     {
-      "run_id": 38154050500,
+      "run_id": 38157064996,
       "event": "pull_request",
-      "head_sha": "363479ffd75c20c8c34285922ce376e0d1e76939",
+      "head_sha": "7db5864ef15819fcfcc79765781b23434e9b3fda",
       "status": "completed",
       "conclusion": "success",
       "jobs": [
         {
-          "id": 114513231660,
+          "id": 114522118676,
           "name": "validate",
           "status": "completed",
           "conclusion": "success",
@@ -299,17 +317,17 @@
           ]
         }
       ],
-      "note": "S025 parent STATUS PR FINAL HEAD independently observed at S026 child entry"
+      "note": "S026 parent status-only final PR HEAD independently checked at S027 registration"
     },
     {
-      "run_id": 38154081065,
+      "run_id": 38157232961,
       "event": "push",
-      "head_sha": "731f71fcefba1cc23fb9b10a449b9fc4ee26f734",
+      "head_sha": "789b673fb083ac8978e850d4d2dfc410f5098aa3",
       "status": "completed",
       "conclusion": "success",
       "jobs": [
         {
-          "id": 114513323646,
+          "id": 114522615738,
           "name": "validate",
           "status": "completed",
           "conclusion": "success",
@@ -325,15 +343,15 @@
           ]
         }
       ],
-      "note": "S025 parent status merged-main PUSH independently observed at S026 child entry"
+      "note": "S026 parent merged-main PUSH independently checked at S027 registration"
     }
   ],
-  "previous_registration_receipt": "sessions/P001-S025/REGISTRATION.md",
-  "outgoing_parent_commit_evidence": "S026 parent status-only FINAL-HEAD programme-integrity PR and merged-main PUSH run/jobs cannot be self-certified before hosting completion.",
-  "registration_kind": "P001_S026_ONE_GLOBAL_HEAVY_NONPRIVATE_DIRECT_EDGE_STATUS_ONLY",
+  "previous_registration_receipt": "sessions/P001-S026/REGISTRATION.md",
+  "outgoing_parent_commit_evidence": "S027 parent status-only FINAL HEAD programme-integrity PR and postmerge main PUSH workflow/jobs cannot be self-certified before hosting completion.",
+  "registration_kind": "P001_S027_MULTIHUB_FULL_SUPPORT_THIN_FIRST_METHOD_STATUS_ONLY",
   "approved_next_child_handoff": {
-    "session": "P001-S027",
-    "objective": "MULTIHUB_NONPRIVATE_DIRECT_EDGE_AGGREGATION",
+    "session": "P001-S028",
+    "objective": "PETAL_FIRST_MULTIHUB_COLLISION_AWARE_SELECTION",
     "approved": "AUTONOMOUS_SINGLE_METHOD_PROOF_FIRST",
     "executed": false
   }

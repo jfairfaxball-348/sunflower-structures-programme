@@ -66,6 +66,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S024"] = ("P001-S025", ["MANDATORY_FIFTH_CORRECTION_AUDIT_AND_EDGE_LEVEL_GLOBAL_BRIDGE"])
     expected_successors["P001-S025"] = ("P001-S026", ["NONPRIVATE_MIXED_SUPPORT_EDGE_REFINEMENT"])
     expected_successors["P001-S026"] = ("P001-S027", ["MULTIHUB_NONPRIVATE_DIRECT_EDGE_AGGREGATION"])
+    expected_successors["P001-S027"] = ("P001-S028", ["PETAL_FIRST_MULTIHUB_COLLISION_AWARE_SELECTION"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -423,6 +424,29 @@ def check_registration(state, projects, receipt):
         assert child["main_validation"]["head_sha"] == child["main_commit"]
         assert child["main_validation"]["conclusion"] == "success"
         assert (ROOT / "sessions/P001-S026/REGISTRATION.md").is_file()
+    if receipt["session"] == "P001-S027":
+        assert receipt["registration_kind"] == "P001_S027_MULTIHUB_FULL_SUPPORT_THIN_FIRST_METHOD_STATUS_ONLY"
+        assert audit["session_outcome"] == "S027_FULL_SUPPORT_THIN_FIRST_METHOD_REFUTED_MULTIHUB_DIRECT_EDGE_512_UNPROVED"
+        assert audit["s027_original_Q_fixed"] and audit["s027_one_Q_per_block"]
+        assert audit["s027_nonprivate_light_allowed"]
+        assert audit["s027_full_support_thin_first_refuted"]
+        assert not audit["s027_frozen_multihub_512_proved"] and not audit["s027_frozen_multihub_512_refuted"]
+        assert audit["s027_q1024_m"] == 1026 and audit["s027_q1024_t"] == 1102737050625
+        assert audit["s027_q1024_thinned_optimum"] == 1026
+        assert audit["s027_q1024_min_required"] == 2047
+        assert audit["s027_same_family_full_valid_edges"] == 1076891650
+        assert not audit["independent_mathematical_review"] and not audit["full_tik_proved"]
+        assert audit["s025_fifth_audit_completed"] and audit["bsel_universal_refuted"]
+        assert not audit["s027_future_only"] and audit["s028_future_only"]
+        assert project["last_child_session"] == "P001-S027"
+        assert child["final_head_validation"] and all(
+            z["head_sha"] == child["merged_pr"]["head_sha"] and z["conclusion"] == "success"
+            and z["jobs"] and all(j["conclusion"] == "success" for j in z["jobs"])
+            for z in child["final_head_validation"])
+        assert child["main_validation"]["head_sha"] == child["main_commit"]
+        assert child["main_validation"]["conclusion"] == "success"
+        assert (ROOT / "sessions/P001-S027/REGISTRATION.md").is_file()
+
     expected_session, expected_objectives = expected_successors[receipt["session"]]
     assert next_step["session"] == expected_session and next_step["objectives"] == expected_objectives
     assert state["last_registry_update"] == receipt["session"]
