@@ -63,6 +63,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S021"] = ("P001-S022", ["NONPRIVATE_LIGHT_OVERLAP_LIFT"])
     expected_successors["P001-S022"] = ("P001-S023", ["LIGHT_AWARE_JOINT_SHORT_CHANNEL_SELECTION"])
     expected_successors["P001-S023"] = ("P001-S024", ["DIRECT_PARTIAL_EDGE_R3_EXTRACTION"])
+    expected_successors["P001-S024"] = ("P001-S025", ["MANDATORY_FIFTH_CORRECTION_AUDIT_AND_EDGE_LEVEL_GLOBAL_BRIDGE"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -364,6 +365,24 @@ def check_registration(state, projects, receipt):
         assert child["main_validation"]["head_sha"] == child["main_commit"]
         assert child["main_validation"]["conclusion"] == "success"
         assert (ROOT / "sessions/P001-S023/REGISTRATION.md").is_file()
+    if receipt["session"] == "P001-S024":
+        assert receipt["registration_kind"] == "P001_S024_DIRECT_EDGE_GATE_UNPROVED_EXACT_OPTIMUM_STATUS_ONLY"
+        assert audit["session_outcome"] == "S024_EXACT_EDGE_OPTIMUM_AND_LOCAL_UNION_FAILURE_DIRECT_M3_UNPROVED"
+        assert audit["s024_frozen_direct_edge_512_proved"] is False
+        assert audit["s024_frozen_direct_edge_512_refuted"] is False
+        assert audit["s024_q_plane_exact_edge_optimum"] == "(m-1)*(m^2-2*m+2)"
+        assert audit["s024_local_hub_union_refuted"] and audit["s024_star_forest_only_refuted"]
+        assert audit["s025_audit_future_only"] and not audit["s024_future_only"]
+        assert audit["bsel_universal_refuted"] and not audit["full_tik_proved"]
+        assert not audit["independent_mathematical_review"]
+        assert project["last_child_session"] == "P001-S024"
+        assert child["final_head_validation"] and all(
+            z["head_sha"] == child["merged_pr"]["head_sha"] and z["conclusion"] == "success"
+            and z["jobs"] and all(j["conclusion"] == "success" for j in z["jobs"])
+            for z in child["final_head_validation"])
+        assert child["main_validation"]["head_sha"] == child["main_commit"]
+        assert child["main_validation"]["conclusion"] == "success"
+        assert (ROOT / "sessions/P001-S024/REGISTRATION.md").is_file()
     expected_session, expected_objectives = expected_successors[receipt["session"]]
     assert next_step["session"] == expected_session and next_step["objectives"] == expected_objectives
     assert state["last_registry_update"] == receipt["session"]
