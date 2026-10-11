@@ -60,3 +60,7 @@ The child restricted one original Q vertex/block petal-first t/((3m−2)(m−1))
 
 ## P001-S029 status only
 Child original two-Q A-submass positive and B Hall/simple graph analysis do not amount to a universal two-Q C512 theorem. A weighted K_(m−1,m−1) example discredits ONLY representative-only pruning, with valid original multi-petal escape; no R3/every-k TIK, independent review, novelty re-audit, formalisation or publishable manuscript. P001 INVESTIGATING, publication IDEA, formal NOT_STARTED. S030 mandatory fifth-session child audit FUTURE; parent S001 remains unexecuted.
+
+
+## P001-S030 — no paper promotion, parent STATUS ONLY
+Child S030 completes the mandatory five-session correction audit and establishes only same-assistant compulsory two-heavy Q pair-core weighted-star and 2m-core restricted extraction with a Hall-lifting method obstruction. Full C512 original two-Q, arbitrary R3, all-k TIK UNPROVED. No independent proof referee, new originality/N1/N2, formalisation, manuscript, submission or publication. P001 stage INVESTIGATING, novelty NOVELTY_UNCERTAIN, Lean NOT_STARTED, publication IDEA. S031 unexecuted successor; parent mathematical S001 not executed.
