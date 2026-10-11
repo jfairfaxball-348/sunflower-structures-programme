@@ -52,3 +52,7 @@ Child S021 did NOT execute a new fifth audit (next S025 only). It preserves comp
 ## P001-S023 child progress status — earlier audits unaltered
 
 S023 supplies a new decisive exact failure of the previously universal WHOLE-BLOCK BSEL auxiliary and the nonprivate two-Q full-block t/m³ hypothesis. This corrects S022's unresolved quantifier without rewriting old evidence. It does not negate the original individual-edge TIK. S005/S010/S015/S020 substantive audits stand, S025 is the next mandatory child fifth-session audit and is ONLY future; parent mathematical S001 remains unexecuted. No newly reviewed proof, novelty clearance, formal theorem or manuscript; CI checks project records, not asymptotic mathematics.
+
+
+## P001-S024 — next mandatory fifth audit reserved for S025
+Child S024 supplied the exact individual-triple optimum on S023 q-plane and two auxiliary false edge-level bridge routes, but NOT the frozen universal t/(512m²), R3 or all-k TIK. All original S005/S010/S015/S020 substantive-session audits remain complete and unchanged. S025 is the separate FUTURE mandatory S021–S025 fifth-session correction/strategy audit plus ONE proof-first global direct-edge bridge. It has NOT been executed in S024 or in this parent status-only registration. Parent mathematical session remains S000 completed, S001 future, no novelty/Lean/paper promotion.
