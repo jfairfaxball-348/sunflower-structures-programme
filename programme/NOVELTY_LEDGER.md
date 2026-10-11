@@ -32,3 +32,7 @@ Girão–Illingworth–Scott–Wood 2024 Lemma 9 sunflower decomposition is ALRE
 ## Child P001-S026 — no novelty promotion
 
 S026 proves only a **same-assistant** restricted nonprivate-light original packing t/(9m²) selected-edge bound when Q={a} globally. The 2026 source-posed every-fixed-k TIK theorem, rank-three attribution, distinct originality, independent proof check and N2 remain UNVERIFIED. Owner-requested deferred detailed new N1/N2 stays deferred until a COMPLETE all-k TIK candidate; no novelty inference. See child S026 report and checked PR #28; no publication stage update.
+
+## Child P001-S027 — no novelty promotion or N1/N2
+
+Same-assistant [frozen S027 gate](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/b7a2d8a75516b7e547cc02b710bc0a23b1eb3aac/research/S027_FROZEN_GATE.md) for multi-Q direct extraction still UNPROVED/UNREFUTED. [S027 report](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/b7a2d8a75516b7e547cc02b710bc0a23b1eb3aac/research/S027_MULTIHUB_NONPRIVATE_EDGE_ANALYSIS.md) derives a failure of preliminary full-original-light-support thinning using already documented S023/S024 q-plane controls; not an original theorem novelty verdict, complete rank-three theorem or TIK counterexample. No independent mathematics scrutiny, new detailed N1/N2, source status or publication promotion. Owner deferral until complete all-k TIK proof candidate remains.

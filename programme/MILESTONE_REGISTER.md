@@ -79,3 +79,7 @@ Independently observed child PR #23 FINAL HEAD `c894844e3b3e6e46eef29dcb1fbd4c5e
 ## P001-S026 verified restricted mathematical advance, no milestone promotion
 
 Child PR #28 final-head and child merged-main hosted Actions independently SUCCESS. Scoped globally original Q={a} nonprivate-light direct-edge extraction t/(9m²) proven symbolically by same assistant with true in-H all-kernel certificates; all-m arbitrary-Q direct extraction, R3 and full all-k TIK remain UNPROVED. No independent mathematical review, novelty N2, Lean, manuscript or publication. Child S027 only prepared, parent mathematical S001 not executed.
+
+## P001-S027 — verified child method obstruction, no milestone theorem promotion
+
+Child PR #29 final HEAD research-integrity hosted PR 38158359789/job 114525895880 SUCCESS; child merged-main `b7a2d8a75516b7e547cc02b710bc0a23b1eb3aac` independent PUSH 38158424393/job 114526087873 SUCCESS. Frozen original multi-Q one-Q-per-block direct t/(512m²) remains UNPROVED/UNREFUTED; same-assistant refutes only lossful FULL original light-support disjointing as a sufficient partial-edge extraction. On q=1024 S023 q-plane this restriction yields <=1026 H triples while numeric requirement >=2047; unthinned S024 exact H has 1,076,891,650. R3/full every-k TIK no theorem and not refuted. No referee, novel proof, Lean or paper; S028 separate future, audit S030; parent mathematical S001 untouched. Parent outgoing CI separate.
