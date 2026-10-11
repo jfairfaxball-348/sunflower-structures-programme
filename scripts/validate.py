@@ -56,6 +56,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S014"] = ("P001-S015", ["QUANTITATIVE_PRESERVE_OR_DROP_PAIR_CLASS_REFINEMENT"])
     expected_successors["P001-S015"] = ("P001-S016", ["JOINT_WEIGHTED_CHANNEL_AND_CORE_MATCHING_SELECTION"])
     expected_successors["P001-S016"] = ("P001-S017", ["ADAPTIVE_WEIGHTED_CORE_FOOTPRINT_AND_TRUE_CHANNEL_JOINT_SELECTION"])
+    expected_successors["P001-S017"] = ("P001-S018", ["CONTAMINATED_HEAVY_CHANNEL_COMPLEMENT_JOINT_SELECTION"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -205,6 +206,24 @@ def check_registration(state, projects, receipt):
             and checked["jobs"] and all(j["conclusion"] == "success" for j in checked["jobs"])
             for checked in child["final_head_validation"])
         assert (ROOT / "sessions/P001-S016/REGISTRATION.md").is_file()
+    if receipt["session"] == "P001-S017":
+        assert receipt["registration_kind"] == "P001_S017_ADAPTIVE_WEIGHTED_SAFE_SPINE_PARTIAL_JOINT_BOUND_STATUS_ONLY"
+        assert audit["session_outcome"] == "SAFE_SPINE_12_PARTIAL_W_PLUS_Z_NO_UNIFORM_T_BOUND"
+        assert audit["s017_safe_spine_12_partial_proved_same_assistant"] is True
+        assert audit["s017_safe_spine_bound"] == "(W+Z)/(12*m^3)"
+        assert audit["s017_original_heavy_fixed"] and audit["s017_actual_in_H_pair_singleton_empty_checked"]
+        assert audit["s017_W_plus_Z_may_be_zero_unbounded_t"] is True
+        assert audit["s017_complete_arbitrary_gamma_proved"] is False
+        assert audit["independent_mathematical_review"] is False
+        assert not audit["private_light_two_heavy_bsel_proved"] and not audit["private_light_two_heavy_bsel_refuted"]
+        assert not audit["bsel_universal_proved"] and not audit["bsel_universal_refuted"]
+        assert not audit["full_tik_proved"]
+        assert project["last_child_session"] == "P001-S017"
+        assert child["final_head_validation"] and all(
+            checked["head_sha"] == child["merged_pr"]["head_sha"] and checked["conclusion"] == "success"
+            and checked["jobs"] and all(j["conclusion"] == "success" for j in checked["jobs"])
+            for checked in child["final_head_validation"])
+        assert (ROOT / "sessions/P001-S017/REGISTRATION.md").is_file()
     expected_session, expected_objectives = expected_successors[receipt["session"]]
     assert next_step["session"] == expected_session and next_step["objectives"] == expected_objectives
     assert state["last_registry_update"] == receipt["session"]
