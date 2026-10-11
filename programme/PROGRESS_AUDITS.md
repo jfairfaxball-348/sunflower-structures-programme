@@ -31,3 +31,7 @@ S001–S010 correction/strategy review complete, including S005, retired exact L
 
 ## P001-S015 verified mandatory fifteenth-substantive child progress/correction audit
 The child S011–S015 progress/correction review is complete ([record](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/72bba5f269df135404bf8aa2bbbc9ef7e6c2c2a4/research/S015_FIFTEENTH_PROGRESS_AUDIT.md)). It confirms exact S011 singleton/global core matchings, S012 pair-only density, S013 protected simultaneous certificates, S014 singleton obstruction with sharp >half positive control, and S015 independently necessary empty matching with >=t/(m-1) positive star. No universal gamma, arbitrary BSEL, R3 or all-k TIK result. It identifies repetitive all-class preservation auxiliary failures and stages one more genuinely quantitative weighted joint selection question S016, NOT executed. This parent registration does not execute parent mathematical S001 or alter the parent's S000-only mathematical-session count. No source/novelty/paper promotion.
+
+
+## P001-S016 verified child status, no fifth-session audit due
+The bounded S016 fixed-backbone quantitative budget intermediary failed with a >=half-density valid adaptive control; this leaves private-light/universal BSEL, R3 and all-k TIK unresolved. The fifth substantive child audit was completed in S015; next due at S020. Parent mathematical session remains S000 only, and separate S017 is UNEXECUTED. [Child CI receipt](P001_REGISTRATION.json).
