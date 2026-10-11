@@ -47,3 +47,8 @@ Verified [child S020 correction audit](https://github.com/jfairfaxball-348/sunfl
 ## P001-S021 — fifth audit continuity (STATUS ONLY)
 
 Child S021 did NOT execute a new fifth audit (next S025 only). It preserves completed S020 correction review across S016–S020 and historical S005/S010/S015 audits. New same-assistant private-light <=2-Q bound `t/[126(m-1)^3]` saves the m-factor on short classes, but has no independent mathematical review; it does not solve nonprivate overlap, BSEL/R3 or all-k TIK. Parent S001 remains unexecuted; child S022 remains future only. Verified child run IDs and jobs in [registration](P001_REGISTRATION.json).
+
+
+## P001-S023 child progress status — earlier audits unaltered
+
+S023 supplies a new decisive exact failure of the previously universal WHOLE-BLOCK BSEL auxiliary and the nonprivate two-Q full-block t/m³ hypothesis. This corrects S022's unresolved quantifier without rewriting old evidence. It does not negate the original individual-edge TIK. S005/S010/S015/S020 substantive audits stand, S025 is the next mandatory child fifth-session audit and is ONLY future; parent mathematical S001 remains unexecuted. No newly reviewed proof, novelty clearance, formal theorem or manuscript; CI checks project records, not asymptotic mathematics.
