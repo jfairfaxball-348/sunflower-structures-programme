@@ -28,3 +28,7 @@ Detailed theorem locations, parameter comparisons, search limitations and eviden
 
 ## P001-S006 block packing N1 registration
 Girão–Illingworth–Scott–Wood 2024 Lemma 9 sunflower decomposition is ALREADY KNOWN. New frozen BSEL universal prescribed-packing cross-kernel selection remains UNPROVED/NOVELTY_UNCERTAIN; no exact published settlement found in bounded N1, not a novelty/open proof. Elementary vertex-disjoint block-support gamma=1 proposition only, same-assistant proof; no N2 or independent audit. [Child N1](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/75dedd9cbf81f584cd7fafaa64eecff04fa34a45/research/S006_N1_BLOCK_COMPATIBILITY.md). R3 exact source status unchanged.
+
+## Child P001-S026 — no novelty promotion
+
+S026 proves only a **same-assistant** restricted nonprivate-light original packing t/(9m²) selected-edge bound when Q={a} globally. The 2026 source-posed every-fixed-k TIK theorem, rank-three attribution, distinct originality, independent proof check and N2 remain UNVERIFIED. Owner-requested deferred detailed new N1/N2 stays deferred until a COMPLETE all-k TIK candidate; no novelty inference. See child S026 report and checked PR #28; no publication stage update.
