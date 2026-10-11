@@ -15,9 +15,9 @@ class TournamentTests(unittest.TestCase):
     def records(self):
         return tuple(json.loads((ROOT/p).read_text()) for p in
                      ("authoritative/STATE.json", "programme/PROJECTS.json", "programme/P001_REGISTRATION.json"))
-    def test_s028_restricted_claim_does_not_promote_tik(self):
+    def test_s029_preserves_s028_restricted_claim_and_does_not_promote_tik(self):
         state, projects, receipt = self.records()
-        self.assertEqual(receipt["session"], "P001-S028")
+        self.assertEqual(receipt["session"], "P001-S029")
         audit = receipt["independent_registration_verification"]
         self.assertEqual(audit["s026_single_original_Q_edge_bound"], "t/(9*m^2)")
         self.assertTrue(audit["s026_exact_Q_singleton_required"])
@@ -33,7 +33,7 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["full_tik_proved"])
         self.assertTrue(audit["bsel_universal_refuted"])
         self.assertEqual(state["session_completed"], "S000")
-        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S028")
+        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S029")
         self.assertTrue(audit["s028_frozen_C512_proved"])
         self.assertEqual(audit["s028_stronger_restricted_bound"], "t/((3m-2)*(m-1)) >= t/(3m^2)")
         self.assertTrue(audit["s028_original_Q_fixed"])
@@ -42,7 +42,13 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["s028_unrestricted_direct_edge_proved"])
         self.assertFalse(audit["s028_full_tik_proved"])
         self.assertFalse(audit["independent_mathematical_review"])
-        self.assertEqual(receipt["next_child_obligation"]["session"], "P001-S029")
+        self.assertEqual(receipt["next_child_obligation"]["session"], "P001-S030")
+        self.assertFalse(audit["s029_frozen_C512_proved"])
+        self.assertFalse(audit["s029_frozen_C512_refuted"])
+        self.assertTrue(audit["s029_A_majority_meets_C512"])
+        self.assertTrue(audit["s029_B_Hall_representatives_injective"])
+        self.assertTrue(audit["s029_rep_only_B512_refuted"])
+        self.assertTrue(audit["s030_future_only"])
         self.assertFalse(receipt["parent_programme_session_executed"])
 
     def test_registration_rejects_wrong_child_sha(self):
