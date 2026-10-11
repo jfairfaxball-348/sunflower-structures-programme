@@ -60,6 +60,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S018"] = ("P001-S019", ["PAIR_ACTIVE_WEIGHTED_JOINT_CHANNEL_AND_FOOTPRINT"])
     expected_successors["P001-S019"] = ("P001-S020", ["FIFTH_AUDIT_AND_SHORT_MIXED_CHANNEL_BRIDGE"])
     expected_successors["P001-S020"] = ("P001-S021", ["SHORT_PAIR_CLASS_M_SAVING_BRIDGE"])
+    expected_successors["P001-S021"] = ("P001-S022", ["NONPRIVATE_LIGHT_OVERLAP_LIFT"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -292,6 +293,30 @@ def check_registration(state, projects, receipt):
             and checked["jobs"] and all(j["conclusion"] == "success" for j in checked["jobs"])
             for checked in child["final_head_validation"])
         assert (ROOT / "sessions/P001-S020/REGISTRATION.md").is_file()
+    if receipt["session"] == "P001-S021":
+        assert receipt["registration_kind"] == "P001_S021_PRIVATE_LIGHT_FULL_M3_THREE_CHANNEL_STATUS_ONLY"
+        assert audit["session_outcome"] == "PRIVATE_LIGHT_TWO_Q_FULL_T_OVER_126M3_PROVED_SAME_ASSISTANT_ALL_K_OPEN"
+        assert audit["s021_frozen_t_200_m3_met"] is True
+        assert audit["s021_short_graph_18_bound"] == "N/[18*(m-1)^2]"
+        assert audit["s021_private_light_m3_bound"] == "t/[126*(m-1)^3]"
+        assert audit["s021_same_assistant_symbolic_only"] is True
+        assert audit["s021_independent_referee"] is False
+        assert audit["s021_original_Q_fixed"] is True
+        assert audit["s021_s018_s019_negative_controls_preserved"] is True
+        assert audit["s021_input_sha256"] == "70d021f8a070967620869f0913e126aedf4c4aaafafc2bc16793a914a7b221e8"
+        assert audit["s021_unrestricted_nonprivate_light_proved"] is False
+        assert audit["s021_full_all_k_tik_proved"] is False
+        assert audit["s022_future_only"] is True
+        assert audit["independent_mathematical_review"] is False
+        assert audit["private_light_two_heavy_bsel_proved"] is True
+        assert audit["bsel_universal_proved"] is False and audit["bsel_universal_refuted"] is False
+        assert audit["full_tik_proved"] is False
+        assert project["last_child_session"] == "P001-S021"
+        assert child["final_head_validation"] and all(
+            checked["head_sha"] == child["merged_pr"]["head_sha"] and checked["conclusion"] == "success"
+            and checked["jobs"] and all(j["conclusion"] == "success" for j in checked["jobs"])
+            for checked in child["final_head_validation"])
+        assert (ROOT / "sessions/P001-S021/REGISTRATION.md").is_file()
     expected_session, expected_objectives = expected_successors[receipt["session"]]
     assert next_step["session"] == expected_session and next_step["objectives"] == expected_objectives
     assert state["last_registry_update"] == receipt["session"]

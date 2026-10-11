@@ -42,3 +42,8 @@ S019 is the nineteenth substantive child mathematics session, with bounded E00 p
 ## P001-S020 — verified mandatory twentieth/fifth substantive child correction audit (parent STATUS ONLY)
 
 Verified [child S020 correction audit](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/85dec23462018f9eb877a61f50f4fc9edae7a785/research/S020_PROGRESS_CORRECTION_AUDIT.md) rechecks S016–S020 and S005/S010/S015, corrects S019 incoming/outgoing PR/merge statuses, computes the exact 12/6/6/24 mass budget and m^-4 loss on E00-short and mixed mandatory/optional directed channels. Original heavy Q and true final pair/singleton/empty certificates remain fixed. S020 fully covers this restricted private-light two-heavy slice at `t/(48m^4)`, still one exponent shy of frozen `t/(96m^3)`; no general gamma/BSEL/R3/full all-k TIK, original refereed theorem, N1/N2, Lean, manuscript or publication. S021 FUTURE only; next child fifth audit S025, parent own S001 mathematical session UNEXECUTED. Parent registration does not increment parent research-session count.
+
+
+## P001-S021 — fifth audit continuity (STATUS ONLY)
+
+Child S021 did NOT execute a new fifth audit (next S025 only). It preserves completed S020 correction review across S016–S020 and historical S005/S010/S015 audits. New same-assistant private-light <=2-Q bound `t/[126(m-1)^3]` saves the m-factor on short classes, but has no independent mathematical review; it does not solve nonprivate overlap, BSEL/R3 or all-k TIK. Parent S001 remains unexecuted; child S022 remains future only. Verified child run IDs and jobs in [registration](P001_REGISTRATION.json).
