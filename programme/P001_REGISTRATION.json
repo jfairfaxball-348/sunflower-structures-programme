@@ -1,39 +1,39 @@
 {
   "schema_version": 1,
-  "session": "P001-S024",
+  "session": "P001-S025",
   "project_id": "P001",
   "observed_on": "2026-10-11",
   "parent": {
     "repository": "jfairfaxball-348/sunflower-structures-programme",
     "repository_id": 1412469441,
-    "starting_main": "29a6831bdfaec4e6202f750883929a2188f38b39"
+    "starting_main": "68db7557986569c0ae5557166e09032256d0ea8a"
   },
   "child": {
     "repository": "jfairfaxball-348/sunflower-internal-kernel-extraction",
     "repository_id": 1412820282,
     "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction",
-    "main_commit": "3d7008cfc0ea21bae8b15a499b765c9a29bd836b",
-    "tree_sha": "243081a16ecd2e6781bd321eb13633c2b621a3e8",
+    "main_commit": "fd4374a3c22d2eec203df9b501b6d4e75c992ebd",
+    "tree_sha": "ae8aa38386088f7e7ca5c45fb0f874a4881f8cf8",
     "manifest_path": "project_manifest.json",
     "merged_pr": {
-      "number": 26,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/26",
+      "number": 27,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/27",
       "merged": true,
-      "merged_at": "2026-10-11T15:24:38Z",
-      "head_sha": "004c915cad68331203845448817e361ecca0ee1d",
-      "merge_sha": "3d7008cfc0ea21bae8b15a499b765c9a29bd836b"
+      "merged_at": "2026-10-11T16:01:26Z",
+      "head_sha": "d29d413ac34399eea8ae2fda99bdeec057a32148",
+      "merge_sha": "fd4374a3c22d2eec203df9b501b6d4e75c992ebd"
     },
     "final_head_validation": [
       {
-        "run_id": 38151119994,
-        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38151119994",
+        "run_id": 38153688223,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38153688223",
         "event": "pull_request",
-        "head_sha": "004c915cad68331203845448817e361ecca0ee1d",
+        "head_sha": "d29d413ac34399eea8ae2fda99bdeec057a32148",
         "status": "completed",
         "conclusion": "success",
         "jobs": [
           {
-            "id": 114504617117,
+            "id": 114512162045,
             "name": "validate",
             "status": "completed",
             "conclusion": "success",
@@ -56,15 +56,15 @@
       }
     ],
     "main_validation": {
-      "run_id": 38151152394,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38151152394",
+      "run_id": 38153720365,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38153720365",
       "event": "push",
-      "head_sha": "3d7008cfc0ea21bae8b15a499b765c9a29bd836b",
+      "head_sha": "fd4374a3c22d2eec203df9b501b6d4e75c992ebd",
       "status": "completed",
       "conclusion": "success",
       "jobs": [
         {
-          "id": 114504712575,
+          "id": 114512254622,
           "name": "validate",
           "status": "completed",
           "conclusion": "success",
@@ -86,32 +86,33 @@
       ]
     },
     "last_completed_substantive_session": {
-      "session": "P001-S024",
-      "main_commit": "3d7008cfc0ea21bae8b15a499b765c9a29bd836b",
+      "session": "P001-S025",
+      "main_commit": "fd4374a3c22d2eec203df9b501b6d4e75c992ebd",
       "merged_pr": {
-        "number": 26,
-        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/26",
+        "number": 27,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/27",
         "merged": true,
-        "merged_at": "2026-10-11T15:24:38Z",
-        "head_sha": "004c915cad68331203845448817e361ecca0ee1d",
-        "merge_sha": "3d7008cfc0ea21bae8b15a499b765c9a29bd836b"
+        "merged_at": "2026-10-11T16:01:26Z",
+        "head_sha": "d29d413ac34399eea8ae2fda99bdeec057a32148",
+        "merge_sha": "fd4374a3c22d2eec203df9b501b6d4e75c992ebd"
       },
       "main_validation": {
-        "run_id": 38151152394,
-        "job_id": 114504712575,
+        "run_id": 38153720365,
+        "job_id": 114512254622,
         "conclusion": "success"
       }
     }
   },
   "independent_registration_verification": {
-    "method": "Independently re-fetched child S024 merged PR #26 final HEAD 004c915cad68331203845448817e361ecca0ee1d and exact research-integrity PR run 38151119994 / job 114504617117 SUCCESS; independently fetched merged main 3d7008cfc0ea21bae8b15a499b765c9a29bd836b and PUSH run 38151152394 / job 114504712575 SUCCESS. Same-assistant exact individual-edge optimum (m-1)(m²-2m+2) for original S023 nested q-plane; disproves neither universal direct edge gate nor R3/TIK. Local hub union fails true EMPTY matching m-1, dense K_N graph-core representatives invalidate star-forest-only extraction. This is status-only registration; no mathematical S001, independent referee, N1/N2, Lean, manuscript or publication.",
+    "method": "Independently verified child P001-S025 merged PR #27 FINAL head d29d413ac34399eea8ae2fda99bdeec057a32148 research-integrity PR run 38153688223 validate JOB 114512162045 completed SUCCESS and independent child merged main fd4374a3c22d2eec203df9b501b6d4e75c992ebd PUSH run 38153720365 validate JOB 114512254622 completed SUCCESS. Child S025 archive/frozen commit ordering, restricted individual-edge density translations, same-assistant clean-star/graph certificates and mandatory fifth audit inspected. Global DIRECT_PARTIAL_EDGE_512 / GLOBAL_EDGE_DICHOTOMY_512 and full R3/TIK remain UNPROVED. This is STATUS ONLY, not parent mathematical S001, independent peer review or paper.",
     "verified_paths": [
-      "research/S024_FROZEN_GATE.md",
-      "research/S024_DIRECT_PARTIAL_EDGE_ANALYSIS.md",
-      "sessions/P001-S024/INPUT.md",
-      "sessions/P001-S024/INPUT_MANIFEST.json",
-      "sessions/P001-S024/ENTRY_EVIDENCE.json",
-      "sessions/P001-S024/CLOSEOUT.md",
+      "research/S025_FROZEN_GATE.md",
+      "research/S025_GLOBAL_EDGE_ANALYSIS.md",
+      "research/S025_PROGRESS_CORRECTION_AUDIT.md",
+      "sessions/P001-S025/INPUT.md",
+      "sessions/P001-S025/INPUT_MANIFEST.json",
+      "sessions/P001-S025/ENTRY_EVIDENCE.json",
+      "sessions/P001-S025/CLOSEOUT.md",
       "sessions/NEXT_SESSION.md",
       "authoritative/STATE.json",
       "project_manifest.json",
@@ -125,7 +126,7 @@
     "new_theorems": 0,
     "formal_verifications": 0,
     "publications": 0,
-    "session_outcome": "S024_EXACT_EDGE_OPTIMUM_AND_LOCAL_UNION_FAILURE_DIRECT_M3_UNPROVED",
+    "session_outcome": "S025_RESTRICTED_EDGE_DENSITY_CONVERSION_GLOBAL_COLLISION_MASS_GAP_UNPROVED",
     "r3_literature_status": "STATUS_UNCERTAIN",
     "independent_mathematical_review": false,
     "bsel_universal_proved": false,
@@ -205,7 +206,7 @@
     "s022_frozen_gate_commit": "3523a5973dacd041bb903a6beeb0771b8969cb7d",
     "s022_same_assistant_symbolic_only": true,
     "s023_future_only": false,
-    "s025_audit_future_only": true,
+    "s025_audit_future_only": false,
     "s024_future_only": false,
     "s022_frozen_nonprivate_t_1008_m3_refuted": true,
     "s023_frozen_nonprivate_t_1008_m3_refuted": true,
@@ -221,7 +222,7 @@
     "s023_input_sha256": "31fbef162594de01bab0cd525c51f74de7bcb15063029fa1a54b2cf5944c80d8",
     "s023_private_light_s021_not_contradicted": true,
     "s023_q_empty_s022_not_contradicted": true,
-    "outgoing_parent_ci": "Not self-certified; parent final-head PR workflow and merged-main push workflow checked only after publication.",
+    "outgoing_parent_ci": "S025 parent status-only PR final-head and merged-main PUSH workflow/job checks must be independently inspected AFTER publication; not self-certified.",
     "s024_frozen_direct_edge_512_proved": false,
     "s024_frozen_direct_edge_512_refuted": false,
     "s024_q_plane_exact_edge_optimum": "(m-1)*(m^2-2*m+2)",
@@ -232,16 +233,38 @@
     "s024_archive_commit": "901f86dd2388d09fd47049e35a4a27544c2d6c79",
     "s024_frozen_gate_commit": "22676de78f62544a9b1916d4860d07542272dbee",
     "s024_same_assistant_symbolic_only": true,
-    "s024_original_Q_fixed": true
+    "s024_original_Q_fixed": true,
+    "s025_fifth_audit_completed": true,
+    "s025_global_edge_dichotomy_proved": false,
+    "s025_global_edge_dichotomy_refuted": false,
+    "s025_direct_edge_512_proved": false,
+    "s025_private_light_direct_edge_count": "t/(126*m^2)",
+    "s025_q_empty_direct_edge_count": "t/(3*m^2)",
+    "s025_nonprivate_two_Q_fallback_edge_count": "t/(378*m^4)",
+    "s025_clean_star_hall_restricted": true,
+    "s025_graph_representative_restricted": true,
+    "s025_global_collision_aware_mass_partition_proved": false,
+    "s025_mandatory_audits_preserved": [
+      "S005",
+      "S010",
+      "S015",
+      "S020",
+      "S025"
+    ],
+    "s025_same_assistant_symbolic_only": true,
+    "s025_input_sha256": "f19536cc72c22ee3417531f9327f1cf9477ecb1123539be080b2546ca73b172b",
+    "s025_input_archive_commit": "492f9752a7b10bffd4c2a8e04f41ca1374dd2417",
+    "s025_frozen_gate_commit": "da5de8f3bfc875870f687d5547b45976a6afc54b",
+    "s026_future_only": true
   },
   "next_child_obligation": {
-    "session": "P001-S025",
+    "session": "P001-S026",
     "objectives": [
-      "MANDATORY_FIFTH_CORRECTION_AUDIT_AND_EDGE_LEVEL_GLOBAL_BRIDGE"
+      "NONPRIVATE_MIXED_SUPPORT_EDGE_REFINEMENT"
     ],
     "open_status": "STATUS_UNCERTAIN",
     "executed": false,
-    "interpretation": "A separately owner-invoked mandatory S021-S025 fifth-session correction audit PLUS exactly one new direct edge-level global certificate proof-first gate. Future/unexecuted."
+    "interpretation": "A completely standalone FUTURE child mixed original-heavy/light-collision edge-refinement gate, with numerical absolute constant and all final exact 2/1/EMPTY witnesses; not executed as part of S025."
   },
   "parent_programme_session_executed": false,
   "parent_registration_ci": [
@@ -298,12 +321,12 @@
       "note": "S022 parent merged main PUSH independently checked at S023 entry"
     }
   ],
-  "previous_registration_receipt": "sessions/P001-S023/REGISTRATION.md",
-  "outgoing_parent_commit_evidence": "S024 parent status-only FINAL HEAD programme-integrity and merged-main PUSH run/job checks require independently inspected hosted CI AFTER publishing; never self-certify.",
-  "registration_kind": "P001_S024_DIRECT_EDGE_GATE_UNPROVED_EXACT_OPTIMUM_STATUS_ONLY",
+  "previous_registration_receipt": "sessions/P001-S024/REGISTRATION.md",
+  "outgoing_parent_commit_evidence": "S025 parent status-only FINAL-HEAD programme-integrity and post-merge main PUSH run/jobs cannot be self-certified before hosted runs finish.",
+  "registration_kind": "P001_S025_FIFTH_AUDIT_RESTRICTED_DIRECT_EDGE_M2_UNPROVED_GLOBAL_STATUS_ONLY",
   "approved_next_child_handoff": {
-    "session": "P001-S025",
-    "objective": "MANDATORY_FIFTH_CORRECTION_AUDIT_AND_EDGE_LEVEL_GLOBAL_BRIDGE",
+    "session": "P001-S026",
+    "objective": "NONPRIVATE_MIXED_SUPPORT_EDGE_REFINEMENT",
     "approved": "AUTONOMOUS_SINGLE_METHOD_PROOF_FIRST",
     "executed": false
   }
