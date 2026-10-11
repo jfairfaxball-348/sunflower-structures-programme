@@ -62,6 +62,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S020"] = ("P001-S021", ["SHORT_PAIR_CLASS_M_SAVING_BRIDGE"])
     expected_successors["P001-S021"] = ("P001-S022", ["NONPRIVATE_LIGHT_OVERLAP_LIFT"])
     expected_successors["P001-S022"] = ("P001-S023", ["LIGHT_AWARE_JOINT_SHORT_CHANNEL_SELECTION"])
+    expected_successors["P001-S023"] = ("P001-S024", ["DIRECT_PARTIAL_EDGE_R3_EXTRACTION"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -341,6 +342,28 @@ def check_registration(state, projects, receipt):
             and checked["jobs"] and all(j["conclusion"] == "success" for j in checked["jobs"])
             for checked in child["final_head_validation"])
         assert (ROOT / "sessions/P001-S022/REGISTRATION.md").is_file()
+    if receipt["session"] == "P001-S023":
+        assert receipt["registration_kind"] == "P001_S023_BSEL_AUXILIARY_REFUTED_STATUS_ONLY"
+        assert audit["session_outcome"] == "S023_FROZEN_NONPRIVATE_M3_AND_UNIVERSAL_BSEL_REFUTED_SAME_ASSISTANT_TIK_UNPROVED"
+        assert audit["s023_frozen_nonprivate_t_1008_m3_refuted"] is True
+        assert audit["s022_frozen_nonprivate_t_1008_m3_refuted"] is True
+        assert audit["bsel_universal_proved"] is False and audit["bsel_universal_refuted"] is True
+        assert audit["s023_three_tier_max_valid_whole_blocks"] == 1
+        assert audit["s023_true_pair_singleton_empty_checked_symbolically"] is True
+        assert audit["s023_same_family_valid_partial_edge_fraction"] == "1/[m*(m-1)]"
+        assert audit["s023_original_Q_fixed"] is True
+        assert audit["s023_same_assistant_symbolic_only"] is True
+        assert audit["s024_future_only"] is True and audit["s025_audit_future_only"] is True
+        assert audit["full_tik_proved"] is False and audit["independent_mathematical_review"] is False
+        assert project["last_child_session"] == "P001-S023"
+        assert project["bsel_universal_status"] == "REFUTED_PARAMETRIC_SAME_ASSISTANT_WHOLE_BLOCK_ONLY"
+        assert child["final_head_validation"] and all(
+            checked["head_sha"] == child["merged_pr"]["head_sha"] and checked["conclusion"] == "success"
+            and checked["jobs"] and all(j["conclusion"] == "success" for j in checked["jobs"])
+            for checked in child["final_head_validation"])
+        assert child["main_validation"]["head_sha"] == child["main_commit"]
+        assert child["main_validation"]["conclusion"] == "success"
+        assert (ROOT / "sessions/P001-S023/REGISTRATION.md").is_file()
     expected_session, expected_objectives = expected_successors[receipt["session"]]
     assert next_step["session"] == expected_session and next_step["objectives"] == expected_objectives
     assert state["last_registry_update"] == receipt["session"]
