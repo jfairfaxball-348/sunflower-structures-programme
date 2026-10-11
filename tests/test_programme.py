@@ -17,17 +17,23 @@ class TournamentTests(unittest.TestCase):
                      ("authoritative/STATE.json", "programme/PROJECTS.json", "programme/P001_REGISTRATION.json"))
     def test_s026_restricted_claim_does_not_promote_tik(self):
         state, projects, receipt = self.records()
-        self.assertEqual(receipt["session"], "P001-S026")
+        self.assertEqual(receipt["session"], "P001-S027")
         audit = receipt["independent_registration_verification"]
         self.assertEqual(audit["s026_single_original_Q_edge_bound"], "t/(9*m^2)")
         self.assertTrue(audit["s026_exact_Q_singleton_required"])
         self.assertTrue(audit["s026_light_support_overlap_allowed"])
         self.assertTrue(audit["s026_final_H_pair_singleton_empty_certified"])
         self.assertFalse(audit["s026_unrestricted_direct_edge_512_proved"])
+        self.assertTrue(audit["s027_full_support_thin_first_refuted"])
+        self.assertFalse(audit["s027_frozen_multihub_512_proved"])
+        self.assertFalse(audit["s027_frozen_multihub_512_refuted"])
+        self.assertEqual(audit["s027_q1024_thinned_optimum"], 1026)
+        self.assertEqual(audit["s027_q1024_min_required"], 2047)
+        self.assertEqual(audit["s027_same_family_full_valid_edges"], 1076891650)
         self.assertFalse(audit["full_tik_proved"])
         self.assertTrue(audit["bsel_universal_refuted"])
         self.assertEqual(state["session_completed"], "S000")
-        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S026")
+        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S027")
         self.assertFalse(receipt["parent_programme_session_executed"])
 
     def test_registration_rejects_wrong_child_sha(self):
