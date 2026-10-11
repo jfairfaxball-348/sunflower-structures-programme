@@ -40,3 +40,8 @@ No manuscript, extraction theorem or full TIK proof candidate. S010 cross-hub sa
 
 ## P001-S019 status only
 No full TIK paper theorem candidate, independent maths referee, novelty screening, Lean, manuscript or publication. Child S019 contains only original-two-optional-Q pair-active submass bound and quantified mixed-star EMPTY obstruction with dense valid control; unrestricted t-based PAIR_ACTIVE_96 remains unproved. Child S020 future mandatory fifth audit, parent S001 unexecuted.
+
+
+## P001-S021 STATUS ONLY
+
+A same-assistant combinatorial result on a restricted private-light <=2-original-Q-support triple-sunflower packing improves the quantitative all-internal kernel selection bound to `t/[126(m-1)^3]`; exact E00/M pair, singleton and EMPTY matching conditions are explicitly checked in the S021 report. No independent mathematical review, full rank-three R3, general BSEL or full every-k TIK candidate; no manuscript, formalisation, originality promotion, publication or parent mathematical S001. Publication remains IDEA, next child S022 FUTURE unexecuted.
