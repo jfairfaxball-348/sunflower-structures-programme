@@ -69,6 +69,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S027"] = ("P001-S028", ["PETAL_FIRST_MULTIHUB_COLLISION_AWARE_SELECTION"])
     expected_successors["P001-S028"] = ("P001-S029", ["PETAL_FIRST_TWO_HEAVY_PAIR_CERTIFICATES"])
     expected_successors["P001-S029"] = ("P001-S030", ["FIFTH_AUDIT_MULTI_PETAL_TWO_Q_BRIDGE"])
+    expected_successors["P001-S030"] = ("P001-S031", ["SPARSE_WEIGHTED_MULTISTAR_COLLISION_AWARE_BRIDGE"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -489,6 +490,29 @@ def check_registration(state, projects, receipt):
         assert child["main_validation"]["head_sha"] == child["main_commit"]
         assert child["main_validation"]["conclusion"] == "success"
         assert (ROOT / "sessions/P001-S029/REGISTRATION.md").is_file()
+
+    if receipt["session"] == "P001-S030":
+        assert receipt["registration_kind"] == "P001_S030_WEIGHTED_STAR_2M_CORE_FIFTH_AUDIT_STATUS_ONLY"
+        assert audit["session_outcome"] == "S030_STAR_CORE_MATCHING_POSITIVES_HALL_FULL_LIFT_FALSE_C512_UNPROVED"
+        assert audit["s030_mandatory_fifth_audit_completed"] and audit["s030_prior_audits_reconciled"] == ["S005","S010","S015","S020","S025"]
+        assert audit["s030_weighted_star_bound"] == "W_q/(m-1)"
+        assert audit["s030_simple_two_m_core_bound"] == "T_C/(m-1)"
+        assert audit["s030_small_matching_bound"] == "|B|/[2*(m-1)^2]"
+        assert audit["s030_hall_light_injection"] and audit["s030_hall_lift_all_refuted"]
+        assert not audit["s030_frozen_C512_proved"] and not audit["s030_frozen_C512_refuted"]
+        assert not audit["s030_full_B_bound_proved"] and not audit["s030_full_B_bound_refuted"]
+        assert not audit["full_tik_proved"] and not audit["s030_full_TIK_proved"]
+        assert audit["s030_same_assistant_symbolic_only"] and not audit["s030_independent_math_review"]
+        assert audit["s030_future_only"] is False and audit["s031_future_only"] is True
+        assert project["last_child_session"] == "P001-S030"
+        assert project["s030_fifth_audit_completed"] and project["s030_full_two_Q_C512"] == "UNPROVED_AND_UNREFUTED"
+        assert child["final_head_validation"] and all(
+            z["head_sha"] == child["merged_pr"]["head_sha"] and z["conclusion"] == "success"
+            and z["jobs"] and all(j["conclusion"] == "success" for j in z["jobs"])
+            for z in child["final_head_validation"])
+        assert child["main_validation"]["head_sha"] == child["main_commit"]
+        assert child["main_validation"]["conclusion"] == "success"
+        assert (ROOT / "sessions/P001-S030/REGISTRATION.md").is_file()
 
     expected_session, expected_objectives = expected_successors[receipt["session"]]
     assert next_step["session"] == expected_session and next_step["objectives"] == expected_objectives
