@@ -27,3 +27,7 @@ Child ninth substantive session refutes only an overstrong high-hub low-load-thi
 
 ## P001-S010 verified mandatory tenth-substantive child audit
 S001–S010 correction/strategy review complete, including S005, retired exact L_AVG/B_CHARGE and exact S006–S010 witnesses. One S010 auxiliary SAT_CROSS negative with >half-density compatible control does not resolve BSEL/R3/TIK. Parent mathematical session stays S000; its own fifth/tenth review counters not advanced.
+
+
+## P001-S015 verified mandatory fifteenth-substantive child progress/correction audit
+The child S011–S015 progress/correction review is complete ([record](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/72bba5f269df135404bf8aa2bbbc9ef7e6c2c2a4/research/S015_FIFTEENTH_PROGRESS_AUDIT.md)). It confirms exact S011 singleton/global core matchings, S012 pair-only density, S013 protected simultaneous certificates, S014 singleton obstruction with sharp >half positive control, and S015 independently necessary empty matching with >=t/(m-1) positive star. No universal gamma, arbitrary BSEL, R3 or all-k TIK result. It identifies repetitive all-class preservation auxiliary failures and stages one more genuinely quantitative weighted joint selection question S016, NOT executed. This parent registration does not execute parent mathematical S001 or alter the parent's S000-only mathematical-session count. No source/novelty/paper promotion.
