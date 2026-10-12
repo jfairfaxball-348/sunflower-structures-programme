@@ -71,3 +71,6 @@ The child S036 same-assistant [matching/high-degree reduction](https://github.co
 
 ## P001-S037 provenance/status only
 Child ae4893283c27af0b53f346dd759afedeba00b06a has same-assistant restricted palette criterion, same-E high-degree positive overlap control, and conditional weighted-conflict lemma; no universal HDSE3 proof, mathematical independent referee or novelty clearance. Owner-specified detailed N1/N2 deferral remains; JJSW26 historic source posed TIK, STRONG_EVIDENCE_OPEN/NOVELTY_UNCERTAIN, R3 independent literature STATUS_UNCERTAIN unchanged. GitHub hosted checks do not establish theorem originality, Lean verification or publication.
+
+## P001-S038 — mathematical scope and N1/N2 restriction
+S038 child at merged main `76916462bd3119801ccd00141b32d4dbc0b33f79` contains same-assistant all-rank full-palette tensor iff, graph-product m^-2 conditional extraction, exact core formula and two method counterexamples with SAME-E positive controls. No prior-art novelty clearance or independent source freshness was obtained; JJSW26 source-posed TIK, STRONG_EVIDENCE_OPEN/NOVELTY_UNCERTAIN, R3 literature STATUS_UNCERTAIN unchanged. Owner proof-first defer detailed N1/N2 until COMPLETE every-fixed-k TIK candidate; CI success is not mathematical peer review. Parent STATUS ONLY, no S001 mathematics or Lean, manuscript, Palomar, outreach, submission.
