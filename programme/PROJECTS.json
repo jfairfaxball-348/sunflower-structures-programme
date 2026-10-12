@@ -159,7 +159,7 @@
       "s032_full_two_Q_B256": "UNPROVED_AND_UNREFUTED",
       "s032_full_all_k_tik_proved": false,
       "s032_independent_math_review": false,
-      "s034_future_only": true,
+      "s034_future_only": false,
       "s033_rank_two_tik_c2": "1/8",
       "s033_link_reduction_all_k": "SAME_ASSISTANT_PROOF",
       "s033_r3_equivalent_to": "DSE_3",
