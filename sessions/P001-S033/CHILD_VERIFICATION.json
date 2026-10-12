@@ -1,0 +1,56 @@
+{
+  "session": "P001-S033",
+  "child": {
+    "repository": "jfairfaxball-348/sunflower-internal-kernel-extraction",
+    "pr": 35,
+    "final_head": "9251077f5b948f5becd2044f15f719714eff8937",
+    "final_head_run": {
+      "run_id": 38250067643,
+      "job_id": 114813747371,
+      "event": "pull_request",
+      "conclusion": "success"
+    },
+    "merge_commit": "0d12a8a0aa2ebd7bae14657f55343127a38fa75b",
+    "merge_parents": [
+      "cffa73b2ad4710cfcdabe4500776e71e02e71ac2",
+      "9251077f5b948f5becd2044f15f719714eff8937"
+    ],
+    "merge_tree": "67c066bb992477e021753fa2144610c7e8c03e56",
+    "final_head_tree": "67c066bb992477e021753fa2144610c7e8c03e56",
+    "merged_main_push_run": {
+      "run_id": 38250151749,
+      "job_id": 114814039835,
+      "event": "push",
+      "conclusion": "success"
+    },
+    "method": "git fetch of child main plus GitHub Actions list_workflow_runs/list_workflow_jobs and pull_request_read in this session"
+  },
+  "parent_entry": {
+    "main": "96e4f1196ba601c145be53d08b270c27cc340534",
+    "parents": [
+      "0c5660d043d58b87b470a8f5f76f132994c134a8",
+      "85c772d5f8686c7686239feab4ef139814da52fc"
+    ]
+  },
+  "parent_predecessor_s032": {
+    "pr": 36,
+    "pr_run": 38244447312,
+    "pr_job": 114794734191,
+    "push_run": 38244506809,
+    "push_job": 114794931584,
+    "conclusion": "success"
+  },
+  "child_exact_owner_archive": {
+    "path": "sessions/P001-S033/INPUT.md",
+    "bytes": 20107,
+    "sha256": "1b504b82d0f4e25414f0849d7b68cecc49dbcb9a7f81296c505d7edc0b5c409c",
+    "archive_commit": "7bbba4e130451788080eb93594ea01b30030bf7c",
+    "frozen_gate_commit": "39d21bceb5094df330e3c169b4035f70662aae46"
+  },
+  "source": "child S033 report research/S033_LINK_REDUCTION_AND_RANK_TWO.md at 0d12a8a",
+  "independent_math_review": false,
+  "parent_math_S001_executed": false,
+  "universal_TIK_proved": false,
+  "r3_proved": false,
+  "parent_outgoing_s033_ci": "MUST be observed after the parent status-only PR head and merged main exist"
+}
