@@ -74,3 +74,6 @@ Child ae4893283c27af0b53f346dd759afedeba00b06a has same-assistant restricted pal
 
 ## P001-S038 — mathematical scope and N1/N2 restriction
 S038 child at merged main `76916462bd3119801ccd00141b32d4dbc0b33f79` contains same-assistant all-rank full-palette tensor iff, graph-product m^-2 conditional extraction, exact core formula and two method counterexamples with SAME-E positive controls. No prior-art novelty clearance or independent source freshness was obtained; JJSW26 source-posed TIK, STRONG_EVIDENCE_OPEN/NOVELTY_UNCERTAIN, R3 literature STATUS_UNCERTAIN unchanged. Owner proof-first defer detailed N1/N2 until COMPLETE every-fixed-k TIK candidate; CI success is not mathematical peer review. Parent STATUS ONLY, no S001 mathematics or Lean, manuscript, Palomar, outreach, submission.
+
+## P001-S039 — provenance only, status registration
+Child c6a7bcf914642fc0d90c2235cbf6794e657e4b41 has SAME-ASSISTANT five-kernel palette atlas, all-q structured extraction and corrected per-spoke intermediate multiplicity positive HDSE3 control. First flawed construction had hidden tensor, explicitly corrected in child second pass. No independent referee, mathematical originality, source novelty check, complete HDSE3/R3/TIK theorem, formal verification, or publication. Owner detailed N1/N2 deferral stands; parent programme mathematical S001 unexecuted. S040 audit FUTURE.
