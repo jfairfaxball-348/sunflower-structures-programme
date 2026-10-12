@@ -97,3 +97,17 @@ Child PR #33 FINAL HEAD b05205e41af42f5a1fadd301def26d1e223fa1b4 research-integr
 
 ## P001-S032 — verified child STATUS ONLY (2026-10-12)
 Registered child [PR #34](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/34) FINAL HEAD `eb14df7d2f4cdd357be75c9d5ee6a7609b82c1fd` research-integrity PR RUN38243920253/JOB114792994646 SUCCESS, two-parent nonforce merge `cffa73b2ad4710cfcdabe4500776e71e02e71ac2` with exact checked tree c1fb5ad611f4b59f35939508941ece8834dc7739 and parents b0fef3abbc329ba5df3771f1f216bbd11bcf9a8e / eb14df7d2f4cdd357be75c9d5ee6a7609b82c1fd, separate merged-main PUSH RUN38244003126/JOB114793268288 SUCCESS. Child exact 6309-byte owner archive SHA256 32c7288fd555a5892d8642260ec38466674e2ef491951dea1832ddee791b6355; frozen C512 before report, no new computations or N1/N2. Restricted SAME-ASSISTANT exact HH/HL/HS/LS/EMPTY criterion; original B K_(m+1,m+1) row-palette family shows globally selected-light-unique allocation can lose 2/(m+1) of full valid F, so refutes only this method. S031 arithmetic sharpens C512 bounded m<=129, B256 m<=66; no universal all-m m^-2 bridge, R3 or all-k TIK theorem. Whole-block BSEL still provisionally refuted. No independent mathematical reviewer, originality, Lean, manuscript/publication. Child S033 FUTURE UNEXECUTED, next fifth audit S035; parent S001 still UNEXECUTED. This parent registration is STATUS ONLY; its OWN outgoing final-head and merged-main hosted CI must be separately checked, NOT assumed here.
+
+## P001-S033 — verified child STATUS ONLY (2026-10-12)
+Registered child [PR #35](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/35):
+- final head `9251077f5b948f5becd2044f15f719714eff8937`, with research-integrity PR run 38250067643/job 114813747371 SUCCESS;
+- two-parent non-force merge `0d12a8a0aa2ebd7bae14657f55343127a38fa75b`, tree 67c066bb992477e021753fa2144610c7e8c03e56 equal to the final-head tree, parents cffa73b2ad4710cfcdabe4500776e71e02e71ac2 / 9251077f5b948f5becd2044f15f719714eff8937;
+- merged-main push run 38250151749/job 114814039835 SUCCESS.
+
+Child SAME-ASSISTANT results:
+- link reduction for every k;
+- TIK at k=2 with c_2=1/8;
+- the degenerate-spread equivalence, giving R3 ⇔ DSE_3, which is UNPROVED;
+- rank-three deletion pieces.
+
+R3, every-k TIK and all-m C512/B256 remain UNPROVED. No independent review and no novelty claim (the literature status of the k=2 result and the reductions is UNCHECKED; N1 deferred). No parent mathematical S001. Child P001-S034 is FUTURE and UNEXECUTED; S035 is the next fifth audit.
