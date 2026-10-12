@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "session": "P001-S030",
+  "project_id": "P001",
+  "observed_on": "2026-10-11",
+  "parent": {
+    "repository": "jfairfaxball-348/sunflower-structures-programme",
+    "repository_id": 1412469441,
+    "starting_main": "8619bcf035ccca5b011dcc1ef48976494d663e82"
+  },
+  "child": {
+    "repository": "jfairfaxball-348/sunflower-internal-kernel-extraction",
+    "repository_id": 1412820282,
+    "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction",
+    "main_commit": "2cc8aae5f3c674cdb5806fd96a38bd92d820eb46",
+    "tree_sha": "ca56e6f6c8fb4a49a25f555aef55ba80ebb30c1b",
+    "manifest_path": "project_manifest.json",
+    "merged_pr": {
+      "number": 32,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/32",
+      "merged": true,
+      "merged_at": "2026-10-11T21:20:47Z",
+      "head_sha": "3259decc277fc8fc26ee2fdfa4ac5feb80a222ad",
+      "merge_sha": "2cc8aae5f3c674cdb5806fd96a38bd92d820eb46"
+    },
+    "final_head_validation": [
+      {
+        "run_id": 38175952031,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38175952031",
+        "event": "pull_request",
+        "head_sha": "3259decc277fc8fc26ee2fdfa4ac5feb80a222ad",
+        "status": "completed",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 114578265654,
+            "name": "validate",
+            "status": "completed",
+            "conclusion": "success",
+            "steps": [
+              {
+                "name": "Validate records and exact target",
+                "conclusion": "success"
+              },
+              {
+                "name": "Check internal and external semantics",
+                "conclusion": "success"
+              },
+              {
+                "name": "Report checked commit",
+                "conclusion": "success"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "main_validation": {
+      "run_id": 38175982695,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38175982695",
+      "event": "push",
+      "head_sha": "2cc8aae5f3c674cdb5806fd96a38bd92d820eb46",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "id": 114578351787,
+          "name": "validate",
+          "status": "completed",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Validate records and exact target",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check internal and external semantics",
+              "conclusion": "success"
+            },
+            {
+              "name": "Report checked commit",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    "last_completed_substantive_session": {
+      "session": "P001-S030",
+      "main_commit": "2cc8aae5f3c674cdb5806fd96a38bd92d820eb46",
+      "merged_pr": {
+        "number": 32,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/32",
+        "merged": true,
+        "merged_at": "2026-10-11T21:20:47Z",
+        "head_sha": "3259decc277fc8fc26ee2fdfa4ac5feb80a222ad",
+        "merge_sha": "2cc8aae5f3c674cdb5806fd96a38bd92d820eb46"
+      },
+      "main_validation": {
+        "run_id": 38175982695,
+        "job_id": 114578351787,
+        "conclusion": "success"
+      }
+    }
+  },
+  "independent_registration_verification": {
+    "method": "Independently verified S030 child PR #32 FINAL HEAD 3259decc277fc8fc26ee2fdfa4ac5feb80a222ad research-integrity PR RUN 38175952031 validate JOB 114578265654 SUCCESS, nonforce two-parent merge 2cc8aae5f3c674cdb5806fd96a38bd92d820eb46, separate child merged-main PUSH RUN 38175982695 validate JOB 114578351787 SUCCESS. Parent STATUS ONLY; parent mathematical S001 NOT executed.",
+    "verified_paths": [
+      "research/S030_FROZEN_GATE.md",
+      "research/S030_TWO_HEAVY_MULTIPETAL_ANALYSIS.md",
+      "research/S030_PROGRESS_CORRECTION_AUDIT.md",
+      "sessions/P001-S030/INPUT.md",
+      "sessions/P001-S030/INPUT_MANIFEST.json",
+      "sessions/P001-S030/ENTRY_EVIDENCE.json",
+      "sessions/P001-S030/CLOSEOUT.md",
+      "sessions/NEXT_SESSION.md",
+      "authoritative/STATE.json",
+      "project_manifest.json",
+      "research/CLAIMS.json"
+    ],
+    "mathematical_status": "SOURCE_POSED_CONJECTURE",
+    "open_status": "STRONG_EVIDENCE_OPEN",
+    "novelty_status": "NOVELTY_UNCERTAIN",
+    "formal_status": "NOT_STARTED",
+    "publication_status": "IDEA",
+    "new_theorems": 0,
+    "formal_verifications": 0,
+    "publications": 0,
+    "session_outcome": "S030_STAR_CORE_MATCHING_POSITIVES_HALL_FULL_LIFT_FALSE_C512_UNPROVED",
+    "r3_literature_status": "STATUS_UNCERTAIN",
+    "independent_mathematical_review": false,
+    "bsel_universal_proved": false,
+    "bsel_universal_refuted": true,
+    "private_light_two_heavy_bsel_proved": true,
+    "private_light_two_heavy_bsel_refuted": false,
+    "full_tik_proved": false,
+    "s016_fixed_backbone_budget_refuted": true,
+    "s016_dense_valid_half_control": true,
+    "s016_short_unsaturated_class_accounted": true,
+    "s016_arbitrary_core_backbone_not_guaranteed": true,
+    "fifteenth_audit_remains_complete": true,
+    "s020_next_five_session_audit": true,
+    "owner_policy": "PROOF_FIRST_N1_N2_DEFERRED_UNTIL_COMPLETE_ALL_K_TIK",
+    "parent_mathematical_s001_executed": false,
+    "s017_safe_spine_12_partial_proved_same_assistant": true,
+    "s017_safe_spine_bound": "(W+Z)/(12*m^3)",
+    "s017_original_heavy_fixed": true,
+    "s017_actual_in_H_pair_singleton_empty_checked": true,
+    "s017_W_plus_Z_may_be_zero_unbounded_t": true,
+    "s017_complete_arbitrary_gamma_proved": false,
+    "s018_a0_unconditional_lower_bound": "|A0|/[12*(m-1)^3]",
+    "s018_a0_majority_t_bound": "t/(24*m^3)",
+    "s018_full_all_k_tik_proved": false,
+    "s018_active_channel_incompatibility": true,
+    "s018_dense_valid_half_control": true,
+    "s018_same_assistant_symbolic_proof_only": true,
+    "s018_archive_sha256": "51fcc594f661d2a23c9086bc903d558b838d8f8a070923f3cae2e5aa419ac8f0",
+    "s018_original_Q_fixed": true,
+    "s019_pair_active_96_proved": false,
+    "s019_pair_active_e00_all_kernel_submass": "T00/[6*m*(m-1)^3]",
+    "s019_pair_active_saturated_e00_all_kernel_submass": "T_sat/[6*(m-1)^2]",
+    "s019_mixed_star_true_empty_matching": 3,
+    "s019_mixed_star_dense_valid_fraction": "m/(m+2) >= 2/3",
+    "s019_original_Q_fixed": true,
+    "s019_all_k_tik_proved": false,
+    "s019_same_assistant_symbolic_only": true,
+    "s019_input_sha256": "ee811c8501718f139d9efc5ea443b1b54f0b6e468cb25bda4b162d5ebd9601d9",
+    "s020_mandatory_fifth_audit_unexecuted": false,
+    "s020_fifth_audit_completed": true,
+    "s020_frozen_t_96_m3_proved": false,
+    "s020_mixed_directed_submass": "T_mixed/[24*(m-1)^4]",
+    "s020_private_light_absolute_t_bound": "t/(48*m^4)",
+    "s020_full_private_light_m3_gamma_proved": false,
+    "s020_full_all_k_tik_proved": false,
+    "s020_original_Q_fixed": true,
+    "s020_same_assistant_symbolic_only": true,
+    "s020_input_sha256": "dc49b17b4bd9ba309edd4bc1957359bcdbeb02dceb894e3b046ac62cfc8f1f38",
+    "s020_negative_controls_finite_m4_n5_checked": true,
+    "s020_local_full_project_tests_not_run": true,
+    "s021_future_only": false,
+    "s021_frozen_t_200_m3_met": true,
+    "s021_short_graph_18_bound": "N/[18*(m-1)^2]",
+    "s021_private_light_m3_bound": "t/[126*(m-1)^3]",
+    "s021_same_assistant_symbolic_only": true,
+    "s021_independent_referee": false,
+    "s021_original_Q_fixed": true,
+    "s021_s018_s019_negative_controls_preserved": true,
+    "s021_input_sha256": "70d021f8a070967620869f0913e126aedf4c4aaafafc2bc16793a914a7b221e8",
+    "s021_archive_commit": "da81a0dd092bb0cdc125424f26e1dfb7b80f5a2d",
+    "s021_frozen_gate_commit": "13b740c62cb11f2bef1807cb2b657a7ebe14ab91",
+    "s021_unrestricted_nonprivate_light_proved": false,
+    "s021_full_all_k_tik_proved": false,
+    "s022_future_only": true,
+    "s022_frozen_nonprivate_t_1008_m3_proved": false,
+    "s022_graph_only_constant_repair_refuted": true,
+    "s022_projective_plane_max_valid": "ONE_PER_COPY",
+    "s022_projective_plane_light_pair_codegree": "m-1",
+    "s022_full_gamma_or_tik_refuted": false,
+    "s022_q_empty_m3_bound": "t/[m*(3*m*(m-1)+1)] >= t/(3*m^3)",
+    "s022_general_two_Q_nonprivate_fallback": "t/[126*(m-1)^3*(3*m*(m-1)+1)] >= t/(378*m^5)",
+    "s022_original_Q_fixed": true,
+    "s022_light_pair_singleton_true_empty_tests": true,
+    "s022_s018_s019_dense_positive_controls_preserved": true,
+    "s022_input_sha256": "322461805d95ee965e90ad62eaf55a454b182104e1c0e59e1a024e59f0dc2f56",
+    "s022_archive_commit": "140bf9b4e9ebd610eb8257e2857b9c8296c07735",
+    "s022_frozen_gate_commit": "3523a5973dacd041bb903a6beeb0771b8969cb7d",
+    "s022_same_assistant_symbolic_only": true,
+    "s023_future_only": false,
+    "s025_audit_future_only": false,
+    "s024_future_only": false,
+    "s022_frozen_nonprivate_t_1008_m3_refuted": true,
+    "s023_frozen_nonprivate_t_1008_m3_refuted": true,
+    "s023_three_tier_max_valid_whole_blocks": 1,
+    "s023_three_tier_block_count": "(m-1)^2*(m^2-3*m+3)",
+    "s023_quantified_ratio": "m^3/[(m-1)^2*(m^2-3m+3)] ->0 along m=q+2 prime powers",
+    "s023_true_pair_singleton_empty_checked_symbolically": true,
+    "s023_same_family_valid_partial_edge_fraction": "1/[m*(m-1)]",
+    "s023_original_Q_fixed": true,
+    "s023_same_assistant_symbolic_only": true,
+    "s023_frozen_gate_commit": "41021d001f718c1c18cb0afc78e9e74de7e04e89",
+    "s023_archive_commit": "fd574168a8ae5157091c3391e617f7fb51cf14d6",
+    "s023_input_sha256": "31fbef162594de01bab0cd525c51f74de7bcb15063029fa1a54b2cf5944c80d8",
+    "s023_private_light_s021_not_contradicted": true,
+    "s023_q_empty_s022_not_contradicted": true,
+    "outgoing_parent_ci": "S030 parent STATUS-ONLY FINAL-HEAD programme-integrity PR and merged-main PUSH to be independently checked AFTER hosting, not self-certified.",
+    "s024_frozen_direct_edge_512_proved": false,
+    "s024_frozen_direct_edge_512_refuted": false,
+    "s024_q_plane_exact_edge_optimum": "(m-1)*(m^2-2*m+2)",
+    "s024_local_hub_union_refuted": true,
+    "s024_star_forest_only_refuted": true,
+    "s024_graph_core_dense_control": true,
+    "s024_archive_sha256": "f19536cc72c22ee3417531f9327f1cf9477ecb1123539be080b2546ca73b172b",
+    "s024_archive_commit": "901f86dd2388d09fd47049e35a4a27544c2d6c79",
+    "s024_frozen_gate_commit": "22676de78f62544a9b1916d4860d07542272dbee",
+    "s024_same_assistant_symbolic_only": true,
+    "s024_original_Q_fixed": true,
+    "s025_fifth_audit_completed": true,
+    "s025_global_edge_dichotomy_proved": false,
+    "s025_global_edge_dichotomy_refuted": false,
+    "s025_direct_edge_512_proved": false,
+    "s025_private_light_direct_edge_count": "t/(126*m^2)",
+    "s025_q_empty_direct_edge_count": "t/(3*m^2)",
+    "s025_nonprivate_two_Q_fallback_edge_count": "t/(378*m^4)",
+    "s025_clean_star_hall_restricted": true,
+    "s025_graph_representative_restricted": true,
+    "s025_global_collision_aware_mass_partition_proved": false,
+    "s025_mandatory_audits_preserved": [
+      "S005",
+      "S010",
+      "S015",
+      "S020",
+      "S025"
+    ],
+    "s025_same_assistant_symbolic_only": true,
+    "s025_input_sha256": "f19536cc72c22ee3417531f9327f1cf9477ecb1123539be080b2546ca73b172b",
+    "s025_input_archive_commit": "492f9752a7b10bffd4c2a8e04f41ca1374dd2417",
+    "s025_frozen_gate_commit": "da5de8f3bfc875870f687d5547b45976a6afc54b",
+    "s026_future_only": false,
+    "s027_future_only": false,
+    "s026_single_original_Q_edge_bound": "t/(9*m^2)",
+    "s026_exact_Q_singleton_required": true,
+    "s026_light_support_overlap_allowed": true,
+    "s026_final_H_pair_singleton_empty_certified": true,
+    "s026_same_assistant_symbolic_only": true,
+    "s026_unrestricted_direct_edge_512_proved": false,
+    "s026_full_tik_proved": false,
+    "s028_future_only": false,
+    "s027_original_Q_fixed": true,
+    "s027_one_Q_per_block": true,
+    "s027_nonprivate_light_allowed": true,
+    "s027_frozen_multihub_512_proved": false,
+    "s027_frozen_multihub_512_refuted": false,
+    "s027_full_support_thin_first_refuted": true,
+    "s027_q1024_m": 1026,
+    "s027_q1024_t": 1102737050625,
+    "s027_q1024_thinned_optimum": 1026,
+    "s027_q1024_min_required": 2047,
+    "s027_same_family_full_valid_edges": 1076891650,
+    "s027_same_assistant_symbolic_only": true,
+    "s027_fifth_audit_due": "S030",
+    "s027_full_tik_proved": false,
+    "s027_input_sha256": "f19536cc72c22ee3417531f9327f1cf9477ecb1123539be080b2546ca73b172b",
+    "s027_archive_commit": "cc3000a2307b99c3dbfb89e19dc81349eb953953",
+    "s027_frozen_gate_commit": "0913cf4ff31400139d36f0b63f9d9ad7b24fcf6d",
+    "s028_frozen_C512_proved": true,
+    "s028_stronger_restricted_bound": "t/((3m-2)*(m-1)) >= t/(3m^2)",
+    "s028_original_Q_fixed": true,
+    "s028_original_one_Q_per_block": true,
+    "s028_nonprivate_light_allowed": true,
+    "s028_all_final_exact_pair_singleton_empty_certified_symbolically": true,
+    "s028_same_assistant_only": true,
+    "s028_unrestricted_direct_edge_proved": false,
+    "s028_full_tik_proved": false,
+    "s028_input_sha256": "f19536cc72c22ee3417531f9327f1cf9477ecb1123539be080b2546ca73b172b",
+    "s028_archive_commit": "c3d26e51f9ddc52647c416f7ab32ebe9f4937caa",
+    "s028_frozen_gate_commit": "ab839bcebaa26e0eb6a0aad9251cd371660f5400",
+    "s028_fifth_audit_due": "S030",
+    "s029_future_only": false,
+    "s030_future_only": false,
+    "s029_frozen_C512_proved": false,
+    "s029_frozen_C512_refuted": false,
+    "s029_A_submass_bound": "|A|/((3m-2)*(m-1)) >= |A|/(3m^2)",
+    "s029_A_majority_meets_C512": true,
+    "s029_B_Hall_representatives_injective": true,
+    "s029_B_graph_pair_singleton_empty_exact": true,
+    "s029_rep_only_B512_refuted": true,
+    "s029_Kbipartite_t": "(m-1)^3",
+    "s029_rep_only_optimum": 1,
+    "s029_same_F_valid_full_petals": "m*(m-1)",
+    "s029_same_assistant_only": true,
+    "s029_fifth_audit_due": "S030",
+    "s029_original_Q_fixed": true,
+    "s029_all_k_tik_proved": false,
+    "s031_future_only": true,
+    "s030_mandatory_fifth_audit_completed": true,
+    "s030_prior_audits_reconciled": [
+      "S005",
+      "S010",
+      "S015",
+      "S020",
+      "S025"
+    ],
+    "s030_frozen_C512_proved": false,
+    "s030_frozen_C512_refuted": false,
+    "s030_original_Q_fixed": true,
+    "s030_hall_light_injection": true,
+    "s030_weighted_star_bound": "W_q/(m-1)",
+    "s030_simple_two_m_core_bound": "T_C/(m-1)",
+    "s030_small_matching_bound": "|B|/[2*(m-1)^2]",
+    "s030_hall_lift_all_refuted": true,
+    "s030_hall_lift_bad_pair": "{q,z} has two (<m) exact selected petals",
+    "s030_full_B_bound_proved": false,
+    "s030_full_B_bound_refuted": false,
+    "s030_full_TIK_proved": false,
+    "s030_same_assistant_symbolic_only": true,
+    "s030_independent_math_review": false,
+    "s030_audit_provenance": "research/S030_PROGRESS_CORRECTION_AUDIT.md",
+    "s030_archive_sha256": "653bdbeaa99d0835ef42fc2506ae4e0fd5407439947c078e071fef95ac168b1a",
+    "s030_archive_commit": "fc7d32642815bf04fb8873ec4d5e30b2378e9403",
+    "s030_frozen_gate_commit": "f92963f361192bb5f849fe0d443f1f2477990f01",
+    "s030_child_final_head": "3259decc277fc8fc26ee2fdfa4ac5feb80a222ad",
+    "s030_child_merged_main": "2cc8aae5f3c674cdb5806fd96a38bd92d820eb46"
+  },
+  "next_child_obligation": {
+    "session": "P001-S031",
+    "objectives": [
+      "SPARSE_WEIGHTED_MULTISTAR_COLLISION_AWARE_BRIDGE"
+    ],
+    "open_status": "STATUS_UNCERTAIN",
+    "executed": false,
+    "interpretation": "Completely NEW separately owner-invoked child P001-S031 collision-aware weighted multi-star assembly for original two-Q compulsory pair-core peeled sparse remainder; S031 NOT executed in S030 or this parent status-only registration."
+  },
+  "parent_programme_session_executed": false,
+  "parent_registration_ci": [
+    {
+      "run_id": 38162256491,
+      "event": "pull_request",
+      "head_sha": "7ac158927cd18f5f5e90e255d83fc66b59579a61",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "id": 114537448050,
+          "name": "validate",
+          "status": "completed",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Run python3 scripts/validate.py",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python3 -m unittest discover -s tests -v",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ],
+      "note": "Independently observed S029 parent STATUS ONLY final PR HEAD, previous registration"
+    },
+    {
+      "run_id": 38162285493,
+      "event": "push",
+      "head_sha": "8619bcf035ccca5b011dcc1ef48976494d663e82",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "id": 114537535855,
+          "name": "validate",
+          "status": "completed",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Run python3 scripts/validate.py",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python3 -m unittest discover -s tests -v",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ],
+      "note": "Independently observed S029 parent STATUS ONLY merged-main PUSH, previous registration"
+    }
+  ],
+  "previous_registration_receipt": "sessions/P001-S029/REGISTRATION.md",
+  "outgoing_parent_commit_evidence": "S030 parent status-only final-head programme-integrity PR and independently observed postmerge main PUSH RUN/JOB SUCCESS must be checked AFTER respective writes; no self-certification.",
+  "registration_kind": "P001_S030_WEIGHTED_STAR_2M_CORE_FIFTH_AUDIT_STATUS_ONLY",
+  "approved_next_child_handoff": {
+    "session": "P001-S031",
+    "objective": "SPARSE_WEIGHTED_MULTISTAR_COLLISION_AWARE_BRIDGE",
+    "approved": "AUTONOMOUS_SINGLE_METHOD_PROOF_FIRST",
+    "executed": false
+  }
+}
