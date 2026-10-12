@@ -1,0 +1,21 @@
+{
+  "session": "P001-S034",
+  "child_main": "627e0897bfcb0702a025e5d696b3298bfdcba50f",
+  "child_tree": "283e3af4b1a85da8c69d31152c918e8ff7897f75",
+  "pr_number": 36,
+  "pr_final_head": "3cc26dfda5c8b061d3a39b58f7e9b51353ae36bc",
+  "pr_run": 38255680420,
+  "pr_job": 114833006472,
+  "pr_conclusion": "success",
+  "merge": "627e0897bfcb0702a025e5d696b3298bfdcba50f",
+  "merge_parents": [
+    "0d12a8a0aa2ebd7bae14657f55343127a38fa75b",
+    "3cc26dfda5c8b061d3a39b58f7e9b51353ae36bc"
+  ],
+  "merge_tree_equals_final_head_tree": true,
+  "push_run": 38255743070,
+  "push_job": 114833225269,
+  "push_conclusion": "success",
+  "independent_review": false,
+  "parent_status_only": true
+}
