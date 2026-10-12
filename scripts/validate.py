@@ -74,6 +74,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S032"] = ("P001-S033", ["SATURATED_LIGHT_FOREST_ROUNDING_M2"])
     expected_successors["P001-S033"] = ("P001-S034", ["DSE3_DEGENERATE_SPREAD_EXTRACTION"])
     expected_successors["P001-S034"] = ("P001-S035", ["MANDATORY_FIFTH_SESSION_CORRECTION_AUDIT_AND_DSE3_COMPATIBILITY_GATE"])
+    expected_successors["P001-S035"] = ("P001-S036", ["DSE3_HIGH_TRANSVERSAL_COMPATIBLE_AGGREGATION"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -517,6 +518,26 @@ def check_registration(state, projects, receipt):
         assert child["main_validation"]["head_sha"] == child["main_commit"]
         assert child["main_validation"]["conclusion"] == "success"
         assert (ROOT / "sessions/P001-S030/REGISTRATION.md").is_file()
+
+
+    if receipt["session"] == "P001-S035":
+        assert receipt["registration_kind"] == "P001_S035_FIFTH_AUDIT_BOUNDED_TRANSVERSAL_DSE3_STATUS_ONLY"
+        assert audit["session_outcome"] == "S035_BOUNDED_FRACTIONAL_COVER_M3_HIGH_COVER_GAP"
+        assert audit["s035_fractional_cover_bound"] == "|D|/[8*m^2*tau*(D)]"
+        assert audit["s035_matching_bound"] == "|D|/[24*m^2*nu(D)]"
+        assert audit["s035_bounded_cover_m3_constant"] == "1/(8*B) when tau*(D)<=B*m"
+        assert audit["s035_fifth_audit_completed"] and not audit["s035_fifth_audit_future_only"]
+        assert audit["s035_high_cover_shortcut_refuted"] and not audit["s035_small_cover_implied_by_spread"]
+        assert audit["s035_same_family_matching_fraction"] == "1/(m-1)^2"
+        assert not audit["s035_dse3_proved"] and not audit["s035_r3_proved"] and not audit["s035_full_all_k_tik_proved"]
+        assert audit["s036_future_only"] and not audit["s035_independent_math_review"]
+        assert project["last_child_session"] == "P001-S035" and project["s035_fifth_audit_completed"]
+        assert child["main_commit"] == "dfa56df29dd56197b53889d8a61f3fed1d28d77f"
+        assert child["merge_parents"] == ["627e0897bfcb0702a025e5d696b3298bfdcba50f", "62455d516baa532a927e42b0a6e248e2a2847424"]
+        assert child["tree_sha"] == "208536f7b40c1ac19396ca24fda982cdfcd19e8e"
+        assert all(run["head_sha"] == child["merged_pr"]["head_sha"] and run["conclusion"] == "success" for run in child["final_head_validation"])
+        for path in ("sessions/P001-S035/REGISTRATION.md", "sessions/P001-S035/CHILD_VERIFICATION.json", "sessions/P001-S035/LOCAL_VALIDATION.md"):
+            assert (ROOT / path).is_file(), path
 
     expected_session, expected_objectives = expected_successors[receipt["session"]]
     assert next_step["session"] == expected_session and next_step["objectives"] == expected_objectives

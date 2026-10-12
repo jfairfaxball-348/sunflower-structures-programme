@@ -1,0 +1,9 @@
+# P001-S035 — verified child and parent STATUS ONLY
+
+## P001-S035 — independently verified child registration, STATUS ONLY (2026-10-12)
+
+Child [PR #37](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/37) final head `62455d516baa532a927e42b0a6e248e2a2847424`: research-integrity PR RUN `38261928467` JOB `114854341993` SUCCESS. Nonforce two-parent merge/main `dfa56df29dd56197b53889d8a61f3fed1d28d77f`, parents `627e0897bfcb0702a025e5d696b3298bfdcba50f` and `62455d516baa532a927e42b0a6e248e2a2847424`; head/merge tree `208536f7b40c1ac19396ca24fda982cdfcd19e8e`. Independently observed merged-main PUSH RUN `38261990449` JOB `114854560612` SUCCESS.
+
+SAME-ASSISTANT [S035 proof](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/dfa56df29dd56197b53889d8a61f3fed1d28d77f/research/S035_TRANSVERSAL_ESCAPE.md) gives for all nonempty triple D a SINGLE internally valid H with `|H|>=|D|/[8m²tau*(D)] >= |D|/[24m²nu(D)]`, hence c=1/(8B) at m^-3 when tau*(D)<=Bm without pair-private or Delta restrictions. But spread/core-free does NOT imply small tau*: N copies of complete K_(m-1,m-1,m-1) give tau*/m unbounded, yet SAME-D fully valid matching density 1/(m-1)²; only the small-cover shortcut is refuted, not DSE3/R3. [S035 fifth-session audit](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/dfa56df29dd56197b53889d8a61f3fed1d28d77f/research/S035_PROGRESS_CORRECTION_AUDIT.md) S031–S035 and older S005/S010/S015/S020/S025/S030 COMPLETE. Original unrestricted DSE3/R3/all-k TIK UNPROVED; no independent mathematical referee, novelty promotion, Lean, paper, external action, or parent mathematical S001. Standalone child S036 is FUTURE ONLY.
+
+This is parent STATUS-ONLY registration, not parent mathematical S001. Parent CI final-head and merged-main push runs/jobs must be verified LIVE; no invented outgoing evidence.
