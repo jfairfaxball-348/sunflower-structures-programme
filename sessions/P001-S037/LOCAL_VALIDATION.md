@@ -1,0 +1,3 @@
+# Parent P001-S037 status-only local validation
+
+GitHub confirmed CHILD S037 final-head research-integrity run38279011676/job114911430846 SUCCESS and child postmerge PUSH run38279082633/job114911652236 SUCCESS before parent registration. No local checkout of parent files was available because DNS to github.com failed earlier in this execution; parent `python3 scripts/validate.py` and `python3 -m unittest discover -s tests -v` NOT RUN locally, no local PASS claimed. Parent hosted programme-integrity PR final-head and main PUSH run/job SUCCESS must be independently observed. No mathematical parent S001 or future S038 execution.
