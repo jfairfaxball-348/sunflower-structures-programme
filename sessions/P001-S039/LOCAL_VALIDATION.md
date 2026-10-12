@@ -1,0 +1,3 @@
+# P001-S039 parent STATUS-ONLY validation
+
+GitHub local clone of full parent repository unavailable from container because github.com DNS resolution failed, so `python3 scripts/validate.py` and `python3 -m unittest discover -s tests -v` locally NOT RUN, not PASS. Independently fetched child final-head run38293861548/job114960124782 and merged-main PUSH run38293931167/job114960353846, both SUCCESS; correct two-parent equal-tree merged commit independently observed. Require ACTUAL parent final-head programme-integrity hosted job SUCCESS, nonforce two-parent head/tree-equal merge and successful separate postmerge PUSH job. No S040 or parent mathematical S001.
