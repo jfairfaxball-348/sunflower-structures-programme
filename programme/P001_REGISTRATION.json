@@ -563,9 +563,9 @@
     "interpretation": "FUTURE one new owner invocation; broad proof-first unrestricted HDSE3 shared-support multi-link extraction or genuinely new every-k induction, not executed in S040."
   },
   "parent_programme_session_executed": false,
-  "parent_registration_ci": "PREMERGE_FINAL_HEAD_AND_POSTMERGE_JOBS_MUST_BE_OBSERVED_SEPARATELY",
+  "parent_registration_ci": [],
   "previous_registration_receipt": "P001-S038 (parent main 8426fc2e8e1b293f1a625230826a2d13af920a3e)",
-  "outgoing_parent_commit_evidence": "PENDING_LIVE_FINAL_HEAD_AND_PUSH_VERIFICATION_NOT_SELF_CERTIFIED",
+  "outgoing_parent_commit_evidence": "PREMERGE S040 status-only parent HEAD/PUSH jobs cannot self-certify; independently observe hosted workflow after PR and merge. Earlier FAILED run38306377235/job115001308616 was caused by wrongly typed self-certification field and is preserved as failed pre-correction evidence.",
   "registration_kind": "P001_S040_FIFTH_TENTH_AUDIT_STAR_FOREST_PALETTES_STATUS_ONLY",
   "approved_next_child_handoff": {
     "session": "P001-S040",
