@@ -15,9 +15,9 @@ class TournamentTests(unittest.TestCase):
     def records(self):
         return tuple(json.loads((ROOT/p).read_text()) for p in
                      ("authoritative/STATE.json", "programme/PROJECTS.json", "programme/P001_REGISTRATION.json"))
-    def test_s036_preserves_earlier_results_and_does_not_promote_tik(self):
+    def test_s037_preserves_earlier_results_and_does_not_promote_tik(self):
         state, projects, receipt = self.records()
-        self.assertEqual(receipt["session"], "P001-S036")
+        self.assertEqual(receipt["session"], "P001-S037")
         audit = receipt["independent_registration_verification"]
         self.assertEqual(audit["s026_single_original_Q_edge_bound"], "t/(9*m^2)")
         self.assertTrue(audit["s026_exact_Q_singleton_required"])
@@ -33,7 +33,7 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["full_tik_proved"])
         self.assertTrue(audit["bsel_universal_refuted"])
         self.assertEqual(state["session_completed"], "S000")
-        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S036")
+        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S037")
         self.assertTrue(audit["s028_frozen_C512_proved"])
         self.assertEqual(audit["s028_stronger_restricted_bound"], "t/((3m-2)*(m-1)) >= t/(3m^2)")
         self.assertTrue(audit["s028_original_Q_fixed"])
@@ -42,7 +42,7 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["s028_unrestricted_direct_edge_proved"])
         self.assertFalse(audit["s028_full_tik_proved"])
         self.assertFalse(audit["independent_mathematical_review"])
-        self.assertEqual(receipt["next_child_obligation"]["session"], "P001-S037")
+        self.assertEqual(receipt["next_child_obligation"]["session"], "P001-S038")
         self.assertFalse(audit["s029_frozen_C512_proved"])
         self.assertFalse(audit["s029_frozen_C512_refuted"])
         self.assertTrue(audit["s029_A_majority_meets_C512"])
@@ -95,7 +95,15 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["s036_hdse3_proved"])
         self.assertFalse(audit["s036_r3_proved"])
         self.assertFalse(audit["s036_full_tik_proved"])
-        self.assertTrue(audit["s037_future_only"])
+        self.assertFalse(audit["s037_future_only"])
+        self.assertTrue(audit["s038_future_only"])
+        self.assertTrue(audit["s037_pair_core_palette_iff_same_assistant"])
+        self.assertTrue(audit["s037_high_degree_overlap_example_core_free_spread_no_private_pair"])
+        self.assertTrue(audit["s037_naive_union_invalid_pair"])
+        self.assertEqual(audit["s037_same_family_valid_fraction"], "1/(m-1)^2")
+        self.assertFalse(audit["s037_hdse3_proved"])
+        self.assertFalse(audit["s037_r3_proved"])
+        self.assertFalse(audit["s037_full_tik_proved"])
         self.assertFalse(receipt["parent_programme_session_executed"])
 
     def test_registration_rejects_wrong_child_sha(self):
