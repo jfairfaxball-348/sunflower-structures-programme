@@ -1,0 +1,112 @@
+{
+  "session": "P001-S032",
+  "child": {
+    "repository": "jfairfaxball-348/sunflower-internal-kernel-extraction",
+    "repository_id": 1412820282,
+    "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction",
+    "main_commit": "cffa73b2ad4710cfcdabe4500776e71e02e71ac2",
+    "tree_sha": "c1fb5ad611f4b59f35939508941ece8834dc7739",
+    "merge_parents": [
+      "b0fef3abbc329ba5df3771f1f216bbd11bcf9a8e",
+      "eb14df7d2f4cdd357be75c9d5ee6a7609b82c1fd"
+    ],
+    "merged_pr": {
+      "number": 34,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/34",
+      "merged": true,
+      "merged_at": "2026-10-12T11:38:55Z",
+      "head_sha": "eb14df7d2f4cdd357be75c9d5ee6a7609b82c1fd",
+      "merge_sha": "cffa73b2ad4710cfcdabe4500776e71e02e71ac2"
+    },
+    "final_head_validation": [
+      {
+        "run_id": 38243920253,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38243920253",
+        "event": "pull_request",
+        "head_sha": "eb14df7d2f4cdd357be75c9d5ee6a7609b82c1fd",
+        "status": "completed",
+        "conclusion": "success",
+        "jobs": [
+          {
+            "id": 114792994646,
+            "name": "validate",
+            "status": "completed",
+            "conclusion": "success",
+            "steps": [
+              {
+                "name": "Validate records and exact target",
+                "conclusion": "success"
+              },
+              {
+                "name": "Check internal and external semantics",
+                "conclusion": "success"
+              },
+              {
+                "name": "Report checked commit",
+                "conclusion": "success"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "main_validation": {
+      "run_id": 38244003126,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38244003126",
+      "event": "push",
+      "head_sha": "cffa73b2ad4710cfcdabe4500776e71e02e71ac2",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "id": 114793268288,
+          "name": "validate",
+          "status": "completed",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Validate records and exact target",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check internal and external semantics",
+              "conclusion": "success"
+            },
+            {
+              "name": "Report checked commit",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "parent_entry": "0c5660d043d58b87b470a8f5f76f132994c134a8",
+  "parent_predecessor_s031": {
+    "pr": 35,
+    "final_head": "475e0b98b713812c9209ae4bf9cfd0fe266d77cd",
+    "merge_commit": "0c5660d043d58b87b470a8f5f76f132994c134a8",
+    "parents": [
+      "6d88ff84a693e51a3852078af903cce227cb7e11",
+      "475e0b98b713812c9209ae4bf9cfd0fe266d77cd"
+    ],
+    "final_head_tree": "142df2fac8938a361253950f87b93ce86310b80c",
+    "merge_tree": "142df2fac8938a361253950f87b93ce86310b80c",
+    "final_head_run": 38216022117,
+    "final_head_job": 114700833474,
+    "main_push_run": 38216085074,
+    "main_push_job": 114701032750,
+    "all_success": true
+  },
+  "child_exact_owner_archive": {
+    "commit": "d1129d4c05ecf2b6866d262a991d7cebb7310b80",
+    "sha256": "32c7288fd555a5892d8642260ec38466674e2ef491951dea1832ddee791b6355",
+    "utf8_bytes": 6309,
+    "frozen_before_report": "9bacda7e6b5afe539f1fbaee8f09a3c7b92554b4"
+  },
+  "source": "independent live child/parent REST and hosted Actions run/job checks 2026-10-12",
+  "independent_math_review": false,
+  "parent_math_S001_executed": false,
+  "universal_TIK_proved": false,
+  "parent_outgoing_s032_ci": "NOT YET OBSERVED; must validate PR final-head then merge/push separately"
+}
