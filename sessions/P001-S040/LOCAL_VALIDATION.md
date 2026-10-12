@@ -1,0 +1,3 @@
+# P001-S040 parent registration — local/harness and hosted evidence
+
+Parent repository checkout/DNS unavailable; local `python3 scripts/validate.py` and `python3 -m unittest discover -s tests -v` **NOT RUN locally**. This status-only registration is checked against independently observed child PR final-head validate SUCCESS run38305995855/job115000071603 and merged-main PUSH validate SUCCESS run38306053362/job115000258001. Exact non-force head/merge tree equal `0cef90701db7079dc0adf798a0e97bcfd8f1ff73`, actual two parents. Outgoing parent programme-integrity final-head/merged-main job statuses are UNKNOWN until separately observed; do not self-certify. Protection access 403 UNKNOWN, accessible rulesets empty. No child mathematics or parent S001 executed here.
