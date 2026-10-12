@@ -70,6 +70,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S028"] = ("P001-S029", ["PETAL_FIRST_TWO_HEAVY_PAIR_CERTIFICATES"])
     expected_successors["P001-S029"] = ("P001-S030", ["FIFTH_AUDIT_MULTI_PETAL_TWO_Q_BRIDGE"])
     expected_successors["P001-S030"] = ("P001-S031", ["SPARSE_WEIGHTED_MULTISTAR_COLLISION_AWARE_BRIDGE"])
+    expected_successors["P001-S031"] = ("P001-S032", ["SIMULTANEOUS_LIGHT_PETAL_ALLOCATION_M_SAVING"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
