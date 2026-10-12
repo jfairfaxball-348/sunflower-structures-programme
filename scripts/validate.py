@@ -77,6 +77,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S035"] = ("P001-S036", ["DSE3_HIGH_TRANSVERSAL_COMPATIBLE_AGGREGATION"])
     expected_successors["P001-S036"] = ("P001-S037", ["HDSE3_OVERLAPPING_HIGH_DEGREE_LINK_EXTRACTION"])
     expected_successors["P001-S037"] = ("P001-S038", ["HDSE3_SATURATED_CROSS_KERNEL_AMPLIFICATION"])
+    expected_successors["P001-S038"] = ("P001-S039", ["HDSE3_HYBRID_SATURATED_AND_PRIVATE_CHANNEL_BRIDGE"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -561,6 +562,23 @@ def check_registration(state, projects, receipt):
         assert audit["s037_independent_math_review"] is False and audit["s038_future_only"] is True
         assert project["last_child_session"] == "P001-S037"
         for path in ("sessions/P001-S037/REGISTRATION.md", "sessions/P001-S037/CHILD_VERIFICATION.json", "sessions/P001-S037/LOCAL_VALIDATION.md"):
+            assert (ROOT / path).is_file(), path
+
+    if receipt["session"] == "P001-S038":
+        assert receipt["registration_kind"] == "P001_S038_TENSOR_CORE_LINEAR_HDSE3_STATUS_ONLY"
+        assert audit["s038_tensor_all_ranks_iff_same_assistant"] is True
+        assert audit["s038_exact_robust_core_graph_mcore"] is True
+        assert audit["s038_linear_spread_corefree_highdegree_no_tensor"] is True
+        assert audit["s038_linear_same_E_valid_fraction"] == "1"
+        assert audit["s038_universal_full_tensor_capture_refuted"] is True
+        assert audit["s038_hdse3_proved"] is False and audit["s038_r3_proved"] is False and audit["s038_full_tik_proved"] is False
+        assert audit["s038_independent_math_review"] is False and audit["s039_future_only"] is True
+        assert project["last_child_session"] == "P001-S038"
+        assert child["merged_pr"]["number"] == 40
+        assert child["main_commit"] == "76916462bd3119801ccd00141b32d4dbc0b33f79"
+        assert child["merge_parents"] == ["ae4893283c27af0b53f346dd759afedeba00b06a", "8c572578a20f00706eba2511467143715c567bdd"]
+        assert child["tree_sha"] == "f023a428a5eedd4a596ddda6c7c7ca75f5c6ef2d"
+        for path in ("sessions/P001-S038/REGISTRATION.md", "sessions/P001-S038/CHILD_VERIFICATION.json", "sessions/P001-S038/LOCAL_VALIDATION.md"):
             assert (ROOT / path).is_file(), path
 
     expected_session, expected_objectives = expected_successors[receipt["session"]]

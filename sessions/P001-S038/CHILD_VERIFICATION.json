@@ -1,0 +1,23 @@
+{
+  "session": "P001-S038",
+  "child_main": "76916462bd3119801ccd00141b32d4dbc0b33f79",
+  "child_tree": "f023a428a5eedd4a596ddda6c7c7ca75f5c6ef2d",
+  "pr_number": 40,
+  "pr_final_head": "8c572578a20f00706eba2511467143715c567bdd",
+  "pr_run": 38284864987,
+  "pr_job": 114930683818,
+  "pr_conclusion": "success",
+  "merge": "76916462bd3119801ccd00141b32d4dbc0b33f79",
+  "merge_parents": [
+    "ae4893283c27af0b53f346dd759afedeba00b06a",
+    "8c572578a20f00706eba2511467143715c567bdd"
+  ],
+  "merge_tree_equals_final_head_tree": true,
+  "push_run": 38285032766,
+  "push_job": 114931239286,
+  "push_conclusion": "success",
+  "independent_review": false,
+  "parent_status_only": true,
+  "s039_future_only": true,
+  "s040_audit_future_only": true
+}

@@ -1,0 +1,3 @@
+# Parent P001-S038 STATUS-ONLY local validation
+
+Verified child PR #40 FINAL HEAD research-integrity 38284864987/job114930683818 SUCCESS and child merged-main PUSH 38285032766/job114931239286 SUCCESS BEFORE parent registration; two-parent matching-tree merge independently fetched. No local parent checkout available from this runtime (github.com git clone DNS unavailable), so `python3 scripts/validate.py` and `python3 -m unittest discover -s tests -v` **NOT RUN locally**, not PASS. Require parent's own ACTUAL final-head PR programme-integrity validate job SUCCESS, non-force two-parent equal-tree merge and independent postmerge parent-main PUSH validate SUCCESS. Parent mathematical S001 and child future S039/S040 NOT executed.
