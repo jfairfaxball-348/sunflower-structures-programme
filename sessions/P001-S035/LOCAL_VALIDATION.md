@@ -1,0 +1,3 @@
+# P001-S035 — parent status-only premerge validation
+
+No complete local parent clone was available from the container (github.com DNS inaccessible). The commands `python3 scripts/validate.py` and `python3 -m unittest discover -s tests -v` were NOT RUN locally and no local PASS is asserted. The parent hosted programme-integrity workflow must run both scripts at final PR head and merged-main push with actual successful job IDs before declaring integration. Child exact head, two-parent merge and postmerge push were independently verified. No parent mathematical S001, child S036, detailed new N1/N2, Lean, manuscript or external action.
