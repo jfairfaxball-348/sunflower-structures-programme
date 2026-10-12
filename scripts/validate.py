@@ -75,6 +75,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S033"] = ("P001-S034", ["DSE3_DEGENERATE_SPREAD_EXTRACTION"])
     expected_successors["P001-S034"] = ("P001-S035", ["MANDATORY_FIFTH_SESSION_CORRECTION_AUDIT_AND_DSE3_COMPATIBILITY_GATE"])
     expected_successors["P001-S035"] = ("P001-S036", ["DSE3_HIGH_TRANSVERSAL_COMPATIBLE_AGGREGATION"])
+    expected_successors["P001-S036"] = ("P001-S037", ["HDSE3_OVERLAPPING_HIGH_DEGREE_LINK_EXTRACTION"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -537,6 +538,16 @@ def check_registration(state, projects, receipt):
         assert child["tree_sha"] == "208536f7b40c1ac19396ca24fda982cdfcd19e8e"
         assert all(run["head_sha"] == child["merged_pr"]["head_sha"] and run["conclusion"] == "success" for run in child["final_head_validation"])
         for path in ("sessions/P001-S035/REGISTRATION.md", "sessions/P001-S035/CHILD_VERIFICATION.json", "sessions/P001-S035/LOCAL_VALIDATION.md"):
+            assert (ROOT / path).is_file(), path
+
+    if receipt["session"] == "P001-S036":
+        assert receipt["registration_kind"] == "P001_S036_HDSE3_REDUCTION_BALANCED_HIGH_COVER_STATUS_ONLY"
+        assert audit["s036_matching_or_high_degree_reduction_same_assistant"] is True
+        assert audit["s036_hdse3_equivalence_conditional_on_s033"] is True
+        assert audit["s036_hdse3_proved"] is False and audit["s036_r3_proved"] is False and audit["s036_full_tik_proved"] is False
+        assert audit["s036_independent_math_review"] is False and audit["s037_future_only"] is True
+        assert project["last_child_session"] == "P001-S036"
+        for path in ("sessions/P001-S036/REGISTRATION.md", "sessions/P001-S036/CHILD_VERIFICATION.json", "sessions/P001-S036/LOCAL_VALIDATION.md"):
             assert (ROOT / path).is_file(), path
 
     expected_session, expected_objectives = expected_successors[receipt["session"]]

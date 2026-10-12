@@ -65,3 +65,6 @@ Child SAME-ASSISTANT results:
 - rank-three deletion pieces.
 
 R3, every-k TIK and all-m C512/B256 remain UNPROVED. No independent review and no novelty claim (the literature status of the k=2 result and the reductions is UNCHECKED; N1 deferred). No parent mathematical S001. Child P001-S034 is FUTURE and UNEXECUTED; S035 is the next fifth audit.
+
+## P001-S036 status-only provenance
+The child S036 same-assistant [matching/high-degree reduction](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/8950538230f2484d5d9f04aadc6d167e267e003c/research/S036_MATCHING_HEAVY_REDUCTION.md) and [restricted compatible-cluster theorem](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/blob/8950538230f2484d5d9f04aadc6d167e267e003c/research/S036_COMPATIBLE_CLUSTER_ASSEMBLY.md) are not independently novelty-checked mathematical publication claims. Owner deferral of new detailed N1/N2 until complete full TIK candidate continues. Preserve JJSW26 attribution, TIK source-posed/STRONG_EVIDENCE_OPEN and NOVELTY_UNCERTAIN, exact rank-three STATUS_UNCERTAIN. No no-hit or current-source result inferred from child CI.

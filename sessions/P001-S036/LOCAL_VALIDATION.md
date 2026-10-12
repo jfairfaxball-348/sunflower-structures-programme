@@ -1,0 +1,3 @@
+# Parent P001-S036 status-only local validation
+
+Live child final-HEAD and merged-main GitHub Actions runs/jobs were independently observed SUCCESS before this parent status update. Attempted local git clone of repositories failed due unavailable github.com DNS; parent `python3 scripts/validate.py` and `python3 -m unittest discover -s tests -v` were NOT run locally and no local PASS claimed. Parent hosted programme-integrity PR validation and merged-main push job MUST be independently observed before declaring parent registration complete. No parent mathematical S001 or future child S037 execution.
