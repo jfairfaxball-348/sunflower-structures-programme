@@ -1,0 +1,24 @@
+{
+  "session": "P001-S040",
+  "child_main": "e8e1c343405c94cdf3a585ef2b1db2c278f1fac1",
+  "child_tree": "0cef90701db7079dc0adf798a0e97bcfd8f1ff73",
+  "pr_number": 42,
+  "pr_final_head": "f7a6bdbe14288260593af78f343fb0894121f1e2",
+  "pr_run": 38305995855,
+  "pr_job": 115000071603,
+  "pr_conclusion": "success",
+  "merge": "e8e1c343405c94cdf3a585ef2b1db2c278f1fac1",
+  "merge_parents": [
+    "c6a7bcf914642fc0d90c2235cbf6794e657e4b41",
+    "f7a6bdbe14288260593af78f343fb0894121f1e2"
+  ],
+  "merge_tree_equals_final_head_tree": true,
+  "push_run": 38306053362,
+  "push_job": 115000258001,
+  "push_conclusion": "success",
+  "independent_mathematical_review": false,
+  "parent_status_only": true,
+  "s040_fifth_tenth_audit_complete": true,
+  "s041_future_only": true,
+  "source": "Independently fetched live GitHub REST PR/commit/run/job evidence"
+}
