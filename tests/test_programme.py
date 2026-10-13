@@ -15,14 +15,14 @@ class TournamentTests(unittest.TestCase):
     def records(self):
         return tuple(json.loads((ROOT/p).read_text()) for p in
                      ("authoritative/STATE.json", "programme/PROJECTS.json", "programme/P001_REGISTRATION.json"))
-    def test_s047_preserves_s046_and_earlier_results_without_promoting_tik(self):
+    def test_s048_preserves_s047_and_earlier_results_without_promoting_tik(self):
         state, projects, receipt = self.records()
-        self.assertEqual(receipt["session"], "P001-S047")
+        self.assertEqual(receipt["session"], "P001-S048")
         audit = receipt["independent_registration_verification"]
-        self.assertEqual(projects["projects"][0]["verified_commit"], "48e7c29d04eb449cc20d4520c25eac7030aab059")
-        self.assertEqual(receipt["child"]["merged_pr"]["number"], 49)
-        self.assertEqual(receipt["child"]["final_head_validation"][0]["run_id"], 38404426889)
-        self.assertEqual(receipt["child"]["main_validation"]["run_id"], 38404537804)
+        self.assertEqual(projects["projects"][0]["verified_commit"], "57f0c8badd13cf2056a2df54ebd016828a81f28f")
+        self.assertEqual(receipt["child"]["merged_pr"]["number"], 50)
+        self.assertEqual(receipt["child"]["final_head_validation"][0]["run_id"], 38424009935)
+        self.assertEqual(receipt["child"]["main_validation"]["run_id"], 38424133836)
         self.assertTrue(audit["s046_connected_6m_spread_corefree_hdse3"])
         self.assertTrue(audit["s046_original_pair_2_and_m"])
         self.assertTrue(audit["s046_matching_or_one_hub_method_refuted"])
@@ -44,7 +44,7 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["full_tik_proved"])
         self.assertTrue(audit["bsel_universal_refuted"])
         self.assertEqual(state["session_completed"], "S000")
-        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S047")
+        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S048")
         self.assertTrue(audit["s028_frozen_C512_proved"])
         self.assertEqual(audit["s028_stronger_restricted_bound"], "t/((3m-2)*(m-1)) >= t/(3m^2)")
         self.assertTrue(audit["s028_original_Q_fixed"])
@@ -53,7 +53,7 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["s028_unrestricted_direct_edge_proved"])
         self.assertFalse(audit["s028_full_tik_proved"])
         self.assertFalse(audit["independent_mathematical_review"])
-        self.assertEqual(receipt["next_child_obligation"]["session"], "P001-S048")
+        self.assertEqual(receipt["next_child_obligation"]["session"], "P001-S049")
         self.assertFalse(audit["s029_frozen_C512_proved"])
         self.assertFalse(audit["s029_frozen_C512_refuted"])
         self.assertTrue(audit["s029_A_majority_meets_C512"])
@@ -181,6 +181,19 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["s047_r3_proved"])
         self.assertFalse(audit["s047_all_k_tik_proved"])
         self.assertFalse(audit["s047_independent_math_review"])
+        # Scoped S048 additions and actual outgoing child CI; retain ALL historical S047 assertions.
+        self.assertEqual(audit["s048_conditional_all_rank_bound"], "c_(k-1)e/[q*m^(k-1)*(m-1)]")
+        self.assertEqual(audit["s048_rank3_bound"], "e/(8q*m^3) via S033")
+        self.assertEqual(audit["s048_rich_graph_bound"], "e/[q*(m-1)]")
+        self.assertTrue(audit["s048_linear_overlap_full_original_validity"])
+        self.assertTrue(audit["s048_connected_hdse3_original_full_valid_control"])
+        self.assertFalse(audit["s048_unrestricted_hdse3_proved"])
+        self.assertFalse(audit["s048_r3_proved"])
+        self.assertFalse(audit["s048_all_k_tik_proved"])
+        self.assertEqual(receipt["child"]["merged_pr"]["head_sha"], "e47262d3999af239d585e1a7212601a4281ce1d2")
+        self.assertEqual(receipt["child"]["final_head_validation"][0]["jobs"][0]["id"], 115388488754)
+        self.assertEqual(receipt["child"]["main_validation"]["jobs"][0]["id"], 115388918727)
+        self.assertEqual(state["last_registry_update"], "P001-S048")
         self.assertFalse(receipt["parent_programme_session_executed"])
 
     def test_registration_rejects_wrong_child_sha(self):
