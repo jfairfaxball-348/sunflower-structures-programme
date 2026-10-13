@@ -81,6 +81,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S039"] = ("P001-S040", ["MANDATORY_FIFTH_TENTH_AUDIT_AND_HYBRID_HIGH_DEGREE_GAP"])
     expected_successors["P001-S040"] = ("P001-S041", ["UNRESTRICTED_OVERLAP_OR_ALL_K_BREAKTHROUGH"])
     expected_successors["P001-S041"] = ("P001-S042", ["UNIVERSAL_REGIONAL_DICHOTOMY_OR_FULL_ALL_K_OVERLAP_BREAKTHROUGH"])
+    expected_successors["P001-S042"] = ("P001-S043", ["NONLINEAR_PAIR_MULTIPLICITY_M_SAVING_OR_FULL_HDSE3"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -651,6 +652,37 @@ def check_registration(state, projects, receipt):
         assert child["main_validation"]["run_id"] == 38368918347
         assert child["main_validation"]["jobs"][0]["id"] == 115200729864
         for path in ("sessions/P001-S041/REGISTRATION.md", "sessions/P001-S041/CHILD_VERIFICATION.json", "sessions/P001-S041/LOCAL_VALIDATION.md"):
+            assert (ROOT / path).is_file(), path
+
+    if receipt["session"] == "P001-S042":
+        assert receipt["registration_kind"] == "P001_S042_ALL_RANKS_LINEAR_RESTRICTED_AND_REGIONAL_METHOD_NEGATIVE_STATUS_ONLY"
+        assert audit["s042_future_only"] is False and audit["s043_future_only"] is True
+        assert audit["s042_original_linear_all_rank_extraction_same_assistant"] is True
+        assert audit["s042_linear_ck"] == "1/[2^(k-1)*k^k]"
+        assert audit["s042_linear_rank3_bound"] == "|F|/(108*m^3)"
+        assert audit["s042_bounded_pair_codegree_bound"] == "|F|/[(1+binom(k,2)*(B-1))*2^(k-1)*k^k*m^k]"
+        assert audit["s042_affine_steiner_original_hdse3"] is True
+        assert audit["s042_affine_steiner_same_E_entirely_valid"] is True
+        assert audit["s042_two_way_regional_mass_capture_refuted"] is True
+        assert audit["s042_two_way_mass_ratio_upper"] == "3*B*(m/n+1/(n-1))"
+        assert not audit["s042_s041_conditional_theorem_refuted"]
+        assert not audit["s042_hdse3_proved"] and not audit["s042_r3_proved"]
+        assert not audit["s042_full_tik_proved"] and not audit["s042_independent_math_review"]
+        assert not audit["s042_new_N1_N2"]
+        assert audit["s042_next_fifth_audit"] == "P001-S045"
+        assert project["last_child_session"] == "P001-S042"
+        assert project["s042_linear_rank3_bound"] == audit["s042_linear_rank3_bound"]
+        assert project["s042_two_way_regional_mass_capture_refuted"] is True
+        assert child["main_commit"] == "47122d5c8fe01054d2db871412eb9e16dbd38c42"
+        assert child["merged_pr"]["number"] == 44 and child["merged_pr"]["head_sha"] == "981507a17a0f7a68ef8cf63906f9e69754307b4a"
+        assert child["tree_sha"] == "86d29139094ab35ad97e14ac74d4242e20c56927"
+        assert child["merge_parents"] == ["92b3bc14caa69f81db82c98b383e75a2ae4292cf", "981507a17a0f7a68ef8cf63906f9e69754307b4a"]
+        assert child["final_head_validation"][0]["run_id"] == 38373003091
+        assert child["final_head_validation"][0]["jobs"][0]["id"] == 115214351394
+        assert child["main_validation"]["run_id"] == 38373071947
+        assert child["main_validation"]["jobs"][0]["id"] == 115214580353
+        assert child["final_head_validation"][0]["conclusion"] == "success"
+        for path in ("sessions/P001-S042/REGISTRATION.md", "sessions/P001-S042/CHILD_VERIFICATION.json", "sessions/P001-S042/LOCAL_VALIDATION.md"):
             assert (ROOT / path).is_file(), path
 
     expected_session, expected_objectives = expected_successors[receipt["session"]]

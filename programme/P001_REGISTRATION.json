@@ -1,40 +1,40 @@
 {
   "schema_version": 1,
-  "session": "P001-S041",
+  "session": "P001-S042",
   "project_id": "P001",
   "observed_on": "2026-10-13",
   "parent": {
     "repository": "jfairfaxball-348/sunflower-structures-programme",
     "repository_id": 1412469441,
-    "starting_main": "51ed22a881c7d649b3ea2de46605495dddadb55d",
-    "starting_main_commit": "51ed22a881c7d649b3ea2de46605495dddadb55d"
+    "starting_main": "494b02fe95e36bf33f185520b5a3f09cbd3aa749",
+    "starting_main_commit": "494b02fe95e36bf33f185520b5a3f09cbd3aa749"
   },
   "child": {
     "repository": "jfairfaxball-348/sunflower-internal-kernel-extraction",
     "repository_id": 1412820282,
     "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction",
-    "main_commit": "92b3bc14caa69f81db82c98b383e75a2ae4292cf",
-    "tree_sha": "4c1e3e845f5bf16a090874ba736466b7f0e3be88",
+    "main_commit": "47122d5c8fe01054d2db871412eb9e16dbd38c42",
+    "tree_sha": "86d29139094ab35ad97e14ac74d4242e20c56927",
     "manifest_path": "project_manifest.json",
     "merged_pr": {
-      "number": 43,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/43",
+      "number": 44,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/44",
       "merged": true,
       "merged_at": "2026-10-13",
-      "head_sha": "02d7ce68c4a51e5055ed9ba34a0cd0820e69fc6f",
-      "merge_sha": "92b3bc14caa69f81db82c98b383e75a2ae4292cf"
+      "head_sha": "981507a17a0f7a68ef8cf63906f9e69754307b4a",
+      "merge_sha": "47122d5c8fe01054d2db871412eb9e16dbd38c42"
     },
     "final_head_validation": [
       {
-        "run_id": 38368846313,
-        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38368846313",
+        "run_id": 38373003091,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38373003091",
         "event": "pull_request",
-        "head_sha": "02d7ce68c4a51e5055ed9ba34a0cd0820e69fc6f",
+        "head_sha": "981507a17a0f7a68ef8cf63906f9e69754307b4a",
         "status": "completed",
         "conclusion": "success",
         "jobs": [
           {
-            "id": 115200497096,
+            "id": 115214351394,
             "name": "validate",
             "status": "completed",
             "conclusion": "success",
@@ -81,15 +81,15 @@
       }
     ],
     "main_validation": {
-      "run_id": 38368918347,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38368918347",
+      "run_id": 38373071947,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38373071947",
       "event": "push",
-      "head_sha": "92b3bc14caa69f81db82c98b383e75a2ae4292cf",
+      "head_sha": "47122d5c8fe01054d2db871412eb9e16dbd38c42",
       "status": "completed",
       "conclusion": "success",
       "jobs": [
         {
-          "id": 115200729864,
+          "id": 115214580353,
           "name": "validate",
           "status": "completed",
           "conclusion": "success",
@@ -135,38 +135,38 @@
       ]
     },
     "last_completed_substantive_session": {
-      "session": "P001-S041",
-      "main_commit": "92b3bc14caa69f81db82c98b383e75a2ae4292cf",
+      "session": "P001-S042",
+      "main_commit": "47122d5c8fe01054d2db871412eb9e16dbd38c42",
       "merged_pr": {
-        "number": 43,
-        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/43",
+        "number": 44,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/44",
         "merged": true,
         "merged_at": "2026-10-13",
-        "head_sha": "02d7ce68c4a51e5055ed9ba34a0cd0820e69fc6f",
-        "merge_sha": "92b3bc14caa69f81db82c98b383e75a2ae4292cf"
+        "head_sha": "981507a17a0f7a68ef8cf63906f9e69754307b4a",
+        "merge_sha": "47122d5c8fe01054d2db871412eb9e16dbd38c42"
       },
       "main_validation": {
-        "run_id": 38368918347,
-        "job_id": 115200729864,
+        "run_id": 38373071947,
+        "job_id": 115214580353,
         "conclusion": "success"
       }
     },
     "merge_parents": [
-      "e8e1c343405c94cdf3a585ef2b1db2c278f1fac1",
-      "02d7ce68c4a51e5055ed9ba34a0cd0820e69fc6f"
+      "92b3bc14caa69f81db82c98b383e75a2ae4292cf",
+      "981507a17a0f7a68ef8cf63906f9e69754307b4a"
     ]
   },
   "independent_registration_verification": {
-    "method": "Independent live GitHub child S041 PR#43 final HEAD 02d7ce68c4a51e5055ed9ba34a0cd0820e69fc6f research-integrity run38368846313/job115200497096 SUCCESS, true two-parent non-force merge 92b3bc14caa69f81db82c98b383e75a2ae4292cf with head/merge tree 4c1e3e845f5bf16a090874ba736466b7f0e3be88 equality, child merged-main PUSH run38368918347/job115200729864 SUCCESS. Parent registration STATUS ONLY; no independent mathematical proof review.",
+    "method": "Independent live child S042 PR #44 final HEAD 981507a17a0f7a68ef8cf63906f9e69754307b4a, research-integrity PR run 38373003091 / validate job 115214351394 SUCCESS, non-force two-parent equal-tree merge 47122d5c8fe01054d2db871412eb9e16dbd38c42, head/merge tree 86d29139094ab35ad97e14ac74d4242e20c56927, merged-main PUSH run 38373071947 / validate job 115214580353 SUCCESS. Mathematical second pass SAME ASSISTANT ONLY; parent STATUS ONLY.",
     "verified_paths": [
-      "sessions/P001-S041/INPUT.md",
-      "sessions/P001-S041/INPUT_MANIFEST.json",
-      "research/S041_FROZEN_GATE.md",
-      "research/S041_REGIONAL_OVERLAP_AND_ALL_K_LINK.md",
-      "sessions/P001-S041/SECOND_PASS_VALIDATION.md",
-      "sessions/P001-S041/ENTRY_EVIDENCE.json",
-      "sessions/P001-S041/LOCAL_VALIDATION.md",
-      "sessions/P001-S041/CLOSEOUT.md",
+      "sessions/P001-S042/INPUT.md",
+      "sessions/P001-S042/INPUT_MANIFEST.json",
+      "research/S042_FROZEN_GATE.md",
+      "research/S042_LINEAR_HIERARCHY_AND_REGIONAL_DICHOTOMY.md",
+      "sessions/P001-S042/SECOND_PASS_VALIDATION.md",
+      "sessions/P001-S042/ENTRY_EVIDENCE.json",
+      "sessions/P001-S042/LOCAL_VALIDATION.md",
+      "sessions/P001-S042/CLOSEOUT.md",
       "research/CLAIMS.json",
       "authoritative/STATE.json",
       "project_manifest.json",
@@ -180,7 +180,7 @@
     "new_theorems": 0,
     "formal_verifications": 0,
     "publications": 0,
-    "session_outcome": "S041_WEIGHTED_REGIONAL_TRANSVERSAL_EXTRACTION_SHARP_EXPONENT_HDSE3_UNPROVED",
+    "session_outcome": "S042_ALL_K_LINEAR_EXPONENT_AND_TWO_WAY_REGIONAL_MASS_DICHOTOMY_FALSE_HDSE3_OPEN",
     "r3_literature_status": "STATUS_UNCERTAIN",
     "independent_mathematical_review": false,
     "bsel_universal_proved": false,
@@ -551,7 +551,7 @@
     "s040_full_tik_proved": false,
     "s040_independent_math_review": false,
     "s041_future_only": false,
-    "s042_future_only": true,
+    "s042_future_only": false,
     "s041_weighted_regional_all_rank_conditional": true,
     "s041_rank3_bound": "|F|/(16*B*m^3)",
     "s041_partial_palette_overlap_permitted": true,
@@ -564,25 +564,41 @@
     "s041_r3_proved": false,
     "s041_full_tik_proved": false,
     "s041_independent_math_review": false,
-    "s041_new_N1_N2": false
+    "s041_new_N1_N2": false,
+    "s043_future_only": true,
+    "s042_original_linear_all_rank_extraction_same_assistant": true,
+    "s042_linear_ck": "1/[2^(k-1)*k^k]",
+    "s042_linear_rank3_bound": "|F|/(108*m^3)",
+    "s042_bounded_pair_codegree_bound": "|F|/[(1+binom(k,2)*(B-1))*2^(k-1)*k^k*m^k]",
+    "s042_affine_steiner_original_hdse3": true,
+    "s042_affine_steiner_same_E_entirely_valid": true,
+    "s042_two_way_regional_mass_capture_refuted": true,
+    "s042_two_way_mass_ratio_upper": "3*B*(m/n+1/(n-1))",
+    "s042_s041_conditional_theorem_refuted": false,
+    "s042_hdse3_proved": false,
+    "s042_r3_proved": false,
+    "s042_full_tik_proved": false,
+    "s042_independent_math_review": false,
+    "s042_new_N1_N2": false,
+    "s042_next_fifth_audit": "P001-S045"
   },
   "next_child_obligation": {
-    "session": "P001-S042",
+    "session": "P001-S043",
     "objectives": [
-      "UNIVERSAL_REGIONAL_DICHOTOMY_OR_FULL_ALL_K_OVERLAP_BREAKTHROUGH"
+      "NONLINEAR_PAIR_MULTIPLICITY_M_SAVING_OR_FULL_HDSE3"
     ],
     "open_status": "STATUS_UNCERTAIN",
     "executed": false,
-    "interpretation": "Complete FUTURE S042 single owner-invoked proof-first unrestricted overlap / regional mass dichotomy / full all-fixed-k investigation, NOT executed in S041."
+    "interpretation": "Complete FUTURE standalone nonlinear ORIGINAL pair-multiplicity saving / unrestricted HDSE3 or all-ranks TIK attack; S043 NOT executed in S042."
   },
   "parent_programme_session_executed": false,
   "parent_registration_ci": [],
-  "previous_registration_receipt": "P001-S040 (parent main 51ed22a881c7d649b3ea2de46605495dddadb55d)",
-  "outgoing_parent_commit_evidence": "PREMERGE S041 status-only parent HEAD/PUSH jobs cannot self-certify; independently observe actual final-head and postmerge Actions validate success.",
-  "registration_kind": "P001_S041_REGIONAL_WEIGHTED_OVERLAP_STATUS_ONLY",
+  "previous_registration_receipt": "P001-S041 (parent main 494b02fe95e36bf33f185520b5a3f09cbd3aa749)",
+  "outgoing_parent_commit_evidence": "PREMERGE S042 STATUS ONLY: outgoing parent final-head PR programme-integrity and postmerge main PUSH jobs cannot self-certify; inspect after each stage.",
+  "registration_kind": "P001_S042_ALL_RANKS_LINEAR_RESTRICTED_AND_REGIONAL_METHOD_NEGATIVE_STATUS_ONLY",
   "approved_next_child_handoff": {
-    "session": "P001-S042",
-    "objective": "UNIVERSAL_REGIONAL_DICHOTOMY_OR_FULL_ALL_K_OVERLAP_BREAKTHROUGH",
+    "session": "P001-S043",
+    "objective": "NONLINEAR_PAIR_MULTIPLICITY_M_SAVING_OR_FULL_HDSE3",
     "approved": "OWNER_AUTONOMOUS_PROOF_FIRST_FUTURE_SESSION",
     "executed": false
   }
