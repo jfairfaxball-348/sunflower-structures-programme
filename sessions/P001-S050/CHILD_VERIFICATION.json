@@ -1,0 +1,25 @@
+{
+  "session": "P001-S050",
+  "parent_entry_main": "fd23135989a771d2cd8ea18863f7a842d5f4b03c",
+  "child_main": "191bb6553507f3cea87d03c0f1addea0c866f96d",
+  "child_tree_sha": "57b23652a80aa42179711eef319c5ec1ecc3e897",
+  "child_merged_pr": 52,
+  "child_final_head": "b7d24e14b834b89c2807216a70b5989c05889f81",
+  "child_pr_run": 38450736559,
+  "child_pr_job": 115480649426,
+  "child_pr_conclusion": "success",
+  "child_two_parent_merge": [
+    "caac0918736d8fb9982a4c69d57b2be613f99ab6",
+    "b7d24e14b834b89c2807216a70b5989c05889f81"
+  ],
+  "child_main_push_run": 38450811794,
+  "child_main_push_job": 115480903024,
+  "child_main_push_conclusion": "success",
+  "child_ci_steps": "all success",
+  "parent_mathematical_S001_executed": false,
+  "S051_executed": false,
+  "restricted_theorem_only": true,
+  "mandatory_fifth_and_tenth_audits_completed": true,
+  "novelty": "UNCERTAIN",
+  "local_validation": "NOT_RUN"
+}
