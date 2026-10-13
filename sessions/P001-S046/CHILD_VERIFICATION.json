@@ -1,0 +1,27 @@
+{
+  "session": "P001-S046",
+  "date": "2026-10-13",
+  "child_repo": "jfairfaxball-348/sunflower-internal-kernel-extraction",
+  "child_pr": 48,
+  "child_head": "f1713d70e553c998d79dfc9de75aaffb62e0146a",
+  "head_tree": "1c835584df6e374b5a968c47fbafbb69b3be3507",
+  "head_run": 38399527066,
+  "head_job": 115303259878,
+  "head_status": "success",
+  "merged_main": "ad276ba083a8939e6dc88091aa57919b3b0e9ef8",
+  "merge_parents": [
+    "91c379d3b24d0423c6add7f522b42f950e459512",
+    "f1713d70e553c998d79dfc9de75aaffb62e0146a"
+  ],
+  "merged_tree": "1c835584df6e374b5a968c47fbafbb69b3be3507",
+  "nonforce_two_parent_equal_tree": true,
+  "main_push_run": 38399647574,
+  "main_push_job": 115303664338,
+  "main_push_status": "success",
+  "theorem_scope": "SCOPED_MATCHING_LINK_ENVELOPE_AND_MIXED_PAIR_METHOD_ONLY_NEGATIVE",
+  "full_hdse3_proved": false,
+  "full_tik_proved": false,
+  "independent_mathematical_referee": false,
+  "parent_programme_S001_executed": false,
+  "next_child": "P001-S047_FUTURE_ONLY"
+}

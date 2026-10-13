@@ -85,6 +85,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S043"] = ("P001-S044", ["DENSE_CORE_NONLINEAR_THIRD_CERTIFICATE_OR_HDSE3"])
     expected_successors["P001-S044"] = ("P001-S045", ["MANDATORY_FIFTH_PROGRESS_CORRECTION_AUDIT_AND_DENSE_CORE_BRIDGE"])
     expected_successors["P001-S045"] = ("P001-S046", ["DENSITY_FREE_NONLINEAR_CORE_AND_PAIR_COEXISTENCE"])
+    expected_successors["P001-S046"] = ("P001-S047", ["JOINT_MULTIHUB_ORIGINAL_MASS_GLUING"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
