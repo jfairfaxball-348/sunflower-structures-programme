@@ -82,6 +82,7 @@ def check_registration(state, projects, receipt):
     expected_successors["P001-S040"] = ("P001-S041", ["UNRESTRICTED_OVERLAP_OR_ALL_K_BREAKTHROUGH"])
     expected_successors["P001-S041"] = ("P001-S042", ["UNIVERSAL_REGIONAL_DICHOTOMY_OR_FULL_ALL_K_OVERLAP_BREAKTHROUGH"])
     expected_successors["P001-S042"] = ("P001-S043", ["NONLINEAR_PAIR_MULTIPLICITY_M_SAVING_OR_FULL_HDSE3"])
+    expected_successors["P001-S043"] = ("P001-S044", ["DENSE_CORE_NONLINEAR_THIRD_CERTIFICATE_OR_HDSE3"])
     if receipt.get("registration_kind") == "P001_S006_APPROVAL_ONLY":
         # Last substantive session remains S005; administrative approval changes its sole unexecuted successor.
         assert receipt["session"] == "P001-S005"
@@ -683,6 +684,28 @@ def check_registration(state, projects, receipt):
         assert child["main_validation"]["jobs"][0]["id"] == 115214580353
         assert child["final_head_validation"][0]["conclusion"] == "success"
         for path in ("sessions/P001-S042/REGISTRATION.md", "sessions/P001-S042/CHILD_VERIFICATION.json", "sessions/P001-S042/LOCAL_VALIDATION.md"):
+            assert (ROOT / path).is_file(), path
+
+    if receipt["session"] == "P001-S043":
+        assert receipt["registration_kind"] == "P001_S043_NONLINEAR_PEELED_FIBRE_M_SAVING_STATUS_ONLY"
+        assert audit["s043_future_only"] is False and audit["s044_future_only"] is True
+        assert audit["s043_peeled_bound"] == "|D|/(108*m^3)"
+        assert audit["s043_low_delta_majority_bound"] == "|F|/(216*m^3)"
+        assert audit["s043_high_delta_link_bound"] == ">|F|/(48*m^3)"
+        assert audit["s043_dense_surviving_core_solved"] is False
+        assert not audit["s043_hdse3_proved"] and not audit["s043_r3_proved"] and not audit["s043_full_tik_proved"]
+        assert not audit["s043_independent_math_review"] and not audit["s043_new_N1_N2"]
+        assert audit["s043_next_fifth_audit"] == "P001-S045"
+        assert project["last_child_session"] == "P001-S043"
+        assert child["main_commit"] == "56ea510dbaef8b21abbcad21a6cbcad2f8e990cd"
+        assert child["merged_pr"]["number"] == 45 and child["merged_pr"]["head_sha"] == "bdad036fb015a9a90b70c8c076ad55d335caba37"
+        assert child["tree_sha"] == "487f9700afaacf7e7464c1c37a0bd111c8b873eb"
+        assert child["merge_parents"] == ["47122d5c8fe01054d2db871412eb9e16dbd38c42", "bdad036fb015a9a90b70c8c076ad55d335caba37"]
+        assert child["final_head_validation"][0]["run_id"] == 38380577867
+        assert child["final_head_validation"][0]["jobs"][0]["id"] == 115239670663
+        assert child["main_validation"]["run_id"] == 38380699071
+        assert child["main_validation"]["jobs"][0]["id"] == 115240078575
+        for path in ("sessions/P001-S043/REGISTRATION.md", "sessions/P001-S043/CHILD_VERIFICATION.json", "sessions/P001-S043/LOCAL_VALIDATION.md"):
             assert (ROOT / path).is_file(), path
 
     expected_session, expected_objectives = expected_successors[receipt["session"]]
