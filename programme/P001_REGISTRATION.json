@@ -1,40 +1,40 @@
 {
   "schema_version": 1,
-  "session": "P001-S048",
+  "session": "P001-S049",
   "project_id": "P001",
   "observed_on": "2026-10-13",
   "parent": {
     "repository": "jfairfaxball-348/sunflower-structures-programme",
     "repository_id": 1412469441,
-    "starting_main": "9a8cd36db1e7ff133c8be99b30c9dcc250f25485",
-    "starting_main_commit": "9a8cd36db1e7ff133c8be99b30c9dcc250f25485"
+    "starting_main": "6453421ba6607b088767b65411112c1df8f515d5",
+    "starting_main_commit": "6453421ba6607b088767b65411112c1df8f515d5"
   },
   "child": {
     "repository": "jfairfaxball-348/sunflower-internal-kernel-extraction",
     "repository_id": 1412820282,
     "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction",
-    "main_commit": "57f0c8badd13cf2056a2df54ebd016828a81f28f",
-    "tree_sha": "ba1102d6cbb6fe986bbc5fdf0924b85d9a1b3049",
+    "main_commit": "caac0918736d8fb9982a4c69d57b2be613f99ab6",
+    "tree_sha": "b47eab13fe6bfac13bce25dfff228f1f401a0141",
     "manifest_path": "project_manifest.json",
     "merged_pr": {
-      "number": 50,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/50",
+      "number": 51,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/51",
       "merged": true,
       "merged_at": "2026-10-13",
-      "head_sha": "e47262d3999af239d585e1a7212601a4281ce1d2",
-      "merge_sha": "57f0c8badd13cf2056a2df54ebd016828a81f28f"
+      "head_sha": "0bc5db57bba85677e686d35cda811dcf04c76198",
+      "merge_sha": "caac0918736d8fb9982a4c69d57b2be613f99ab6"
     },
     "final_head_validation": [
       {
-        "run_id": 38424009935,
-        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38424009935",
+        "run_id": 38431512164,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38431512164",
         "event": "pull_request",
-        "head_sha": "e47262d3999af239d585e1a7212601a4281ce1d2",
+        "head_sha": "0bc5db57bba85677e686d35cda811dcf04c76198",
         "status": "completed",
         "conclusion": "success",
         "jobs": [
           {
-            "id": 115388488754,
+            "id": 115414600255,
             "name": "validate",
             "status": "completed",
             "conclusion": "success",
@@ -81,15 +81,15 @@
       }
     ],
     "main_validation": {
-      "run_id": 38424133836,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38424133836",
+      "run_id": 38431597679,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38431597679",
       "event": "push",
-      "head_sha": "57f0c8badd13cf2056a2df54ebd016828a81f28f",
+      "head_sha": "caac0918736d8fb9982a4c69d57b2be613f99ab6",
       "status": "completed",
       "conclusion": "success",
       "jobs": [
         {
-          "id": 115388918727,
+          "id": 115414895692,
           "name": "validate",
           "status": "completed",
           "conclusion": "success",
@@ -157,16 +157,16 @@
     ]
   },
   "independent_registration_verification": {
-    "method": "Independently observed child S048 PR #50 FINAL HEAD e47262d3999af239d585e1a7212601a4281ce1d2 research-integrity RUN 38424009935/JOB 115388488754 SUCCESS, two-parent NONFORCE exact equal-tree merge/main 57f0c8badd13cf2056a2df54ebd016828a81f28f tree ba1102d6cbb6fe986bbc5fdf0924b85d9a1b3049, merged-main PUSH RUN 38424133836/JOB 115388918727 SUCCESS. Scoped SAME-ASSISTANT original-mass gluing A/B/C; NO unrestricted HDSE3/R3/TIK, novelty/referee not verified.",
+    "method": "Independently observed child S049 PR #51 FINAL HEAD 0bc5db57bba85677e686d35cda811dcf04c76198 research-integrity run 38431512164/validate job 115414600255 SUCCESS after corrected first failed manifest-schema run; nonforce two-parent EXACT EQUAL TREE b47eab13fe6bfac13bce25dfff228f1f401a0141 child merge caac0918736d8fb9982a4c69d57b2be613f99ab6; separately observed child merged-main push run 38431597679/validate job 115414895692 SUCCESS. SAME-ASSISTANT scoped rank-three repeated ordinary PAIR iff and high-original-link-richness m^-3 ownership theorem, not full HDSE3/R3/TIK or originality/referee/Lean.",
     "verified_paths": [
-      "sessions/P001-S048/INPUT.md",
-      "sessions/P001-S048/INPUT_MANIFEST.json",
-      "research/S048_FROZEN_GATE.md",
-      "research/S048_OVERLAP_HUB_LINK_GLUING.md",
-      "research/S048_HOSTILE_SECOND_PASS.md",
-      "sessions/P001-S048/ENTRY_EVIDENCE.json",
-      "sessions/P001-S048/LOCAL_VALIDATION.md",
-      "sessions/P001-S048/CLOSEOUT.md",
+      "sessions/P001-S049/INPUT.md",
+      "sessions/P001-S049/INPUT_MANIFEST.json",
+      "research/S049_FROZEN_GATE.md",
+      "research/S049_INTERMEDIATE_OWNERSHIP_AND_PAIR_SATURATION.md",
+      "research/S049_HOSTILE_SECOND_PASS.md",
+      "sessions/P001-S049/ENTRY_EVIDENCE.json",
+      "sessions/P001-S049/LOCAL_VALIDATION.md",
+      "sessions/P001-S049/CLOSEOUT.md",
       "research/CLAIMS.json",
       "authoritative/STATE.json",
       "project_manifest.json",
@@ -180,7 +180,7 @@
     "new_theorems": 0,
     "formal_verifications": 0,
     "publications": 0,
-    "session_outcome": "S048_SCOPED_ALL_RANK_COLOURING_AND_FULL_LINEAR_OVERLAP_RESCUE_FULL_OPEN",
+    "session_outcome": "S049_SCOPED_PAIR_SATURATION_IFF_AND_HIGH_RICHNESS_M3_OWNERSHIP_FULL_OPEN",
     "r3_literature_status": "STATUS_UNCERTAIN",
     "independent_mathematical_review": false,
     "bsel_universal_proved": false,
@@ -671,25 +671,32 @@
     "s048_manifest_commit": "aa1e547f270ee71fa73a0b25e0698d20cfb574a6",
     "s048_frozen_gate_commit": "0816dbe7ecafd4f45739be124bbb48d7f777e7ac",
     "s048_hostile_commit": "fb63083b995200e1c54ccc28fd942922c16fb655",
-    "s050_next_mandatory_audit": true
+    "s050_next_mandatory_audit": true,
+    "s049_original_one_hub_r_h_exact_iff": true,
+    "s049_original_high_richness_retention": "|F|/(2m^3)",
+    "s049_richness_requires_log_e": true,
+    "s049_unrestricted_hdse3_proved": false,
+    "s049_r3_proved": false,
+    "s049_all_k_proved": false,
+    "s049_independent_math_review": false
   },
   "next_child_obligation": {
-    "session": "P001-S049",
+    "session": "P001-S050",
     "objectives": [
-      "INTERMEDIATE_SINGLETON_AND_MIXED_PAIR_M3_REPAIR"
+      "MANDATORY_FIFTH_TENTH_CORRECTION_AUDIT_AND_LOW_RICHNESS_BRIDGE"
     ],
     "open_status": "STATUS_UNCERTAIN",
     "executed": false,
-    "interpretation": "FUTURE ONLY: original repeated ordinary PAIR and intermediate singleton r=2..m-1 repair beyond S048 linear-support/gap hypotheses; unrestricted HDSE3/R3/all-k TIK still open."
+    "interpretation": "FUTURE ONLY: mandatory fifth/tenth progress correction and strategy reassessment with low-richness HDSE3 bridge and every-rank independent attack; NOT executed by parent status registration."
   },
   "parent_programme_session_executed": false,
   "parent_registration_ci": [],
-  "previous_registration_receipt": "P001-S047 (parent main 9a8cd36db1e7ff133c8be99b30c9dcc250f25485)",
-  "outgoing_parent_commit_evidence": "PREMERGE S048 STATUS ONLY; actual FINAL HEAD programme-integrity validate and separate merged-main PUSH success required, NOT self-certified.",
-  "registration_kind": "P001_S048_SCOPED_OVERLAPPING_HUB_LINK_GLUING_STATUS_ONLY",
+  "previous_registration_receipt": "P001-S048 (parent main 6453421ba6607b088767b65411112c1df8f515d5)",
+  "outgoing_parent_commit_evidence": "PREMERGE S049 STATUS ONLY; must see ACTUAL final HEAD programme-integrity/validate success, nonforce two-parent equal-tree merge, and separate merged-main push validate success.",
+  "registration_kind": "P001_S049_SCOPED_INTERMEDIATE_OWNERSHIP_STATUS_ONLY",
   "approved_next_child_handoff": {
-    "session": "P001-S049",
-    "objective": "INTERMEDIATE_SINGLETON_AND_MIXED_PAIR_M3_REPAIR",
+    "session": "P001-S050",
+    "objective": "MANDATORY_FIFTH_TENTH_CORRECTION_AUDIT_AND_LOW_RICHNESS_BRIDGE",
     "approved": "OWNER_AUTONOMOUS_PROOF_FIRST_FUTURE_SESSION",
     "executed": false
   }
