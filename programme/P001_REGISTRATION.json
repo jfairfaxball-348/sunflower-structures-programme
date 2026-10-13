@@ -1,48 +1,44 @@
 {
   "schema_version": 1,
-  "session": "P001-S050",
+  "session": "P001-S051",
   "project_id": "P001",
   "observed_on": "2026-10-13",
   "parent": {
     "repository": "jfairfaxball-348/sunflower-structures-programme",
     "repository_id": 1412469441,
-    "starting_main": "fd23135989a771d2cd8ea18863f7a842d5f4b03c",
-    "starting_main_commit": "fd23135989a771d2cd8ea18863f7a842d5f4b03c"
+    "starting_main": "296a71a0aea9aeacf12ae7fc9e3249916dadfbb7",
+    "starting_main_commit": "296a71a0aea9aeacf12ae7fc9e3249916dadfbb7"
   },
   "child": {
     "repository": "jfairfaxball-348/sunflower-internal-kernel-extraction",
     "repository_id": 1412820282,
     "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction",
-    "main_commit": "191bb6553507f3cea87d03c0f1addea0c866f96d",
-    "tree_sha": "57b23652a80aa42179711eef319c5ec1ecc3e897",
+    "main_commit": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c",
+    "tree_sha": "bf2cd36b84b33c44a2bbf1ea7ba1c6e47bdb1cd5",
     "manifest_path": "project_manifest.json",
     "merged_pr": {
-      "number": 52,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/52",
+      "number": 53,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/53",
       "merged": true,
       "merged_at": "2026-10-13",
-      "head_sha": "b7d24e14b834b89c2807216a70b5989c05889f81",
-      "merge_sha": "191bb6553507f3cea87d03c0f1addea0c866f96d"
+      "head_sha": "e70d332eaa39920ac98e4e576f38b0a4845f8c0a",
+      "merge_sha": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c"
     },
     "final_head_validation": [
       {
-        "run_id": 38450736559,
-        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38450736559",
+        "run_id": 38474098838,
+        "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38474098838",
         "event": "pull_request",
-        "head_sha": "b7d24e14b834b89c2807216a70b5989c05889f81",
+        "head_sha": "e70d332eaa39920ac98e4e576f38b0a4845f8c0a",
         "status": "completed",
         "conclusion": "success",
         "jobs": [
           {
-            "id": 115480649426,
+            "id": 115560366457,
             "name": "validate",
             "status": "completed",
             "conclusion": "success",
             "steps": [
-              {
-                "name": "Set up job",
-                "conclusion": "success"
-              },
               {
                 "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
                 "conclusion": "success"
@@ -52,27 +48,15 @@
                 "conclusion": "success"
               },
               {
-                "name": "Validate records and exact target",
+                "name": "Run python3 scripts/validate.py",
                 "conclusion": "success"
               },
               {
-                "name": "Check internal and external semantics",
+                "name": "Run python3 -m unittest discover -s tests -v",
                 "conclusion": "success"
               },
               {
                 "name": "Report checked commit",
-                "conclusion": "success"
-              },
-              {
-                "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
-                "conclusion": "success"
-              },
-              {
-                "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
-                "conclusion": "success"
-              },
-              {
-                "name": "Complete job",
                 "conclusion": "success"
               }
             ]
@@ -81,23 +65,19 @@
       }
     ],
     "main_validation": {
-      "run_id": 38450811794,
-      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38450811794",
+      "run_id": 38474286573,
+      "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/actions/runs/38474286573",
       "event": "push",
-      "head_sha": "191bb6553507f3cea87d03c0f1addea0c866f96d",
+      "head_sha": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c",
       "status": "completed",
       "conclusion": "success",
       "jobs": [
         {
-          "id": 115480903024,
+          "id": 115561024657,
           "name": "validate",
           "status": "completed",
           "conclusion": "success",
           "steps": [
-            {
-              "name": "Set up job",
-              "conclusion": "success"
-            },
             {
               "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
               "conclusion": "success"
@@ -107,51 +87,37 @@
               "conclusion": "success"
             },
             {
-              "name": "Validate records and exact target",
+              "name": "Run python3 scripts/validate.py",
               "conclusion": "success"
             },
             {
-              "name": "Check internal and external semantics",
+              "name": "Run python3 -m unittest discover -s tests -v",
               "conclusion": "success"
             },
             {
               "name": "Report checked commit",
-              "conclusion": "success"
-            },
-            {
-              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
-              "conclusion": "success"
-            },
-            {
-              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
-              "conclusion": "success"
-            },
-            {
-              "name": "Complete job",
               "conclusion": "success"
             }
           ]
         }
       ]
     },
-    "last_completed_substantive_session": "P001-S050",
+    "last_completed_substantive_session": "P001-S051",
     "merge_parents": [
-      "caac0918736d8fb9982a4c69d57b2be613f99ab6",
-      "b7d24e14b834b89c2807216a70b5989c05889f81"
+      "191bb6553507f3cea87d03c0f1addea0c866f96d",
+      "e70d332eaa39920ac98e4e576f38b0a4845f8c0a"
     ]
   },
   "independent_registration_verification": {
-    "method": "Independently observed S050 child PR52 FINAL HEAD b7d24e14b834b89c2807216a70b5989c05889f81 research-integrity run38450736559/validate job115480649426 SUCCESS; NONFORCE 2-parent exact equal-tree child merge 191bb6553507f3cea87d03c0f1addea0c866f96d; separately observed merged-main PUSH run38450811794/validate job115480903024 SUCCESS. Scoped all-rank rainbow k!/k^k normal form (rank3 2/9), exact low-richness five final-kernel criterion and SAME-F >half repair of naive link union. S050 mandatory fifth/tenth correction/strategy audit completed; full HDSE3/R3/all-k TIK and originality/independent review unproved.",
+    "method": "Live independently observed S051 child PR53 final head e70d332... research-integrity run38474098838/validate job115560366457 COMPLETED SUCCESS, 2-parent exact equal-tree merge c7ede267... main and independent PUSH run38474286573/job115561024657 SUCCESS. Scoped genuine original 6m-spread core-free/high-original-hub matching-rich r/h gap with J_x=2<m but SAME ORIGINAL valid H >1-m^-4; all-k rainbow fraction p_k optimal for tripartite normalization. Universal HDSE3/R3/all-rank TIK UNPROVED, novelty/independent proof scrutiny absent.",
     "verified_paths": [
-      "sessions/P001-S050/INPUT.md",
-      "sessions/P001-S050/INPUT_MANIFEST.json",
-      "research/S050_FROZEN_GATE.md",
-      "research/S050_PARTITE_REDUCTION_AND_CERTIFICATE_PACKING.md",
-      "research/S050_PROGRESS_AND_STRATEGIC_AUDIT.md",
-      "research/S050_HOSTILE_SECOND_PASS.md",
-      "sessions/P001-S050/ENTRY_EVIDENCE.json",
-      "sessions/P001-S050/LOCAL_VALIDATION.md",
-      "sessions/P001-S050/CLOSEOUT.md",
+      "sessions/P001-S051/INPUT.md",
+      "sessions/P001-S051/INPUT_MANIFEST.json",
+      "research/S051_FROZEN_GATE.md",
+      "research/S051_RICH_LINK_STRESS_AND_SHARP_PARTITE.md",
+      "research/S051_HOSTILE_SECOND_PASS.md",
+      "sessions/P001-S051/ENTRY_EVIDENCE.json",
+      "sessions/P001-S051/CLOSEOUT.md",
       "authoritative/STATE.json",
       "project_manifest.json",
       "research/CLAIMS.json",
@@ -165,7 +131,7 @@
     "new_theorems": 0,
     "formal_verifications": 0,
     "publications": 0,
-    "session_outcome": "S050_PARTITE_ALL_RANK_REDUCTION_EXACT_LOW_RICHNESS_IFF_AND_MANDATORY_FIFTH_TENTH_AUDIT_FULL_OPEN",
+    "session_outcome": "S051_NORMALIZED_RICH_LINK_SINGLETON_OBSTRUCTION_NEAR_TOTAL_SAME_F_RESCUE_RAINBOW_SHARP_FULL_OPEN",
     "r3_literature_status": "STATUS_UNCERTAIN",
     "independent_mathematical_review": false,
     "bsel_universal_proved": false,
@@ -679,25 +645,36 @@
     "s050_original_input_commit": "d3180124e86cec20f62805c4096d3f1bd325631d",
     "s050_frozen_gate_commit": "0a03d77e53be10710d78bd3c6fee1f69056d9c26",
     "s050_proof_commit": "dd99bc89f47f2916534ea8192369713d9a029c69",
-    "s050_hostile_pass_commit": "4fb0f6360374ef53bafba84da8ced3fc43687178"
+    "s050_hostile_pass_commit": "4fb0f6360374ef53bafba84da8ced3fc43687178",
+    "s051_normalized_6m_spread_corefree_highhub": true,
+    "s051_rich_links_L_plus_1": true,
+    "s051_jx_matching": 2,
+    "s051_same_original_valid_fraction": ">1-1/L>=1-m^-4",
+    "s051_rainbow_pk_sharp": true,
+    "s051_hdse3_proved": false,
+    "s051_r3_proved": false,
+    "s051_all_k_tik_proved": false,
+    "s051_independent_math_review": false,
+    "s051_new_N1_N2": false,
+    "s051_next_fifth_audit": "P001-S055"
   },
   "next_child_obligation": {
-    "session": "P001-S051",
+    "session": "P001-S052",
     "objectives": [
-      "TRIPARTITE_FIVE_CERTIFICATE_UNIVERSAL_M3_PACKING"
+      "LOW_RICHNESS_JX_MATCHING_REPAIR_UNRESTRICTED_TRIPARTITE_R3"
     ],
     "open_status": "STATUS_UNCERTAIN",
     "executed": false,
-    "interpretation": "FUTURE ONLY: new owner invocation to attempt arbitrary tripartite exact five-final-certificate R3 at absolute m^-3 and all-rank compatible step; S050 mandatory audit COMPLETED."
+    "interpretation": "FUTURE ONLY: full five certificate matching/repair at absolute m^-3 for arbitrary ORIGINAL tripartite F, and all-rank bridge; new explicit owner invocation required."
   },
   "parent_programme_session_executed": false,
   "parent_registration_ci": [],
-  "previous_registration_receipt": "P001-S049 (parent main fd23135989a771d2cd8ea18863f7a842d5f4b03c)",
-  "outgoing_parent_commit_evidence": "PREMERGE S050 STATUS ONLY; must observe ACTUAL FINAL HEAD programme-integrity/validate SUCCESS, NONFORCE two-parent equal-tree merge and distinct merged-main PUSH SUCCESS.",
-  "registration_kind": "P001_S050_TRIPARTITE_FIVE_CERTIFICATE_AND_MANDATORY_FIFTH_TENTH_AUDIT_STATUS_ONLY",
+  "previous_registration_receipt": "P001-S050 (parent main 296a71a0aea9aeacf12ae7fc9e3249916dadfbb7)",
+  "outgoing_parent_commit_evidence": "PREMERGE S051 status-only, require hosted FINAL HEAD programme-integrity/validate SUCCESS, nonforce two-parent equal-tree merge, separate main PUSH job SUCCESS",
+  "registration_kind": "P001_S051_RICH_LINK_JX_TRAP_AND_SHARP_PARTITE_STATUS_ONLY",
   "approved_next_child_handoff": {
-    "session": "P001-S051",
-    "objective": "TRIPARTITE_FIVE_CERTIFICATE_UNIVERSAL_M3_PACKING",
+    "session": "P001-S052",
+    "objective": "LOW_RICHNESS_JX_MATCHING_REPAIR_UNRESTRICTED_TRIPARTITE_R3",
     "approved": "OWNER_AUTONOMOUS_PROOF_FIRST_FUTURE_SESSION",
     "executed": false
   }
