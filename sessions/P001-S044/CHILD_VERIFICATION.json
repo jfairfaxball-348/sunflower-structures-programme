@@ -1,0 +1,32 @@
+{
+  "session": "P001-S044",
+  "child_main": "dcc1617884c538d18a85649cad959cfeded0e28e",
+  "child_tree": "45406c8ab1dcb98245ac95d47cdbba4f49b9025c",
+  "pr_number": 46,
+  "pr_final_head": "4ae8c9403f86c065abd0610f88b371aa07afa2fe",
+  "pr_run": 38383149617,
+  "pr_job": 115248297568,
+  "pr_conclusion": "success",
+  "merge": "dcc1617884c538d18a85649cad959cfeded0e28e",
+  "merge_parents": [
+    "56ea510dbaef8b21abbcad21a6cbcad2f8e990cd",
+    "4ae8c9403f86c065abd0610f88b371aa07afa2fe"
+  ],
+  "merge_tree_equals_final_head_tree": true,
+  "push_run": 38383253404,
+  "push_job": 115248637606,
+  "push_conclusion": "success",
+  "parent_status_only": true,
+  "independent_math_review": false,
+  "original_tik_proved": false,
+  "s044_apex_degeneracy_bound": "|F|/[54*(A+1)*m^3]",
+  "s044_dense_balanced_bound": "|F|/(36*A*m^3)",
+  "s044_nonlinear_hdse3_original_pair_invalid": true,
+  "s044_actual_hdse3_positive_same_e": true,
+  "s044_full_hdse3_proved": false,
+  "s044_r3_proved": false,
+  "s045_fifth_audit_due": true,
+  "local_python_tests": "NOT_RUN_NO_REAL_CHECKOUT",
+  "parent_final_head_ci": "FUTURE_OBSERVATION_REQUIRED",
+  "parent_main_push_ci": "FUTURE_OBSERVATION_REQUIRED"
+}
