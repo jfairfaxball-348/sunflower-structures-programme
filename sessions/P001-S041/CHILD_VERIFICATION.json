@@ -1,0 +1,25 @@
+{
+  "session": "P001-S041",
+  "child_main": "92b3bc14caa69f81db82c98b383e75a2ae4292cf",
+  "child_tree": "4c1e3e845f5bf16a090874ba736466b7f0e3be88",
+  "pr_number": 43,
+  "pr_final_head": "02d7ce68c4a51e5055ed9ba34a0cd0820e69fc6f",
+  "pr_run": 38368846313,
+  "pr_job": 115200497096,
+  "pr_conclusion": "success",
+  "merge": "92b3bc14caa69f81db82c98b383e75a2ae4292cf",
+  "merge_parents": [
+    "e8e1c343405c94cdf3a585ef2b1db2c278f1fac1",
+    "02d7ce68c4a51e5055ed9ba34a0cd0820e69fc6f"
+  ],
+  "merge_tree_equals_final_head_tree": true,
+  "push_run": 38368918347,
+  "push_job": 115200729864,
+  "push_conclusion": "success",
+  "independent_mathematical_review": false,
+  "parent_status_only": true,
+  "s040_fifth_tenth_audit_complete": true,
+  "s041_complete": true,
+  "s042_future_only": true,
+  "source": "Independently fetched live GitHub child PR, commit, check-run and actual hosted workflow jobs; no outgoing parent job self-certification"
+}
