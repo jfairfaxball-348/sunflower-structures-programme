@@ -15,10 +15,21 @@ class TournamentTests(unittest.TestCase):
     def records(self):
         return tuple(json.loads((ROOT/p).read_text()) for p in
                      ("authoritative/STATE.json", "programme/PROJECTS.json", "programme/P001_REGISTRATION.json"))
-    def test_s045_preserves_earlier_results_and_does_not_promote_tik(self):
+    def test_s046_preserves_earlier_results_and_does_not_promote_tik(self):
         state, projects, receipt = self.records()
-        self.assertEqual(receipt["session"], "P001-S045")
+        self.assertEqual(receipt["session"], "P001-S046")
         audit = receipt["independent_registration_verification"]
+        self.assertEqual(projects["projects"][0]["verified_commit"], "ad276ba083a8939e6dc88091aa57919b3b0e9ef8")
+        self.assertEqual(receipt["child"]["merged_pr"]["number"], 48)
+        self.assertEqual(receipt["child"]["final_head_validation"][0]["run_id"], 38399527066)
+        self.assertEqual(receipt["child"]["main_validation"]["run_id"], 38399647574)
+        self.assertTrue(audit["s046_connected_6m_spread_corefree_hdse3"])
+        self.assertTrue(audit["s046_original_pair_2_and_m"])
+        self.assertTrue(audit["s046_matching_or_one_hub_method_refuted"])
+        self.assertEqual(audit["s046_same_e_near_full_valid"], "m^4/(m^4+1)")
+        self.assertFalse(audit["s046_unrestricted_hdse3_proved"])
+        self.assertFalse(audit["s046_r3_proved"])
+        self.assertFalse(audit["s046_all_k_tik_proved"])
         self.assertEqual(audit["s026_single_original_Q_edge_bound"], "t/(9*m^2)")
         self.assertTrue(audit["s026_exact_Q_singleton_required"])
         self.assertTrue(audit["s026_light_support_overlap_allowed"])
@@ -33,7 +44,7 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["full_tik_proved"])
         self.assertTrue(audit["bsel_universal_refuted"])
         self.assertEqual(state["session_completed"], "S000")
-        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S045")
+        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S046")
         self.assertTrue(audit["s028_frozen_C512_proved"])
         self.assertEqual(audit["s028_stronger_restricted_bound"], "t/((3m-2)*(m-1)) >= t/(3m^2)")
         self.assertTrue(audit["s028_original_Q_fixed"])
@@ -42,7 +53,7 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(audit["s028_unrestricted_direct_edge_proved"])
         self.assertFalse(audit["s028_full_tik_proved"])
         self.assertFalse(audit["independent_mathematical_review"])
-        self.assertEqual(receipt["next_child_obligation"]["session"], "P001-S046")
+        self.assertEqual(receipt["next_child_obligation"]["session"], "P001-S047")
         self.assertFalse(audit["s029_frozen_C512_proved"])
         self.assertFalse(audit["s029_frozen_C512_refuted"])
         self.assertTrue(audit["s029_A_majority_meets_C512"])
