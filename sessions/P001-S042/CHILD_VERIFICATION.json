@@ -1,0 +1,31 @@
+{
+  "session": "P001-S042",
+  "child_main": "47122d5c8fe01054d2db871412eb9e16dbd38c42",
+  "child_tree": "86d29139094ab35ad97e14ac74d4242e20c56927",
+  "pr_number": 44,
+  "pr_final_head": "981507a17a0f7a68ef8cf63906f9e69754307b4a",
+  "pr_run": 38373003091,
+  "pr_job": 115214351394,
+  "pr_conclusion": "success",
+  "merge": "47122d5c8fe01054d2db871412eb9e16dbd38c42",
+  "merge_parents": [
+    "92b3bc14caa69f81db82c98b383e75a2ae4292cf",
+    "981507a17a0f7a68ef8cf63906f9e69754307b4a"
+  ],
+  "merge_tree_equals_final_head_tree": true,
+  "push_run": 38373071947,
+  "push_job": 115214580353,
+  "push_conclusion": "success",
+  "parent_status_only": true,
+  "independent_math_review": false,
+  "original_tik_proved": false,
+  "s042_linear_all_k_exponent_same_assistant": true,
+  "s042_original_pair_degree_B_loss": true,
+  "s042_two_way_regional_capture_refuted_only": true,
+  "same_E_affine_steiner_full_valid": true,
+  "s043_future_only": true,
+  "s045_fifth_audit_due": true,
+  "local_python_tests": "NOT_RUN_NO_REAL_CHECKOUT",
+  "parent_final_head_ci": "FUTURE_OBSERVATION_REQUIRED",
+  "parent_main_push_ci": "FUTURE_OBSERVATION_REQUIRED"
+}
