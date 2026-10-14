@@ -54,7 +54,7 @@ def check_grid():
                 product_image = pass_lex(full_product(q, k), q*k)
                 assert star(q, k) <= product_image, (q, k)
                 product_cases += 1
-    assert spoke_cases == 22 and product_cases == 17, (spoke_cases, product_cases)
+    assert spoke_cases == 22 and product_cases == 19, (spoke_cases, product_cases)
     return spoke_cases, product_cases
 
 
