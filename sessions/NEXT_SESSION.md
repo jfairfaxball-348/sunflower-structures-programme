@@ -6,7 +6,7 @@ Read before working: AGENTS.md, authoritative/STATE.json, research/WORKING_PROOF
 
 ## Mission
 
-Prove the full Erdős–Rado Sunflower Conjecture for every fixed s>=3: some n-independent C_s satisfies f_s(k)<=C_s^k for all k>=1, for distinct ORIGINAL petals and cores possibly empty. No parent/child process, staged papers, session quotas or hard stop. Continue substantial independent mathematical investigation now, not merely plan it. **NO full proof is established.** v2 only bounds SHIFTED families. The v1 full-shift lifting inference is invalid. Do not falsely claim a complete proof.
+Prove the full Erdős–Rado Sunflower Conjecture for every fixed s>=3: some n-independent C_s satisfies f_s(k)<=C_s^k for all k>=1, for distinct ORIGINAL petals and cores possibly empty. No parent/child process, staged papers, session quotas or hard stop. Continue substantial independent mathematical investigation now, not merely plan it. **NO complete proof has been obtained.** v2 only bounds SHIFTED families. The v1 full-shift lifting inference is invalid. Do not falsely claim a complete proof.
 
 ## Frozen result and honest reach
 
