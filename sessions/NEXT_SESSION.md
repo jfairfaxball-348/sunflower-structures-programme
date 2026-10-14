@@ -5,7 +5,7 @@ Primary versions: https://arxiv.org/html/2606.02667v1 and https://arxiv.org/html
 
 ## Mission and authoritative starting point
 
-Find and prove a COMPLETE solution of the unrestricted Erdős–Rado Sunflower Conjecture for every fixed s>=3, with C_s independent of k and ground-set size, and ORIGINAL distinct sunflower petals (empty core allowed). This is a single-repository direct proof effort, not a child project, paper pipeline, session quota or background automation.
+Find and prove a COMPLETE solution of the full Erdős–Rado Sunflower Conjecture for every fixed s>=3, with C_s independent of k and ground-set size, and ORIGINAL distinct sunflower petals (empty core allowed). This is a single-repository direct proof effort, not a child project, paper pipeline, session quota or background automation.
 
 READ FIRST: research/SPOKE_SHIFT_THEOREM.md, research/WORKING_PROOF.md, research/VERSION_BRIDGE.md, authoritative/STATE.json.
 
