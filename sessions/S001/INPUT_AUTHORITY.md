@@ -1,0 +1,5 @@
+# Parent S001 owner instruction authority archive — 2026-10-14
+
+**NOT VERBATIM INPUT.** The exact lengthy SUN-PARENT-S001 request was supplied directly in the owner conversation and is authoritative. The tool path here has no programmatic access to raw user-message bytes for a provably exact transcript; this is a faithful index, NOT a falsely certified verbatim prompt/hash.
+
+Owner explicitly authorised one independent parent-only strategic session, mathematical asset and source audits, autonomous P001A CONTINUE/PAUSE/RETIRE decision, selected P001B if justified, new repo creation if supported, parent commits PR green CI merge and normal nonforce verified integration. Grand Erdős–Rado objective never changes. Do NOT run P001A-S052 or P001B-S001, begin Lean/Palomar/manuscript/publication/outreach, or overwrite historical records. Parent S001 was confirmed unused on live entry. Refer to conversation request labelled 'SUN-PARENT-S001 — Strategic Research Reset, P001A Review and Successor Selection' for exact wording. Exact archival limitation must remain visible until a truthful verbatim import can be performed.

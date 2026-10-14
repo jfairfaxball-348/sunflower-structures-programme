@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "parent": "jfairfaxball-348/sunflower-structures-programme",
-  "active_project": "P001",
+  "active_project": "P001B",
   "projects": [
     {
       "id": "P001",
       "slug": "sunflower-internal-kernel-extraction",
       "repository_id": 1412820282,
       "url": "https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction",
-      "status": "INVESTIGATING_S051_NORMALIZED_HUB_RICHNESS_JX_AND_UNIVERSAL_FIVE_CERTIFICATE_FULL_OPEN",
+      "status": "RETIRED_BY_PARENT_S001_EXISTING_CHILD_FROZEN_S051",
       "objective": "2026 JJSW Section 6 internal-kernel quantitative extraction question",
       "verified_commit": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c",
       "verification_receipt": "programme/P001_REGISTRATION.json",
@@ -17,7 +17,7 @@
       "novelty_status": "NOVELTY_UNCERTAIN",
       "formal_status": "NOT_STARTED",
       "publication_status": "IDEA",
-      "next_obligation": "LOW_RICHNESS_JX_MATCHING_REPAIR_UNRESTRICTED_TRIPARTITE_R3",
+      "next_obligation": "NO_S052_EXECUTION_UNLESS_PARENT_REACTIVATES",
       "next_executed": false,
       "last_child_session": "P001-S051",
       "session_outcome": "S051_NORMALIZED_RICH_LINK_SINGLETON_OBSTRUCTION_NEAR_TOTAL_SAME_F_RESCUE_RAINBOW_SHARP_FULL_OPEN",
@@ -310,7 +310,31 @@
       "s051_ordinary_singleton_matching": 2,
       "s051_same_original_retained_fraction": ">1-1/L>=1-m^-4",
       "s051_partite_fraction_sharp_all_rank": "k!/k^k",
-      "s051_universal_hdse3_r3_tik_proved": false
+      "s051_universal_hdse3_r3_tik_proved": false,
+      "programme_alias": "P001A",
+      "portfolio_status": "RETIRED_ACTIVE_INVESTMENT",
+      "retirement_decision": "sessions/S001/CLOSEOUT.md",
+      "reactivation_criterion": "NOVELTY_CLEARED_PAPER_RESULT_OR_NEW_UNIVERSAL_MASS_PRESERVING_R3_IMPLICATION_WITH_NONREPEATED_ARCHITECTURE"
+    },
+    {
+      "id": "P001B",
+      "title": "Four-Petal Sunflower-Free Triple Extremal Threshold",
+      "slug": "sunflower-four-petal-triples",
+      "repository_id": null,
+      "url": null,
+      "repository_created": false,
+      "status": "SELECTED_PARENT_S001_BOOTSTRAP_BLOCKED",
+      "portfolio_status": "SELECTED_PENDING_INDEPENDENT_REPOSITORY",
+      "objective": "Improve one of the sourced current bounds 39 <= f(3,4) <= 49, with a certified 40-edge lower witness or an at-most-48 upper proof, and assess any valid recursive/asymptotic transfer.",
+      "novelty_status": "UNCLAIMED_PENDING_SOURCE_REFRESH",
+      "formal_status": "NOT_STARTED",
+      "publication_status": "IDEA",
+      "verified_commit": null,
+      "first_child_session": "P001B-S001",
+      "next_executed": false,
+      "success_criterion": "Rigorous, independently checkable new extremal inequality improving 2026 source bounds, after independent literature priority gate.",
+      "headline_implication": "NONE_ESTABLISHED_FOR_VARIABLE_RANK",
+      "repo_creation_blocker": "Connected GitHub actions lack repository creation endpoint; do not invent URL or repo ID."
     }
   ],
   "planned": []
