@@ -1,6 +1,6 @@
 # SUN-PARENT-S008 — FUTURE ONLY: one-mathematical-mechanism reopening gate
 
-**NOT EXECUTED IN S007.** Owner must separately invoke this in the `sunflower-structures-programme` parent Project. No active child as of S007; all P001A/B/C remain retired/paused. Permanent goal remains Erdős–Rado for EVERY fixed petal count r≥3 and ALL ranks k, `f(k,r)≤C_r^k`.
+**NOT EXECUTED IN S007.** Owner must separately invoke this in the `sunflower-structures-programme` parent Project. No active child as of S007; all P001A/B/C remain retired/paused. **P001C NO S003; P001B NO S004; P001A NO S052.** Permanent goal remains Erdős–Rado for EVERY fixed petal count r≥3 and ALL ranks k, `f(k,r)≤C_r^k`.
 
 ## Entry
 1. Pin live parent main SHA; latest S007 ordinary two-parent merged PR and **distinct successful exact PR-head and merged-main push Actions**, or stop and document a failed gate. Pin P001A/B/C main SHAs and any open parent/child PRs; if state moved, correct handoff before action.
