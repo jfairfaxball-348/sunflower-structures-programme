@@ -8,6 +8,8 @@ Additional urgent prior art: https://arxiv.org/abs/2609.06175 (Axante et al., Se
 
 For each fixed s>=3 prove an explicit finite C_s independent of k and n such that every simple original k-uniform family with more than C_s^k members contains s DISTINCT ORIGINAL members with identical pairwise intersections, including empty core. Continue aggressive original mathematical research in this single repository. No parent/child process, session quotas or paper workflow. Do not claim solution from a shifted image.
 
+**NO complete proof of the full conjecture has been obtained.** The following finite-factor and symbolic counterexamples obstruct specific proof strategies, not the unrestricted theorem.
+
 ## READ FIRST: results and adversarial facts now established
 
 1. research/HIGH_RANK_DENSE_TENSOR_OBSTRUCTION.md (NEW), especially general anchored-factor theorem, 54/39 factors, exact shadow saturation and **heavy-link criterion equivalence/vacuity trap**.
