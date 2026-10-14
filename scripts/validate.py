@@ -21,6 +21,8 @@ def main():
         "scripts/high_rank_tensor_audit.py", "tests/test_high_rank_tensor_audit.py",
         "research/SIX_PETAL_INTERSECTING_TENSOR_OBSTRUCTION.md",
         "scripts/six_petal_factor_audit.py", "tests/test_six_petal_factor_audit.py",
+        "research/ORIGINAL_MULTIWITNESS_TRACE_RANK_REDUCTION.md",
+        "scripts/compatible_trace_audit.py", "tests/test_compatible_trace_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -40,6 +42,7 @@ def main():
     assert "RANK_FOUR_54_FACTOR_SHADOW_INCIDENCE_SATURATION" in state["verified_results"]
     assert "SIX_PETAL_NINE_SWAP_SHIFT_OBSTRUCTION" in state["verified_results"]
     assert "INTERSECTING_ORIGINAL_EXTRACTION_FACTOR_QK" in state["verified_results"]
+    assert "ORIGINAL_INTERSECTING_MULTIWITNESS_EXACT_TRACE_RANK_REDUCTION" in state["verified_results"]
     for v in ("v1", "v2"):
         assert f"2606.02667{v}" in state["source_versions"][v]
     handoff = (ROOT / state["active_next_prompt"]).read_text()
@@ -65,6 +68,8 @@ def main():
     check_dense()
     check_high_rank()
     check_six_petal()
+    from compatible_trace_audit import main as check_compatible_trace
+    check_compatible_trace()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
