@@ -7,12 +7,17 @@ def txt(p): return (ROOT/p).read_text(encoding="utf8")
 def check_registration(state, projects, receipt):
     assert state["repo"] == projects["parent"] == receipt["parent"]["repository"] == "jfairfaxball-348/sunflower-structures-programme"
     assert state["repository_id"] == receipt["parent"]["repository_id"] == 1412469441
-    assert state["session_completed"] == "S000" and state["next_programme_session"] == "S001"
+    assert state["session_completed"] == "S001" and state["next_programme_session"] == "S002"
     assert state["headline_id"] == "SUN" and state["champion"] == "Erdős–Rado Sunflower Conjecture"
-    assert state["active_paper_id"] == projects["active_project"] == receipt["project_id"] == "P001"
+    assert receipt["project_id"] == "P001" and state["active_paper_id"] == projects["active_project"] == "P001B"
     assert state["child_repo_created"] and state["first_paper_authorized"]
     assert not state["parent_repo_name_temporary"]
-    assert len(projects["projects"]) == 1 and projects["planned"] == []
+    assert len(projects["projects"]) == 2 and projects["planned"] == []
+    assert projects["projects"][0]["id"] == "P001" and projects["projects"][0]["programme_alias"] == "P001A"
+    assert projects["projects"][0]["portfolio_status"] == "RETIRED_ACTIVE_INVESTMENT"
+    assert projects["projects"][1]["id"] == "P001B" and projects["projects"][1]["repository_created"] is False
+    assert projects["projects"][1]["repository_id"] is None and projects["projects"][1]["url"] is None
+    assert projects["projects"][1]["next_executed"] is False
     project = projects["projects"][0]
     child = receipt["child"]
     assert project["repository_id"] == child["repository_id"] == 1412820282
@@ -917,7 +922,9 @@ def main():
     check_registration(state, projects, receipt)
     assert (ROOT/"sessions/P001-S000/REGISTRATION.md").is_file()
     assert (ROOT/"prompts/S001_BEFORE_P001_REGISTRATION.md").is_file()
-    assert not (ROOT/"sessions/S001").exists(), "Registration is not parent S001"
+    assert (ROOT/"sessions/S001/CLOSEOUT.md").is_file(), "Parent S001 closeout missing"
+    assert (ROOT/"programme/PROGRESS_DASHBOARD.md").is_file()
+    assert (ROOT/"programme/S001_SUCCESSOR_ASSESSMENT.md").is_file()
     if receipt["session"] == "P001-S001":
         assert (ROOT/"sessions/P001-S001/REGISTRATION.md").is_file()
         assert (ROOT/"sessions/P001-S000/REGISTRATION_RECEIPT.json").is_file()

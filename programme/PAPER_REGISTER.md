@@ -111,3 +111,11 @@ Child PR #46 FINAL HEAD 4ae8c9403f86c065abd0610f88b371aa07afa2fe research-integr
 ## P001-S046 — STATUS-ONLY independent child registration (2026-10-13)
 Independently observed child research PR [#48](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/48) FINAL HEAD `f1713d70e553c998d79dfc9de75aaffb62e0146a` research-integrity PR RUN `38399527066`, validate JOB `115303259878`, SUCCESS. Child two-parent nonforce exact equal-tree merged main `ad276ba083a8939e6dc88091aa57919b3b0e9ef8`, parents `91c379d3...` and `f1713d70...`, matching tree `1c835584df6e374b5a968c47fbafbb69b3be3507`. Separately independently observed child merged-main PUSH research-integrity RUN `38399647574` validate JOB `115303664338` SUCCESS.
 This parent registration is STATUS ONLY; parent mathematical S001 is NOT executed. S046 SAME-ASSISTANT matching/link conditional rank-k bound, rank3 `e/(24 nu(F)m²)` and bounded-matching rank3 `e/(24A m³)`; exact connected original 6m-spread corefree high-degree, low-density, mixed codegree 2/m, original-m-vertex-core HDSE3 family E. Any matching or single common-apex selection is o(e/m³) on E, while an explicit SAME-E near-full `m⁴/(m⁴+1)` internally valid selection prevents any HDSE3 counterexample interpretation. Unrestricted HDSE3/R3/every-k TIK remain unproved; no independent mathematical referee, N1/N2, novelty, Lean, Palomar, manuscript or publication. Future S047 multihub joint-original-mass gate NOT EXECUTED. Local parent checkout/validators NOT RUN due DNS; require actual parent FINAL-HEAD and merged-main PUSH programme-integrity validate before/after NONFORCE exact-tree merge.
+
+
+## S001 current portfolio (supersedes stale P001-S001 snapshot above)
+|Alias|Historical ID|Current paper-level investment|External proof review|Novelty|Publication|
+|---|---|---|---|---|---|
+|P001A|P001|RETIRED active effort; child remains at S051, S052 unexecuted|NONE; same-assistant only|S033/S042/S045 UNCERTAIN|No manuscript|
+|P001B|new|SELECTED, new repository NOT CREATED, mathematical S001 NOT EXECUTED|NONE|Target opportunity, no discovery asserted|IDEA|
+See programme/PROGRESS_DASHBOARD.md and sessions/S001/CLOSEOUT.md. The title of historical P001 and its GitHub identity are immutable.
