@@ -221,6 +221,22 @@ class TournamentTests(unittest.TestCase):
         self.assertFalse(projects["projects"][0]["s049_full_tik_proved"])
         self.assertTrue((ROOT/"sessions/S001/CLOSEOUT.md").is_file())
 
+    def test_owner_supplied_p001b_repo_and_separate_project_handoff(self):
+        state, projects, receipt = self.records()
+        b = projects["projects"][1]
+        self.assertEqual(b["repository_id"], 1418652673)
+        self.assertTrue(b["repository_created"])
+        self.assertFalse(b["bootstrapped"])
+        self.assertIsNone(b["verified_commit"])
+        self.assertFalse(b["next_executed"])
+        self.assertEqual(state["next_programme_session"], "S002")
+        prompt = (ROOT/"sessions/NEXT_SESSION.md").read_text()
+        self.assertIn("Four-Petal-Sunflower-Free-Triple-Extremal-Threshold", prompt)
+        self.assertIn("COMPLETE SAME child prompt", prompt)
+        self.assertIn("separate ChatGPT Project", prompt)
+        self.assertIn("Never run P001B-S001 mathematics", prompt)
+        self.assertIn("EMPTY", prompt)
+
     def test_registration_rejects_wrong_child_sha(self):
         state, projects, receipt = self.records()
         altered = copy.deepcopy(receipt)

@@ -3,7 +3,7 @@
   "repo": "jfairfaxball-348/sunflower-structures-programme",
   "repository_id": 1412469441,
   "session_completed": "S001",
-  "stage": "S001_P001A_RETIRED_P001B_SELECTED_BOOTSTRAP_BLOCKED",
+  "stage": "S001_COMPLETE_P001B_REPOSITORY_EXISTS_EMPTY_S002_BOOTSTRAP_PENDING",
   "headline_id": "SUN",
   "headline_open_status": "STRONG_EVIDENCE_OPEN",
   "champion": "Erdős–Rado Sunflower Conjecture",
@@ -20,7 +20,7 @@
     "P001 full target is source-posed with strong evidence of openness, not exhaustive independently confirmed non-resolution",
     "Exact low-rank internal extraction attribution remains STATUS_UNCERTAIN",
     "Incoming parent S000 prompt synopsis archived, not verbatim; child P001-S000 prompt archived verbatim",
-    "P001B separate GitHub repository NOT CREATED: available GitHub connector exposes no create_repository action",
+    "Historical S001 condition: P001B repository had NOT yet been created during that session. Owner has since externally supplied a real empty repository; bootstrap and validation remain pending.",
     "S001 mathematical scrutiny is same-assistant, not external proof certification"
   ],
   "next_programme_session": "S002",
@@ -30,5 +30,10 @@
   "last_handoff_registration": "P001-S052_FUTURE_UNEXECUTED",
   "owner_research_policy": "S001_STRATEGIC_NOVELTY_REVIEW_AUTHORISED_P001B_FEASIBILITY_FIRST",
   "portfolio_decision": "RETIRE_P001A_SELECT_P001B",
-  "next_child_session": "P001B-S001_FUTURE_AFTER_BOOTSTRAP"
+  "next_child_session": "P001B-S001_FUTURE_ONLY_AFTER_S002_BOOTSTRAP",
+  "p001b_repository": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+  "p001b_repository_id": 1418652673,
+  "p001b_repository_state": "EXISTS_EMPTY_NO_INITIAL_COMMIT",
+  "p001b_child_bootstrapped": false,
+  "p001b_first_mathematics_executed": false
 }

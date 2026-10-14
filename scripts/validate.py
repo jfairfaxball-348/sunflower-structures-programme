@@ -15,7 +15,17 @@ def check_registration(state, projects, receipt):
     assert len(projects["projects"]) == 2 and projects["planned"] == []
     assert projects["projects"][0]["id"] == "P001" and projects["projects"][0]["programme_alias"] == "P001A"
     assert projects["projects"][0]["portfolio_status"] == "RETIRED_ACTIVE_INVESTMENT"
-    assert projects["projects"][1]["id"] == "P001B" and projects["projects"][1]["repository_created"] is False
+    assert projects["projects"][1]["id"] == "P001B" and projects["projects"][1]["repository_created"] is True
+    assert projects["projects"][1]["repository_id"] == state["p001b_repository_id"] == 1418652673
+    assert projects["projects"][1]["url"] == "https://github.com/" + state["p001b_repository"]
+    assert state["p001b_repository_state"] == "EXISTS_EMPTY_NO_INITIAL_COMMIT"
+    assert projects["projects"][1]["bootstrapped"] is False
+    assert projects["projects"][1]["verified_commit"] is None
+    assert state["p001b_first_mathematics_executed"] is False
+    assert "standalone" in txt("sessions/NEXT_SESSION.md").lower()
+    assert "separate ChatGPT Project" in txt("sessions/NEXT_SESSION.md")
+    assert "full" in txt("sessions/NEXT_SESSION.md").lower()
+    assert "P001B-S001" in txt("sessions/NEXT_SESSION.md")
     assert projects["projects"][1]["repository_id"] is None and projects["projects"][1]["url"] is None
     assert projects["projects"][1]["next_executed"] is False
     project = projects["projects"][0]
