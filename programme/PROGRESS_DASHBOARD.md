@@ -1,3 +1,18 @@
+# Live parent dashboard — after SUN-PARENT-S006 (2026-10-14)
+
+**ALL THREE children inactive; permanent SUN champion unchanged.** Exact child P001C S001 and S002 were completed and host CI-verified. S002 binary verdict NO; **no new fixed D-exponent saving** or global theorem. Parent S006 triggers its promised pause rather than a third child session. Independent source bounds remain attributed; no formalisation, paper, submission or all-r result.
+
+| Stream | Portfolio verdict | Genuine asset | Outstanding obligation |
+|---|---|---|---|
+| P001A | RETIRED at S051 | Restricted internal-kernel claims, not complete TIK | Nonrecycled all-m original-family extraction and rank lift; no S052 |
+| P001B | PAUSED at S003 | F39 checks; restricted cyclic Z12 result max24 | No global 40 / <=48, no all-rank transfer; no S004 |
+| P001C | **PAUSED at S002**, no S003 | Explicit sparse counterexamples, elementary atom inequality, Fourier termwise barrier | No independent near-extremal cancellation / fixed δ / C^n |
+| SUN parent | S006 completed subject to hosted PR+main CI verification | Exact audit and enforced two-session kill; **0 original global theorems** | Future owner-invoked S007 portfolio selection only |
+
+[Quantitative audit](../sessions/S006/QUANTITATIVE_AUDIT.md) · [CI child evidence](../validation/P001C_S002_REVIEW_RECEIPT.json) · [future parent S007](../sessions/NEXT_SESSION.md).
+
+---
+
 # Live parent dashboard — after S005 (2026-10-14)
 
 **P001C child repository BOOTSTRAPPED and independently CI-verified, but P001C-S001 mathematics has NOT begun.** [Owner-supplied repo](https://github.com/jfairfaxball-348/alphabet-uniform-sunflower-capacity), ID 1419073216, merged main `63091ad31062e4e0bd07bfcbc4942291de1f7c01`; child PR #1 final-head run 38578180582 SUCCESS and merged-main push run 38578264942 SUCCESS. P001A S051 retired, P001B S003 paused, permanent SUN headline unchanged. Original new theorem 0, formal proof 0, publication 0.

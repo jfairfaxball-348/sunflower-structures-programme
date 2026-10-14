@@ -1,3 +1,6 @@
+## SUN-PARENT-S006 — child S001/S002 priority status (2026-10-14)
+**NO new claim to clear.** P001C child source checks distinguish published Naslund–Sawin 2017 journal Thm 2 (arXiv v1 Thm 5), ASU 2013 Thm 2.6, Hegedus 2018 D-independent factorial growth, and Ahmadi–Norouzi 2026 Boolean polynomial factor. Neither strict uniform D exponent saving nor independently original near-extremal theorem was achieved. All-family counterexamples, elementary first-moment bounds, and Fourier termwise examples have NOT undergone external novelty refereeing. Targeted source search ≠ exhaustive N1/N2. P001C paused at S002, not a novelty success; see [S006 audit](../sessions/S006/QUANTITATIVE_AUDIT.md).
+
 ## SUN-PARENT-S005 — P001C status (14 October 2026)
 **UNASSESSED / NOT CLEARED.** No newly achieved P001C mathematical claim exists to subject to N2. Bootstrap of owner-provided child and CI verifies governance, not novelty. ASU 2013 Thm 2.6 and Naslund–Sawin 2017 Thm 5 belong to their authors; bounded 2026 competitor scan from S004 is not exhaustive. Child P001C-S001 must source-check live proof versions before asserting originality, with no claim that strict D exponent would solve the ordinary conjecture. [Source authority](P001C_SOURCE_AUTHORITY.md).
 
