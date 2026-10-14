@@ -1,5 +1,9 @@
 # Claim register
 
+## SUN-PARENT-S005 — verified separate child governance, NO new mathematics
+P001C owner-supplied GitHub repository ID 1419073216 has independently verified administrative P001C-S000 with exact PR-head and merged-main hosted GitHub Actions SUCCESS. This proves only workflow integrity. Future P001C-S001 research UNEXECUTED, U(D,n) exponent improvement NOT PROVED, D-independent C^n NOT PROVED, three-petal or all-petal Erdős–Rado NOT PROVED, priority NOT CLEARED, publication/formalisation NONE. [Exact receipt](../validation/P001C_S000_RECEIPT.json).
+
+
 |ID|Claim|Correctness|Novelty|Formal status|Publication|
 |---|---|---|---|---|---|
 |C000|Rao 2026 identifies sunflower conjecture as open|BACKGROUND, source-reported|N/A|NONE|Published survey|

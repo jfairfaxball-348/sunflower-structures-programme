@@ -7,12 +7,12 @@ def txt(p): return (ROOT/p).read_text(encoding="utf8")
 def check_registration(state, projects, receipt):
     assert state["repo"] == projects["parent"] == receipt["parent"]["repository"] == "jfairfaxball-348/sunflower-structures-programme"
     assert state["repository_id"] == receipt["parent"]["repository_id"] == 1412469441
-    assert state["session_completed"] == "S004" and state["next_programme_session"] == "S005"
+    assert state["session_completed"] == "S005" and state["next_programme_session"] == "S006"
     assert state["headline_id"] == "SUN" and state["champion"] == "Erdős–Rado Sunflower Conjecture"
-    assert receipt["project_id"] == "P001" and state["active_paper_id"] is None and projects["active_project"] is None
+    assert receipt["project_id"] == "P001" and state["active_paper_id"] == "P001C" and projects["active_project"] == "P001C"
     assert state["child_repo_created"] and state["first_paper_authorized"]
     assert not state["parent_repo_name_temporary"]
-    assert len(projects["projects"]) == 2 and len(projects["planned"]) == 1
+    assert len(projects["projects"]) == 3 and len(projects["planned"]) == 0
     assert projects["projects"][0]["id"] == "P001" and projects["projects"][0]["programme_alias"] == "P001A"
     assert projects["projects"][0]["portfolio_status"] == "RETIRED_ACTIVE_INVESTMENT"
     assert projects["projects"][1]["id"] == "P001B" and projects["projects"][1]["repository_created"] is True
@@ -935,7 +935,7 @@ def main():
     assert (ROOT/"sessions/S002/CLOSEOUT.md").is_file()
     assert (ROOT/"validation/P001B_S000_RECEIPT.json").is_file()
     assert (ROOT/"prompts/P001B_S001_LAUNCH.md").is_file()
-    assert "SUN-PARENT-S005" in txt("sessions/NEXT_SESSION.md")
+    assert "SUN-PARENT-S006" in txt("sessions/NEXT_SESSION.md")
     assert (ROOT/"sessions/S003/CLOSEOUT.md").is_file()
     cert=json.loads(txt("validation/P001B_S003_REVIEW_RECEIPT.json"))
     assert cert["child_main"]==state["p001b_verified_main_sha"]==projects["projects"][1]["verified_commit"]
@@ -948,10 +948,24 @@ def main():
     assert (ROOT/"programme/S004_SUCCESSOR_PORTFOLIO.md").is_file()
     assert (ROOT/"prompts/P001C_S001_LAUNCH.md").is_file()
     assert (ROOT/"validation/S004_ENTRY_EVIDENCE.json").is_file()
-    assert projects["planned"][0]["id"] == state["p001c_project_id"] == "P001C"
-    assert not projects["planned"][0]["repository_created"] and state["p001c_repository"] is None
-    assert projects["active_project"] is None and state["next_child_session"] == "NONE_AUTHORISED"
-    assert state["portfolio_decision"] == "SELECT_NEW_CHILD_P001C_CONDITIONAL_REPOSITORY_CREATION_AND_VERIFIED_BOOTSTRAP"
+    assert projects["projects"][2]["id"] == state["p001c_project_id"] == "P001C"
+    assert projects["projects"][2]["repository_created"] and projects["projects"][2]["bootstrapped"]
+    assert projects["projects"][2]["repository_id"] == state["p001c_repository_id"] == 1419073216
+    assert projects["projects"][2]["verified_commit"] == state["p001c_verified_main_sha"]
+    assert projects["active_project"] == state["active_paper_id"] == "P001C"
+    assert state["next_child_session"].startswith("P001C-S001_FUTURE")
+    assert not state["p001c_first_mathematics_executed"]
+    assert state["portfolio_decision"] == "ACTIVATE_BOOTSTRAPPED_P001C_FOR_OWNER_INVOKED_SEPARATE_S001"
+    newreceipt=json.loads(txt("validation/P001C_S000_RECEIPT.json"))
+    assert newreceipt["child"]["repository_id"] == 1419073216
+    assert newreceipt["child"]["main_sha"] == state["p001c_verified_main_sha"]
+    assert newreceipt["child"]["pr"]["merged"] is True
+    assert newreceipt["child"]["pr"]["head_ci"]["head_sha"] == newreceipt["child"]["pr"]["head_sha"]
+    assert newreceipt["child"]["pr"]["head_ci"]["conclusion"] == "success"
+    assert newreceipt["child"]["main_ci"]["head_sha"] == newreceipt["child"]["main_sha"]
+    assert newreceipt["child"]["main_ci"]["event"] == "push" and newreceipt["child"]["main_ci"]["conclusion"] == "success"
+    assert not newreceipt["child"]["next_executed"] and newreceipt["mathematics"]["new_theorems"] == 0
+    assert (ROOT/"sessions/S005/CLOSEOUT.md").is_file()
     assert (ROOT/"programme/PROGRESS_DASHBOARD.md").is_file()
     assert (ROOT/"programme/S001_SUCCESSOR_ASSESSMENT.md").is_file()
     if receipt["session"] == "P001-S001":

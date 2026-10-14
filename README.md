@@ -1,3 +1,5 @@
+**CURRENT 2026-10-14:** P001C administrative bootstrap completed. [Verified separate child](https://github.com/jfairfaxball-348/alphabet-uniform-sunflower-capacity), [parent S005 gate](sessions/S005/CLOSEOUT.md); owner-invoked child S001 in a separate Project is FUTURE, no mathematics yet. Below README historical.
+
 # Sunflower Structures — grand research programme
 
 Permanent programme repository: **sunflower-structures-programme**, stable repository ID 1412469441. Champion: **Erdős–Rado Sunflower Conjecture**; headline remains STRONG_EVIDENCE_OPEN, with no programme proof. The current name was observed at the start of P001-S000; this session performed no rename.

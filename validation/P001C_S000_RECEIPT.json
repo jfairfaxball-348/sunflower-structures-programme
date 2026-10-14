@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "session": "SUN-PARENT-S005",
+  "date": "2026-10-14",
+  "nature": "ADMINISTRATIVE_CHILD_REPOSITORY_BOOTSTRAP_NO_MATHEMATICS",
+  "parent_entry": {
+    "repository": "jfairfaxball-348/sunflower-structures-programme",
+    "main_sha": "f6cf1b3dca50838a7f69e8bb373b789adad10304",
+    "tree_sha": "5d531f08f6e204c7851b3bc03b8e688368be85b1",
+    "latest_main_push_run": 38574918701,
+    "latest_main_push_conclusion": "success",
+    "open_pr_count": 0
+  },
+  "previous_children": [
+    {
+      "id": "P001A",
+      "repository": "jfairfaxball-348/sunflower-internal-kernel-extraction",
+      "main_sha": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c",
+      "tree_sha": "bf2cd36b84b33c44a2bbf1ea7ba1c6e47bdb1cd5",
+      "latest_main_push_run": 38474286573,
+      "conclusion": "success",
+      "open_pr_count": 0,
+      "status": "RETIRED"
+    },
+    {
+      "id": "P001B",
+      "repository": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+      "main_sha": "b8660e1ff0bda6c367a725b6beb9aa98f927a584",
+      "tree_sha": "564ec0de65635377d5d90e76d5abc8bc60624da7",
+      "latest_main_push_run": 38566297899,
+      "conclusion": "success",
+      "open_pr_count": 0,
+      "status": "PAUSED"
+    }
+  ],
+  "child": {
+    "project": "P001C",
+    "repository": "jfairfaxball-348/alphabet-uniform-sunflower-capacity",
+    "repository_id": 1419073216,
+    "owner_supplied": true,
+    "permissions": "admin,push,pull",
+    "empty_at_entry": true,
+    "initial_unborn_main_commit": "27088648fa1f47e0a44b0b99e2c8c97c6428aa1a",
+    "initial_main_tree": "d6833b355352881805b77b24b797c9a193b2bb15",
+    "authored_bootstrap_commit": "50ee9d476c5fb302d3c10872b106cda77a8e48ce",
+    "pr": {
+      "number": 1,
+      "url": "https://github.com/jfairfaxball-348/alphabet-uniform-sunflower-capacity/pull/1",
+      "head_sha": "50ee9d476c5fb302d3c10872b106cda77a8e48ce",
+      "head_ci": {
+        "run_id": 38578180582,
+        "job_id": 115900725049,
+        "event": "pull_request",
+        "head_sha": "50ee9d476c5fb302d3c10872b106cda77a8e48ce",
+        "status": "completed",
+        "conclusion": "success",
+        "all_steps_success": true
+      },
+      "merge_method": "merge",
+      "merged": true,
+      "merge_commit_sha": "63091ad31062e4e0bd07bfcbc4942291de1f7c01"
+    },
+    "main_sha": "63091ad31062e4e0bd07bfcbc4942291de1f7c01",
+    "tree_sha": "1d8de8e1cae7569e93ab60eba58e7135e0f82b93",
+    "main_ci": {
+      "run_id": 38578264942,
+      "job_id": 115901010644,
+      "event": "push",
+      "head_sha": "63091ad31062e4e0bd07bfcbc4942291de1f7c01",
+      "status": "completed",
+      "conclusion": "success",
+      "all_steps_success": true
+    },
+    "future_handoff": "sessions/NEXT_SESSION.md",
+    "next_child_session": "P001C-S001",
+    "next_executed": false
+  },
+  "governance": {
+    "rulesets": "none",
+    "branch_list_protected": false,
+    "branch_protection_endpoint": "403_UNAVAILABLE_UNKNOWN",
+    "classic_status_checks": "NO_REPORTED_STATUS_NOT_CI_PASS",
+    "actions_evidence": "EXACT_HEAD_AND_MERGED_MAIN_SUCCESS"
+  },
+  "mathematics": {
+    "new_theorems": 0,
+    "strict_uniform_delta_improvement": false,
+    "D_independent_base": false,
+    "r3_Erdos_Rado_proved": false,
+    "all_r_Erdos_Rado_proved": false,
+    "formal_proofs": 0,
+    "manuscripts": 0,
+    "publication": 0,
+    "novelty": "NOT_CLEARED"
+  },
+  "parent_pr_verification": "TO_BE_OBSERVED_OUTSIDE_AUTHOR_COMMIT_AFTER_HOSTED_CI"
+}

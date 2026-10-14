@@ -1,3 +1,6 @@
+## SUN-PARENT-S005 — P001C status (14 October 2026)
+**UNASSESSED / NOT CLEARED.** No newly achieved P001C mathematical claim exists to subject to N2. Bootstrap of owner-provided child and CI verifies governance, not novelty. ASU 2013 Thm 2.6 and Naslund–Sawin 2017 Thm 5 belong to their authors; bounded 2026 competitor scan from S004 is not exhaustive. Child P001C-S001 must source-check live proof versions before asserting originality, with no claim that strict D exponent would solve the ordinary conjecture. [Source authority](P001C_SOURCE_AUTHORITY.md).
+
 # Novelty ledger
 
 - N000: Sunflower theorem known; original conjecture posed 1960 by Erdős–Rado. Rao 2026 survey confirms remains open. No programme proof.
