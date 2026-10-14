@@ -19,6 +19,8 @@ def main():
         "scripts/dense_obstruction_audit.py", "tests/test_dense_obstruction_audit.py",
         "research/HIGH_RANK_DENSE_TENSOR_OBSTRUCTION.md",
         "scripts/high_rank_tensor_audit.py", "tests/test_high_rank_tensor_audit.py",
+        "research/SIX_PETAL_INTERSECTING_TENSOR_OBSTRUCTION.md",
+        "scripts/six_petal_factor_audit.py", "tests/test_six_petal_factor_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -36,6 +38,8 @@ def main():
     assert "DENSE_TENSOR_LEX_SHIFT_LINEAR_STAR_ALL_S" in state["verified_results"]
     assert "ANCHORED_HIGH_RANK_FACTOR_TENSOR_SHIFT_LEMMA" in state["verified_results"]
     assert "RANK_FOUR_54_FACTOR_SHADOW_INCIDENCE_SATURATION" in state["verified_results"]
+    assert "SIX_PETAL_NINE_SWAP_SHIFT_OBSTRUCTION" in state["verified_results"]
+    assert "INTERSECTING_ORIGINAL_EXTRACTION_FACTOR_QK" in state["verified_results"]
     for v in ("v1", "v2"):
         assert f"2606.02667{v}" in state["source_versions"][v]
     handoff = (ROOT / state["active_next_prompt"]).read_text()
@@ -54,11 +58,13 @@ def main():
     from spoke_shift_audit import main as check_spoke
     from dense_obstruction_audit import main as check_dense
     from high_rank_tensor_audit import main as check_high_rank
+    from six_petal_factor_audit import main as check_six_petal
     check_examples()
     check_bridge()
     check_spoke()
     check_dense()
     check_high_rank()
+    check_six_petal()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
