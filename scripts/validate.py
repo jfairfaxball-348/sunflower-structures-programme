@@ -12,6 +12,7 @@ def main():
         "authoritative/STATE.json", "research/VERSION_BRIDGE.md",
         "research/SOURCE_REGISTER.md", "research/WORKING_PROOF.md",
         "sessions/NEXT_SESSION.md", "scripts/shift_sanity.py",
+        "scripts/bridge_audit.py", "tests/test_bridge_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -24,6 +25,7 @@ def main():
     assert not state["legacy_hierarchy_active"]
     assert not state["legacy_hard_stop_active"]
     assert state["active_next_prompt"] == "sessions/NEXT_SESSION.md"
+    assert "SHIFTED_SUBFAMILY_OF_PRODUCT_AT_MOST_Q" in state["verified_results"]
     for v in ("v1", "v2"):
         assert f"2606.02667{v}" in state["source_versions"][v]
     handoff = (ROOT / state["active_next_prompt"]).read_text()
@@ -31,14 +33,17 @@ def main():
     assert "full Erdős" in handoff
     assert "C_s" in handoff
     assert "NO S011" not in handoff
-    assert "FULL-shift" in handoff or "FULL-shift".lower() in handoff.lower()
+    assert "full-shift" in handoff.lower()
     assert "original" in handoff.lower()
     assert "P(s-1,k)" in handoff
-    assert "impossible" in (ROOT / "research/VERSION_BRIDGE.md").read_text().lower()
+    bridge = (ROOT / "research/VERSION_BRIDGE.md").read_text().lower()
+    assert "false" in bridge and "rank-dependent" in bridge
     assert "source" in (ROOT / "research/SOURCE_REGISTER.md").read_text().lower()
     from shift_sanity import main as check_examples
+    from bridge_audit import main as check_bridge
     check_examples()
-    print("PASS: active research charter, exact source versions, conjecture integrity and direct next prompt")
+    check_bridge()
+    print("PASS: active research state, audited source bridge and direct next prompt")
 
 
 if __name__ == "__main__":
