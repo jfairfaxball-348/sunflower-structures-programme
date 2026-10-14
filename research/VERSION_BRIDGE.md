@@ -18,7 +18,7 @@ The full Erdős–Rado sunflower conjecture is NOT proved here. See [independent
 | Natural shifted-original-subfamily extraction | Every product P(q,k) contains large genuinely shifted ORIGINAL subfamily | FALSE: every such subfamily has <=q members, for ANY point ordering |
 | Arbitrary-family constant-density link | Every s-free F has a vertex in c_s|F| sets | FALSE: pair-private k+1-set construction has maximum degree 2 |
 | Global support-U inverse | If preimages preserve outside U then tau(G)<=2^|U|tau(F) | PROVED (colour ancestors by original U trace) |
-| Rank-dependent full-shift bound H_s | tau(SF)<=A_s k/log(k+2) for all s-free F | UNPROVED, and finite P(2,k) tests strongly challenge it |
+| Rank-dependent full-shift bound H_s | tau(SF)<=A_s k/log(k+2) for all s-free F | **FALSE for every fixed s>=3** under lex shifting; universally proved spoke-to-star theorem |
 
 ## Precisely where v1's lifting argument breaks
 
@@ -33,8 +33,12 @@ For q=s-1>=3, P(q,k) is s-free, |P|=q^k and tau(P)=q. Independently established 
     (q/2)^k <= (t+1)^(2t),
     t log(t+1) >= (k/2) log(q/2).
 
-So t must grow at least Omega_q(k/log k). No purely tau(F)-dependent uniform full-shift transfer is possible. A *rank-dependent* upper bound of the same order would suffice for C_s^k (proof and exact constant in WORKING_PROOF.md), but has not been established; small full-shift P(2,k) computations produce stars of k+1 petals, warning against such a bound even for s=3.
+So t must grow at least Omega_q(k/log k). No purely tau(F)-dependent uniform full-shift transfer is possible. A rank-dependent upper bound of the same order would logically suffice for C_s^k, but that specific H_s premise is **FALSE**: the universal proof in [SPOKE_SHIFT_THEOREM.md](SPOKE_SHIFT_THEOREM.md) gives a permanent shifted star with (q-1)k+1 petals for every q>=2, k>=2 in the lexicographic full shift of P(q,k). Even the sparse (q-1)k+1-edge original spoke family shifts EXACTLY to this star. Thus the earlier finite observations have been upgraded to a complete symbolic negative theorem for all s>=3.
 
 A rigorous small-support replacement holds for ALL compositions supported on U: tau(G)<=2^|U|tau(F). The unresolved step is structural: bound necessary compression support or supply additional original-source compatibility that avoids exponential inflation inside the shifted extremal bound. Product P(q,k) also kills any constant-fraction shifted original subfamily and demands a nontrivial extraction mechanism.
 
 **State: original-family bridge OPEN. Do not report v1's theorem or the full conjecture as solved.**
+
+## New resolved question: linear shift inflation on sparse spokes
+
+For q>=2 and k>=2 the original simple q-ary sparse spoke family T(q,k) has tau=q and (q-1)k+1 edges. One lexicographic compression pass maps it bijectively to the (q-1)k+1 edges with core [k-1] and singleton petals k,...,qk. The q-ary product P(q,k) also acquires all these edges in that pass and keeps them during subsequent compressions. This is a direct proof with exact quantifiers and with old-family collision handling, not an extrapolation. Consequently the conditional H_s implication in WORKING_PROOF remains logically valid, but the premise is refuted for all s by q=s-1. **Next bridge must contain compatibility information on original preimages or use an independent rank reduction.**
