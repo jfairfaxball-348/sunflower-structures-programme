@@ -1,0 +1,41 @@
+{
+  "session": "SUN-PARENT-S009",
+  "entry_main": "c866139c5068d8b670e3915f1b4e0173ca341abc",
+  "entry_tree": "10fd1ea05d17b1ba6a4965f8709c5ae5b13faad2",
+  "prompt_blob": "ac4c35e38ed1fcbf32e340d317c0121845de320a",
+  "prior_pr": {
+    "number": 68,
+    "head": "fff6cd0530193f869501f7c9d94bb145360ad6c4",
+    "merge": "c866139c5068d8b670e3915f1b4e0173ca341abc",
+    "parents": [
+      "93dc7dd091baa51665178a202e8747a2387c0678",
+      "fff6cd0530193f869501f7c9d94bb145360ad6c4"
+    ],
+    "head_action": {
+      "run": 38593617810,
+      "job": 115954570315,
+      "result": "success"
+    },
+    "main_push_action": {
+      "run": 38593734235,
+      "job": 115954972149,
+      "result": "success"
+    }
+  },
+  "frozen_children": {
+    "P001A": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c",
+    "P001B": "b8660e1ff0bda6c367a725b6beb9aa98f927a584",
+    "P001C": "21580ff1e59a323d02648ad0bd2772f06ce21899"
+  },
+  "open_pr_counts": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "math": "FRACTIONAL_TWO_LINK_COLLAPSE_REFUTED_ALL_R_ALL_K",
+  "scrutiny": "SAME_ASSISTANT_SYMBOLIC_AND_FINITE_CHECKS_NOT_REFEREED",
+  "verdict": "STOP_NO_ACTIVE_CHILD",
+  "next": "S010_FUTURE_ONLY",
+  "own_ci": "PENDING_REAL_PR_AND_MERGE"
+}

@@ -1,0 +1,11 @@
+# SUN-PARENT-S009 — targeted primary/source priority, not originality clearance (2026-10-14)
+1. **Jack Edmonds (1965)**, Maximum Matching and a Polyhedron with 0,1-Vertices, original Journal of Research NBS 69B, pp125–130: https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn1-2p125_A1b.pdf . Classical matching/polytope priority; not S009 original.
+2. **Integer and Fractional Matchings (1981)**, North-Holland Mathematical Studies 59, pp1–13, publisher https://www.sciencedirect.com/science/chapter/bookseries/pii/S0304020808734534 . Explicit classical discussion of fractional matching integrality and odd cycles. Earliest competing direction predates this work. Our elementary weight construction is not novelty-cleared.
+3. **Erdős–Gallai (1959)** matching-number extremal theorem, independently quoted in matching-extremal survey https://www.researchgate.net/publication/355987740_A_survey_on_spectral_conditions_for_some_extremal_graph_problems . No new rank-two extremal upper result claimed.
+4. **Bell–Chueluecha–Warnke**, Note on sunflowers, Discrete Mathematics 344 (2021) 112367: https://www.sciencedirect.com/science/article/pii/S0012365X21000807 . General f(k,r)<=(C r log k)^k.
+5. **Ge–Wang–Xu–Zhao**, Bounded VC-dimension implies the Erdős–Rado sunflower conjecture, 2026 arXiv preprint https://arxiv.org/abs/2609.18995 . VC<=d yields (50 d r)^k; arXiv identifier/submission date inconsistency already noted in S007/S008, don't infer priority from identifier.
+6. **Cavalar–Fabris–Mukhopadhyay–Srinivasan–Yehudayoff**, ECCC TR26-220, 28 September 2026, https://eccc.weizmann.ac.il/report/2026/220/ . O(w)-wise robust derandomisation already achieved (with modified parameters), not ordinary C_r^k.
+7. **Janzer–Jin–Sudakov–Wu**, Sunflowers and Ramsey Problems for Restricted Intersections, Combinatorica 46 (2026) article 29: https://link.springer.com/article/10.1007/s00493-026-00222-1 . Source originality of original-F extraction, not final-H.
+8. **Naslund–Sawin / Alon–Shpilka–Umans**, S007_SOURCE_REGISTER primary sources; fixed-D exponent saving is not uniform D-independent three-petal transfer, let alone all r.
+
+Scope: targeted primary checks, no exhaustive world priority search or external referee; S009 is an elementary falsifier of a FALSE proposed structural L, not a novel published theorem.

@@ -1,3 +1,7 @@
+**LATEST SUN-PARENT-S009 (2026-10-14):** Fractional rank-two original-link collapse L refuted for all r,k by G_q tensor P(q,k-2), full VC=k, >q^k, r-free and rank-two link fractional matching >q. This is distinct from S008 q-ary full-link collision failure (P(q,k) satisfies new bound). Classical odd-set obstruction, no novel theorem, no unrestricted headline progress, no child: **STOP_NO_ACTIVE_CHILD**; P001A/B/C frozen. [S009 mathematical closeout](../sessions/S009/MECHANISM_AUDIT.md), [S009 targeted sources](../programme/S009_SOURCE_REGISTER.md), [S010 FUTURE ONLY](../sessions/NEXT_SESSION.md). Historical S008 and older text below remains dated.
+
+---
+
 **LATEST SUN-PARENT-S008 (2026-10-14):** separately owner-invoked one-mechanism hard gate; parent entry main `93dc7dd091baa51665178a202e8747a2387c0678` with exact S007 PR-head and distinct main-push Actions SUCCESS. Tested high-VC FULL-LINK COLLISION DROPOFF L: **FALSE for all r≥3** by q=r−1 product with VC=k, q^k members and unavoidable Q≥2/q on every ≥r-edge full link. High-hub original-mass stress also negative but does not itself meet L's size premise. Elementary NON-NOVEL counterexample, no new global theorem, no viable child and no unrestricted headline improvement. STOP_NO_ACTIVE_CHILD; P001A/B/C remain inactive. [S008 audit](../sessions/S008/MECHANISM_AUDIT.md), [source register](../programme/S008_SOURCE_REGISTER.md), [future-only S009](../sessions/NEXT_SESSION.md). Older text below is DATED.
 
 ---

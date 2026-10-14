@@ -392,6 +392,6 @@
     }
   ],
   "planned": [],
-  "portfolio_decision": "STOP_NO_ACTIVE_CHILD_S008_FULL_LINK_COLLISION_REFUTED",
-  "last_parent_session": "S008"
+  "portfolio_decision": "STOP_NO_ACTIVE_CHILD_S009_FRACTIONAL_LINK_CAPACITY_REFUTED",
+  "last_parent_session": "S009"
 }
