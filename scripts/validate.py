@@ -34,7 +34,7 @@ def main():
     assert "FULL-shift" in handoff or "FULL-shift".lower() in handoff.lower()
     assert "original" in handoff.lower()
     assert "P(s-1,k)" in handoff
-    assert "FALSE" in (ROOT / "research/VERSION_BRIDGE.md").read_text()
+    assert "impossible" in (ROOT / "research/VERSION_BRIDGE.md").read_text().lower()
     assert "source" in (ROOT / "research/SOURCE_REGISTER.md").read_text().lower()
     from shift_sanity import main as check_examples
     check_examples()
