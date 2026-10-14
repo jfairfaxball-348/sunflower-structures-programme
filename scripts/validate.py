@@ -7,7 +7,7 @@ def txt(p): return (ROOT/p).read_text(encoding="utf8")
 def check_registration(state, projects, receipt):
     assert state["repo"] == projects["parent"] == receipt["parent"]["repository"] == "jfairfaxball-348/sunflower-structures-programme"
     assert state["repository_id"] == receipt["parent"]["repository_id"] == 1412469441
-    assert state["session_completed"] == "S001" and state["next_programme_session"] == "S002"
+    assert state["session_completed"] == "S002" and state["next_programme_session"] == "S003"
     assert state["headline_id"] == "SUN" and state["champion"] == "Erdős–Rado Sunflower Conjecture"
     assert receipt["project_id"] == "P001" and state["active_paper_id"] == projects["active_project"] == "P001B"
     assert state["child_repo_created"] and state["first_paper_authorized"]
@@ -18,14 +18,14 @@ def check_registration(state, projects, receipt):
     assert projects["projects"][1]["id"] == "P001B" and projects["projects"][1]["repository_created"] is True
     assert projects["projects"][1]["repository_id"] == state["p001b_repository_id"] == 1418652673
     assert projects["projects"][1]["url"] == "https://github.com/" + state["p001b_repository"]
-    assert state["p001b_repository_state"] == "EXISTS_EMPTY_NO_INITIAL_COMMIT"
-    assert projects["projects"][1]["bootstrapped"] is False
-    assert projects["projects"][1]["verified_commit"] is None
+    assert state["p001b_repository_state"] == "BOOTSTRAPPED_VERIFIED_MAIN"
+    assert projects["projects"][1]["bootstrapped"] is True and state["p001b_child_bootstrapped"] is True
+    assert projects["projects"][1]["verified_commit"] == state["p001b_verified_main_sha"] == "f80b61c45e121b3ae2ce9868f26684dc7244f68b"
     assert state["p001b_first_mathematics_executed"] is False
-    assert "standalone" in txt("sessions/NEXT_SESSION.md").lower()
-    assert "separate ChatGPT Project" in txt("sessions/NEXT_SESSION.md")
-    assert "full" in txt("sessions/NEXT_SESSION.md").lower()
-    assert "P001B-S001" in txt("sessions/NEXT_SESSION.md")
+    assert "standalone" in txt("prompts/P001B_S001_LAUNCH.md").lower()
+    assert "separate ChatGPT Project" in txt("prompts/P001B_S001_LAUNCH.md")
+    assert "full" in txt("prompts/P001B_S001_LAUNCH.md").lower()
+    assert "P001B-S001" in txt("prompts/P001B_S001_LAUNCH.md")
     assert projects["projects"][1]["next_executed"] is False
     project = projects["projects"][0]
     child = receipt["child"]
@@ -932,6 +932,10 @@ def main():
     assert (ROOT/"sessions/P001-S000/REGISTRATION.md").is_file()
     assert (ROOT/"prompts/S001_BEFORE_P001_REGISTRATION.md").is_file()
     assert (ROOT/"sessions/S001/CLOSEOUT.md").is_file(), "Parent S001 closeout missing"
+    assert (ROOT/"sessions/S002/CLOSEOUT.md").is_file()
+    assert (ROOT/"validation/P001B_S000_RECEIPT.json").is_file()
+    assert (ROOT/"prompts/P001B_S001_LAUNCH.md").is_file()
+    assert "SUN-PARENT-S003" in txt("sessions/NEXT_SESSION.md")
     assert (ROOT/"programme/PROGRESS_DASHBOARD.md").is_file()
     assert (ROOT/"programme/S001_SUCCESSOR_ASSESSMENT.md").is_file()
     if receipt["session"] == "P001-S001":
