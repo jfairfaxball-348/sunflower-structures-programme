@@ -319,12 +319,12 @@
     {
       "id": "P001B",
       "title": "Four-Petal Sunflower-Free Triple Extremal Threshold",
-      "slug": "sunflower-four-petal-triples",
-      "repository_id": null,
-      "url": null,
-      "repository_created": false,
-      "status": "SELECTED_PARENT_S001_BOOTSTRAP_BLOCKED",
-      "portfolio_status": "SELECTED_PENDING_INDEPENDENT_REPOSITORY",
+      "slug": "Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+      "repository_id": 1418652673,
+      "url": "https://github.com/jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+      "repository_created": true,
+      "status": "REPOSITORY_EXISTS_EMPTY_AWAITING_PARENT_S002_BOOTSTRAP",
+      "portfolio_status": "SELECTED_REPOSITORY_REGISTERED_BOOTSTRAP_PENDING",
       "objective": "Improve one of the sourced current bounds 39 <= f(3,4) <= 49, with a certified 40-edge lower witness or an at-most-48 upper proof, and assess any valid recursive/asymptotic transfer.",
       "novelty_status": "UNCLAIMED_PENDING_SOURCE_REFRESH",
       "formal_status": "NOT_STARTED",
@@ -334,7 +334,10 @@
       "next_executed": false,
       "success_criterion": "Rigorous, independently checkable new extremal inequality improving 2026 source bounds, after independent literature priority gate.",
       "headline_implication": "NONE_ESTABLISHED_FOR_VARIABLE_RANK",
-      "repo_creation_blocker": "Connected GitHub actions lack repository creation endpoint; do not invent URL or repo ID."
+      "repo_creation_blocker": null,
+      "bootstrapped": false,
+      "bootstrap_state": "NO_INITIAL_COMMIT_OR_CONTENTS_AS_OF_2026_10_14",
+      "next_obligation": "PARENT_S002_BOOTSTRAP_AND_EXPLICIT_STANDALONE_P001B_S001_LAUNCH_PROMPT"
     }
   ],
   "planned": []
