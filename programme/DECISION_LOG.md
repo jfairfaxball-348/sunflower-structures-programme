@@ -1,3 +1,8 @@
+# D-S008 (2026-10-14) — hard-stop mathematical gate
+Attempted exactly one high-VC FULL-LINK COLLISION DROPOFF lemma; falsified uniformly in r by (r−1)-ary product: VC=k, |F|=(r−1)^k, original-link Q≥2/(r−1)>1/binom(r,2). A hub-cone stress likewise obstructs naive marginal squaring, with its distinct threshold limitation disclosed. The proposed mechanism has Ge et al. second-moment prior work as a priority competitor; **do not propose a new child**. Parent STOP_NO_ACTIVE_CHILD; P001A/B/C remain frozen, no result or paper, no child S001. An S009 future-only nonrecycled-mathematics gate was staged, not executed. [Audit](../sessions/S008/MECHANISM_AUDIT.md) · [entry](../validation/S008_ENTRY_EVIDENCE.json).
+
+---
+
 # SUN-PARENT-S007 — source-collision stop portfolio election (2026-10-14)
 Hard decision **C STOP / NO_ACTIVE_CHILD**, not A/B. Four distinct routes assessed with exact bounds and countercontrols in [S007 report](../sessions/S007/PORTFOLIO_AUDIT.md); fixed VC source-preempted; direct high-VC no credible independent lemma; frozen P001A/B/C not reopened; ECCC O(w) candidate source-preempted. One future-only testable S008 owner-invoked NONCIRCULAR high-VC mechanism gate. No new repository, no child authorisation. 0 original global theorems; permanent headline maintained.
 

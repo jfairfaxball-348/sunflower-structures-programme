@@ -1,0 +1,26 @@
+# SUN-PARENT-S008 — verbatim owner invocation and pinned entry
+
+**Invoked by owner, 2026-10-14, ~16:44 Europe/London:** `run this session [https://github.com/jfairfaxball-348/sunflower-structures-programme/blob/main/sessions/NEXT_SESSION.md](https://github.com/jfairfaxball-348/sunflower-structures-programme/blob/main/sessions/NEXT_SESSION.md)`.
+
+Live main on entry: `93dc7dd091baa51665178a202e8747a2387c0678` (tree `ee2b8306cc3c37e4abd0a4458b8d7202e2642f65`); live NEXT_SESSION.md blob `5ad51e9c18d45956ec519f26101faadc9f538d3c`. Last PR #67 merged 2026-10-14 15:39:14Z via ordinary two-parent nonforce merge: first parent `fea3891141a8093f8ce45f260a5128ce64c63d00`, second parent `fc60014d142a3590930d1ec9dd836f0f9d6ebdd6`. Exact final PR head `fc60014d142a3590930d1ec9dd836f0f9d6ebdd6` Actions `38591125274`, validate job `115945980952`, SUCCESS. Distinct merged-main **push** Actions `38591211950`, validate job `115946283049`, SUCCESS at `93dc7dd091baa51665178a202e8747a2387c0678`. Parent and P001A/B/C all had zero open PRs on entry. Child main SHAs: P001A `c7ede2676909f335ea2bb9f247d5a0e2abdff12c`, P001B `b8660e1ff0bda6c367a725b6beb9aa98f927a584`, P001C `21580ff1e59a323d02648ad0bd2772f06ce21899`. No new active child. See machine-readable evidence at [entry receipt](../../validation/S008_ENTRY_EVIDENCE.json).
+
+The following was the **exact** fetched executable prompt, archived in full; it was future-only when authored during S007, and activated by the separate owner invocation above.
+
+---
+
+# SUN-PARENT-S008 — FUTURE ONLY: one-mathematical-mechanism reopening gate
+
+**NOT EXECUTED IN S007.** Owner must separately invoke this in the `sunflower-structures-programme` parent Project. No active child as of S007; all P001A/B/C remain retired/paused. **P001C NO S003; P001B NO S004; P001A NO S052.** Permanent goal remains Erdős–Rado for EVERY fixed petal count r≥3 and ALL ranks k, `f(k,r)≤C_r^k`.
+
+## Entry
+1. Pin live parent main SHA; latest S007 ordinary two-parent merged PR and **distinct successful exact PR-head and merged-main push Actions**, or stop and document a failed gate. Pin P001A/B/C main SHAs and any open parent/child PRs; if state moved, correct handoff before action.
+2. Read AGENTS, START_HERE, STATE, PROJECTS, [S007 portfolio and B_k obstruction](S007/PORTFOLIO_AUDIT.md), [S007 source register](../programme/S007_SOURCE_REGISTER.md), source/claims/novelty and recent child closeouts. Archive actual owner invocation and live evidence.
+3. Correct, rather than silently reuse, novelty baselines: **Ge–Wang–Xu–Zhao arXiv:2609.18995 already proves bounded-VC constant-base as a 2026 preprint**; Balogh et al. 2025 only older log* bound; **ECCC TR26-220 already proves O(w)-wise robust derandomisation** with modified parameters; BCW `(Cr log k)^k` remains the general benchmark; JJSW in-original-family is not final-H extraction; Naslund–Sawin D^(2/3) fixed δ is not a D-independent ASU transfer. Search no-hit is not priority clearance.
+
+## EXACTLY ONE mandatory mathematics obligation, with hard stop
+Try to develop or falsify **one truly new, explicitly quantified NONCIRCULAR high-VC/unrestricted-rank mechanism L** that is strong enough to imply (with fully written parameter transfer) either a legitimate, potentially publishable new sunflower theorem independent of the old children, or a strict improvement on a stated all-rank general bound. Do NOT assume the Erdős–Rado conjecture in L, define L to be an equivalent heavy-fibre/matching restatement, or use an already-sourced bounded-VC/robust result as if original. Spell out domain, ∀/∃, constants, original-family vs selected-family witnesses, overlap certificates, and earliest priority competitors. Mathematically test L against binary coordinate-product B_k (2^k, VC=k, no r≥3 sunflower, bounded-d mass only `Σ_{j≤d}binom(k,j)`) and the P001A high-hub original-mass controls. Either prove it carefully or provide a finite/formula counterexample; adversarial checking is required. No improvement is claimed until independent mathematical verification and full priority check.
+
+**BINARY EXIT by the end of THIS parent session:** (a) if and only if a specific, independently justified new lemma/method and unoccupied first-paper theorem survives both countercontrols and targeted primary priority, recommend ONE exact new child theorem, a first S001-S002 two-session kill gate and owner-created repository requirement; then STOP pending separate human creation and bootstrap; or (b) `STOP_NO_ACTIVE_CHILD` with the falsified/unsatisfied obligation and NO new child recommendation. A verbose exploratory report without a valid L cannot be marketed as progress. One meaningful theorem is not mandatory; integrity of the STOP gate is.
+
+## Closeout
+Parent-only report; update STATE, PROJECTS, CLAIMS, NOVELTY, SOURCES, DECISIONS, DASHBOARD, validator/tests, archive exact evidence and prompt; one authored branch commit, live passing exact-head hosted PR Actions, ordinary **nonforce two-parent merge**, distinct successful merged-main push check. Stage ONE standalone S009 **future** parent handoff, never run it automatically. No child mathematics/repo creation, no Lean/Palomar/manuscript/submission/outreach.

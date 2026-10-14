@@ -1,3 +1,8 @@
+# SUN-PARENT-S008 — NO priority-clear new theorem
+S008 L is falsified, not a new valid theorem. Symbolic product/moment counterexample is an elementary construction, NOT novel. The Ge–Wang–Xu–Zhao 2026 primary proof itself already employs spread-family squared-marginal and matching machinery; that overlapping idea cannot be marketed as independent discovery. No search no-hit grants worldwide novelty or publication clearance. All children paused. See [audit](../sessions/S008/MECHANISM_AUDIT.md) and [source register](S008_SOURCE_REGISTER.md).
+
+---
+
 # S007 targeted PRIOR ART CORRECTION — NOT novelty clearance
 S004 candidate fixed d=2 constant-base was already achieved in Ge et al. 2026 arXiv:2609.18995 (preprint Theorem 1.1 `(50dr)^k`). Do **not** claim log* elimination novelty. S004 O(w²)→O(w) robust sunflower derandomisation already reported by Cavalar et al. ECCC TR26-220 (2026; changed parameters). B_k/Sauer countercontrol is elementary standard, **not** original. No proposed fourth-child theorem has N1/N2 clearance; no priority no-hit or peer-review assertion. [Controlling sources](S007_SOURCE_REGISTER.md).
 

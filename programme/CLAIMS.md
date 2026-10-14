@@ -1,3 +1,8 @@
+# SUN-PARENT-S008 — all-r full-link collision falsification (NOT NOVEL)
+The proposed structural L (high VC, full original link Q<1/binom(r,2) at size (r−1)^k) is **FALSE**: for q=r−1 product P(q,k), each ≥r full link has Q=(k−|C|)/q≥2/q, despite VC=k and q^k edges. Hub-cone original-mass controls likewise refuse the naive moment criterion, but do not satisfy L's size premise. Conditional L→high-VC sunflower via union bound is valid; L itself is refuted, so NO positive theorem or unrestricted all-rank improvement. This calculation is elementary/not novel; second-moment approach overlaps Ge et al. 2026 prior art. **STOP_NO_ACTIVE_CHILD**, 0 original universal results. [Audit](../sessions/S008/MECHANISM_AUDIT.md) · [sources](S008_SOURCE_REGISTER.md).
+
+---
+
 # S007 live claims boundary — no new theorem
 * SOURCE-PROVED/ATTRIBUTED preprint: Ge–Wang–Xu–Zhao (arXiv:2609.18995) fixed VC≤d exponential base `(50dr)^k`; full external mathematical/referee verification not claimed.
 * SOURCE-PROVED/ATTRIBUTED ECCC: O(w)-wise robust sunflower derandomisation TR26-220 with weaker parameters.
