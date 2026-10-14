@@ -200,3 +200,8 @@ SAME-ASSISTANT child S048 scoped results: one-marked-hub ORIGINAL k-families wit
 |SUN-HEADLINE|Variable-rank exponential Erdős–Rado|OPEN / NONE_ESTABLISHED|Fixed-rank finite improvement would not alone prove headline|
 
 All six equal pairwise intersection SETS (EMPTY allowed) and four DISTINCT triples are required. Computational checking + PR CI do not equal human independent proof scrutiny. Formal proof NONE; submissions NONE; published theorem count ZERO; new independently priority-cleared first-paper theorem count ZERO.
+
+## SUN-PARENT-S004 — decision-only source bridge (no new mathematics)
+C-S004-001 SOURCE ONLY: Alon–Shpilka–Umans 2013 Theorem 2.6, as restated in Naslund–Sawin 2017 §3, transfers D-independent |A|<=C^n for 3-sunflower-free A subset [D]^n to ordinary f(w,3)<=(eC)^w. NOT OUR THEOREM. It is 3-petal, not all-petal.
+C-S004-002 SOURCE ONLY: Naslund–Sawin 2017 Theorem 5 gives U(D,n)<=[3(D−1)^(2/3)/2^(2/3)]^n. P001C's fixed exponent improvement and D-uniform constant are OPEN PROJECT ASPIRATIONS, NOT claimed successes.
+C-S004-003 PROJECT STATUS: conditional P001C selected on strategic evidence. No repository, mathematics session, new mathematical result, formalisation, novelty verdict, manuscript, submitted or accepted paper, or headline progress. Parent count stays ZERO.

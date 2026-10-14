@@ -1,3 +1,18 @@
+# Live parent dashboard — S004, 2026-10-14
+**Permanent Erdős–Rado champion unchanged. No new headline bound.** S004 selected P001C **CONDITIONAL, NO REPO CREATED, NO ACTIVE CHILD**. Next authorised parent review/administrative gate is owner-invoked S005, not child research; see [S004 closeout](../sessions/S004/CLOSEOUT.md).
+
+|Stream|Status after S004|What is actually proved/verified|Remaining first-paper and headline gap|
+|---|---|---|---|
+|P001A internal-kernel TIK|RETIRED, S051 frozen|Conditional/low-rank same-assistant mathematics|Universal m^-k original-family internal extraction unproved; no quantitative exponential c_k|
+|P001B rank-three four-petal threshold|PAUSED at S003|F39 baseline and cyclic Z12 max24 independently replayed, scope LIMITED|No global 40 construction / <=48 bound, no variable-rank transfer|
+|P001C alphabet-uniform 3-sunflower words|SELECTED CONDITIONALLY, no repository/child started|ONLY published Naslund–Sawin D^(2/3) bound and ASU 3-petal transfer; no project theorem|New uniform D exponent saving and ultimately D-independent C not proved; 3 petals alone would not settle all r|
+|SUN parent|S004 COMPLETED subject to actual hosted closeout verification; S005 future|Source-led comparison and strict two-session/ten-session kill criteria|No mathematical improvement, publication, formal proof or independently novelty-cleared new result|
+
+**Next action**: owner creates real P001C GitHub repo and provides URL; parent S005 must bootstrap it with verified PR/main CI before any P001C-S001 in a SEPARATE Project. A fixed positive exponent saving does not close the conjecture. Details in [source-led portfolio](S004_SUCCESSOR_PORTFOLIO.md).
+
+---
+Historical dashboard as of S003 follows:
+
 # Current programme dashboard — parent S003, 2026-10-14
 
 Permanent headline: **Erdős–Rado Sunflower Conjecture** — **UNCHANGED, OPEN** by cited October literature; no new asymptotic consequence proved. Parent S003 portfolio verdict **RETURN_PARENT / PAUSE P001B**, no active child execution authorised. The registered new global-threshold results remain **ZERO**, despite useful scoped child mathematics. The old S002 dashboard below is archival and superseded here.

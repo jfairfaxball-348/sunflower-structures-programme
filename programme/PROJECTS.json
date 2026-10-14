@@ -323,8 +323,8 @@
       "repository_id": 1418652673,
       "url": "https://github.com/jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
       "repository_created": true,
-      "status": "RESEARCH_PAUSED_PARENT_REASSESS",
-      "portfolio_status": "PAUSED_BY_PARENT_S003_AWAIT_S004_SUCCESSOR_SELECTION",
+      "status": "RESEARCH_PAUSED_PARENT_S004",
+      "portfolio_status": "PAUSED_BY_PARENT_S004_SUCCESSOR_SELECTED_NO_CHILD_REACTIVATION",
       "objective": "Improve one of the sourced current bounds 39 <= f(3,4) <= 49, with a certified 40-edge lower witness or an at-most-48 upper proof, and assess any valid recursive/asymptotic transfer.",
       "novelty_status": "UNCLEARED_AFTER_S001_TO_S003",
       "formal_status": "NOT_STARTED",
@@ -337,7 +337,7 @@
       "repo_creation_blocker": null,
       "bootstrapped": true,
       "bootstrap_state": "P001B_S000_VERIFIED_PR1_AND_MAIN_PUSH",
-      "next_obligation": "NONE_CHILD_S004_BLOCKED_UNLESS_FRESH_PARENT_REAUTHORISATION",
+      "next_obligation": "NONE_CHILD_S004_BLOCKED_REQUIRES_EXPLICIT_PARENT_REACTIVATION",
       "baseline_source": "arXiv:2609.06175v1",
       "bootstrap_pr": 1,
       "validation_receipt": "validation/P001B_S003_REVIEW_RECEIPT.json",
@@ -349,5 +349,28 @@
       "first_mathematics_executed": true
     }
   ],
-  "planned": []
+  "planned": [
+    {
+      "id": "P001C",
+      "title": "Alphabet-Uniform Three-Sunflower-Free Word Capacity",
+      "slug": "alphabet-uniform-sunflower-capacity",
+      "repository_id": null,
+      "url": null,
+      "repository_created": false,
+      "bootstrapped": false,
+      "status": "SELECTED_CONDITIONAL_NOT_AUTHORISED",
+      "objective": "For every alphabet size D>=3 and dimension n>=1 improve the Naslund–Sawin exponential alphabet dependence D^(2/3) for three-sunflower-free A subset [D]^n, with a fixed delta>0 and universal finite prefactor K; long-run D-independent C^n would imply Erdős–Rado r=3 by ASU.",
+      "known_bound": "|A| <= (3/2^(2/3)*(D-1)^(2/3))^n (Naslund–Sawin 2017 Theorem 5)",
+      "first_child_session": "P001C-S001",
+      "next_executed": false,
+      "first_session_blocker": "OWNER_CREATE_REPOSITORY_AND_PARENT_S005_BOOTSTRAP_VERIFIED_CI",
+      "verified_commit": null,
+      "novelty_status": "UNASSESSED_P001C_NO_NEW_CLAIM",
+      "headline_implication": "THREE_PETALS_ONLY_IF_D_INDEPENDENT_C_SOURCE_ASU; NO_IMPLICATION_FROM_DELTA_IMPROVEMENT_ALONE",
+      "formal_status": "NOT_STARTED",
+      "publication_status": "NOT_STARTED",
+      "ten_session_kill_gate": "NO_STRICT_UNIFORM_DELTA_QUANTITATIVE_BOUND_OR_DEMONSTRABLE_NONRECYCLED_MECHANISM_RETIRE_TO_PARENT",
+      "source": "Naslund-Sawin 2017 Theorem 5; Alon-Shpilka-Umans 2013 Theorem 2.6"
+    }
+  ]
 }
