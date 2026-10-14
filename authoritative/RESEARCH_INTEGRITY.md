@@ -1,3 +1,5 @@
-# Integrity
+# Mathematical integrity
 
-Never invent a source, theorem locator, independent verification, computation, publication, practical use or proof. Document corrections, retracted targets, failed searches and original human contribution. Published preprint claim ≠ peer-accepted theorem. Finite exhaustive certification ≠ universal proof. Algorithmic levels: existence, effective construction, polynomial-time construction, complexity guarantee, demonstrated useful scale; do not infer one from another. A child project update propagates to parent only after source commits and audit. Public repository may contain AI-assisted research, not confidential data.
+Separate (a) source-reported theorems, (b) independently proved facts, (c) checked finite computations, (d) tentative conjectures, and (e) refuted candidates. Never promote a false v1 numerical bound or a sunflower in a shifted family into an original-family theorem. All sunflower witnesses must be s distinct original sets, with all pairwise intersections equal, empty cores allowed. Every C_s must be independent of k and the ground set size. Preserve explicit counterexamples and failed reasoning.
+
+GitHub CI verifies repo/tests only. Any purported proof of the full conjecture requires full quantifiers, rigorous checks against q-ary product lower constructions and counterexamples, targeted primary-source review, and outside expert scrutiny before public claims. No autonomous ongoing work or unrequested external contact/submission.
