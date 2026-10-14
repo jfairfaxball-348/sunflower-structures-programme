@@ -1,3 +1,8 @@
+# S007 parent milestone: portfolio STOP (2026-10-14)
+S007 source-priority update and elementary B_k fixed-VC transfer countercontrol completed. Quantitative all-r theorem not proved; 0 mathematical first-paper milestones achieved; programme champion unchanged. Decision C: no active child; future S008 one noncircular high-VC mechanism gate only. [S007 full report](../sessions/S007/PORTFOLIO_AUDIT.md).
+
+---
+
 # Milestones
 
 |ID|Objective|Status|Dependency|Risk|

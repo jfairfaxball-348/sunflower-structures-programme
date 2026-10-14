@@ -1,3 +1,8 @@
+# Parent dashboard — SUN-PARENT-S007 (2026-10-14)
+**Verdict C STOP / NO_ACTIVE_CHILD**, permanent Erdős–Rado headline unchanged. Child P001A retired S051, P001B paused S003, P001C paused S002; no new global theorem (0), formal proof (0), publication (0). Fixed VC constant-base is ALREADY sourced in Ge et al. 2026 preprint arXiv:2609.18995; ECCC TR26-220 likewise already provides O(w)-wise robust derandomisation. Binary product 2^k / Sauer subfamily bound prevents simple VC reduction without exponential loss. All-r unrestricted gap remains general `(Cr log k)^k` versus desired `C_r^k`; no bridge delivered. [Full quantitative report](../sessions/S007/PORTFOLIO_AUDIT.md). S008 is **future parent-only**, single mechanism gate, no child created.
+
+---
+
 # Live parent dashboard — after SUN-PARENT-S006 (2026-10-14)
 
 **ALL THREE children inactive; permanent SUN champion unchanged.** Exact child P001C S001 and S002 were completed and host CI-verified. S002 binary verdict NO; **no new fixed D-exponent saving** or global theorem. Parent S006 triggers its promised pause rather than a third child session. Independent source bounds remain attributed; no formalisation, paper, submission or all-r result.

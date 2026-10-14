@@ -1,3 +1,12 @@
+# S007 live claims boundary — no new theorem
+* SOURCE-PROVED/ATTRIBUTED preprint: Ge–Wang–Xu–Zhao (arXiv:2609.18995) fixed VC≤d exponential base `(50dr)^k`; full external mathematical/referee verification not claimed.
+* SOURCE-PROVED/ATTRIBUTED ECCC: O(w)-wise robust sunflower derandomisation TR26-220 with weaker parameters.
+* ELEMENTARY/CLASSICAL DERIVATION, NOT NOVEL: binary-product B_k size 2^k, VC dimension k, sunflower-free all r≥3; any VC≤d subfamily ≤Σ_{j≤d}binom(k,j). It **only** kills constant-fraction bounded-VC extraction.
+* UNPROVED: unrestricted `C_r^k`, general constant-q sunflower spread lemma, P001A full TIK, P001C fixed δ, P001B improved global f(3,4). All children inactive, 0 original universal result.
+See [S007 audit](../sessions/S007/PORTFOLIO_AUDIT.md).
+
+---
+
 ## SUN-PARENT-S006 — precise P001C NO-result / early stop
 P001C-S001/S002 are completed and PR/main GitHub Actions-verified; neither proves a new all-D,all-n exponent improvement, D-independent C^n, three-petal conjecture or the all-r conjecture. Published Naslund–Sawin Theorem 2 exponent 2/3 remains baseline. S001 balancing and S002 one-hot examples refute unconditional auxiliary lemmas only, not the near-extremal conjecture. Elementary first-moment `p*≥(m−1)(m−2)/(3nm²)` is independent check but insufficient and NOT claimed novel; S002 heavy-fibre L is UNPROVED and induction-equivalent to improvement; Fourier balanced full-cube modes block termwise improvement, not restricted cancellations. **Parent decision PAUSE P001C**, NO S003. No active child, novelty cleared, new global theorem, Lean, manuscript or submission. [Audit](../sessions/S006/QUANTITATIVE_AUDIT.md).
 

@@ -43,7 +43,7 @@ class TournamentTests(unittest.TestCase):
         self.assertEqual(audit["s027_same_family_full_valid_edges"], 1076891650)
         self.assertFalse(audit["full_tik_proved"])
         self.assertTrue(audit["bsel_universal_refuted"])
-        self.assertEqual(state["session_completed"], "S006")
+        self.assertEqual(state["session_completed"], "S007")
         self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S051")
         self.assertTrue(audit["s028_frozen_C512_proved"])
         self.assertEqual(audit["s028_stronger_restricted_bound"], "t/((3m-2)*(m-1)) >= t/(3m^2)")
@@ -229,7 +229,7 @@ class TournamentTests(unittest.TestCase):
         self.assertTrue(b["bootstrapped"])
         self.assertEqual(b["verified_commit"], "b8660e1ff0bda6c367a725b6beb9aa98f927a584")
         self.assertFalse(b["next_executed"])
-        self.assertEqual(state["next_programme_session"], "S007")
+        self.assertEqual(state["next_programme_session"], "S008")
         prompt = (ROOT/"prompts/P001B_S001_LAUNCH.md").read_text()
         self.assertIn("Four-Petal-Sunflower-Free-Triple-Extremal-Threshold", prompt)
         self.assertIn("P001B-S001", prompt)
@@ -238,11 +238,11 @@ class TournamentTests(unittest.TestCase):
         self.assertIn("EMPTY", prompt)
         self.assertIn("39 ≤ f(3,4) ≤ 49", prompt)
         self.assertTrue((ROOT/"sessions/S002/CLOSEOUT.md").is_file())
-        self.assertIn("SUN-PARENT-S007", (ROOT/"sessions/NEXT_SESSION.md").read_text())
+        self.assertIn("SUN-PARENT-S008", (ROOT/"sessions/NEXT_SESSION.md").read_text())
 
     def test_s003_p001b_paused_with_replayed_restricted_certificate(self):
         state, projects, _ = self.records()
-        self.assertEqual(state["portfolio_decision"], "PAUSE_P001C_RETURN_PORTFOLIO_S007")
+        self.assertEqual(state["portfolio_decision"], "STOP_NO_ACTIVE_CHILD_POST_SOURCE_COLLISIONS_S007")
         self.assertEqual(state["active_paper_id"], "NONE")
         self.assertIsNone(projects["active_project"])
         self.assertTrue(state["p001b_first_mathematics_executed"])
@@ -258,8 +258,8 @@ class TournamentTests(unittest.TestCase):
 
     def test_s005_verified_child_launch_gate_without_mathematics(self):
         state, projects, _ = self.records()
-        self.assertEqual(state["session_completed"], "S006")
-        self.assertEqual(state["next_programme_session"], "S007")
+        self.assertEqual(state["session_completed"], "S007")
+        self.assertEqual(state["next_programme_session"], "S008")
         self.assertEqual(projects["projects"][2]["id"], "P001C")
         self.assertTrue(projects["projects"][2]["repository_created"])
         self.assertTrue(projects["projects"][2]["bootstrapped"])
@@ -267,9 +267,9 @@ class TournamentTests(unittest.TestCase):
         self.assertEqual(state["p001c_repository_id"], 1419073216)
         self.assertEqual(state["p001c_verified_main_sha"], "21580ff1e59a323d02648ad0bd2772f06ce21899")
         self.assertIsNone(projects["active_project"])
-        self.assertEqual(state["next_child_session"], "NONE_P001C_PAUSED_NO_S003")
+        self.assertEqual(state["next_child_session"], "NONE_NO_CHILD_AUTHORISED")
         self.assertIn("U(D,n)", (ROOT/"prompts/P001C_S001_LAUNCH.md").read_text())
-        self.assertIn("SUN-PARENT-S007", (ROOT/"sessions/NEXT_SESSION.md").read_text())
+        self.assertIn("SUN-PARENT-S008", (ROOT/"sessions/NEXT_SESSION.md").read_text())
         evidence=json.loads((ROOT/"validation/P001C_S000_RECEIPT.json").read_text())
         self.assertTrue(evidence["child"]["pr"]["merged"])
         self.assertEqual(evidence["child"]["pr"]["head_ci"]["conclusion"], "success")
@@ -282,7 +282,7 @@ class TournamentTests(unittest.TestCase):
     def test_s006_binary_kill_gate_and_child_ci_receipt(self):
         state, projects, _ = self.records()
         receipt=json.loads((ROOT/"validation/P001C_S002_REVIEW_RECEIPT.json").read_text())
-        self.assertEqual(state["session_completed"], "S006")
+        self.assertEqual(state["session_completed"], "S007")
         self.assertEqual(receipt["children"]["P001C"]["main"], "21580ff1e59a323d02648ad0bd2772f06ce21899")
         self.assertEqual(receipt["children"]["P001C"]["sessions"][1]["pr_run"],38586770364)
         self.assertEqual(receipt["children"]["P001C"]["sessions"][1]["main_push_run"],38586904685)
@@ -291,7 +291,25 @@ class TournamentTests(unittest.TestCase):
         self.assertEqual(projects["projects"][2]["last_child_session"],"P001C-S002")
         self.assertIsNone(projects["active_project"])
         self.assertTrue((ROOT/"sessions/S006/QUANTITATIVE_AUDIT.md").is_file())
-        self.assertIn("SUN-PARENT-S007",(ROOT/"sessions/NEXT_SESSION.md").read_text())
+        self.assertIn("SUN-PARENT-S008",(ROOT/"sessions/NEXT_SESSION.md").read_text())
+
+    def test_s007_priority_collision_stop_and_binary_products(self):
+        from itertools import combinations, product
+        state, projects, _ = self.records()
+        self.assertEqual(state["session_completed"], "S007")
+        self.assertEqual(state["portfolio_decision"], "STOP_NO_ACTIVE_CHILD_POST_SOURCE_COLLISIONS_S007")
+        self.assertEqual(state["active_child_count"], 0)
+        self.assertFalse(state["child_session_authorised"])
+        self.assertIsNone(projects["active_project"])
+        self.assertEqual(projects["planned"], [])
+        self.assertIn("2609.18995", (ROOT/"programme/S007_SOURCE_REGISTER.md").read_text())
+        self.assertIn("TR26-220", (ROOT/"programme/S007_SOURCE_REGISTER.md").read_text())
+        self.assertTrue((ROOT/"sessions/S007/PORTFOLIO_AUDIT.md").is_file())
+        for k in range(1, 6):
+            fam=[frozenset((i, b) for i, b in enumerate(t)) for t in product((0,1), repeat=k)]
+            self.assertEqual(len(fam), 2**k)
+            for a,b,c in combinations(fam, 3):
+                self.assertFalse(a & b == a & c == b & c)
 
     def test_registration_rejects_wrong_child_sha(self):
         state, projects, receipt = self.records()
