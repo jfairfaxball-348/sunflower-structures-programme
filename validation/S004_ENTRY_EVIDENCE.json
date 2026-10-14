@@ -1,0 +1,60 @@
+{
+  "session": "SUN-PARENT-S004",
+  "date": "2026-10-14",
+  "parent": {
+    "repo": "jfairfaxball-348/sunflower-structures-programme",
+    "entry_main": "9367e8db8c290acd123319e81c171a15b2e1bd2e",
+    "entry_tree": "6bd70ab66aab45e2d3450c89bbdd51ddbe5ed831",
+    "last_push_ci": {
+      "run_id": 38572387828,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "open_pr_count": 0,
+    "rulesets": [],
+    "branch_protection_api": "403_UNKNOWN"
+  },
+  "children": [
+    {
+      "repo": "jfairfaxball-348/sunflower-internal-kernel-extraction",
+      "main": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c",
+      "tree": "bf2cd36b84b33c44a2bbf1ea7ba1c6e47bdb1cd5",
+      "last_push_ci": {
+        "run_id": 38474286573,
+        "conclusion": "success"
+      },
+      "open_pr_count": 0,
+      "rulesets": [],
+      "branch_protection_api": "403_UNKNOWN",
+      "status": "RETIRED"
+    },
+    {
+      "repo": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+      "main": "b8660e1ff0bda6c367a725b6beb9aa98f927a584",
+      "tree": "564ec0de65635377d5d90e76d5abc8bc60624da7",
+      "last_push_ci": {
+        "run_id": 38566297899,
+        "conclusion": "success"
+      },
+      "open_pr_count": 0,
+      "rulesets": [],
+      "branch_protection_api": "403_UNKNOWN",
+      "status": "PAUSED"
+    }
+  ],
+  "sources_checked": [
+    "https://arxiv.org/abs/1606.09575",
+    "https://theory.stanford.edu/~virgi/cs367/papers/sunflowersmult.pdf",
+    "https://link.springer.com/article/10.1007/s00493-026-00222-1",
+    "https://arxiv.org/abs/2609.06175",
+    "https://link.springer.com/article/10.1007/s00493-025-00163-1",
+    "https://link.springer.com/article/10.1007/s00493-025-00186-8",
+    "https://eccc.weizmann.ac.il/report/2026/220/"
+  ],
+  "decision": "SELECT_NEW_CHILD_CONDITIONAL",
+  "child_new_repo_created": false,
+  "child_S001_executed": false,
+  "mathematical_new_results": 0,
+  "local_tests": "NOT_RUN_NO_LOCAL_CHECKOUT",
+  "host_ci_future": "TO_VERIFY_SEPARATELY"
+}

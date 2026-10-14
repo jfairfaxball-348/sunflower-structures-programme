@@ -7,18 +7,18 @@ def txt(p): return (ROOT/p).read_text(encoding="utf8")
 def check_registration(state, projects, receipt):
     assert state["repo"] == projects["parent"] == receipt["parent"]["repository"] == "jfairfaxball-348/sunflower-structures-programme"
     assert state["repository_id"] == receipt["parent"]["repository_id"] == 1412469441
-    assert state["session_completed"] == "S003" and state["next_programme_session"] == "S004"
+    assert state["session_completed"] == "S004" and state["next_programme_session"] == "S005"
     assert state["headline_id"] == "SUN" and state["champion"] == "Erdős–Rado Sunflower Conjecture"
     assert receipt["project_id"] == "P001" and state["active_paper_id"] is None and projects["active_project"] is None
     assert state["child_repo_created"] and state["first_paper_authorized"]
     assert not state["parent_repo_name_temporary"]
-    assert len(projects["projects"]) == 2 and projects["planned"] == []
+    assert len(projects["projects"]) == 2 and len(projects["planned"]) == 1
     assert projects["projects"][0]["id"] == "P001" and projects["projects"][0]["programme_alias"] == "P001A"
     assert projects["projects"][0]["portfolio_status"] == "RETIRED_ACTIVE_INVESTMENT"
     assert projects["projects"][1]["id"] == "P001B" and projects["projects"][1]["repository_created"] is True
     assert projects["projects"][1]["repository_id"] == state["p001b_repository_id"] == 1418652673
     assert projects["projects"][1]["url"] == "https://github.com/" + state["p001b_repository"]
-    assert state["p001b_repository_state"] == "RESEARCH_PAUSED_PARENT_REASSESS"
+    assert state["p001b_repository_state"] == "RESEARCH_PAUSED_PARENT_S004"
     assert projects["projects"][1]["bootstrapped"] is True and state["p001b_child_bootstrapped"] is True
     assert projects["projects"][1]["verified_commit"] == state["p001b_verified_main_sha"] == "b8660e1ff0bda6c367a725b6beb9aa98f927a584"
     assert state["p001b_first_mathematics_executed"] is True
@@ -935,7 +935,7 @@ def main():
     assert (ROOT/"sessions/S002/CLOSEOUT.md").is_file()
     assert (ROOT/"validation/P001B_S000_RECEIPT.json").is_file()
     assert (ROOT/"prompts/P001B_S001_LAUNCH.md").is_file()
-    assert "SUN-PARENT-S004" in txt("sessions/NEXT_SESSION.md")
+    assert "SUN-PARENT-S005" in txt("sessions/NEXT_SESSION.md")
     assert (ROOT/"sessions/S003/CLOSEOUT.md").is_file()
     cert=json.loads(txt("validation/P001B_S003_REVIEW_RECEIPT.json"))
     assert cert["child_main"]==state["p001b_verified_main_sha"]==projects["projects"][1]["verified_commit"]
@@ -944,6 +944,14 @@ def main():
     assert cert["child_s003_compact_certificate_parent_independent_recheck"]["remaining_triangles"]==8
     assert not cert["global_new_witness40"] and not cert["global_new_upper48"]
     assert projects["projects"][1]["portfolio_status"].startswith("PAUSED")
+    assert (ROOT/"sessions/S004/CLOSEOUT.md").is_file()
+    assert (ROOT/"programme/S004_SUCCESSOR_PORTFOLIO.md").is_file()
+    assert (ROOT/"prompts/P001C_S001_LAUNCH.md").is_file()
+    assert (ROOT/"validation/S004_ENTRY_EVIDENCE.json").is_file()
+    assert projects["planned"][0]["id"] == state["p001c_project_id"] == "P001C"
+    assert not projects["planned"][0]["repository_created"] and state["p001c_repository"] is None
+    assert projects["active_project"] is None and state["next_child_session"] == "NONE_AUTHORISED"
+    assert state["portfolio_decision"] == "SELECT_NEW_CHILD_P001C_CONDITIONAL_REPOSITORY_CREATION_AND_VERIFIED_BOOTSTRAP"
     assert (ROOT/"programme/PROGRESS_DASHBOARD.md").is_file()
     assert (ROOT/"programme/S001_SUCCESSOR_ASSESSMENT.md").is_file()
     if receipt["session"] == "P001-S001":
