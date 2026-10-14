@@ -63,3 +63,8 @@ The next independently audited obstruction, including a standalone symbolic argu
 Even an INTERSECTING-original restriction cannot rescue that kind of transfer at D<153^(1/3): fixing one tensor coordinate to an original vertex-star leaves a constant fraction of the exponential size and nine per FREE coordinate shifting witnesses. The analogous statement holds at D<54^(1/4) for s=3 and D<39^(1/3) for s=4. Exact endpoints are NOT asserted for the restricted families.
 
 An independent original-family reduction gives i_s(k)<=f_s(k)<=(s-1)k*i_s(k), where i_s is the INTERSECTING extremal function. Hence a fixed-base upper bound on intersecting ORIGINAL families would be sufficient, but it is equivalent to the full conjecture and remains OPEN. This is not an inference from Mishra v2's shifted-only theorem. Correct exact-trace bookkeeping also includes T=empty with matching number<=s-2, though the rank-k residue still blocks naive induction.
+
+
+## New non-shifting original link route (14 October; local only)
+
+[Multiwitness compatible trace proof](ORIGINAL_MULTIWITNESS_TRACE_RANK_REDUCTION.md): r distinct disjoint-outside original witnesses E=T+V, A_i=T+W_i in an INTERSECTING s-free k-family force each opposite exact trace U subseteq V of size u into at most h^r genuine (k-u-r)-uniform original links (h=|V|, r<=s-2). At h=1, this is coefficient-one rank-(r+1) reduction, sharp in finite families. It is not the missing unrestricted v1/v2 transfer because no theorem establishes a bounded-cost global partition of the original family into those opposite traces. Multi-shift source uniqueness remains false; shifted-only v2 bounds remain restricted.
