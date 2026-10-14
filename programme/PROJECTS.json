@@ -372,7 +372,7 @@
       "portfolio_status": "PAUSED_BY_PARENT_S006_EARLY_BINARY_KILL_GATE",
       "validation_receipt": "validation/P001C_S000_RECEIPT.json",
       "last_child_session": "P001C-S002",
-      "next_obligation": "NO_P001C_S003; RETURN_PARENT_S007_PORTFOLIO_SELECTION",
+      "next_obligation": "NO_S003; S007_RECONFIRMS_PAUSE; ONLY_NEW_PARENT_MECHANISM_GATE",
       "first_mathematics_executed": true,
       "bootstrap_pr": 1,
       "source_bound_improved": false,
@@ -391,5 +391,7 @@
       "reactivation_criterion": "NEW independently checkable noncircular D-exponent mechanism with all-D all-n quantified proof, or an explicit owner-approved strategic change"
     }
   ],
-  "planned": []
+  "planned": [],
+  "portfolio_decision": "STOP_NO_ACTIVE_CHILD_POST_SOURCE_COLLISIONS_S007",
+  "last_parent_session": "S007"
 }

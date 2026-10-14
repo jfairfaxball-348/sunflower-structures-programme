@@ -1,0 +1,7 @@
+# SUN-PARENT-S007 — closeout (2026-10-14)
+
+**DECISION C: STOP / NO_ACTIVE_CHILD.** S007 was executed as a parent-only portfolio audit on entry main `fea3891141a8093f8ce45f260a5128ce64c63d00`. It produced no new global sunflower theorem, proof candidate, formalisation, publication or new child research. Ge–Wang–Xu–Zhao arXiv:2609.18995 already addresses constant-base fixed-VC dimension; ECCC TR26-220 already addresses O(w)-wise robust sunflower derandomisation. Elementary binary-product construction with Sauer–Shelah invalidates constant-mass bounded-VC extraction, not Erdős–Rado. Direct all-rank, P001A, P001B and P001C contain no independently demonstrated new mechanism; all children remain inactive. [Full report](PORTFOLIO_AUDIT.md), [sources](../../programme/S007_SOURCE_REGISTER.md), [entry evidence](../../validation/S007_ENTRY_EVIDENCE.json).
+
+Single reopening gate for *separate future S008*: quantitatively specified, genuinely noncircular high-VC/unrestricted-rank lemma; proof/countermodel stress on binary-product and high-hub examples; source-priority and explicit mathematical transfer. No owner repo creation, child session, Lean, Palomar, manuscript or outreach. Future S008 [standalone](../NEXT_SESSION.md) is **UNEXECUTED**.
+
+**Immutable pre-PR closeout:** this file makes NO claim of S007 final-head Actions, PR number or merged-main push success. Only independent live GitHub observations after those events may certify checks and two-parent nonforce merge. This distinction preserves historical provenance.

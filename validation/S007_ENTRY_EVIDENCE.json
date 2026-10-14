@@ -1,0 +1,49 @@
+{
+  "session": "SUN-PARENT-S007",
+  "date": "2026-10-14",
+  "entry_main": "fea3891141a8093f8ce45f260a5128ce64c63d00",
+  "entry_main_tree": "b30f3ec596e253d17ef25ebc203b83ae339da68a",
+  "parent_previous_pr": {
+    "number": 66,
+    "head": "6d5a5aef0c2a39814b6692f90199a2d242d9d630",
+    "merged": true,
+    "merged_main": "fea3891141a8093f8ce45f260a5128ce64c63d00",
+    "parents": [
+      "8212235af310bc2b1a912d05332f184282d0d6eb",
+      "6d5a5aef0c2a39814b6692f90199a2d242d9d630"
+    ],
+    "pr_run": 38588867501,
+    "pr_validate_job": 115938081186,
+    "pr_conclusion": "success",
+    "main_push_run": 38588962670,
+    "main_validate_job": 115938413467,
+    "main_conclusion": "success"
+  },
+  "children": {
+    "P001A": {
+      "main": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c",
+      "open_prs": 0,
+      "status": "retired"
+    },
+    "P001B": {
+      "main": "b8660e1ff0bda6c367a725b6beb9aa98f927a584",
+      "open_prs": 0,
+      "status": "paused"
+    },
+    "P001C": {
+      "main": "21580ff1e59a323d02648ad0bd2772f06ce21899",
+      "open_prs": 0,
+      "status": "paused"
+    }
+  },
+  "entry_parent_open_prs": 0,
+  "decision": "STOP_NO_ACTIVE_CHILD",
+  "new_global_theorems": 0,
+  "new_formalisations": 0,
+  "first_paper_selected": false,
+  "primary_new_source": "https://arxiv.org/abs/2609.18995",
+  "priority_collision_bounded_vc": true,
+  "new_live_source": "https://eccc.weizmann.ac.il/report/2026/220/",
+  "prior_art_Ow_independence": true,
+  "s007_pr_and_merged_main_checks": "NOT_YET_OCCURRED_AT_ENTRY; POSTEVENT_LIVE_VERIFICATION_REQUIRED"
+}

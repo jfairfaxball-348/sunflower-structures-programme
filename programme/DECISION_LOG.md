@@ -1,3 +1,8 @@
+# SUN-PARENT-S007 — source-collision stop portfolio election (2026-10-14)
+Hard decision **C STOP / NO_ACTIVE_CHILD**, not A/B. Four distinct routes assessed with exact bounds and countercontrols in [S007 report](../sessions/S007/PORTFOLIO_AUDIT.md); fixed VC source-preempted; direct high-VC no credible independent lemma; frozen P001A/B/C not reopened; ECCC O(w) candidate source-preempted. One future-only testable S008 owner-invoked NONCIRCULAR high-VC mechanism gate. No new repository, no child authorisation. 0 original global theorems; permanent headline maintained.
+
+---
+
 ## D-S006 — 2026-10-14: two-session child falsification gate
 **PAUSE P001C / RETURN_PARENT_PORTFOLIO.** Owner-invoked parent SUN-PARENT-S006 independently checked P001C-S001 and S002 source and exact GitHub CI provenance. Child S001 disproved unconditional heavy-atom/type-density shortcuts; S002 established a necessary first-moment inequality but **NO independent D-exponent-saving mechanism**, its heavy-fibre L is unproved and target-equivalent by induction, and balanced full-cube Fourier modes obstruct termwise truncation without ruling out restricted cancellation. Published Naslund–Sawin D^(2/3) remains unchanged. Child S002 has already concluded RETURN_PARENT and forbids S003, triggering parent S004 two-session stop. Active project = NONE, child statuses P001A RETIRED / P001B PAUSED / P001C PAUSED. No originality, new theorem, Lean, paper, publication, communication or all-r consequence. S007 separately owner-invoked strategic portfolio selection future-only, NOT child mathematics. [Quantitative audit](../sessions/S006/QUANTITATIVE_AUDIT.md) · [CI receipt](../validation/P001C_S002_REVIEW_RECEIPT.json).
 

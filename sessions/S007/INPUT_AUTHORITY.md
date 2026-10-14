@@ -1,0 +1,24 @@
+# SUN-PARENT-S007 — owner invocation and immutable entry prompt
+
+Owner message (2026-10-14): `run next session [https://github.com/jfairfaxball-348/sunflower-structures-programme/blob/main/sessions/NEXT_SESSION.md](https://github.com/jfairfaxball-348/sunflower-structures-programme/blob/main/sessions/NEXT_SESSION.md)`.
+
+Entry main `fea3891141a8093f8ce45f260a5128ce64c63d00`; fetched authoritative NEXT_SESSION.md blob `d1799dd807c7ee004ca7cd11bd8f729bbe1fe858`. Exact fetched session text copied below; execution limited to S007. No preapproval for another child or external action.
+
+---
+
+# SUN-PARENT-S007 — FUTURE ONLY: Post-P001C strategic portfolio selection
+
+**NOT EXECUTED IN SUN-PARENT-S006.** The owner must separately invoke S007 in the *sunflower-structures-programme* parent Project. This is a parent-only one-session strategic research/portfolio review, NOT P001C-S003 and NOT any child's proof session. Permanent headline: Erdős–Rado Sunflower Conjecture for all fixed r≥3. Parent S006 paused P001C at completed S002, retired P001A at S051 and maintained P001B paused at S003; no active child, new result or formalisation. [Parent audited outcome](S006/QUANTITATIVE_AUDIT.md).
+
+## Entry authority and evidence
+1. Pin LIVE parent main SHA, newest merged parent S006 PR and exact final-head/merged-main push Actions success; verify no concurrent parent session or unseen active child. Pin all child heads (P001A `c7ede2676909f335ea2bb9f247d5a0e2abdff12c` and P001B `b8660e1ff0bda6c367a725b6beb9aa98f927a584` are historical S006 observations only; P001C `21580ff1e59a323d02648ad0bd2772f06ce21899` is likewise historical). If live state has advanced, correct this prompt before execution.
+2. Read AGENTS, START_HERE, STATE, PROJECTS, P001C S006 audit, S004 ranked alternatives, P001A S051/P001B S003/P001C S002 final mathematics, main source registers, claims and novelty ledgers. Archive actual owner input and verification provenance.
+3. Independently refresh PRIMARY PRIOR ART and target transfer parameters. No pretending absence of search hits proves novelty/openness; do not misdescribe Naslund–Sawin D^(2/3), fixed-δ saving, ASU 2013 three-petal constant-base transfer, or all-r dependencies.
+
+## A SINGLE hard portfolio decision
+Run a genuinely adversarial selection over at least THREE substantially distinct *mathematical* routes, including consideration of a direct all-rank mechanism and of a realistically publishable independent intermediate. Existing P001A/B/C remain frozen unless concrete mathematically new evidence justifies reopening. Compare: (i) explicit fully quantified target; (ii) exact known theorem baseline and earliest/source-priority competitor; (iii) noncircular missing lemma and how one could falsify it rapidly; (iv) route to a standalone new publishable theorem rather than auxiliary-lemmata treadmill; (v) precise dependence from that result to all-r Erdős–Rado, identifying where no proven transfer exists; (vi) feasible independent proof and novelty audit and credible termination gate. No arbitrary percentages or fabricated breakthroughs.
+
+Choose ONE: (A) recommend a new child with exact first-paper target and sharp S001/S002 binary success-or-kill condition, **pending owner's real repository creation and a separate bootstrap session**; (B) reactivate an old child only with independently specified NEW methodology and evidence overturning the last kill; or (C) explicitly leave all children paused with a source-supported reason and one testable obligation. Merely renaming a P001C conjecture, repeating P001A's missing bridge or lowering an unrelated fixed-rank constant is not progress toward the headline. No automatic owner repository creation, no research in a child repo, no Lean, Palomar, manuscript, outreach, submission, journal contact or publication.
+
+## GitHub integrity and closeout
+Write one parent S007 report with quantitative claims and source URLs, changes to STATE/PROJECTS/claims/novelty/sources/dashboard/decisions, one authored branch commit, passing actual exact-head PR CI, ordinary two-parent nonforce merge, and distinct successful merged-main push CI. Preserve historical provenance, provide exact PR/Actions/commit identifiers, and stage ONE full standalone future handoff without executing it. If no credible route exists, record STOP/NO_ACTIVE_CHILD rather than manufacture progress.

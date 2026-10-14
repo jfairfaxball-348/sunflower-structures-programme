@@ -1,3 +1,8 @@
+# S007 targeted PRIOR ART CORRECTION — NOT novelty clearance
+S004 candidate fixed d=2 constant-base was already achieved in Ge et al. 2026 arXiv:2609.18995 (preprint Theorem 1.1 `(50dr)^k`). Do **not** claim log* elimination novelty. S004 O(w²)→O(w) robust sunflower derandomisation already reported by Cavalar et al. ECCC TR26-220 (2026; changed parameters). B_k/Sauer countercontrol is elementary standard, **not** original. No proposed fourth-child theorem has N1/N2 clearance; no priority no-hit or peer-review assertion. [Controlling sources](S007_SOURCE_REGISTER.md).
+
+---
+
 ## SUN-PARENT-S006 — child S001/S002 priority status (2026-10-14)
 **NO new claim to clear.** P001C child source checks distinguish published Naslund–Sawin 2017 journal Thm 2 (arXiv v1 Thm 5), ASU 2013 Thm 2.6, Hegedus 2018 D-independent factorial growth, and Ahmadi–Norouzi 2026 Boolean polynomial factor. Neither strict uniform D exponent saving nor independently original near-extremal theorem was achieved. All-family counterexamples, elementary first-moment bounds, and Fourier termwise examples have NOT undergone external novelty refereeing. Targeted source search ≠ exhaustive N1/N2. P001C paused at S002, not a novelty success; see [S006 audit](../sessions/S006/QUANTITATIVE_AUDIT.md).
 
