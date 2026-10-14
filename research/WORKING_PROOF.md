@@ -120,3 +120,18 @@ Independent original-link attempt: a maximal matching hitting set still gives |F
 Diagnostics: scripts/high_rank_tensor_audit.py; tests/test_high_rank_tensor_audit.py. All-m statements are symbolic; tests cover finite factors and m<=2 only. The central gap remains original-ancestor-compatible rank reduction **above** these stronger adversarial bases or by an invariant not defeated by them.
 
 **Logical threshold audit:** The bare assertion that *there exist* D_s,B_s,k0 so that every s-free |F|>D_s^k has an original vertex with degree >=|F|/B_s is in fact **equivalent to the sunflower conjecture**. Forward: this links to f_s(k-1) and inducts with C_s>=D_s,B_s and finitely many base ranks. Backward: if a C_s bound already holds, choose D_s>C_s and the condition is vacuous. It cannot be advertised as a substantive independent bridge merely by assuming unquantified thresholds. See section 4a of HIGH_RANK_DENSE_TENSOR_OBSTRUCTION.md for the exact proof.
+
+
+## 14 October: original intersecting-family reduction and s=6 adversarial factor
+
+[Full proof, finite certificates and exact limitations](SIX_PETAL_INTERSECTING_TENSOR_OBSTRUCTION.md).
+
+**PROVED:** If i_s(k) is the maximum size of an INTERSECTING original s-free k-family, then i_s(k)<=f_s(k)<=(s-1)k*i_s(k): choose a maximal matching of at most s-1 edges, colour originals by a first vertex in its union; each class is intersecting. Consequently the full and intersecting extremal functions have equal limsup kth-root growth. An independently established fixed-base bound for intersecting original families would settle the full problem, but assuming such a bound is **circular**.
+
+**PROVED correction to earlier trace bookkeeping:** for a fixed original edge E, matching number of exact-trace residues R_T is <=s-2 for EVERY proper T subset E, INCLUDING T=empty. Empty-trace rank stays k; no constant-coefficient rank recurrence follows.
+
+**PROVED s=6 no-go:** published 153-triple s=6-free factor of Axante et al. §7.1 has nine distinct one-swap outsiders at B={0,1,10}. Rank 3m tensors of size 153^m remain original six-free, tau=5, and their ordered full-shift sunflower number is >=9m+1. This raises the density-shift-transfer obstruction base to 153^(1/3)>sqrt(27). The exact shadow-codegree histogram for the finite factor is (1:27,4:8,5:80), NOT globally saturated.
+
+**PROVED strengthened general no-go:** for any anchored s-free factor H, fixing one baseline vertex in the first tensor coordinate yields an INTERSECTING original s-free tensor subfamily of constant density fraction d/h, while retaining r(m-1)+1 shifted core-star petals. Thus restricting naive full-shift sunflower-number transfer to intersecting originals still fails for all D strictly below the corresponding factor floor. This does NOT refute a direct intersecting original-size theorem.
+
+**OPEN:** a valid independently proved fixed-base upper bound for intersecting original families or other O_s(1)-loss original rank reduction. No full proof.
