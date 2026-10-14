@@ -2,14 +2,14 @@
   "schema": 1,
   "repo": "jfairfaxball-348/sunflower-structures-programme",
   "repository_id": 1412469441,
-  "session_completed": "S000",
-  "stage": "P001_S051_NORMALIZED_RICH_LINK_JX_OBSTRUCTION_SHARP_PARTITE_FULL_OPEN",
+  "session_completed": "S001",
+  "stage": "S001_P001A_RETIRED_P001B_SELECTED_BOOTSTRAP_BLOCKED",
   "headline_id": "SUN",
   "headline_open_status": "STRONG_EVIDENCE_OPEN",
   "champion": "Erdős–Rado Sunflower Conjecture",
   "parent_repo_name_temporary": false,
   "proposed_rename": null,
-  "active_paper_id": "P001",
+  "active_paper_id": "P001B",
   "first_paper_milestone": "P001",
   "child_repo_created": true,
   "first_paper_authorized": true,
@@ -19,12 +19,16 @@
   "source_limitations": [
     "P001 full target is source-posed with strong evidence of openness, not exhaustive independently confirmed non-resolution",
     "Exact low-rank internal extraction attribution remains STATUS_UNCERTAIN",
-    "Incoming parent S000 prompt synopsis archived, not verbatim; child P001-S000 prompt archived verbatim"
+    "Incoming parent S000 prompt synopsis archived, not verbatim; child P001-S000 prompt archived verbatim",
+    "P001B separate GitHub repository NOT CREATED: available GitHub connector exposes no create_repository action",
+    "S001 mathematical scrutiny is same-assistant, not external proof certification"
   ],
-  "next_programme_session": "S001",
+  "next_programme_session": "S002",
   "last_registry_update": "P001-S051",
   "child_registration": "programme/P001_REGISTRATION.json",
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "last_handoff_registration": "P001-S052_FUTURE_UNEXECUTED",
-  "owner_research_policy": "DEFER_N1_N2_UNTIL_COMPLETE_TIK_PROOF_CANDIDATE_AUTONOMOUS_METHOD_CHOICE"
+  "owner_research_policy": "S001_STRATEGIC_NOVELTY_REVIEW_AUTHORISED_P001B_FEASIBILITY_FIRST",
+  "portfolio_decision": "RETIRE_P001A_SELECT_P001B",
+  "next_child_session": "P001B-S001_FUTURE_AFTER_BOOTSTRAP"
 }

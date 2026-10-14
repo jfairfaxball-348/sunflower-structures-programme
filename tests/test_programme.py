@@ -43,7 +43,7 @@ class TournamentTests(unittest.TestCase):
         self.assertEqual(audit["s027_same_family_full_valid_edges"], 1076891650)
         self.assertFalse(audit["full_tik_proved"])
         self.assertTrue(audit["bsel_universal_refuted"])
-        self.assertEqual(state["session_completed"], "S000")
+        self.assertEqual(state["session_completed"], "S001")
         self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S051")
         self.assertTrue(audit["s028_frozen_C512_proved"])
         self.assertEqual(audit["s028_stronger_restricted_bound"], "t/((3m-2)*(m-1)) >= t/(3m^2)")
