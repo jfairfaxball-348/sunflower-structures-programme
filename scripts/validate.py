@@ -13,6 +13,8 @@ def main():
         "research/SOURCE_REGISTER.md", "research/WORKING_PROOF.md",
         "sessions/NEXT_SESSION.md", "scripts/shift_sanity.py",
         "scripts/bridge_audit.py", "tests/test_bridge_audit.py",
+        "research/SPOKE_SHIFT_THEOREM.md", "scripts/spoke_shift_audit.py",
+        "tests/test_spoke_shift_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -26,6 +28,7 @@ def main():
     assert not state["legacy_hard_stop_active"]
     assert state["active_next_prompt"] == "sessions/NEXT_SESSION.md"
     assert "SHIFTED_SUBFAMILY_OF_PRODUCT_AT_MOST_Q" in state["verified_results"]
+    assert "SPOKE_TO_STAR_LEX_SHIFT_THEOREM_ALL_Q_K" in state["verified_results"]
     for v in ("v1", "v2"):
         assert f"2606.02667{v}" in state["source_versions"][v]
     handoff = (ROOT / state["active_next_prompt"]).read_text()
@@ -41,8 +44,10 @@ def main():
     assert "source" in (ROOT / "research/SOURCE_REGISTER.md").read_text().lower()
     from shift_sanity import main as check_examples
     from bridge_audit import main as check_bridge
+    from spoke_shift_audit import main as check_spoke
     check_examples()
     check_bridge()
+    check_spoke()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 

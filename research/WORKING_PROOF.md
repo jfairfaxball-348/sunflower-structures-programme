@@ -63,7 +63,7 @@ For |U|<=b_s, (7) followed by (3) would give a valid C_s^k estimate **if** a suf
 
 ## 4. Exact quantitative candidate and its danger
 
-**Conditional rank-dependent bridge (fully proved as an implication, premise UNPROVED).** Suppose for a fixed s there exists A_s>=1 such that for every s-free rank-k original family with k>=2 its full-shift image G satisfies
+**Conditional rank-dependent bridge (implication correct but premise now DISPROVED).** Suppose for a fixed s there exists A_s>=1 such that for every s-free rank-k original family with k>=2 its full-shift image G satisfies
 
     tau(G) <= A_s k / log(k+2).                                       (H_s)
 
@@ -76,7 +76,7 @@ For k=1 take at most s-1 singleton sets. Hence H_s would prove the unrestricted 
 
     C_s=max(s-1, 2 exp(2D_s(1+log(D_s)/log(4)))).
 
-Equation (6) shows k/log k is the smallest plausible ORDER of a universal shifted-tau upper bound of this kind when s>=4. However this is NOT a verified bridge: P(2,k) is 3-free, and exact full-shift computations at k=2,...,8 (using blocks {i,k+i}) produce a common-(k-1)-core star of k+1 sets after lexicographic full shifting. If that persists in all k, H_3 is FALSE for this shift order. This is finite evidence, not a proved universal refutation or a new bound. Do not claim H_s is true.
+Equation (6) previously supplied a necessary Omega_q(k/log k) inflation, not a sufficient upper bound. The new [spoke-shift theorem](SPOKE_SHIFT_THEOREM.md) proves the stronger Omega_q(k) inflation for the specific lexicographic full shift, for EVERY q>=2 and rank k>=2, including binary products and a sparse q-ary subfamily. Thus H_s is FALSE for every fixed s>=3 under that shift order. The conditional implication above remains logically correct but cannot prove the conjecture because its premise is refuted.
 
 **Other explored routes.** Arbitrary original link reduction loses a factor up to k(s-1) per rank and reproduces factorial bounds, not C_s^k. Indefinite one-step shift multiplication costs 2^T with T potentially depending on n. Global fixed-support colouring is rigorous but too expensive for growing support. Literal shifted-original subfamily extraction is destroyed by (5). Heavy stars have high links but cannot cover pair-private or product arrangements. None of these routes closes the full theorem.
 
@@ -86,4 +86,10 @@ Run: python3 scripts/bridge_audit.py and python3 -m unittest discover -s tests -
 
 Exhaustively enumerated all 2048 subfamilies of the 2- and 3-layers on [5]; verified (1), (4), cardinality preservation, shifted half-link and shifted link closure. Exhaustively enumerated all 15 pair partitions of [6], all 256 subfamilies of each P(2,3), and verified (5) in those 3840 cases; some achieve size 2. Checked (4) at equality via 4+4 two-star edges and the pair-private 3-free construction. These computations corroborate the symbolic proofs and are not substitutes for them. Product full-shift star growth reported above is only checked for k<=8.
 
-**Decisive unresolved task:** Prove a quantitatively valid ORIGINAL-witness-preserving structural theorem for sufficiently large arbitrary s-free families that avoids the source/collision barrier and yields O_s(1) exponential base per rank. One concrete falsifiable attack is to decide H_s decisively on P(2,k), by symbolic full-shift description and proof; if H_s fails, develop an alternative invariant (e.g. trace-resolved compatible lifted witnesses, not just final tau) strong enough to imply C_s^k. All constants must be independent of k and n. **No complete proof has been obtained.**
+**Decisive unresolved task:** The H_s problem is RESOLVED NEGATIVELY. Prove an ORIGINAL-witness-preserving structural theorem for sufficiently large s-free families, or an ancestor-compatible transfer, yielding O_s(1) exponential cost per rank. Sparse spokes, q-products and pair-private families are mandatory adversarial tests. All constants must be independent of k and n. **No complete proof has been obtained.**
+
+## 6. New universal symbolic obstruction: spoke-to-star compression (PROVED)
+
+The full proof is in [SPOKE_SHIFT_THEOREM.md](SPOKE_SHIFT_THEOREM.md). For each q>=2, k>=2, let T(q,k) consist of [k] and the (q-1)k coordinate neighbours [k]\\{l}+{l+ak}, 1<=l<=k, 1<=a<=q-1. It is contained in P(q,k), has EXACTLY (q-1)k+1 distinct original members and tau(T)=q. In one lexicographic compression pass, T becomes the COMPLETE star {[k-1]+{j}:k<=j<=qk}; P(q,k) contains this same star after compression, with persistence under all subsequent shifts. The proof tracks B_t(x)=([k]\\{t})+{x}: the pair C_(t,t+1) either creates B_(t+1)(x) or leaves an already existing one, and previous phases cannot disturb it. This resolves the previous finite-only observation for ALL ranks. Thus tau(S(P(q,k)))>=(q-1)k+1, and H_s with q=s-1 is FALSE for EVERY fixed s>=3, not merely unproved. No arbitrary shift-order assertion is claimed. The shifted-only recurrence cannot close the conjecture from this tau alone.
+
+Finite corroboration: `python3 scripts/spoke_shift_audit.py` checks 22 spoke cases and 19 q-product cases; symbolic quantifiers rest on the induction, not testing. The original rank-reduction and origin-compatible witness transfer problems remain OPEN.
