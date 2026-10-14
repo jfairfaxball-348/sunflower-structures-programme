@@ -1,0 +1,11 @@
+# SUN-PARENT-S008 — targeted primary-source check (2026-10-14)
+
+Status **TARGETED PRIMARY SOURCES ONLY; NOT EXHAUSTIVE WORLD PRIORITY, REFEREE OR NOVELTY CLEARANCE.** Correct all baselines and credit original authors.
+
+1. [Ge–Wang–Xu–Zhao, *Bounded VC-dimension implies the Erdős–Rado sunflower conjecture*, arXiv:2609.18995](https://arxiv.org/abs/2609.18995), 2026 preprint, original text Theorem 1.1. For VC≤d, k-uniform r-sunflower-free F, `|F|≤(50dr)^k`. Their proof explicitly uses marginal concentration / entropy / the sum of squared marginals in spread links, followed by a matching argument. Consequently a full-link collision-energy proposal alone is **not priority-clear** even absent our concrete counterexample. Source HTML displays an unusual identifier/date mismatch (arXiv 2609 number but submitted 17 July 2026); do not deduce priority from the identifier.
+2. [Bell–Chueluecha–Warnke, *Note on Sunflowers*, arXiv:2009.09327](https://arxiv.org/abs/2009.09327), source and published Discrete Math. 344 (2021): general `(Cr log k)^k` benchmark, not `C_r^k`. [Rao 2026 survey](https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms.70380) reports unrestricted headline as open.
+3. [Cavalar–Fabris–Mukhopadhyay–Srinivasan–Yehudayoff, ECCC TR26-220](https://eccc.weizmann.ac.il/report/2026/220/), 28 Sep 2026: **O(w)-wise** robust-sunflower derandomisation with altered parameters already prior art. Not ordinary C_r^k.
+4. [Janzer–Jin–Sudakov–Wu, Combinatorica 2026](https://link.springer.com/article/10.1007/s00493-026-00222-1), P001A source: original-family extraction witnesses are not a solution to arbitrary FINAL selected-H internal validity; P001A S051 high-hub overlap remains an original-mass control.
+5. [S007 source register](S007_SOURCE_REGISTER.md): Naslund–Sawin alphabet `D^(2/3)` at fixed D does not give D-independent ASU three-petal transfer, and none supplies all r. Fixed-d 2025 VC log* was superseded by Ge et al. 2026.
+
+New S008 product moment/fibre statements are elementary independently derived algebra, **not declared novel**. A negative example for a proposed L requires no priority clearance; it is not proof of a new publishable result.

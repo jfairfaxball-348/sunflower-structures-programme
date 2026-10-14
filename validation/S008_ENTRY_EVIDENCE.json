@@ -1,0 +1,64 @@
+{
+  "session": "SUN-PARENT-S008",
+  "date": "2026-10-14",
+  "entry_main": "93dc7dd091baa51665178a202e8747a2387c0678",
+  "entry_tree": "ee2b8306cc3c37e4abd0a4458b8d7202e2642f65",
+  "invocation": "Owner separately invoked linked main sessions/NEXT_SESSION.md; see sessions/S008/INPUT_AUTHORITY.md",
+  "source_prompt_blob": "5ad51e9c18d45956ec519f26101faadc9f538d3c",
+  "preceding_pr": {
+    "number": 67,
+    "merged": true,
+    "merge_main": "93dc7dd091baa51665178a202e8747a2387c0678",
+    "first_parent": "fea3891141a8093f8ce45f260a5128ce64c63d00",
+    "second_parent": "fc60014d142a3590930d1ec9dd836f0f9d6ebdd6",
+    "exact_head": "fc60014d142a3590930d1ec9dd836f0f9d6ebdd6",
+    "exact_head_actions": {
+      "id": 38591125274,
+      "job": 115945980952,
+      "event": "pull_request",
+      "conclusion": "success"
+    },
+    "merged_main_actions": {
+      "id": 38591211950,
+      "job": 115946283049,
+      "event": "push",
+      "head_sha": "93dc7dd091baa51665178a202e8747a2387c0678",
+      "conclusion": "success"
+    }
+  },
+  "parent_open_prs": 0,
+  "children": {
+    "P001A": {
+      "repo": "jfairfaxball-348/sunflower-internal-kernel-extraction",
+      "main": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c",
+      "open_prs": 0,
+      "active": false
+    },
+    "P001B": {
+      "repo": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+      "main": "b8660e1ff0bda6c367a725b6beb9aa98f927a584",
+      "open_prs": 0,
+      "active": false
+    },
+    "P001C": {
+      "repo": "jfairfaxball-348/alphabet-uniform-sunflower-capacity",
+      "main": "21580ff1e59a323d02648ad0bd2772f06ce21899",
+      "open_prs": 0,
+      "active": false
+    }
+  },
+  "math": {
+    "mechanism": "FULL_LINK_COLLISION_DROPOFF_L",
+    "verdict": "REFUTED_FOR_ALL_R_BY_Q_ARY_PRODUCTS",
+    "uniform_r_counter": true,
+    "vc_dimension_k": true,
+    "high_hub_stress": true,
+    "new_global_theorem": false,
+    "independent_review": false
+  },
+  "decision": "STOP_NO_ACTIVE_CHILD",
+  "new_child_recommended": false,
+  "formalisation": false,
+  "publication": false,
+  "next_session": "S009_FUTURE_ONLY"
+}

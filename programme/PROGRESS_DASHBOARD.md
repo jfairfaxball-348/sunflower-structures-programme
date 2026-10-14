@@ -1,3 +1,8 @@
+# SUN-PARENT-S008 — completed 2026-10-14
+**STOP_NO_ACTIVE_CHILD.** One exact quantified L refuted by q=r−1 products (even VC=k and |F|=q^k): conditional collision energy Q≥2/q, too large to union-bound r petals. High-hub cone independently stress-tests but is not a second threshold-qualified counterexample. No sourced priority gap, new paper theorem, all-r bound improvement, Lean, outreach or formal verification. **Original global theorems: 0; formal verifications: 0; publications: 0.** P001A S051 retired, P001B S003 paused, P001C S002 paused. Next S009 FUTURE/owner-invoked only. [Proof and scope](../sessions/S008/MECHANISM_AUDIT.md) · [source audit](S008_SOURCE_REGISTER.md).
+
+---
+
 # Parent dashboard — SUN-PARENT-S007 (2026-10-14)
 **Verdict C STOP / NO_ACTIVE_CHILD**, permanent Erdős–Rado headline unchanged. Child P001A retired S051, P001B paused S003, P001C paused S002; no new global theorem (0), formal proof (0), publication (0). Fixed VC constant-base is ALREADY sourced in Ge et al. 2026 preprint arXiv:2609.18995; ECCC TR26-220 likewise already provides O(w)-wise robust derandomisation. Binary product 2^k / Sauer subfamily bound prevents simple VC reduction without exponential loss. All-r unrestricted gap remains general `(Cr log k)^k` versus desired `C_r^k`; no bridge delivered. [Full quantitative report](../sessions/S007/PORTFOLIO_AUDIT.md). S008 is **future parent-only**, single mechanism gate, no child created.
 
