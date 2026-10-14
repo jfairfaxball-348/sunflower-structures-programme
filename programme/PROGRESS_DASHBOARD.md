@@ -1,3 +1,18 @@
+# Live parent dashboard — after S005 (2026-10-14)
+
+**P001C child repository BOOTSTRAPPED and independently CI-verified, but P001C-S001 mathematics has NOT begun.** [Owner-supplied repo](https://github.com/jfairfaxball-348/alphabet-uniform-sunflower-capacity), ID 1419073216, merged main `63091ad31062e4e0bd07bfcbc4942291de1f7c01`; child PR #1 final-head run 38578180582 SUCCESS and merged-main push run 38578264942 SUCCESS. P001A S051 retired, P001B S003 paused, permanent SUN headline unchanged. Original new theorem 0, formal proof 0, publication 0.
+
+|Stream|Portfolio after S005|Research status|Next|
+|---|---|---|---|
+|P001A|Retired S051|Full TIK not proved|No S052|
+|P001B|Paused S003|Global 39..49 unchanged|No S004|
+|P001C|ACTIVE CHILD, bootstrap only|Known D^(2/3) upper published; no new δ theorem or D-independent C|Owner separately invoke P001C-S001|
+|SUN parent|S005 administrative gate complete pending separate own PR/main check|No all-r improvement|S006 only after child mathematics evidence|
+
+**Scope:** A fixed D exponent reduction would not alone settle three-petal Erdős–Rado. Only a fully D-independent bound would transfer through ASU's sourced r=3 implication; r>3 is a separate problem. [Receipt](../validation/P001C_S000_RECEIPT.json). [Full standalone child prompt](../prompts/P001C_S001_LAUNCH.md).
+
+---
+
 # Live parent dashboard — S004, 2026-10-14
 **Permanent Erdős–Rado champion unchanged. No new headline bound.** S004 selected P001C **CONDITIONAL, NO REPO CREATED, NO ACTIVE CHILD**. Next authorised parent review/administrative gate is owner-invoked S005, not child research; see [S004 closeout](../sessions/S004/CLOSEOUT.md).
 

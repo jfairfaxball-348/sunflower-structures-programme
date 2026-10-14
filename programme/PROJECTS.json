@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "parent": "jfairfaxball-348/sunflower-structures-programme",
-  "active_project": null,
+  "active_project": "P001C",
   "projects": [
     {
       "id": "P001",
@@ -347,30 +347,35 @@
       "local_f39_deletion_rigidity": "S001_COMPUTER_ASSISTED_CHECKED_PRIORITY_UNCLEARED",
       "source_upper49_replayed": false,
       "first_mathematics_executed": true
-    }
-  ],
-  "planned": [
+    },
     {
       "id": "P001C",
       "title": "Alphabet-Uniform Three-Sunflower-Free Word Capacity",
       "slug": "alphabet-uniform-sunflower-capacity",
-      "repository_id": null,
-      "url": null,
-      "repository_created": false,
-      "bootstrapped": false,
-      "status": "SELECTED_CONDITIONAL_NOT_AUTHORISED",
+      "repository_id": 1419073216,
+      "url": "https://github.com/jfairfaxball-348/alphabet-uniform-sunflower-capacity",
+      "repository_created": true,
+      "bootstrapped": true,
+      "status": "BOOTSTRAPPED_READY_FUTURE_MATH_SESSION",
       "objective": "For every alphabet size D>=3 and dimension n>=1 improve the Naslund–Sawin exponential alphabet dependence D^(2/3) for three-sunflower-free A subset [D]^n, with a fixed delta>0 and universal finite prefactor K; long-run D-independent C^n would imply Erdős–Rado r=3 by ASU.",
       "known_bound": "|A| <= (3/2^(2/3)*(D-1)^(2/3))^n (Naslund–Sawin 2017 Theorem 5)",
       "first_child_session": "P001C-S001",
       "next_executed": false,
-      "first_session_blocker": "OWNER_CREATE_REPOSITORY_AND_PARENT_S005_BOOTSTRAP_VERIFIED_CI",
-      "verified_commit": null,
-      "novelty_status": "UNASSESSED_P001C_NO_NEW_CLAIM",
+      "first_session_blocker": null,
+      "verified_commit": "63091ad31062e4e0bd07bfcbc4942291de1f7c01",
+      "novelty_status": "NOT_CLEARED",
       "headline_implication": "THREE_PETALS_ONLY_IF_D_INDEPENDENT_C_SOURCE_ASU; NO_IMPLICATION_FROM_DELTA_IMPROVEMENT_ALONE",
       "formal_status": "NOT_STARTED",
       "publication_status": "NOT_STARTED",
       "ten_session_kill_gate": "NO_STRICT_UNIFORM_DELTA_QUANTITATIVE_BOUND_OR_DEMONSTRABLE_NONRECYCLED_MECHANISM_RETIRE_TO_PARENT",
-      "source": "Naslund-Sawin 2017 Theorem 5; Alon-Shpilka-Umans 2013 Theorem 2.6"
+      "source": "Naslund-Sawin 2017 Theorem 5; Alon-Shpilka-Umans 2013 Theorem 2.6",
+      "portfolio_status": "ACTIVE_CHILD_READY_FOR_OWNER_SEPARATE_INVOCATION",
+      "validation_receipt": "validation/P001C_S000_RECEIPT.json",
+      "last_child_session": "P001C-S000_ADMINISTRATIVE_ONLY",
+      "next_obligation": "OWNER_INVOKE_P001C_S001_IN_SEPARATE_CHATGPT_PROJECT",
+      "first_mathematics_executed": false,
+      "bootstrap_pr": 1
     }
-  ]
+  ],
+  "planned": []
 }

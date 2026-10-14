@@ -1,3 +1,9 @@
+# S005 VERIFIED LAUNCH AUTHORITY — 2026-10-14
+
+The owner supplied the ACTUAL GitHub repository [jfairfaxball-348/alphabet-uniform-sunflower-capacity](https://github.com/jfairfaxball-348/alphabet-uniform-sunflower-capacity), ID **1419073216**. Parent S005 independently verified administrative child PR #1 final authored head `50ee9d476c5fb302d3c10872b106cda77a8e48ce`, GitHub Actions run 38578180582/validate job 115900725049 **SUCCESS**, ordinary two-parent merge main `63091ad31062e4e0bd07bfcbc4942291de1f7c01`, and distinct main PUSH run 38578264942/validate job 115901010644 **SUCCESS**. Child S000 is ADMINISTRATIVE; no mathematical session executed. The following standalone prompt is now ready to be invoked **once by the owner in a SEPARATE ChatGPT Project**, not within this parent session. When invoked, recheck live parent S005 merged status and independent parent CI and the actual child main before research; STOP on conflict.
+
+---
+
 # P001C-S001 — standalone future first CHILD mathematics session (not authorised until bootstrap)
 **For a NEW ChatGPT Project/conversation named “Alphabet-Uniform Sunflower Capacity”, not the sunflower parent Project.** This is a paste-ready FULL conditional launch instruction. The parent S004 that authored it did NOT execute it.
 ## Gate 0 — STOP unless connected child exists and is ready
