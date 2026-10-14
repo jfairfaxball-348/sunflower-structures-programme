@@ -15,6 +15,8 @@ def main():
         "scripts/bridge_audit.py", "tests/test_bridge_audit.py",
         "research/SPOKE_SHIFT_THEOREM.md", "scripts/spoke_shift_audit.py",
         "tests/test_spoke_shift_audit.py",
+        "research/DENSE_ANCESTOR_OBSTRUCTION.md",
+        "scripts/dense_obstruction_audit.py", "tests/test_dense_obstruction_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -29,6 +31,7 @@ def main():
     assert state["active_next_prompt"] == "sessions/NEXT_SESSION.md"
     assert "SHIFTED_SUBFAMILY_OF_PRODUCT_AT_MOST_Q" in state["verified_results"]
     assert "SPOKE_TO_STAR_LEX_SHIFT_THEOREM_ALL_Q_K" in state["verified_results"]
+    assert "DENSE_TENSOR_LEX_SHIFT_LINEAR_STAR_ALL_S" in state["verified_results"]
     for v in ("v1", "v2"):
         assert f"2606.02667{v}" in state["source_versions"][v]
     handoff = (ROOT / state["active_next_prompt"]).read_text()
@@ -45,9 +48,11 @@ def main():
     from shift_sanity import main as check_examples
     from bridge_audit import main as check_bridge
     from spoke_shift_audit import main as check_spoke
+    from dense_obstruction_audit import main as check_dense
     check_examples()
     check_bridge()
     check_spoke()
+    check_dense()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 

@@ -42,3 +42,10 @@ A rigorous small-support replacement holds for ALL compositions supported on U: 
 ## New resolved question: linear shift inflation on sparse spokes
 
 For q>=2 and k>=2 the original simple q-ary sparse spoke family T(q,k) has tau=q and (q-1)k+1 edges. One lexicographic compression pass maps it bijectively to the (q-1)k+1 edges with core [k-1] and singleton petals k,...,qk. The q-ary product P(q,k) also acquires all these edges in that pass and keeps them during subsequent compressions. This is a direct proof with exact quantifiers and with old-family collision handling, not an extrapolation. Consequently the conditional H_s implication in WORKING_PROOF remains logically valid, but the premise is refuted for all s by q=s-1. **Next bridge must contain compatibility information on original preimages or use an independent rank reduction.**
+
+
+## 14 October addendum — dense original families can still inflate linearly
+
+An additional rigorous [graph tensor and partial-spoke theorem](DENSE_ANCESTOR_OBSTRUCTION.md) strengthens the obstruction from sparse examples and q-ary products. For q=s-1, one can take rank K=2m, original q-free families of size b_q^K with b_q>q, yet lex shifting creates at least c_q*K+1 petals with one common core. Explicitly b_q=sqrt(q(q+1)) when q is even, and b_q=sqrt(q^2+(q-1)/2) when q is odd. This disproves the k/log(k+2) full-shift sunflower-number premise **even if it is restricted to original families of size >=D^K for any D<=b_q**. It does NOT falsify every possible high-density lemma or prove an unrestricted result. Rank-two extremal graph ideas are established prior art; the present proof and compression diagnostic are not asserted as first discoveries.
+
+A collision-safe partial-spoke propagation lemma gives the quantitative result without assuming unique ancestors. The correct next attempt requires genuine compatibility of *original* petals and an exact fixed-base rank recurrence; simply changing a shifted-family size threshold is not enough below b_q.

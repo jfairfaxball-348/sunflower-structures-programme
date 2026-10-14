@@ -46,8 +46,8 @@ class BridgeResearchTests(unittest.TestCase):
         for version in ("v1", "v2"):
             self.assertIn("2606.02667" + version, sources)
         prompt = (ROOT / "sessions/NEXT_SESSION.md").read_text()
-        self.assertIn("BUILD THE MISHRA", prompt)
-        self.assertIn("NO", prompt)  # explicit negative controls
+        self.assertIn("NEXT DIRECT RESEARCH INVESTIGATION", prompt)
+        self.assertIn("NO complete proof", prompt)  # explicit negative controls
 
 
 if __name__ == "__main__":

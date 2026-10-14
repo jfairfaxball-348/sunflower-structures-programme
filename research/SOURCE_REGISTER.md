@@ -7,3 +7,5 @@
 - **Status caveat:** arXiv v1 full conjecture abstract was superseded by v2 restricted abstract. Full conjecture remains an open research target under available independent-source evidence, not certified impossible or solved. More prior art is welcome when it changes actual mathematical obligations.
 
 All dates are version dates; source claims are not independently peer-reviewed or newly discovered programme results.
+
+- **Rank-two extremal graph prior art:** Niranjan Balachandran and Niraj Khare, *Graphs with restricted valency and matching number*, Discrete Mathematics (2009), https://doi.org/10.1016/j.disc.2008.10.007 . This directly studies graphs with bounded maximum degree and matching number, exactly the 2-uniform sunflower-free setting. The graph construction in DENSE_ANCESTOR_OBSTRUCTION.md is not claimed novel; its role here is a rigorously labelled, tensorised adversarial test of original-source compression.
