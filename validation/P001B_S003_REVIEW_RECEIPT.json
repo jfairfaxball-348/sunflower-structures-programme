@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "date": "2026-10-14",
+  "parent_entry_main": "2336b38698ff5302acbcc132157edb8188128337",
+  "parent_entry_tree": "de3c17ff4bd3ad8b23b56e612fffa610e29e13b0",
+  "child_repository": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+  "child_repository_id": 1418652673,
+  "child_main": "b8660e1ff0bda6c367a725b6beb9aa98f927a584",
+  "child_main_tree": "564ec0de65635377d5d90e76d5abc8bc60624da7",
+  "child_main_parents": [
+    "d57e8e7b3e6cd3f532e0f18f466a2407c6a79bf1",
+    "b591e27e0d5143468712e7054dbd4f8b80dd4dcd"
+  ],
+  "child_pr": {
+    "number": 6,
+    "merged": true,
+    "head": "b591e27e0d5143468712e7054dbd4f8b80dd4dcd",
+    "exact_head_ci": {
+      "event": "pull_request",
+      "run_id": 38566178744,
+      "job_id": 115859315973,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    "main_push_ci": {
+      "event": "push",
+      "head_sha": "b8660e1ff0bda6c367a725b6beb9aa98f927a584",
+      "run_id": 38566297899,
+      "job_id": 115859704412,
+      "status": "completed",
+      "conclusion": "success"
+    }
+  },
+  "child_rulesets": [],
+  "branch_metadata_protected": false,
+  "branch_protection_endpoint": "403_UNKNOWN",
+  "classic_statuses": "ABSENT_NOT_PASS",
+  "source": "Axante et al arXiv:2609.06175v1",
+  "source_lower": 39,
+  "source_upper": 49,
+  "source_upper_certificate_replayed": false,
+  "child_last_session": "P001B-S003",
+  "child_s001_local_f39_witness_size": 39,
+  "child_s002_milp_iterations": 40,
+  "child_s002_sound_cuts": 12095,
+  "child_s002_outcome": "INCONCLUSIVE",
+  "child_s003_cyclic_support": 12,
+  "child_s003_population": 988,
+  "child_s003_free_counts": [
+    1,
+    13,
+    16,
+    0
+  ],
+  "child_s003_maximum": 24,
+  "child_s003_compact_certificate_parent_independent_recheck": {
+    "ordinary_orbits": 18,
+    "exceptional_orbits": 1,
+    "free_singletons": 13,
+    "free_pairs": 16,
+    "remaining_triangles": 8,
+    "all_8_quartet_witnesses_valid": true,
+    "representative_24_free": true
+  },
+  "global_new_witness40": false,
+  "global_new_upper48": false,
+  "erdos_rado_transfer_proved": false,
+  "priority_cleared": false,
+  "independent_human_review": false,
+  "paper_submitted": false,
+  "lean_or_palomar": false,
+  "parent_decision": "RETURN_PARENT_PAUSE_P001B",
+  "child_S004_authorised": false,
+  "parent_S004_executed": false
+}
