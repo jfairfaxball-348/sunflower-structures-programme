@@ -43,7 +43,7 @@ class TournamentTests(unittest.TestCase):
         self.assertEqual(audit["s027_same_family_full_valid_edges"], 1076891650)
         self.assertFalse(audit["full_tik_proved"])
         self.assertTrue(audit["bsel_universal_refuted"])
-        self.assertEqual(state["session_completed"], "S009")
+        self.assertEqual(state["session_completed"], "S010")
         self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S051")
         self.assertTrue(audit["s028_frozen_C512_proved"])
         self.assertEqual(audit["s028_stronger_restricted_bound"], "t/((3m-2)*(m-1)) >= t/(3m^2)")
@@ -229,7 +229,7 @@ class TournamentTests(unittest.TestCase):
         self.assertTrue(b["bootstrapped"])
         self.assertEqual(b["verified_commit"], "b8660e1ff0bda6c367a725b6beb9aa98f927a584")
         self.assertFalse(b["next_executed"])
-        self.assertEqual(state["next_programme_session"], "S010")
+        self.assertEqual(state["next_programme_session"], "NONE")
         prompt = (ROOT/"prompts/P001B_S001_LAUNCH.md").read_text()
         self.assertIn("Four-Petal-Sunflower-Free-Triple-Extremal-Threshold", prompt)
         self.assertIn("P001B-S001", prompt)
@@ -242,7 +242,7 @@ class TournamentTests(unittest.TestCase):
 
     def test_s003_p001b_paused_with_replayed_restricted_certificate(self):
         state, projects, _ = self.records()
-        self.assertEqual(state["portfolio_decision"], "STOP_NO_ACTIVE_CHILD_S009_FRACTIONAL_LINK_CAPACITY_REFUTED")
+        self.assertEqual(state["portfolio_decision"], "STOP_NO_ACTIVE_CHILD_S010_STRATEGIC_HARD_STOP")
         self.assertEqual(state["active_paper_id"], "NONE")
         self.assertIsNone(projects["active_project"])
         self.assertTrue(state["p001b_first_mathematics_executed"])
@@ -258,8 +258,8 @@ class TournamentTests(unittest.TestCase):
 
     def test_s005_verified_child_launch_gate_without_mathematics(self):
         state, projects, _ = self.records()
-        self.assertEqual(state["session_completed"], "S009")
-        self.assertEqual(state["next_programme_session"], "S010")
+        self.assertEqual(state["session_completed"], "S010")
+        self.assertEqual(state["next_programme_session"], "NONE")
         self.assertEqual(projects["projects"][2]["id"], "P001C")
         self.assertTrue(projects["projects"][2]["repository_created"])
         self.assertTrue(projects["projects"][2]["bootstrapped"])
@@ -282,7 +282,7 @@ class TournamentTests(unittest.TestCase):
     def test_s006_binary_kill_gate_and_child_ci_receipt(self):
         state, projects, _ = self.records()
         receipt=json.loads((ROOT/"validation/P001C_S002_REVIEW_RECEIPT.json").read_text())
-        self.assertEqual(state["session_completed"], "S009")
+        self.assertEqual(state["session_completed"], "S010")
         self.assertEqual(receipt["children"]["P001C"]["main"], "21580ff1e59a323d02648ad0bd2772f06ce21899")
         self.assertEqual(receipt["children"]["P001C"]["sessions"][1]["pr_run"],38586770364)
         self.assertEqual(receipt["children"]["P001C"]["sessions"][1]["main_push_run"],38586904685)
@@ -296,8 +296,8 @@ class TournamentTests(unittest.TestCase):
     def test_s007_priority_collision_stop_and_binary_products(self):
         from itertools import combinations, product
         state, projects, _ = self.records()
-        self.assertEqual(state["session_completed"], "S009")
-        self.assertEqual(state["portfolio_decision"], "STOP_NO_ACTIVE_CHILD_S009_FRACTIONAL_LINK_CAPACITY_REFUTED")
+        self.assertEqual(state["session_completed"], "S010")
+        self.assertEqual(state["portfolio_decision"], "STOP_NO_ACTIVE_CHILD_S010_STRATEGIC_HARD_STOP")
         self.assertEqual(state["active_child_count"], 0)
         self.assertFalse(state["child_session_authorised"])
         self.assertIsNone(projects["active_project"])
@@ -315,8 +315,8 @@ class TournamentTests(unittest.TestCase):
         from itertools import product,combinations
         from fractions import Fraction
         state,projects,_ = self.records()
-        self.assertEqual(state["session_completed"],"S009")
-        self.assertEqual(state["next_programme_session"],"S010")
+        self.assertEqual(state["session_completed"],"S010")
+        self.assertEqual(state["next_programme_session"],"NONE")
         self.assertIsNone(projects["active_project"])
         for r,k in ((3,2),(3,3),(4,2),(5,2)):
             q=r-1
@@ -345,8 +345,8 @@ class TournamentTests(unittest.TestCase):
     def test_s009_all_r_fractional_rank_two_counterfamily_and_tensors(self):
         from itertools import combinations,product
         state,projects,_=self.records()
-        self.assertEqual(state["session_completed"],"S009")
-        self.assertEqual(state["next_programme_session"],"S010")
+        self.assertEqual(state["session_completed"],"S010")
+        self.assertEqual(state["next_programme_session"],"NONE")
         self.assertIsNone(projects["active_project"])
         for r in range(3,10):
             q=r-1
@@ -388,6 +388,21 @@ class TournamentTests(unittest.TestCase):
                 self.assertFalse(z[0]==z[1]==z[2])
         self.assertIn("SUN-PARENT-S010",(ROOT/"sessions/NEXT_SESSION.md").read_text())
         self.assertIn("G_q",(ROOT/"sessions/S009/MECHANISM_AUDIT.md").read_text())
+
+    def test_s010_hard_stop_and_entry_evidence(self):
+        state, projects, _ = self.records()
+        self.assertEqual(state["session_completed"],"S010")
+        self.assertEqual(state["next_programme_session"],"NONE")
+        self.assertEqual(state["portfolio_decision"],"STOP_NO_ACTIVE_CHILD_S010_STRATEGIC_HARD_STOP")
+        self.assertEqual(projects["last_parent_session"],"S010")
+        self.assertIsNone(projects["active_project"])
+        self.assertEqual(projects["planned"],[])
+        self.assertIn("NO EXECUTABLE NEXT SESSION",(ROOT/"sessions/NEXT_SESSION.md").read_text())
+        self.assertIn("Mishra",(ROOT/"programme/S010_SOURCE_REGISTER.md").read_text())
+        e=json.loads((ROOT/"validation/S010_ENTRY_EVIDENCE.json").read_text())
+        self.assertEqual(e["prior_merge"]["head_ci"]["conclusion"],"success")
+        self.assertEqual(e["prior_merge"]["main_push_ci"]["conclusion"],"success")
+        self.assertEqual(e["open_prs"]["parent"],0)
 
     def test_registration_rejects_wrong_child_sha(self):
         state, projects, receipt = self.records()

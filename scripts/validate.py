@@ -7,7 +7,7 @@ def txt(p): return (ROOT/p).read_text(encoding="utf8")
 def check_registration(state, projects, receipt):
     assert state["repo"] == projects["parent"] == receipt["parent"]["repository"] == "jfairfaxball-348/sunflower-structures-programme"
     assert state["repository_id"] == receipt["parent"]["repository_id"] == 1412469441
-    assert state["session_completed"] == "S009" and state["next_programme_session"] == "S010"
+    assert state["session_completed"] == "S010" and state["next_programme_session"] == "NONE"
     assert state["headline_id"] == "SUN" and state["champion"] == "Erdős–Rado Sunflower Conjecture"
     assert receipt["project_id"] == "P001" and state["active_paper_id"] == "NONE" and projects["active_project"] is None
     assert state["child_repo_created"] and state["first_paper_authorized"]
@@ -955,7 +955,7 @@ def main():
     assert projects["active_project"] is None and state["active_paper_id"] == "NONE"
     assert state["next_child_session"] == "NONE_NO_CHILD_AUTHORISED"
     assert state["p001c_first_mathematics_executed"]
-    assert state["portfolio_decision"] == "STOP_NO_ACTIVE_CHILD_S009_FRACTIONAL_LINK_CAPACITY_REFUTED"
+    assert state["portfolio_decision"] == "STOP_NO_ACTIVE_CHILD_S010_STRATEGIC_HARD_STOP"
     newreceipt=json.loads(txt("validation/P001C_S000_RECEIPT.json"))
     assert newreceipt["child"]["repository_id"] == 1419073216
     assert newreceipt["child"]["main_sha"] == "63091ad31062e4e0bd07bfcbc4942291de1f7c01"  # immutable S005 bootstrap receipt
@@ -1020,13 +1020,26 @@ def main():
     assert s9["prior_pr"]["main_push_action"]["result"]=="success"
     assert s9["open_pr_counts"]==[0,0,0,0]
     assert state["active_child_count"]==0 and not state["child_session_authorised"]
-    assert projects["last_parent_session"]=="S009" and projects["active_project"] is None and projects["planned"]==[]
+    assert projects["last_parent_session"]=="S010" and projects["active_project"] is None and projects["planned"]==[]
     assert "FRACTIONAL" in txt("sessions/S009/MECHANISM_AUDIT.md").upper()
     assert "Edmonds" in txt("programme/S009_SOURCE_REGISTER.md")
     assert (ROOT/"sessions/S009/INPUT_AUTHORITY.md").is_file()
     assert (ROOT/"sessions/S009/CLOSEOUT.md").is_file()
     assert "SUN-PARENT-S010" in txt("sessions/NEXT_SESSION.md")
 
+    # S010 mandatory tenth-session audit and non-executable next handoff
+    s10=json.loads(txt("validation/S010_ENTRY_EVIDENCE.json"))
+    assert s10["entry_main"]=="9f1832cedbe9b53e725d09684fa8fa0611fd4f23"
+    assert s10["prior_merge"]["pr"]==69 and len(s10["prior_merge"]["parents"])==2
+    assert s10["prior_merge"]["head_ci"]["conclusion"]=="success" and s10["prior_merge"]["main_push_ci"]["conclusion"]=="success"
+    assert s10["prior_merge"]["main_push_ci"]["event"]=="push"
+    assert all(c==0 for c in s10["open_prs"].values())
+    assert state["next_programme_session"]=="NONE" and state["portfolio_review_due"]=="NOT_SCHEDULED_HARD_STOP_NO_S011"
+    assert state["portfolio_decision"]=="STOP_NO_ACTIVE_CHILD_S010_STRATEGIC_HARD_STOP"
+    assert projects["last_parent_session"]=="S010" and projects["planned"]==[]
+    assert all((ROOT/p).is_file() for p in ("sessions/S010/CLOSEOUT.md","sessions/S010/PORTFOLIO_AUDIT.md","sessions/S010/INPUT_AUTHORITY.md","programme/S010_SOURCE_REGISTER.md"))
+    assert "NO EXECUTABLE NEXT SESSION" in txt("sessions/NEXT_SESSION.md")
+    assert "Mishra" in txt("programme/S010_SOURCE_REGISTER.md") and "Fukuyama" in txt("programme/S010_SOURCE_REGISTER.md")
     assert state["mathematical_result_count"]==0 and projects["active_project"] is None
     if receipt["session"] == "P001-S001":
         assert (ROOT/"sessions/P001-S001/REGISTRATION.md").is_file()
