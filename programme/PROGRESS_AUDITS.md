@@ -1,3 +1,6 @@
+## SUN-PARENT-S006 strategic binary early-stop audit (2026-10-14)
+Independent parent review observed P001C S001 and S002 as separate completed sessions with distinct successful PR-head/main-push GitHub Actions. Both provide valuable negative evidence but zero all-D exponent results; S002 heavy-fibre L is an unproved reformulation. Enforce S004 promised binary gate: PAUSE P001C, prohibit S003; preserve P001A retired, P001B paused, no active child. Future SUN-PARENT-S007 separate owner-invoked portfolio choice must prioritise genuinely new quantified mathematics over an incremental child treadmill. [Full S006 audit](../sessions/S006/QUANTITATIVE_AUDIT.md).
+
 # Audit schedule
 
 S000 setup only, no mathematical sessions completed. At S005, S010 and every fifth subsequent substantive programme session check mathematical advancement, proof correctness, novelty failures, publication, compute value, applications and roadmap; S010 and every tenth additionally compare continuation/pivot/termination strategies. Apply same cadence separately per paper-repository session number.

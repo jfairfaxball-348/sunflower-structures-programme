@@ -1,3 +1,6 @@
+## SUN-PARENT-S006 — precise P001C NO-result / early stop
+P001C-S001/S002 are completed and PR/main GitHub Actions-verified; neither proves a new all-D,all-n exponent improvement, D-independent C^n, three-petal conjecture or the all-r conjecture. Published Naslund–Sawin Theorem 2 exponent 2/3 remains baseline. S001 balancing and S002 one-hot examples refute unconditional auxiliary lemmas only, not the near-extremal conjecture. Elementary first-moment `p*≥(m−1)(m−2)/(3nm²)` is independent check but insufficient and NOT claimed novel; S002 heavy-fibre L is UNPROVED and induction-equivalent to improvement; Fourier balanced full-cube modes block termwise improvement, not restricted cancellations. **Parent decision PAUSE P001C**, NO S003. No active child, novelty cleared, new global theorem, Lean, manuscript or submission. [Audit](../sessions/S006/QUANTITATIVE_AUDIT.md).
+
 # Claim register
 
 ## SUN-PARENT-S005 — verified separate child governance, NO new mathematics

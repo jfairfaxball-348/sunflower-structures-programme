@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "session": "SUN-PARENT-S006",
+  "date": "2026-10-14",
+  "owner_invoked": true,
+  "authority_path": "sessions/NEXT_SESSION.md",
+  "parent": {
+    "repo": "jfairfaxball-348/sunflower-structures-programme",
+    "entry_main": "8212235af310bc2b1a912d05332f184282d0d6eb",
+    "entry_tree": "78199df6885a1e503dda13cacea3768110ca1dd3",
+    "s005_pr": 65,
+    "s005_main_push_run": 38579368318,
+    "s005_main_push_job": 115904849427,
+    "s005_main_push_conclusion": "success",
+    "open_prs_at_entry": 0
+  },
+  "children": {
+    "P001A": {
+      "repo": "jfairfaxball-348/sunflower-internal-kernel-extraction",
+      "main": "c7ede2676909f335ea2bb9f247d5a0e2abdff12c",
+      "last": "P001-S051",
+      "status": "RETIRED"
+    },
+    "P001B": {
+      "repo": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+      "main": "b8660e1ff0bda6c367a725b6beb9aa98f927a584",
+      "last": "P001B-S003",
+      "status": "PAUSED"
+    },
+    "P001C": {
+      "repo": "jfairfaxball-348/alphabet-uniform-sunflower-capacity",
+      "repository_id": 1419073216,
+      "main": "21580ff1e59a323d02648ad0bd2772f06ce21899",
+      "tree": "036cb501c2afb8e9d5b087c8a5bd30ded8f41ef8",
+      "merge_parents": [
+        "519d70b20162e219f628b90d2cf3de4c62d9a209",
+        "169c2bfde27f4ab8e2c43c5339bdab4fb417d285"
+      ],
+      "sessions": [
+        {
+          "session": "P001C-S001",
+          "pr": 2,
+          "final_head": "deccc1c7679e9ad250bdbc5c7cb144f8268b8750",
+          "pr_run": 38582946394,
+          "pr_job": 115917327327,
+          "pr_conclusion": "success",
+          "main": "519d70b20162e219f628b90d2cf3de4c62d9a209",
+          "main_push_run": 38583139330,
+          "main_push_job": 115917999843,
+          "main_conclusion": "success"
+        },
+        {
+          "session": "P001C-S002",
+          "pr": 3,
+          "final_head": "169c2bfde27f4ab8e2c43c5339bdab4fb417d285",
+          "pr_run": 38586770364,
+          "pr_job": 115930731515,
+          "pr_conclusion": "success",
+          "main": "21580ff1e59a323d02648ad0bd2772f06ce21899",
+          "main_push_run": 38586904685,
+          "main_push_job": 115931204619,
+          "main_conclusion": "success"
+        }
+      ],
+      "decision": "NO_RETURN_PARENT_PAUSE",
+      "s003_queued": false
+    }
+  },
+  "math": {
+    "new_uniform_D_exponent": false,
+    "globally_new_theorems": 0,
+    "formalizations": 0,
+    "publications": 0,
+    "near_extremal_L": "UNPROVED_NONINDEPENDENT",
+    "old_exponent": "2/3",
+    "all_r_transfer": false,
+    "source_status": "TARGETED_SOURCE_CHECK_PRIORITY_NOT_CLEARED"
+  },
+  "parent_decision": "PAUSE_P001C",
+  "active_child": null,
+  "next_parent": "SUN-PARENT-S007_FUTURE_OWNER_INVOKED",
+  "s007_executed": false,
+  "caveat": "Parent S006 own PR-head and merged-main Actions cannot be put in this pre-event receipt; independently verify after events."
+}
