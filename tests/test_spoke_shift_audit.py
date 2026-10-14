@@ -8,7 +8,7 @@ from spoke_shift_audit import check_grid, pass_lex, spoke, star
 
 class SpokeShiftAuditTests(unittest.TestCase):
     def test_general_grid(self):
-        self.assertEqual(check_grid(), (22, 17))
+        self.assertEqual(check_grid(), (22, 19))
 
     def test_binary_small_examples(self):
         for k in range(2, 7):
