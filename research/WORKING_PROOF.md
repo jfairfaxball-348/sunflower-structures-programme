@@ -76,7 +76,7 @@ For k=1 take at most s-1 singleton sets. Hence H_s would prove the unrestricted 
 
     C_s=max(s-1, 2 exp(2D_s(1+log(D_s)/log(4)))).
 
-Equation (6) shows k/log k is the smallest plausible ORDER of a universal shifted-tau upper bound of this kind when s>=4. However this is NOT a viable bridge: the spoke-shift theorem PROVES that this common-(k-1)-core star occurs for EVERY k>=2, and it extends to P(q,k) for all fixed q>=2. This behaviour is now PROVED FOR ALL k>=2, indeed q-ary products and a sparse spoke subfamily show it for every s>=3. H_s is therefore FALSE for the stipulated lexicographic shift order. See SPOKE_SHIFT_THEOREM.md.
+Equation (6) previously supplied a necessary Omega_q(k/log k) inflation, not a sufficient upper bound. The new [spoke-shift theorem](SPOKE_SHIFT_THEOREM.md) proves the stronger Omega_q(k) inflation for the specific lexicographic full shift, for EVERY q>=2 and rank k>=2, including binary products and a sparse q-ary subfamily. Thus H_s is FALSE for every fixed s>=3 under that shift order. The conditional implication above remains logically correct but cannot prove the conjecture because its premise is refuted.
 
 **Other explored routes.** Arbitrary original link reduction loses a factor up to k(s-1) per rank and reproduces factorial bounds, not C_s^k. Indefinite one-step shift multiplication costs 2^T with T potentially depending on n. Global fixed-support colouring is rigorous but too expensive for growing support. Literal shifted-original subfamily extraction is destroyed by (5). Heavy stars have high links but cannot cover pair-private or product arrangements. None of these routes closes the full theorem.
 
