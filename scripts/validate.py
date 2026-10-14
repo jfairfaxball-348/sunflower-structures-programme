@@ -1040,6 +1040,8 @@ def main():
     assert all((ROOT/p).is_file() for p in ("sessions/S010/CLOSEOUT.md","sessions/S010/PORTFOLIO_AUDIT.md","sessions/S010/INPUT_AUTHORITY.md","programme/S010_SOURCE_REGISTER.md"))
     assert "NO EXECUTABLE NEXT SESSION" in txt("sessions/NEXT_SESSION.md")
     assert "Mishra" in txt("programme/S010_SOURCE_REGISTER.md") and "Fukuyama" in txt("programme/S010_SOURCE_REGISTER.md")
+    assert "SHIFTED" in txt("programme/S010_SOURCE_REGISTER.md")
+    assert "2606.02667v2" in txt("sessions/S010/SOURCE_CORRECTION.md")
     assert state["mathematical_result_count"]==0 and projects["active_project"] is None
     if receipt["session"] == "P001-S001":
         assert (ROOT/"sessions/P001-S001/REGISTRATION.md").is_file()

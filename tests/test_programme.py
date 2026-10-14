@@ -399,6 +399,8 @@ class TournamentTests(unittest.TestCase):
         self.assertEqual(projects["planned"],[])
         self.assertIn("NO EXECUTABLE NEXT SESSION",(ROOT/"sessions/NEXT_SESSION.md").read_text())
         self.assertIn("Mishra",(ROOT/"programme/S010_SOURCE_REGISTER.md").read_text())
+        self.assertIn("SHIFTED",(ROOT/"programme/S010_SOURCE_REGISTER.md").read_text())
+        self.assertIn("2606.02667v2",(ROOT/"sessions/S010/SOURCE_CORRECTION.md").read_text())
         e=json.loads((ROOT/"validation/S010_ENTRY_EVIDENCE.json").read_text())
         self.assertEqual(e["prior_merge"]["head_ci"]["conclusion"],"success")
         self.assertEqual(e["prior_merge"]["main_push_ci"]["conclusion"],"success")

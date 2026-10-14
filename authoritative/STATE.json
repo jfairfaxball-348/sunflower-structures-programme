@@ -50,7 +50,8 @@
     "S009 cyclic G_q degree/size/fractional matching is elementary, same-assistant and classical-matching-priority-obstructed, NOT a new theorem, independent proof scrutiny or complete novelty certification.",
     "S010 Fukuyama arXiv:2510.19037 sublog claim: author April 2026 notes instability, independent acceptance absent; BCW conservative published benchmark only.",
     "S010 Mishra arXiv:2606.02667 full solution CLAIM not independently proved/refereed, external OPEN reports conflict; no exhaustive status assertion.",
-    "S010 hard stop: zero priority-cleared new general theorem/variable-k all-r bridge; source scan targeted, proof review same assistant, no future S011 staged."
+    "S010 hard stop: zero priority-cleared new general theorem/variable-k all-r bridge; source scan targeted, proof review same assistant, no future S011 staged.",
+    "POST_S010_SOURCE_CORRECTION_2026_10_14: Mishra arXiv:2606.02667v1 full-conjecture claim was superseded by author v2 dated June 8 titled Erdős Rado Sunflower Theorem for Shifted Families; this is NOT a live full-solution claim. Restricted v2 proof not independently assessed; conjecture status remains evidence-qualified OPEN."
   ],
   "next_programme_session": "NONE",
   "last_registry_update": "P001-S051",
@@ -110,5 +111,6 @@
   "s007_binary_cube_reduction": "NO_CONSTANT_FRACTION_VC_LE_D_SUBFAMILY_OF_BINARY_PRODUCT_FOR_FIXED_D",
   "s007_active_children": 0,
   "s010_audit": "TENTH_STRATEGY_AUDIT_COMPLETE",
-  "s010_successor": "S011_NOT_STAGED"
+  "s010_successor": "S011_NOT_STAGED",
+  "s010_mishra_latest_version": "ARXIV_2606_02667_V2_2026_06_08_SHIFTED_FAMILIES_ONLY_V1_FULL_CLAIM_SUPERSEDED"
 }

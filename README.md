@@ -1,3 +1,7 @@
+**POST-S010 SOURCE CORRECTION (2026-10-14):** Mishra arXiv:2606.02667 v1 claimed a full sunflower proof, but official **v2 (8 June 2026) explicitly narrows to shifted families**; there is no confirmed full conjecture resolution. [Erratum](sessions/S010/SOURCE_CORRECTION.md). S010 STOP_NO_ACTIVE_CHILD remains a feasibility-based portfolio decision, NOT a claim the headline was solved. **No S011 staged.**
+
+---
+
 **CURRENT SUN-PARENT-S010, 2026-10-14:** Tenth substantive parent strategy audit concluded **STOP_NO_ACTIVE_CHILD / SHELF**, no S011 staged; all children frozen. No new general original theorem or all-r variable-k bound. [Full audit](sessions/S010/PORTFOLIO_AUDIT.md), [sources](programme/S010_SOURCE_REGISTER.md), [closed handoff](sessions/NEXT_SESSION.md). Earlier history below is dated.
 
 ---
