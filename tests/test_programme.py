@@ -1,427 +1,54 @@
-import copy,json,sys,unittest
+"""Direct single-repo mathematical sanity tests. Historical portfolio tests retired."""
+import json
+import sys
+import unittest
+from itertools import combinations
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT/"scripts"))
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
 import validate
-class TournamentTests(unittest.TestCase):
-    def test_structural_integrity(self):validate.main()
-    def test_unique_positive_scores(self):
-        x=json.loads((ROOT/"tournament/S000/data.json").read_text())
-        self.assertEqual(len(x),10)
-        self.assertTrue(all(c["score"]>0 for c in x))
-    def test_separate_handoffs(self):
-        self.assertIn("P001-S000", (ROOT/"papers/P001_S000_KICKOFF_PROMPT.md").read_text())
-        self.assertIn("S001", (ROOT/"sessions/NEXT_SESSION.md").read_text())
-    def records(self):
-        return tuple(json.loads((ROOT/p).read_text()) for p in
-                     ("authoritative/STATE.json", "programme/PROJECTS.json", "programme/P001_REGISTRATION.json"))
-    def test_s051_preserves_s050_and_earlier_results_without_promoting_tik(self):
-        state, projects, receipt = self.records()
-        self.assertEqual(receipt["session"], "P001-S051")
-        audit = receipt["independent_registration_verification"]
-        self.assertEqual(projects["projects"][0]["verified_commit"], "c7ede2676909f335ea2bb9f247d5a0e2abdff12c")
-        self.assertEqual(receipt["child"]["merged_pr"]["number"], 53)
-        self.assertEqual(receipt["child"]["final_head_validation"][0]["run_id"], 38474098838)
-        self.assertEqual(receipt["child"]["main_validation"]["run_id"], 38474286573)
-        self.assertTrue(audit["s046_connected_6m_spread_corefree_hdse3"])
-        self.assertTrue(audit["s046_original_pair_2_and_m"])
-        self.assertTrue(audit["s046_matching_or_one_hub_method_refuted"])
-        self.assertEqual(audit["s046_same_e_near_full_valid"], "m^4/(m^4+1)")
-        self.assertFalse(audit["s046_unrestricted_hdse3_proved"])
-        self.assertFalse(audit["s046_r3_proved"])
-        self.assertFalse(audit["s046_all_k_tik_proved"])
-        self.assertEqual(audit["s026_single_original_Q_edge_bound"], "t/(9*m^2)")
-        self.assertTrue(audit["s026_exact_Q_singleton_required"])
-        self.assertTrue(audit["s026_light_support_overlap_allowed"])
-        self.assertTrue(audit["s026_final_H_pair_singleton_empty_certified"])
-        self.assertFalse(audit["s026_unrestricted_direct_edge_512_proved"])
-        self.assertTrue(audit["s027_full_support_thin_first_refuted"])
-        self.assertFalse(audit["s027_frozen_multihub_512_proved"])
-        self.assertFalse(audit["s027_frozen_multihub_512_refuted"])
-        self.assertEqual(audit["s027_q1024_thinned_optimum"], 1026)
-        self.assertEqual(audit["s027_q1024_min_required"], 2047)
-        self.assertEqual(audit["s027_same_family_full_valid_edges"], 1076891650)
-        self.assertFalse(audit["full_tik_proved"])
-        self.assertTrue(audit["bsel_universal_refuted"])
-        self.assertEqual(state["session_completed"], "S010")
-        self.assertEqual(projects["projects"][0]["last_child_session"], "P001-S051")
-        self.assertTrue(audit["s028_frozen_C512_proved"])
-        self.assertEqual(audit["s028_stronger_restricted_bound"], "t/((3m-2)*(m-1)) >= t/(3m^2)")
-        self.assertTrue(audit["s028_original_Q_fixed"])
-        self.assertTrue(audit["s028_original_one_Q_per_block"])
-        self.assertTrue(audit["s028_all_final_exact_pair_singleton_empty_certified_symbolically"])
-        self.assertFalse(audit["s028_unrestricted_direct_edge_proved"])
-        self.assertFalse(audit["s028_full_tik_proved"])
-        self.assertFalse(audit["independent_mathematical_review"])
-        self.assertEqual(receipt["next_child_obligation"]["session"], "P001-S052")
-        self.assertFalse(audit["s029_frozen_C512_proved"])
-        self.assertFalse(audit["s029_frozen_C512_refuted"])
-        self.assertTrue(audit["s029_A_majority_meets_C512"])
-        self.assertTrue(audit["s029_B_Hall_representatives_injective"])
-        self.assertTrue(audit["s029_rep_only_B512_refuted"])
-        self.assertFalse(audit["s030_future_only"])
-        self.assertTrue(audit["s030_mandatory_fifth_audit_completed"])
-        self.assertTrue(audit["s030_hall_lift_all_refuted"])
-        self.assertEqual(audit["s030_weighted_star_bound"], "W_q/(m-1)")
-        self.assertEqual(audit["s030_simple_two_m_core_bound"], "T_C/(m-1)")
-        self.assertFalse(audit["s030_frozen_C512_proved"])
-        self.assertFalse(audit["s030_full_B_bound_proved"])
-        self.assertFalse(audit["s031_future_only"])
-        self.assertFalse(audit["s032_future_only"])
-        self.assertFalse(audit["s033_future_only"])
-        self.assertFalse(audit["s034_future_only"])
-        self.assertFalse(audit["s035_fifth_audit_future_only"])
-        self.assertTrue(audit["s035_fifth_audit_completed"])
-        self.assertEqual(audit["s035_fractional_cover_bound"], "|D|/[8*m^2*tau*(D)]")
-        self.assertTrue(audit["s035_high_cover_shortcut_refuted"])
-        self.assertFalse(audit["s035_dse3_proved"])
-        self.assertTrue(audit["s034_naive_gluing_refuted"])
-        self.assertFalse(audit["s034_full_dse3_proved"])
-        self.assertTrue(audit["s031_same_assistant_symbolic_only"])
-        self.assertFalse(audit["s031_frozen_C512_all_m_proved"])
-        self.assertFalse(audit["s031_full_TIK_proved"])
-        self.assertEqual(audit["s031_bounded_m_C512_max"], 128)
-        self.assertEqual(audit["s031_light_singleton_bad_matching"], 2)
-        self.assertTrue(audit["s032_five_link_certificate_exact_same_assistant"])
-        self.assertTrue(audit["s032_global_private_extra_petal_constant_fraction_refuted"])
-        self.assertTrue(audit["s032_palette_full_F_internally_valid"])
-        self.assertEqual(audit["s032_palette_private_mass_cap"], "2/(m+1)")
-        self.assertEqual(audit["s032_sharpened_bounded_m_C512_max"], 129)
-        self.assertEqual(audit["s032_sharpened_bounded_m_B256_max"], 66)
-        self.assertFalse(audit["s032_universal_B256_proved"])
-        self.assertFalse(audit["s032_full_TIK_proved"])
-        self.assertFalse(audit["s032_independent_math_review"])
-        self.assertTrue(audit["s033_link_reduction_all_k_same_assistant"])
-        self.assertEqual(audit["s033_rank_two_tik_c2"], "1/8")
-        self.assertEqual(audit["s033_r3_equivalent_to"], "DSE_3")
-        self.assertFalse(audit["s033_dse3_proved"])
-        self.assertFalse(audit["s033_dse3_refuted"])
-        self.assertFalse(audit["s033_aux_check_spread_branches_exercised"])
-        self.assertFalse(audit["s033_r3_proved"])
-        self.assertFalse(audit["s033_full_TIK_proved"])
-        self.assertFalse(audit["s033_independent_math_review"])
-        self.assertEqual(audit["s033_next_fifth_audit"], "P001-S035")
-        self.assertTrue(audit["s036_matching_or_high_degree_reduction_same_assistant"])
-        self.assertTrue(audit["s036_hdse3_equivalence_conditional_on_s033"])
-        self.assertFalse(audit["s036_hdse3_proved"])
-        self.assertFalse(audit["s036_r3_proved"])
-        self.assertFalse(audit["s036_full_tik_proved"])
-        self.assertFalse(audit["s037_future_only"])
-        self.assertFalse(audit["s038_future_only"])
-        self.assertFalse(audit["s039_future_only"])
-        self.assertFalse(audit["s040_fifth_audit_future_only"])
-        self.assertTrue(audit["s040_fifth_tenth_audit_completed"])
-        self.assertEqual(audit["s040_all_palette_disjoint_star_forest_bound"], "|E|/(3*m^3)")
-        self.assertTrue(audit["s040_arbitrary_palette_sizes"])
-        self.assertTrue(audit["s040_original_complete_disjoint_star_forest_required"])
-        self.assertTrue(audit["s040_true_final_pair_singleton_empty_checked_same_assistant"])
-        self.assertFalse(audit["s040_hdse3_proved"])
-        self.assertFalse(audit["s040_r3_proved"])
-        self.assertFalse(audit["s040_full_tik_proved"])
-        self.assertFalse(audit["s040_independent_math_review"])
-        self.assertFalse(audit["s041_future_only"])
-        self.assertFalse(audit["s042_future_only"])
-        self.assertFalse(audit["s043_future_only"])
-        self.assertFalse(audit["s044_future_only"])
-        self.assertFalse(audit["s045_future_only"])
-        self.assertTrue(audit["s045_fifth_audit_completed"])
-        self.assertFalse(audit["s045_hdse3_proved"])
-        self.assertFalse(audit["s045_r3_proved"])
-        self.assertFalse(audit["s045_full_tik_proved"])
-        self.assertTrue(audit["s045_unbalanced_original_hdse3_positive"])
-        self.assertEqual(audit["s045_local_checkout_validation"], "NOT_RUN")
-        self.assertEqual(audit["s044_dense_balanced_bound"], "|F|/(36*A*m^3)")
-        self.assertTrue(audit["s044_explicit_cyclic_original_hdse3"])
-        self.assertFalse(audit["s044_full_tik_proved"])
-        self.assertEqual(audit["s043_peeled_bound"], "|D|/(108*m^3)")
-        self.assertEqual(audit["s043_low_delta_majority_bound"], "|F|/(216*m^3)")
-        self.assertFalse(audit["s043_dense_surviving_core_solved"])
-        self.assertFalse(audit["s043_hdse3_proved"])
-        self.assertFalse(audit["s043_full_tik_proved"])
-        self.assertEqual(audit["s042_linear_rank3_bound"], "|F|/(108*m^3)")
-        self.assertTrue(audit["s042_two_way_regional_mass_capture_refuted"])
-        self.assertTrue(audit["s042_affine_steiner_same_E_entirely_valid"])
-        self.assertFalse(audit["s042_hdse3_proved"])
-        self.assertFalse(audit["s042_full_tik_proved"])
-        self.assertEqual(audit["s041_rank3_bound"], "|F|/(16*B*m^3)")
-        self.assertFalse(audit["s041_hdse3_proved"])
-        self.assertTrue(audit["s039_exact_five_link_atlas"])
-        self.assertTrue(audit["s039_intermediate_private_spoke_hdse3"])
-        self.assertTrue(audit["s039_private_spoke_all_pair_degree_lt_m"])
-        self.assertEqual(audit["s039_private_spoke_same_e_fraction"], "1/(m-1)")
-        self.assertFalse(audit["s039_hdse3_proved"])
-        self.assertFalse(audit["s039_r3_proved"])
-        self.assertFalse(audit["s039_full_tik_proved"])
-        self.assertTrue(audit["s038_tensor_all_ranks_iff_same_assistant"])
-        self.assertTrue(audit["s038_exact_robust_core_graph_mcore"])
-        self.assertTrue(audit["s038_linear_spread_corefree_highdegree_no_tensor"])
-        self.assertEqual(audit["s038_linear_same_E_valid_fraction"], "1")
-        self.assertTrue(audit["s038_universal_full_tensor_capture_refuted"])
-        self.assertFalse(audit["s038_hdse3_proved"])
-        self.assertFalse(audit["s038_r3_proved"])
-        self.assertFalse(audit["s038_full_tik_proved"])
-        self.assertFalse(audit["s038_independent_math_review"])
-        self.assertTrue(audit["s037_pair_core_palette_iff_same_assistant"])
-        self.assertTrue(audit["s037_high_degree_overlap_example_core_free_spread_no_private_pair"])
-        self.assertTrue(audit["s037_naive_union_invalid_pair"])
-        self.assertEqual(audit["s037_same_family_valid_fraction"], "1/(m-1)^2")
-        self.assertFalse(audit["s037_hdse3_proved"])
-        self.assertFalse(audit["s037_r3_proved"])
-        self.assertFalse(audit["s037_full_tik_proved"])
-        # New S047 checks complement, rather than erase, historical S046 assertions.
-        self.assertEqual(audit["s047_graph_cell_bound"], "|F|/(m-1)^2")
-        self.assertEqual(audit["s047_sat_upgrade"], "|F|/(m-1)")
-        self.assertTrue(audit["s047_sat_arbitrary_base_overlap"])
-        self.assertTrue(audit["s047_low_common_hub_required"])
-        self.assertEqual(audit["s047_conflicting_original_fraction"], "1/2")
-        self.assertEqual(audit["s047_same_E_retained_fraction"], "1/2")
-        self.assertTrue(audit["s047_connected_6m_spread_corefree_highhub"])
-        self.assertTrue(audit["s047_global_singleton_cross_gluing_failure"])
-        self.assertFalse(audit["s047_unrestricted_hdse3_proved"])
-        self.assertFalse(audit["s047_r3_proved"])
-        self.assertFalse(audit["s047_all_k_tik_proved"])
-        self.assertFalse(audit["s047_independent_math_review"])
-        # Scoped S048 additions and actual outgoing child CI; retain ALL historical S047 assertions.
-        self.assertEqual(audit["s048_conditional_all_rank_bound"], "c_(k-1)e/[q*m^(k-1)*(m-1)]")
-        self.assertEqual(audit["s048_rank3_bound"], "e/(8q*m^3) via S033")
-        self.assertEqual(audit["s048_rich_graph_bound"], "e/[q*(m-1)]")
-        self.assertTrue(audit["s048_linear_overlap_full_original_validity"])
-        self.assertTrue(audit["s048_connected_hdse3_original_full_valid_control"])
-        self.assertFalse(audit["s048_unrestricted_hdse3_proved"])
-        self.assertFalse(audit["s048_r3_proved"])
-        self.assertFalse(audit["s048_all_k_tik_proved"])
-        self.assertEqual(receipt["child"]["merged_pr"]["head_sha"], "e70d332eaa39920ac98e4e576f38b0a4845f8c0a")
-        self.assertEqual(receipt["child"]["final_head_validation"][0]["jobs"][0]["id"], 115560366457)
-        self.assertEqual(receipt["child"]["main_validation"]["jobs"][0]["id"], 115561024657)
-        self.assertEqual(state["last_registry_update"], "P001-S051")
-        self.assertFalse(receipt["parent_programme_session_executed"])
-        self.assertTrue(audit["s049_original_one_hub_r_h_exact_iff"])
-        self.assertEqual(audit["s049_original_high_richness_retention"], "|F|/(2m^3)")
-        self.assertTrue(audit["s049_richness_requires_log_e"])
-        self.assertFalse(audit["s049_unrestricted_hdse3_proved"])
-        self.assertFalse(audit["s049_r3_proved"])
-        self.assertFalse(audit["s049_all_k_proved"])
-        self.assertFalse(audit["s049_independent_math_review"])
-        self.assertFalse(projects["projects"][0]["s050_future_only"])
-        self.assertFalse(projects["projects"][0]["s051_future_only"])
-        self.assertTrue(projects["projects"][0]["s052_future_only"])
-        self.assertTrue(audit["s051_normalized_6m_spread_corefree_highhub"])
-        self.assertEqual(audit["s051_jx_matching"], 2)
-        self.assertEqual(audit["s051_same_original_valid_fraction"], ">1-1/L>=1-m^-4")
-        self.assertTrue(audit["s050_fifth_tenth_audit_completed"])
-        self.assertEqual(audit["s050_rank3_tripartite_fraction"], "2/9")
-        self.assertEqual(audit["s050_all_rank_fraction"], "k!/k^k")
-        self.assertTrue(audit["s050_five_certificate_iff_same_assistant"])
-        self.assertTrue(audit["s050_naive_link_gluing_false"])
-        self.assertEqual(audit["s050_same_F_valid_fraction"], "m/(2m-1)>1/2")
-        self.assertFalse(audit["s050_r3_proved"])
-        self.assertFalse(audit["s050_unrestricted_hdse3_proved"])
-        self.assertFalse(audit["s050_all_k_proved"])
-        self.assertFalse(audit["s050_independent_review"])
-        self.assertFalse(projects["projects"][0]["s049_full_tik_proved"])
-        self.assertTrue((ROOT/"sessions/S001/CLOSEOUT.md").is_file())
+from shift_sanity import shift, fully_shift, has_sunflower, coordinate_product
 
-    def test_owner_supplied_p001b_repo_and_separate_project_handoff(self):
-        state, projects, receipt = self.records()
-        b = projects["projects"][1]
-        self.assertEqual(b["repository_id"], 1418652673)
-        self.assertTrue(b["repository_created"])
-        self.assertTrue(b["bootstrapped"])
-        self.assertEqual(b["verified_commit"], "b8660e1ff0bda6c367a725b6beb9aa98f927a584")
-        self.assertFalse(b["next_executed"])
-        self.assertEqual(state["next_programme_session"], "NONE")
-        prompt = (ROOT/"prompts/P001B_S001_LAUNCH.md").read_text()
-        self.assertIn("Four-Petal-Sunflower-Free-Triple-Extremal-Threshold", prompt)
-        self.assertIn("P001B-S001", prompt)
-        self.assertIn("separate ChatGPT Project", prompt)
-        self.assertIn("all SIX intersections", prompt)
-        self.assertIn("EMPTY", prompt)
-        self.assertIn("39 ≤ f(3,4) ≤ 49", prompt)
-        self.assertTrue((ROOT/"sessions/S002/CLOSEOUT.md").is_file())
-        self.assertIn("SUN-PARENT-S010", (ROOT/"sessions/NEXT_SESSION.md").read_text())
 
-    def test_s003_p001b_paused_with_replayed_restricted_certificate(self):
-        state, projects, _ = self.records()
-        self.assertEqual(state["portfolio_decision"], "STOP_NO_ACTIVE_CHILD_S010_STRATEGIC_HARD_STOP")
-        self.assertEqual(state["active_paper_id"], "NONE")
-        self.assertIsNone(projects["active_project"])
-        self.assertTrue(state["p001b_first_mathematics_executed"])
-        self.assertEqual(state["p001b_latest_child_session"], "P001B-S003")
-        self.assertFalse(state["p001b_new_witness40"])
-        self.assertFalse(state["p001b_certified_global_new_bound"])
-        self.assertFalse(projects["projects"][1]["next_executed"])
-        cert=json.loads((ROOT/"validation/P001B_S003_REVIEW_RECEIPT.json").read_text())
-        self.assertEqual(cert["child_s003_free_counts"],[1,13,16,0])
-        self.assertEqual(cert["child_s003_compact_certificate_parent_independent_recheck"]["free_pairs"],16)
-        self.assertTrue(cert["child_s003_compact_certificate_parent_independent_recheck"]["all_8_quartet_witnesses_valid"])
-        self.assertTrue((ROOT/"sessions/S003/CLOSEOUT.md").is_file())
+class BridgeResearchTests(unittest.TestCase):
+    def test_live_programme(self):
+        validate.main()
+        state = json.loads((ROOT / "authoritative/STATE.json").read_text())
+        self.assertFalse(state["full_conjecture_proved"])
+        self.assertFalse(state["legacy_hierarchy_active"])
+        self.assertEqual(state["active_next_prompt"], "sessions/NEXT_SESSION.md")
 
-    def test_s005_verified_child_launch_gate_without_mathematics(self):
-        state, projects, _ = self.records()
-        self.assertEqual(state["session_completed"], "S010")
-        self.assertEqual(state["next_programme_session"], "NONE")
-        self.assertEqual(projects["projects"][2]["id"], "P001C")
-        self.assertTrue(projects["projects"][2]["repository_created"])
-        self.assertTrue(projects["projects"][2]["bootstrapped"])
-        self.assertFalse(projects["projects"][2]["next_executed"])
-        self.assertEqual(state["p001c_repository_id"], 1419073216)
-        self.assertEqual(state["p001c_verified_main_sha"], "21580ff1e59a323d02648ad0bd2772f06ce21899")
-        self.assertIsNone(projects["active_project"])
-        self.assertEqual(state["next_child_session"], "NONE_NO_CHILD_AUTHORISED")
-        self.assertIn("U(D,n)", (ROOT/"prompts/P001C_S001_LAUNCH.md").read_text())
-        self.assertIn("SUN-PARENT-S010", (ROOT/"sessions/NEXT_SESSION.md").read_text())
-        evidence=json.loads((ROOT/"validation/P001C_S000_RECEIPT.json").read_text())
-        self.assertTrue(evidence["child"]["pr"]["merged"])
-        self.assertEqual(evidence["child"]["pr"]["head_ci"]["conclusion"], "success")
-        self.assertEqual(evidence["child"]["main_ci"]["conclusion"], "success")
-        self.assertEqual(evidence["child"]["main_ci"]["head_sha"], evidence["child"]["main_sha"])
-        self.assertFalse(evidence["child"]["next_executed"])
-        self.assertEqual(evidence["mathematics"]["new_theorems"], 0)
-        self.assertTrue((ROOT/"sessions/S005/CLOSEOUT.md").is_file())
+    def test_one_shift_creates_sunflower_not_in_original(self):
+        f = frozenset(map(frozenset, ({2, 3}, {1, 4}, {1, 5})))
+        self.assertFalse(has_sunflower(f, 3))
+        g = shift(f, 1, 2)
+        self.assertTrue(has_sunflower(g, 3))
+        self.assertEqual(len(f), len(g))
 
-    def test_s006_binary_kill_gate_and_child_ci_receipt(self):
-        state, projects, _ = self.records()
-        receipt=json.loads((ROOT/"validation/P001C_S002_REVIEW_RECEIPT.json").read_text())
-        self.assertEqual(state["session_completed"], "S010")
-        self.assertEqual(receipt["children"]["P001C"]["main"], "21580ff1e59a323d02648ad0bd2772f06ce21899")
-        self.assertEqual(receipt["children"]["P001C"]["sessions"][1]["pr_run"],38586770364)
-        self.assertEqual(receipt["children"]["P001C"]["sessions"][1]["main_push_run"],38586904685)
-        self.assertFalse(receipt["math"]["new_uniform_D_exponent"])
-        self.assertFalse(projects["projects"][2]["global_improvement_proved"])
-        self.assertEqual(projects["projects"][2]["last_child_session"],"P001C-S002")
-        self.assertIsNone(projects["active_project"])
-        self.assertTrue((ROOT/"sessions/S006/QUANTITATIVE_AUDIT.md").is_file())
-        self.assertIn("SUN-PARENT-S010",(ROOT/"sessions/NEXT_SESSION.md").read_text())
+    def test_two_element_changes_in_singleton_full_shift(self):
+        f = frozenset((frozenset({3, 4}),))
+        g = fully_shift(f, 4)
+        self.assertEqual(g, frozenset((frozenset({1, 2}),)))
+        self.assertEqual(len(next(iter(f)) ^ next(iter(g))), 4)
 
-    def test_s007_priority_collision_stop_and_binary_products(self):
-        from itertools import combinations, product
-        state, projects, _ = self.records()
-        self.assertEqual(state["session_completed"], "S010")
-        self.assertEqual(state["portfolio_decision"], "STOP_NO_ACTIVE_CHILD_S010_STRATEGIC_HARD_STOP")
-        self.assertEqual(state["active_child_count"], 0)
-        self.assertFalse(state["child_session_authorised"])
-        self.assertIsNone(projects["active_project"])
-        self.assertEqual(projects["planned"], [])
-        self.assertIn("2609.18995", (ROOT/"programme/S007_SOURCE_REGISTER.md").read_text())
-        self.assertIn("TR26-220", (ROOT/"programme/S007_SOURCE_REGISTER.md").read_text())
-        self.assertTrue((ROOT/"sessions/S007/PORTFOLIO_AUDIT.md").is_file())
-        for k in range(1, 6):
-            fam=[frozenset((i, b) for i, b in enumerate(t)) for t in product((0,1), repeat=k)]
-            self.assertEqual(len(fam), 2**k)
-            for a,b,c in combinations(fam, 3):
-                self.assertFalse(a & b == a & c == b & c)
+    def test_product_obstruction_four_petals(self):
+        for k in range(1, 4):
+            f = coordinate_product(3, k)
+            self.assertEqual(len(f), 3**k)
+            self.assertFalse(has_sunflower(f, 4))
 
-    def test_s008_q_ary_original_links_and_high_hub_collision_obstruction(self):
-        from itertools import product,combinations
-        from fractions import Fraction
-        state,projects,_ = self.records()
-        self.assertEqual(state["session_completed"],"S010")
-        self.assertEqual(state["next_programme_session"],"NONE")
-        self.assertIsNone(projects["active_project"])
-        for r,k in ((3,2),(3,3),(4,2),(5,2)):
-            q=r-1
-            fam=[frozenset((i,b) for i,b in enumerate(word)) for word in product(range(q),repeat=k)]
-            self.assertEqual(len(fam),q**k)
-            for petals in combinations(fam,r):
-                intersections=[a&b for a,b in combinations(petals,2)]
-                self.assertFalse(all(v==intersections[0] for v in intersections))
-            kernels={frozenset()} | {frozenset(c) for edge in fam for t in range(1,k) for c in combinations(edge,t)}
-            for C in kernels:
-                link=[edge for edge in fam if C <= edge]
-                if len(link)<r:continue
-                moment=sum((Fraction(sum(v in edge for edge in link),len(link)))**2 for v in set().union(*fam)-C)
-                self.assertEqual(moment,Fraction(k-len(C),q))
-                self.assertGreaterEqual(moment,Fraction(2,q))
-                self.assertGreater(moment,Fraction(2,r*(r-1)))
-            hub=frozenset({("hub",0)})
-            cone=[edge|hub for edge in [frozenset((i,b) for i,b in enumerate(word)) for word in product(range(q),repeat=k-1)]]
-            self.assertEqual(len(cone),q**(k-1))
-            # Cone misses L's cardinality premise, intentionally a separate mechanism stress.
-            self.assertLess(len(cone),q**k)
-            self.assertTrue(all(hub <= edge for edge in cone))
-        self.assertIn("FULL-LINK COLLISION", (ROOT/"sessions/S008/MECHANISM_AUDIT.md").read_text())
-        self.assertIn("SUN-PARENT-S010",(ROOT/"sessions/NEXT_SESSION.md").read_text())
+    def test_v1_universal_numerical_claim_impossible(self):
+        self.assertGreater(3**1000, 48**94 * 2**1000)
 
-    def test_s009_all_r_fractional_rank_two_counterfamily_and_tensors(self):
-        from itertools import combinations,product
-        state,projects,_=self.records()
-        self.assertEqual(state["session_completed"],"S010")
-        self.assertEqual(state["next_programme_session"],"NONE")
-        self.assertIsNone(projects["active_project"])
-        for r in range(3,10):
-            q=r-1
-            n=2*q+1
-            E=set()
-            for i in range(n):
-                for d in range(1,q//2+1):
-                    E.add(tuple(sorted((i,(i+d)%n))))
-            if q%2:
-                for i in range(q):
-                    E.add((i,i+q))
-            M=(n*q)//2
-            self.assertEqual(len(E),M)
-            self.assertGreater(M,q*q)
-            deg=[sum(v in edge for edge in E) for v in range(n)]
-            self.assertLessEqual(max(deg),q)
-            self.assertGreater(M/q,q) # feasible fractional edge weights w_e=1/q
-            u,v=next(iter(E))
-            traces={frozenset(set(e)&{u,v}) for e in E}
-            self.assertEqual(traces,{frozenset(),frozenset((u,)),frozenset((v,)),frozenset((u,v))})
-            if r<=4:
-                for petals in combinations([frozenset(e) for e in E],r):
-                    z=[a&b for a,b in combinations(petals,2)]
-                    self.assertFalse(all(t==z[0] for t in z))
-        q=2
-        cycle=[frozenset(("g",v) for v in e) for e in
-               [(0,1),(1,2),(2,3),(3,4),(4,0)]]
-        for k in (2,3,4):
-            F=[a|frozenset(("p",i,b) for i,b in enumerate(w))
-               for a in cycle for w in product(range(q),repeat=k-2)]
-            self.assertEqual(len(F),5*q**(k-2))
-            self.assertGreater(len(F),q**k)
-            C=frozenset(("p",i,0) for i in range(k-2))
-            link=[a-C for a in F if C<=a]
-            self.assertEqual(len(link),5)
-            self.assertGreater(len(link)/q,q)
-            for petals in combinations(F,3):
-                z=[a&b for a,b in combinations(petals,2)]
-                self.assertFalse(z[0]==z[1]==z[2])
-        self.assertIn("SUN-PARENT-S010",(ROOT/"sessions/NEXT_SESSION.md").read_text())
-        self.assertIn("G_q",(ROOT/"sessions/S009/MECHANISM_AUDIT.md").read_text())
+    def test_source_versions_and_active_prompt(self):
+        sources = (ROOT / "research/SOURCE_REGISTER.md").read_text()
+        for version in ("v1", "v2"):
+            self.assertIn("2606.02667" + version, sources)
+        prompt = (ROOT / "sessions/NEXT_SESSION.md").read_text()
+        self.assertIn("BUILD THE MISHRA", prompt)
+        self.assertIn("NO", prompt)  # explicit negative controls
 
-    def test_s010_hard_stop_and_entry_evidence(self):
-        state, projects, _ = self.records()
-        self.assertEqual(state["session_completed"],"S010")
-        self.assertEqual(state["next_programme_session"],"NONE")
-        self.assertEqual(state["portfolio_decision"],"STOP_NO_ACTIVE_CHILD_S010_STRATEGIC_HARD_STOP")
-        self.assertEqual(projects["last_parent_session"],"S010")
-        self.assertIsNone(projects["active_project"])
-        self.assertEqual(projects["planned"],[])
-        self.assertIn("NO EXECUTABLE NEXT SESSION",(ROOT/"sessions/NEXT_SESSION.md").read_text())
-        self.assertIn("Mishra",(ROOT/"programme/S010_SOURCE_REGISTER.md").read_text())
-        self.assertIn("SHIFTED",(ROOT/"programme/S010_SOURCE_REGISTER.md").read_text())
-        self.assertIn("2606.02667v2",(ROOT/"sessions/S010/SOURCE_CORRECTION.md").read_text())
-        e=json.loads((ROOT/"validation/S010_ENTRY_EVIDENCE.json").read_text())
-        self.assertEqual(e["prior_merge"]["head_ci"]["conclusion"],"success")
-        self.assertEqual(e["prior_merge"]["main_push_ci"]["conclusion"],"success")
-        self.assertEqual(e["open_prs"]["parent"],0)
 
-    def test_registration_rejects_wrong_child_sha(self):
-        state, projects, receipt = self.records()
-        altered = copy.deepcopy(receipt)
-        altered["child"]["main_validation"]["head_sha"] = "0" * 40
-        with self.assertRaises(AssertionError):
-            validate.check_registration(state, projects, altered)
-    def test_registration_rejects_failed_job(self):
-        state, projects, receipt = self.records()
-        altered = copy.deepcopy(receipt)
-        altered["child"]["main_validation"]["jobs"][0]["conclusion"] = "failure"
-        with self.assertRaises(AssertionError):
-            validate.check_registration(state, projects, altered)
-    def test_registration_cannot_promote_proof_count(self):
-        state, projects, receipt = self.records()
-        state["mathematical_result_count"] = 1
-        with self.assertRaises(AssertionError):
-            validate.check_registration(state, projects, receipt)
-if __name__=="__main__":unittest.main()
-
+if __name__ == "__main__":
+    unittest.main()
