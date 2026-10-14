@@ -187,3 +187,16 @@ SAME-ASSISTANT child S048 scoped results: one-marked-hub ORIGINAL k-families wit
 
 ## P001-S049 — independently verified child STATUS-ONLY registration (2026-10-13)
 [Parent status-only registration](../sessions/P001-S049/REGISTRATION.md) reconciles child [PR #51](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction/pull/51) FINAL HEAD `0bc5db57bba85677e686d35cda811dcf04c76198` with actual research-integrity RUN 38431512164/validate JOB 115414600255 SUCCESS, two-parent NONFORCE EXACT equal-tree merged child main `caac0918736d8fb9982a4c69d57b2be613f99ab6` (tree `b47eab13fe6bfac13bce25dfff228f1f401a0141`), and independently observed merged-main PUSH RUN 38431597679/validate JOB 115414895692 SUCCESS. S049 SAME-ASSISTANT restricted original one-hub rank-three result: with rich links (min-positive degree>=m, matching>=2m), arbitrary support and repeated PAIR overlap, WHOLE F valid iff all positive ordinary multiplicities r(x), h(xy) are 1 or >=m (>=m active hubs). Independent ownership repairs r/h 2..m−1 preserving FINAL in-H H>=|F|/(2m³) assuming much stronger ORIGINAL local degrees D>=64m²(m+ln(64m³(e+1))) and matching M>=64m³(m+ln(64m³(e+1))). NO unconditional HDSE3/R3/all-k TIK, no new detailed N1/N2, independent reviewer, novelty verdict, Lean, paper or external action. Child P001-S050 fifth/tenth audit FUTURE ONLY; parent mathematical S001 UNEXECUTED.
+
+
+## SUN-PARENT-S003 — evidence-class separation
+
+|ID|Mathematical statement|Status|Novelty and downstream effect|
+|---|---|---|---|
+|P001B-BASELINE|39 <= f(3,4) <= 49|Published Axante et al 2026; lower39 independently reconstructed, upper49 complete certificate NOT replayed|PRIOR ART, no new global improvement|
+|P001B-S001|For known F39, each absent triple on up to 16 representative vertices triggers two edge-disjoint old-triple witness quartets|Finite 521-case computational certificates replayed by child; local robustness only|Priority UNKNOWN; not 40 construction or <=48 bound|
+|P001B-S002|40-iteration full 13-vertex anchored cut-MILP search with 12,095 cuts|INCONCLUSIVE, no UNSAT or witness|No mathematical inequality|
+|P001B-S003|12-cycle translation-invariant sunflower-free triple families have at most 24 edges, attained by two ordinary orbits|Exact 18-orbit reduction + independently checked 13 singles/16 compatible pairs/8 forbidden triangles, 24-edge witness|Restricted class; no 12-support universal bound, no 40/48, novelty UNKNOWN|
+|SUN-HEADLINE|Variable-rank exponential Erdős–Rado|OPEN / NONE_ESTABLISHED|Fixed-rank finite improvement would not alone prove headline|
+
+All six equal pairwise intersection SETS (EMPTY allowed) and four DISTINCT triples are required. Computational checking + PR CI do not equal human independent proof scrutiny. Formal proof NONE; submissions NONE; published theorem count ZERO; new independently priority-cleared first-paper theorem count ZERO.

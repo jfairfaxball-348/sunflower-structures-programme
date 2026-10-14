@@ -1,3 +1,19 @@
+# Current programme dashboard — parent S003, 2026-10-14
+
+Permanent headline: **Erdős–Rado Sunflower Conjecture** — **UNCHANGED, OPEN** by cited October literature; no new asymptotic consequence proved. Parent S003 portfolio verdict **RETURN_PARENT / PAUSE P001B**, no active child execution authorised. The registered new global-threshold results remain **ZERO**, despite useful scoped child mathematics. The old S002 dashboard below is archival and superseded here.
+
+| Workstream | State | Verified mathematical asset | Qualifying first-paper/headline progress |
+|---|---|---|---|
+| P001A internal-kernel TIK (former P001) | RETIRED since parent S001; historic S051 preserved | k=2 and restricted-slice / linear-class estimates plus HDSE3 reduction, same-assistant | No universal R3 / every-k TIK; no novelty or headline proof |
+| P001B four-petal triples | **PAUSED** after child S003; no S004 authority | Source F39 checked, local 521-case double obstruction; complete 988-case cyclic Z12 classification max24, compact certificate independently cross-checked | **No 40 family, no global <=48, no novel priority clearance**; bound still 39–49 |
+| Parent S004 | FUTURE/UNEXECUTED | Reassess successor strategy, transfer potential and publishable theorem odds | Must choose one credible next project/route under separate session, without executing a child |
+
+Child [S003 closeout](https://github.com/jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold/blob/b8660e1ff0bda6c367a725b6beb9aa98f927a584/sessions/S003/CLOSEOUT.md) and [source-restricted theorem](https://github.com/jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold/blob/b8660e1ff0bda6c367a725b6beb9aa98f927a584/research/S003_CYCLIC_LINK_EQUALITY.md). CI confirms repository checks only; S003 compact certificate independently replayed at parent gate, not professionally refereed. Published Axante et al arXiv:2609.06175v1 states 39–49. Upper49 author certificate not replayed. Exact-child SHA and separate CI jobs in [receipt](../validation/P001B_S003_REVIEW_RECEIPT.json).
+
+**Four separate outcome axes:** Scoped mathematical facts YES (conditional/local, novelty unknown); qualifying universal first-paper advance NO; Lean/Palomar/publication NO; Erdős–Rado headline NO. Preserve parent S001/S002 historical assets and status below.
+
+---
+
 **LATEST S002 CLOSEOUT (2026-10-14):** P001B child [jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold](https://github.com/jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold), ID 1418652673, BOOTSTRAPPED_NOT_RESEARCH_EXECUTED. [PR #1](https://github.com/jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold/pull/1) head `32d665ad31ee8a8e826a80108f635fdecad0c700`, successful exact-head run 38552766754 job 115814455276; merged main `f80b61c45e121b3ae2ce9868f26684dc7244f68b`, distinct successful push run 38552831839 job 115814667501. First unborn-main commit `6cdfc0c8eec3ac4143966bb76f04447ad81e1b25`. Full verbatim future [P001B-S001 child launch](../prompts/P001B_S001_LAUNCH.md). No new mathematical result, novelty certificate, publication, formalisation or Erdős–Rado improvement. Parent S003 and child P001B-S001 FUTURE/UNEXECUTED. Earlier statements that P001B is EMPTY were accurate only at S002 entry, NOT now. See [S002 closeout](../sessions/S002/CLOSEOUT.md) and [verified receipt](../validation/P001B_S000_RECEIPT.json).
 
 ---
