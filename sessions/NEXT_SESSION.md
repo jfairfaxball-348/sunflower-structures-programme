@@ -1,30 +1,36 @@
-# NEXT DIRECT RESEARCH INVESTIGATION — ANCESTOR-COMPATIBLE RANK REDUCTION BEYOND THE SPOKE COUNTEREXAMPLE
+# NEXT DIRECT RESEARCH INVESTIGATION — ORIGINAL-WITNESS RANK REDUCTION ABOVE THE DENSE TENSOR BARRIER
 
 Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
-Primary versions: https://arxiv.org/html/2606.02667v1 and https://arxiv.org/html/2606.02667v2
+Sources: https://arxiv.org/html/2606.02667v1 and https://arxiv.org/html/2606.02667v2
 
-## Mission and authoritative starting point
+## Mission (unchanged)
 
-Find and prove a COMPLETE solution of the full Erdős–Rado Sunflower Conjecture for every fixed s>=3, with C_s independent of k and ground-set size, and ORIGINAL distinct sunflower petals (empty core allowed). This is a single-repository direct proof effort, not a child project, paper pipeline, session quota or background automation.
+Prove the **full Erdős–Rado Sunflower Conjecture**: for each fixed s>=3, a constant C_s independent of k and the ground-set size exists so that any simple original k-family with more than C_s^k members contains s DISTINCT ORIGINAL petals of identical pairwise intersection, empty core allowed. Continue vigorous direct mathematical research in this ONE repository; legacy parent/child hierarchy, paper pipeline, session quotas and hard stops remain retired. Do not claim a proof while the original-family gap persists.
 
-READ FIRST: research/SPOKE_SHIFT_THEOREM.md, research/WORKING_PROOF.md, research/VERSION_BRIDGE.md, authoritative/STATE.json.
+## READ FIRST — authoritative live results
 
-**New PROVED session result:** For all q,k>=2 the sparse original spoke family
-T(q,k)={ [k] } union { [k]\{l} union {l+ak}:1<=l<=k,1<=a<=q-1 }
-is (q+1)-free of size (q-1)k+1, yet ONE lexicographic compression pass makes it EXACTLY the sunflower {[k-1] union {j}:k<=j<=qk}. The complete product P(q,k) ALSO acquires this permanent (q-1)k+1-sunflower. The proof handles already-present replacements without inventing ancestors. Therefore the rank-dependent hypothesis H_s: tau(SF)<=A_s*k/log(k+2) is FALSE for EVERY fixed s>=3, not merely computationally doubtful. STOP relying on it. This does not solve the full conjecture. Source v1's constant-times-2^k and universal full-shift source transfer are also invalid; v2 shifted recurrence is usable but lacks original witnesses.
+- research/DENSE_ANCESTOR_OBSTRUCTION.md
+- research/SPOKE_SHIFT_THEOREM.md
+- research/WORKING_PROOF.md
+- research/VERSION_BRIDGE.md
+- authoritative/STATE.json and research/SOURCE_REGISTER.md
+- scripts/dense_obstruction_audit.py and tests/test_dense_obstruction_audit.py
 
-## Principal proof attack — original witness or ancestor-compatible induction
+**New PROVED no-go:** Let q=s-1 and let
+M_q=q(q+1) for even q and M_q=q^2+(q-1)/2 for odd q; b_q=sqrt(M_q)>q. There exist original (q+1)-free families F_(q,m) of rank K=2m with |F|=b_q^K and tau(F)=q such that lex shifted G has tau(G)>=m(q-1)+1 (even q) or 2m(q-1)+1 (odd q). It follows that any attempt to resurrect tau(G)<=A_s*K/log(K+2) merely by restricting original size to >=D^K is FALSE for every D<=b_q. This extends the q-ary product (s-1)^k obstruction to a **larger exponential density**. The partial-spoke lemma applies even with arbitrarily many extra original edges and fully handles collisions; its lower-bound star need not keep identical last-vertex labels after later shifts. Rank-two constructions overlap known extremal-graph prior art; do not advertise them as literature novelty. NO complete proof exists in the repository.
 
-A. **Design an original-family dichotomy with fixed per-rank cost.** Search for a rigorous large-family-only (density-sensitive) heavy-link versus dispersed-fibre theorem. Required output must either give an ORIGINAL s-sunflower or reduce k with |F|<=D_s*max |rank-(k-1) relevant ORIGINAL subfamily| plus an s-dependent exceptional bound whose accumulation stays <=C_s^k. Explore matching covers, fractional covers, shadows with sunflower-free extension limits, weighted fibres, degree spectrum, minimal cores, tensor tests, and multi-vertex conditioning. Specify the exact class, threshold, constants, and induction boundary. The k+1 pair-private 3-free family kills an unconditional constant-fraction link, but not a sufficiently-large-family theorem; P(s-1,k) forces C_s>=s-1.
+## Principal research programme — attack the missing ORIGINAL link
 
-B. **Find a compression inverse retaining origin compatibility, not tau alone.** A sunflower in shifted G can have mutually incompatible ancestors. Build a finite-rank certificate on labelled origin intersections, e.g. obstruction/conflict graphs on compressed petals or trace-fibre cliques, and prove quantitative guarantees. Demonstrate by explicit original-ancestor maps exactly how the k+1 newly produced spoke petals fail to lift. Any palette/label bound must tolerate linearly many incompatible petals in T(2,k). Investigate local partial shifts, bounded-width certificates, and high-density inverse selection; avoid full-shift tau transfer, which is now conclusively dead at k/log k.
+1. **Quantified density-sensitive original dichotomy.** Seek a theorem for any fixed s and threshold D_s>b_(s-1) (or a genuinely different invariant): every sufficiently large s-free original k-family either has an s-sunflower or admits a rank-(k-1) original link/restriction/extraction whose loss is bounded by a fixed number B_s independent of k,n. State a precise inequality, e.g. |F| <= B_s max_{x} |L_x| + E_s(k), and prove that any E_s(k) can be absorbed into a C_s^k induction with explicit k=1,2 and s=3 boundaries. Watch for circularity: a size condition that is itself stronger than the target is not a proof.
 
-C. **Try a genuine hybrid of (A) and (B).** One promising possibility is to restrict attention to families already larger than D_s^k before spending compression cost; sparse spokes should then be negligible but tensor products of spokes and P(q,k) may amplify the obstruction. Explicitly analyse T(q,k)^tensor m (disjoint product) and mixed product/spoke factors. Seek a lemma allowing rank reduction of a dense family while preserving the intersections of original petals. Also test two-star factor-2 sharpness and all pair-private configurations.
+2. **Falsify naive fibre, shadow and matching claims first.** Apply proposed lemmas to: binary double triangles H_2 and tensor powers (base sqrt(6)); odd-q double-star/circulant H_q; even-q two-clique tensors; T(q,k); P(q,k); pair-private (k+1)-family; the sharp two-star one-compression example. For every candidate compute the exact original max degree, shadows, links and tensor scaling. In particular any threshold <=b_q is already below valid dense counterexamples for shift inflation. Look for a *new adversarial original family* with a larger exponential density before assuming success.
 
-D. **Chase any positive result to the actual C_s^k target.** Do NOT stop at an informal lemma: derive the complete quantified recurrence, exact threshold and base cases k=1,2 and s=3; show no hidden n dependence, no collision of original ancestors, no loss of distinctness, and compatibility with (s-1)^k lower products. If a proposed bound fails, build a symbolic family counterexample and find the minimal missing condition. Explore multiple mathematically distinct approaches, not routine tuning of the rejected one.
+3. **Ancestor-compatible inverse with genuinely useful colour cost.** A final compressed star from H_q tensor m has Omega_s(K) petals but original sunflower number q; any partition into classes that each lift to an original sunflower takes Omega_s(K) classes. Invent an alternative certificate that tracks source intersections, uses density to find s compatible original petals, and avoids superexponential loss. State and audit the exact inverse mapping; no unique-source or sunflower-number-only transfer.
 
-## Recording and validation
+4. **New distinct approach not solely full compression.** Explore minimal cores, weighted deletion, randomized restrictions on original families, entropy/measure bounds, fractional hitting sets, nonuniform trace lemmas and multi-vertex conditioning. Prove a meaningful rank-reducing step or construct a fully symbolic counterexample. Do not spend the session merely optimizing the already-false H_s.
 
-Substantial investigation in this invocation; update research/WORKING_PROOF.md and research/VERSION_BRIDGE.md honestly, add independent proof/checkable tests for new falsifiers, keep authoritative/STATE.json accurate, and replace THIS NEXT_SESSION.md with a sharper direct continuation. Run `python3 scripts/validate.py` and `python3 -m unittest discover -s tests -v`; create and merge an ordinary PR after checks pass. All mathematical assertions are to be separately verified; CI tests cannot certify a full proof.
+5. **Derive the actual target when a candidate survives.** Show all constants and recursion steps, no n dependence, exact original distinctness and empty-core coverage. Check consistency with both P(s-1,k) of size (s-1)^k and dense factor tensor powers of size b_(s-1)^k (even ranks). A claimed C_s must be at least b_(s-1) unless a larger original lower family is found.
 
-**No complete unrestricted proof currently exists in this repository. Do not claim otherwise.**
+## Session deliverables
+
+Conduct substantial mathematical attempts NOW, not just a plan. Preserve proved/falsified/conditional distinctions; make explicit symbolic counterexamples where necessary. Update research/WORKING_PROOF.md, research/VERSION_BRIDGE.md, authoritative/STATE.json, relevant executable diagnostics, and replace this file with the strongest DIRECT next-session prompt. Run python3 scripts/validate.py and python3 -m unittest discover -s tests -v; open and merge an ordinary GitHub PR after checks succeed. Always output closeout, mathematical verdict, commit/PR link, and the newly queued next prompt. GitHub CI is evidence about code integrity, not a certificate of a general mathematical proof.
