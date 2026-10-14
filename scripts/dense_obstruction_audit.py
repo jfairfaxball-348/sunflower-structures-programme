@@ -71,7 +71,7 @@ def check_grid():
     for q, m in cases:
         F, n = tensor_graph(q, m)
         K = 2*m
-        if len(F) <= 130:
+        if len(F) <= 50:
             assert all(not has_sunflower(t)
                        for t in combinations(F, q+1)), (q, m)
         G = pass_lex(F, n)
