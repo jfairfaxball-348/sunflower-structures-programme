@@ -66,6 +66,16 @@ For diagnostics: |partial H_4|=63, with shadow-codegree histogram 27 faces of co
 
 No universal bound |F|<=B_s max_x |L_x|+E_s(K) with an absorbable error was derived above the new floors. No inverse transfer or full C_s^K induction was proved.
 
+
+## 4a. Exact status of the proposed heavy-link criterion (logical equivalence, not progress by itself)
+
+Consider the statement Q_s: there exist fixed real D>1, B>=1 and integer k0 such that **every** s-free simple k-family with k>=k0 and |F|>D^k has some original vertex x with |L_x(F)|>=|F|/B. Then **Q_s is logically equivalent to the full sunflower conjecture for fixed s**:
+
+- If Q_s holds, let C be at least max(D,B,1) and at least f_s(j)^(1/j) for each 1<=j<k0 (finite by the classical sunflower lemma). Induct on k. An extremal s-free family has either |F|<=D^k<=C^k, or a link with |F|/B<=|L_x|<=f_s(k-1)<=C^(k-1), whence |F|<=B*C^(k-1)<=C^k. This is a valid exact per-rank reduction, with no n dependence and the correct base ranks.
+- Conversely, if f_s(k)<=C_s^k, choose D>C_s. Then no s-free family meets |F|>D^k; Q_s holds *vacuously*, for any B.
+
+Consequently merely **postulating** unknown D and B or proving a statement under a threshold already known to be above all possible s-free families is not progress; the quantifier structure can conceal the full conjecture. A future useful theorem must prove Q_s by genuinely independent structure (preferably with a grounded explicit threshold and nonvacuous applications), or attack another precise sufficient condition. The density floors above restrict proposed *shift-transfer* premises, but do not disprove Q_s at those floors.
+
 ## 5. Executable corroboration and next obligation
 
 scripts/high_rank_tensor_audit.py and tests/test_high_rank_tensor_audit.py independently enumerate the finite 54-edge and 39-edge factors and check forbidden sunflowers, degrees, shadows, tensor cardinality, tensor shadow formula and original-ancestor star in lex-shifted tensor powers m=1,2. These tests are finite checks only. The all-m consequences follow from the symbolic factor proofs, product lemma and partial-spoke lemma.
