@@ -17,6 +17,8 @@ def main():
         "tests/test_spoke_shift_audit.py",
         "research/DENSE_ANCESTOR_OBSTRUCTION.md",
         "scripts/dense_obstruction_audit.py", "tests/test_dense_obstruction_audit.py",
+        "research/HIGH_RANK_DENSE_TENSOR_OBSTRUCTION.md",
+        "scripts/high_rank_tensor_audit.py", "tests/test_high_rank_tensor_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -32,6 +34,8 @@ def main():
     assert "SHIFTED_SUBFAMILY_OF_PRODUCT_AT_MOST_Q" in state["verified_results"]
     assert "SPOKE_TO_STAR_LEX_SHIFT_THEOREM_ALL_Q_K" in state["verified_results"]
     assert "DENSE_TENSOR_LEX_SHIFT_LINEAR_STAR_ALL_S" in state["verified_results"]
+    assert "ANCHORED_HIGH_RANK_FACTOR_TENSOR_SHIFT_LEMMA" in state["verified_results"]
+    assert "RANK_FOUR_54_FACTOR_SHADOW_INCIDENCE_SATURATION" in state["verified_results"]
     for v in ("v1", "v2"):
         assert f"2606.02667{v}" in state["source_versions"][v]
     handoff = (ROOT / state["active_next_prompt"]).read_text()
@@ -49,10 +53,12 @@ def main():
     from bridge_audit import main as check_bridge
     from spoke_shift_audit import main as check_spoke
     from dense_obstruction_audit import main as check_dense
+    from high_rank_tensor_audit import main as check_high_rank
     check_examples()
     check_bridge()
     check_spoke()
     check_dense()
+    check_high_rank()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
