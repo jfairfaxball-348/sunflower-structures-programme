@@ -1,3 +1,3 @@
-# Lean/Mathlib policy
+# Formal checking
 
-Track A original mathematics; Track B meaningful formalisation of known important theorems, requiring independent originality audit of the FORMAL contribution. For each Lean claim: freeze paper theorem and precise Lean statement including indexed/labeled objects; inspect Mathlib, existing Lean, Coq, Isabelle, computer certificates; pin versions; compile `lake build` on actual GitHub Actions; inspect `#print axioms` and transitive proof assumptions; ban unexamined `sorry`, `admit`, bespoke axioms and `native_decide` in final theorem chain; independently verify mathematical statement equivalence and strength. Compilation neither proves novelty nor substantive publication value. Compute-only proofs need immutable checked certificates and complete input provenance.
+Do not impose a formalisation stage or Lean requirement on exploratory mathematics. Use exact symbolic arguments and reproducible finite counterchecks now. A future completed proof may be formally checked, if useful and explicitly requested. Formalisation can strengthen a proof but cannot repair a missing mathematical premise.

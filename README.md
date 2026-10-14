@@ -1,20 +1,21 @@
-**POST-S010 SOURCE CORRECTION (2026-10-14):** Mishra arXiv:2606.02667 v1 claimed a full sunflower proof, but official **v2 (8 June 2026) explicitly narrows to shifted families**; there is no confirmed full conjecture resolution. [Erratum](sessions/S010/SOURCE_CORRECTION.md). S010 STOP_NO_ACTIVE_CHILD remains a feasibility-based portfolio decision, NOT a claim the headline was solved. **No S011 staged.**
+# Erdős–Rado Sunflower Conjecture — Mishra v1/v2 bridge research
 
----
+**Single research programme. One goal: prove the unrestricted conjecture.** This established repository now investigates the precise mathematical gap between Tapas Kumar Mishra's *Erdős Rado Sunflower (Conjecture) Theorem* **v1** (1 June 2026) and *Erdős Rado Sunflower Theorem for Shifted Families* **v2** (8 June 2026), plus any independent approach needed to overcome that gap.
 
-**CURRENT SUN-PARENT-S010, 2026-10-14:** Tenth substantive parent strategy audit concluded **STOP_NO_ACTIVE_CHILD / SHELF**, no S011 staged; all children frozen. No new general original theorem or all-r variable-k bound. [Full audit](sessions/S010/PORTFOLIO_AUDIT.md), [sources](programme/S010_SOURCE_REGISTER.md), [closed handoff](sessions/NEXT_SESSION.md). Earlier history below is dated.
+For each fixed integer s>=3 we seek a constant C_s independent of k such that every finite family of k-element sets with more than C_s^k distinct members contains s distinct sets with identical pairwise intersections (empty core allowed). **No proof of this full conjecture is currently claimed by this repository.**
 
----
+**Read first:** [Exact version comparison and obstructions](research/VERSION_BRIDGE.md) · [Sources](research/SOURCE_REGISTER.md) · [Working proof and open directions](research/WORKING_PROOF.md) · [NEXT DIRECT RESEARCH PROMPT](sessions/NEXT_SESSION.md).
 
-**CURRENT 2026-10-14 (SUN-PARENT-S006):** P001C child [S001/S002](https://github.com/jfairfaxball-348/alphabet-uniform-sunflower-capacity) completed and independently GitHub CI-verified; no new uniform D exponent theorem. Binary stop triggered: P001C PAUSED with NO S003. P001A retired and P001B paused. **No active child** and no formal theorem/publication. Parent [S006 audit](sessions/S006/QUANTITATIVE_AUDIT.md) and [future S007 portfolio selection](sessions/NEXT_SESSION.md). Historical README below.
+## Why the gap matters
 
----
+- [Mishra v1 (1 June 2026)](https://arxiv.org/html/2606.02667v1) claimed an unrestricted bound by showing a quantitative bound on the maximum sunflower after full shifting, then applying a shifted-family theorem. The exact claimed `(3s^2)^(6s^2-2) * 2^k` universal bound is mathematically impossible for s>=4, since explicit s-sunflower-free families have (s-1)^k members.
+- [Mishra v2 (8 June 2026)](https://arxiv.org/html/2606.02667v2) confines its main result to *shifted families*, with a recurrence for the shifted extremal function. It no longer claims the unrestricted solution. All source proofs remain subject to auditing.
+- Compression need not preserve sunflower-freeness: `{{2,3},{1,4},{1,5}}` has no 3-sunflower but its (1,2)-shift `{{1,3},{1,4},{1,5}}` does. A transfer theorem therefore needs stronger ideas than naive shifting.
 
-**CURRENT 2026-10-14:** P001C administrative bootstrap completed. [Verified separate child](https://github.com/jfairfaxball-348/alphabet-uniform-sunflower-capacity), [parent S005 gate](sessions/S005/CLOSEOUT.md); owner-invoked child S001 in a separate Project is FUTURE, no mathematics yet. Below README historical.
+**Primary open problem:** find a mathematically valid route from the special structure of shifted families to the full arbitrary-family bound with a base C_s >= s-1 allowed to depend on s but NOT on k or the ground-set size.
 
-# Sunflower Structures — grand research programme
+## Working policy
 
-Permanent programme repository: **sunflower-structures-programme**, stable repository ID 1412469441. Champion: **Erdős–Rado Sunflower Conjecture**; headline remains STRONG_EVIDENCE_OPEN, with no programme proof. The current name was observed at the start of P001-S000; this session performed no rename.
+Explore original mathematics relentlessly within each invoked research task, including repaired shifts, witness-lifting, structured subfamilies, inverse compression, encoding, shadows and other independent techniques. Falsify overstrong lemmas quickly; keep counterexamples. No parent/child folders or stage gates; the single repository is the research notebook. Old `programme/`, `papers/`, `tournament/` and historical `sessions/S*/` are archival evidence only, not binding instructions. There is **no longer any STOP_NO_ACTIVE_CHILD or S011 restriction**.
 
-Read [START_HERE](authoritative/START_HERE.md), the [selection decision](tournament/S000/FINAL_DECISION.md), [P001 brief](papers/PAPER_01_BRIEF.md) and [verified child registration](programme/P001_REGISTRATION.json). The active child [sunflower-internal-kernel-extraction](https://github.com/jfairfaxball-348/sunflower-internal-kernel-extraction) owns P001's mathematics. Its P001-S001 analysis identifies a failed colour-palette repair mechanism and leaves one unproved averaging obligation sufficient for rank-three extraction. R3 remains unresolved. No new theorem, formal verification or publication is claimed. The permanent programme owns the wider research ladder.
-
+GitHub Actions checks repository consistency and exact counterexamples, not novelty or a proof of the conjecture. We will not declare success without a complete proof and independent scrutiny.
