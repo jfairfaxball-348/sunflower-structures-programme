@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "session": "SUN-PARENT-S002",
+  "parent_entry_main": "970e187317b9bf415a0960d74aa099d466baa332",
+  "child_repository": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+  "child_repository_id": 1418652673,
+  "entry": "UNBORN_MAIN",
+  "first_commit": "6cdfc0c8eec3ac4143966bb76f04447ad81e1b25",
+  "pr": {
+    "number": 1,
+    "url": "https://github.com/jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold/pull/1",
+    "authored_head": "32d665ad31ee8a8e826a80108f635fdecad0c700",
+    "run_id": 38552766754,
+    "job_id": 115814455276,
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "main": {
+    "sha": "f80b61c45e121b3ae2ce9868f26684dc7244f68b",
+    "push_run_id": 38552831839,
+    "job_id": 115814667501,
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "workflow": "P001B integrity / validate",
+  "github_branch_protection": "UNKNOWN_403",
+  "rulesets": [],
+  "source": "https://arxiv.org/abs/2609.06175",
+  "source_version": "v1 indexed",
+  "baseline": "39 <= f(3,4) <= 49; lower explicit, upper computer-assisted",
+  "full_source_and_priority_verified": false,
+  "child_session_completed": "P001B-S000_ADMIN_ONLY",
+  "next_child": "P001B-S001_FUTURE_UNEXECUTED",
+  "math_results": 0,
+  "formalisation": false,
+  "publication": false,
+  "headline_progress": false
+}
