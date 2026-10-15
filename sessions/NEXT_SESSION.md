@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Governing goal and non-negotiable integrity
 
-Prove the unrestricted Erdős–Rado Sunflower Conjecture for ORIGINAL simple k-uniform families: for each fixed s>=3 there is C_s independent of k and n such that |F|>C_s^k forces s DISTINCT original members with equal pairwise intersections (possibly empty core). **The conjecture remains OPEN: no full proof obtained.** Mishra [v1](https://arxiv.org/html/2606.02667v1) uses invalid cumulative shift-owner attribution, and its universal O_s(2^k) claim is FALSE for s>=4 via P(s-1,k). [v2](https://arxiv.org/html/2606.02667v2) proves a theorem only for SHIFTED families. Never substitute ghost shifts, images or partial residues for actual compatible original petals. General best published upper base still contains log(k); new bounded-VC results depend on VC dimension.
+Prove the full Erdős–Rado Sunflower Conjecture for ORIGINAL simple k-uniform families: for each fixed s>=3 there is C_s independent of k and n such that |F|>C_s^k forces s DISTINCT original members with equal pairwise intersections (possibly empty core). **The conjecture remains OPEN: no full proof obtained.** Mishra [v1](https://arxiv.org/html/2606.02667v1) uses invalid cumulative shift-owner attribution, and its universal O_s(2^k) claim is FALSE for s>=4 via P(s-1,k). [v2](https://arxiv.org/html/2606.02667v2) proves a theorem only for SHIFTED families. Never substitute ghost shifts, images or partial residues for actual compatible original petals. General best published upper base still contains log(k); new bounded-VC results depend on VC dimension.
 
 ## Read-first verified state
 
