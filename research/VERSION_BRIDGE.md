@@ -124,3 +124,8 @@ The ORIGINAL all-anchor/equal-trace-rank fractional defect-cover LP has exact va
 ## 15 October: density-sensitive heterogeneous ORIGINAL multishield (independently derived, not a full bridge)
 
 [HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md](HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md) proves an exact LP value and explicit actual-original dual for variable-size product alphabets 1<=q_j<=s-1, plus density robustness at delta>s/(s+1), and the all-anchor alternating-seed LP 3. The new density bound is relative to the ENTIRE product box, and cannot be applied to arbitrary original families without a proved box representation. It is a certificate COVER lower bound, NOT a global sunflower cardinality upper bound; tensor factors above the classical product base are counterexamples to naive density-excess lifting. v1 remains INVALID as full-family transfer, v2 remains SHIFTED-ONLY, unrestricted C_s^k OPEN.
+
+
+## 15 October 2026 — strictly nonseparable ORIGINAL tensor-certificate phenomenon
+
+[Exact global AS3 tensor Q9 audit](NONPRODUCT_ORIGINAL_TENSOR_CORRELATION.md) establishes a genuinely ORIGINAL all-anchor LP with V_3(AS3 tensor Q9)=8>3+3=V_3(AS3)+V_3(Q9), exact integer primal/dual witnesses, 6403 records, and independently double-enumerated 457 defect sets. Global LP superadditivity holds universally for tensor products of s-free ORIGINAL families and owner-congestion yields a general honest density-deletion inequality. None of these certificates bounds f_s(k) by C_s^k: iterated tensor costs remain linear and balanced owner use is not forced. The invalid multi-shift original-ancestor step of v1 is NOT repaired; v2 is SHIFTED only. Full conjecture OPEN.

@@ -55,3 +55,13 @@ New internal derivation: research/GLOBAL_MULTISHIELD_ORIGINAL_OWNERSHIP.md, scri
 
 
 - **15 October 2026 heterogeneous original product cover/dual investigation:** [HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md](HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md) gives programme-local elementary exact rational LP and density-restriction deductions, plus all-anchor AS3 enumeration. **Priority not checked**. The underlying product construction is CLASSICAL Erdős–Rado; H54 is Abbott–Hanson prior art, and H39/H153 are from Axante et al. https://arxiv.org/abs/2609.06175 . Mishra https://arxiv.org/html/2606.02667v1 is NOT a valid unrestricted proof; https://arxiv.org/html/2606.02667v2 addresses shifted families only. Rao https://doi.org/10.1112/jlms.70380 and Bell–Chueluecha–Warnke https://doi.org/10.1016/j.disc.2021.112367 preserve the general log(k)-base context. Ge–Wang–Xu–Zhao https://arxiv.org/abs/2609.18995 and Shangguan https://arxiv.org/abs/2609.30263 restrict to bounded VC dimension, which can be Omega(k) on binary products. No unrestricted full conjecture proof.
+
+
+## 15 October 2026 — nonproduct ORIGINAL tensor synergy session source check
+
+- Primary v1 https://arxiv.org/html/2606.02667v1 — explicit unrestricted base-two bound, refuted for s>=4 by classical P(s-1,k); original-source transfer not established.
+- Primary v2 https://arxiv.org/html/2606.02667v2 — shifted families only. No unrestricted conclusion.
+- Bell–Chueluecha–Warnke https://arxiv.org/abs/2009.09327 and Rao 2026 https://doi.org/10.1112/jlms.70380 — fixed-s O(log k) base, not fixed-base conjecture.
+- Axante et al. https://arxiv.org/abs/2609.06175 — prior finite 39/54/153 lower-factor construction counts; not independently re-enumerated here.
+- Ge–Wang–Xu–Zhao https://arxiv.org/abs/2609.18995 and Shangguan https://arxiv.org/abs/2609.30263 — VC-bounded source claims; large VC~k remains outside a uniform fixed-base inference.
+- New [finite ORIGINAL LP construction](NONPRODUCT_ORIGINAL_TENSOR_CORRELATION.md) checked algebraically and by two complete stdlib enumerators. Literature novelty PRIORITY NOT CHECKED. No full original-family sunflower theorem is claimed.
