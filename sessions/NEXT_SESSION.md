@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Central problem (OPEN)
 
-Prove for each fixed s>=3 an explicit C_s independent of rank k and ground-set size n such that every simple original k-uniform family F with |F|>C_s^k contains s DISTINCT ORIGINAL members whose pairwise intersections are identical (empty core allowed). No unrestricted proof is known. Mishra arXiv:2606.02667v1's full-shift original-source transfer is invalid and its O_s(2^k) bound is FALSE for s>=4; v2 only establishes a shifted-family result. Never treat a shifted sunflower as original.
+Prove the full Erdős–Rado Sunflower Conjecture: for each fixed s>=3 find an explicit C_s independent of rank k and ground-set size n such that every simple original k-uniform family F with |F|>C_s^k contains s DISTINCT ORIGINAL members whose pairwise intersections are identical (empty core allowed). No unrestricted proof is known. Mishra arXiv:2606.02667v1's full-shift original-source transfer is invalid and its O_s(2^k) bound is FALSE for s>=4; v2 only establishes a shifted-family result. Never treat a shifted sunflower as original.
 
 ## Read live files and preserve source provenance
 
