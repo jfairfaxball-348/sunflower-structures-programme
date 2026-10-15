@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Governing theorem target and absolute integrity requirements
 
-Prove the full Erdős–Rado Sunflower Conjecture for finite simple ORIGINAL k-uniform families: for fixed s>=3 find C_s independent of rank k and ground size with f_s(k)<=C_s^k. s distinct ORIGINAL petals, pairwise equal intersections, core possibly empty. **Full conjecture STILL OPEN.** Mishra [v1](https://arxiv.org/html/2606.02667v1) has an invalid cumulative original-owner transfer and a FALSE universal base-2 claimed consequence for s>=4; [v2](https://arxiv.org/html/2606.02667v2) proves SHIFTED only. NEVER lift shifted/ghost petals to original owners.
+Prove the full Erdős–Rado Sunflower Conjecture for finite simple ORIGINAL k-uniform families: for fixed s>=3 find C_s independent of rank k and ground size with f_s(k)<=C_s^k. s distinct ORIGINAL petals, pairwise equal intersections, core possibly empty. **Full conjecture STILL OPEN.** Mishra [v1](https://arxiv.org/html/2606.02667v1) has an invalid cumulative original-owner full-shift transfer and a FALSE universal base-2 claimed consequence for s>=4; [v2](https://arxiv.org/html/2606.02667v2) proves SHIFTED only. NEVER lift shifted/ghost petals to original owners.
 
 ## Read-first authoritative state
 
