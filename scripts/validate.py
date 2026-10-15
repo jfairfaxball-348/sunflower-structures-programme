@@ -36,6 +36,9 @@ def main():
         "scripts/original_pair_budget_audit.py",
         "tests/test_original_pair_budget_audit.py",
         "scripts/correlated_partite_audit.py",
+        "research/ORIGINAL_PACKET_KRAFT_AND_ENTROPY.md",
+        "scripts/original_packet_entropy_audit.py",
+        "tests/test_original_packet_entropy_audit.py",
         "tests/test_correlated_partite_audit.py",
     ]
     for name in files:
@@ -94,6 +97,8 @@ def main():
     check_partite()
     from original_pair_budget_audit import main as check_original_pair_budget
     check_original_pair_budget()
+    from original_packet_entropy_audit import main as check_original_packet_entropy
+    check_original_packet_entropy()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 

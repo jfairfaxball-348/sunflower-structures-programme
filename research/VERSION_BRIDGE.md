@@ -97,3 +97,8 @@ The verified actual-original edge-tuple coordinate LP on classical P(s-1,m) has 
 ## 15 October continuation — actual pair-certificate capacity cannot replace original lift
 
 [ORIGINAL_PAIR_BUDGET_AND_TENSOR_ENTROPY.md](ORIGINAL_PAIR_BUDGET_AND_TENSOR_ENTROPY.md) now proves a global LP that indexes ONLY real original edge pairs and common vertices, with exact no-overcount capacity on distinct original s-tuples. It has a universal quadratic lower bound and, on the full binary product P(2,m), an explicit nonlinear primal giving Lambda_3=Theta(|F|^2). Thus even an actual-edge, multi-anchor pair witness charge normalised by |F|^2 gives no intrinsic exponential rank savings. Anchored trace entropy is exact but not a decrement; nine-point ternary cap tensors make the earlier product-support E3/E5 vacuous. There is still NO legitimate replacement for v1 cumulative original-source lifting from the shifted v2 theorem. Full conjecture OPEN.
+
+
+## Further original-witness bridge audit — exact packet accounting (15 October 2026)
+
+[Original-owned packet entropy and slack](ORIGINAL_PACKET_KRAFT_AND_ENTROPY.md) proves each actual original edge is owned once by its exact trace relative to a real anchor and shows the rank/entropy/slack ledger is an IDENTITY, not a bridge. In intersecting 3-free pair-private examples the entropy/rank ratio diverges; on classical q-products conditional residue slack exactly balances trace entropy. Any claimed v1-to-unrestricted repair must add a noncircular cross-trace compatible-residue restriction, not merely ensure original edge ownership or shifted witnesses. Original theorem OPEN; shifted v2 separate.
