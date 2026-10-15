@@ -73,6 +73,9 @@ def main():
         "research/NESTED_ORIGINAL_WREATH_PACKET_RECURSION.md",
         "scripts/nested_original_wreath_audit.py",
         "tests/test_nested_original_wreath_audit.py",
+        "research/ALL_PHYSICAL_WREATH_COMPATIBILITY.md",
+        "scripts/all_physical_wreath_compatibility_audit.py",
+        "tests/test_all_physical_wreath_compatibility_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -168,9 +171,13 @@ def main():
     check_packet_budget()
     from nested_original_wreath_audit import audit as check_nested_wreath
     check_nested_wreath()
+    from all_physical_wreath_compatibility_audit import audit as check_all_physical
+    check_all_physical()
+    assert "ALL_PHYSICAL_NESTED_QPRODUCT_KRAFT_RECURSION" in state["verified_results"]
+    assert "ALL_PHYSICAL_BASE_TWO_KRAFT_BUDGET_DOES_NOT_CONTROL_RESIDUAL_CAPACITY" in state["confirmed_obstructions"]
     assert "NESTED_ORIGINAL_WREATH_EXACT_SHELL_KRAFT_RECURSION" in state["verified_results"]
     assert "KRAFT_BUDGET_ALONE_NOT_FIXED_BASE_ORIGINAL_INDUCTION" in state["confirmed_obstructions"]
-    print("PASS: original nested wreath shell Kraft recursion, earlier witness audits, source bridge and next prompt")
+    print("PASS: ALL-PHYSICAL original nested wreath Kraft recursion and s-way compatibility, predecessor audits, source bridge and next prompt")
 
 
 if __name__ == "__main__":
