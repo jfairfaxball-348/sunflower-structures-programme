@@ -1,7 +1,7 @@
 name: programme-integrity
 on:
   push:
-    branches: [main, "s000/**", "s001/**", "p001-*/**"]
+    branches: [main, "s000/**", "s001/**", "p001-*/**", "research/**"]
   pull_request:
     branches: [main]
 permissions:
