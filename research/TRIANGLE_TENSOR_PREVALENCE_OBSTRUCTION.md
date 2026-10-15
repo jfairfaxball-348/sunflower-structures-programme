@@ -16,7 +16,7 @@ Our new obstruction applies to (1), whether packets actually exist or not. This 
 
 ## Theorem 1 — exponentially dense, core-free intersecting tensor obstruction (PROVED)
 
-Fix s>=3, a finite nonempty simple s-free w-uniform family Q with a>=2 members, and integer m>=1. Let T be the three two-element edges of a triangle on disjoint vertices 0,1,2. Use disjoint copies Q_1,...,Q_m. Define
+Fix s>=3, a finite nonempty simple s-free w-uniform family Q with a>=2 members and **empty global intersection**, and integer m>=1. Let T be the three two-element edges of a triangle on disjoint vertices 0,1,2. Use disjoint copies Q_1,...,Q_m. Define
 
     I_m = T tensor Q_1 tensor ... tensor Q_m,
     k=2+wm, |I_m|=3a^m.                                   (2)
@@ -36,11 +36,11 @@ For fixed H (or H=o(m)), the right side tends to zero exponentially. For fixed H
 
 (For H=0 the left side is zero because I_m intersects.)
 
-**Proof.** Every tensor member chooses a unique edge from T and one from each Q_j, giving (2) and uniformity. Different triangle edges intersect, so all I_m edges intersect; the intersection of all triangle edges is empty, and any global intersection of I_m would have to lie in a coordinate common to every choice. The triangle itself has empty intersection; for each coordinate of Q, if Q happened to have a common vertex this does NOT give empty global intersection. Therefore the empty-global-intersection claim requires Q to have empty global intersection (equivalently intersect all Q_j choices has empty intersection). Under this additional hypothesis, the conclusion holds. In general, delete the common core of Q before tensoring or restrict to Q with empty core. For all factors actually used below, Q has empty global intersection.
+**Proof.** Every tensor member chooses a unique edge from T and one from each Q_j, giving (2) and uniformity. Different triangle edges intersect, so all I_m edges intersect; the intersection of all triangle edges is empty, and any global intersection of I_m would have to lie in a coordinate common to every choice. The intersection of all tensor edges equals the union of the coordinate-wise common intersections. Each coordinate of Q has empty common intersection by hypothesis, as does the triangle, so the entire global intersection is empty.
 
 T has sunflower number 2: its three pairwise intersections are three different singletons. The disjoint-block tensor lemma proved in DENSE_ANCESTOR_OBSTRUCTION.md gives tau(I_m)=max(2,tau(Q))<=s-1. This uses original distinct sets and permits empty sunflower core. Fix an anchor E and choose B uniformly from I_m. In each block j, B_j equals the fixed E_j with probability 1/a, independently across j. Whenever equality occurs, |B_j intersect E_j|=w. Let X count such blocks: X~Bin(m,1/a). The triangle contributes at least one further intersection point, so |B intersect E| >=1+wX. The stated strengthened binomial bound follows. For H=o(m), a standard binomial lower-tail bound (or its elementary finite sum) gives an exponentially decaying probability; for fixed H, (4) follows termwise. QED.
 
-**Correction to avoid an overstatement:** A universal arbitrary Q need not have empty global core; hence the theorem's core-free conclusion is stated only when Q does. All the 54, 39, 153 and q-ary factors below meet this restriction. The remaining properties and near-trace tail bound hold for any nonempty Q.
+**Precise scope:** The core-free conclusion requires Q to be core-free, as stipulated. If Q has a shared point, the other properties and trace-tail inequality still hold, but the tensor family then has a nonempty common core. All 54, 39, 153 and q-ary factors below meet the stipulated requirement.
 
 **Direct corollary (single-anchor prevalence FALSE).** For any fixed s,H,phi>0, there are arbitrarily high ranks k and intersecting s-free original k-families of exponential density, with empty global core, for which EVERY anchor E and EVERY collection of compatible packets of h<=H covers LESS than phi |I_m| members. It already fails for I_m with Q=P(s-1,1), yielding |I_m|=3(s-1)^m and limiting exponential base s-1. It also fails at every fixed density D<a^(1/w), in the sense |I_m|>=D^k for all sufficiently large m.
 
@@ -84,11 +84,15 @@ This is a precise moment counterexample to using high mean pair overlap as a *su
 
 The same Theorem 1 applies to the published 39-edge, rank-three four-free factor (Q=H39) and 153-edge rank-three six-free factor (Q=H153). Both have empty global intersection and at least two edges, independently checked in the cited factor notes. It gives core-free intersecting s-free counterexamples to fixed-fraction bounded-trace prevalence for ALL D<39^(1/3) (s=4) and ALL D<153^(1/3) (s=6), as well as all D<s-1 from one-coordinate q-ary products for arbitrary s. These are density floors for this *particular prevalence claim*, not claimed optimal sunflower-free densities. Finite factors are credited to Abbott–Hanson and Axante et al.; the tensor and overlap deductions are programme work, with NO external novelty audit established.
 
-An unconditional proposed assertion for high-density input families of the form: for constants D,H,phi>0, all s-free intersecting |F|>D^k have some original E, compatible packet with h<=H and D(E,V)>=phi|F|, would itself **imply the full conjecture**. Indeed local Theorem A yields
+**Noncircularity audit.** Suppose one asserts constants D,H,phi>0 such that every sufficiently large s-free **INTERSECTING** family with |F|>D^k has an original compatible packet with h<=H and D(E,V)>=phi|F|. Local Theorem A does yield
 
-    phi |F| <= H^(s-2) * 2^H * f_s(k-2)
+    phi|F| <= H^(s-2)*2^H*f_s(k-2),
 
-using f_s(j) nondecreasing in j and u+r>=2. Thus |F|<=B f_s(k-2) with B=H^(s-2)2^H/phi. Choosing C>=D,sqrt(B), and finite base-rank values closes induction. Conversely a proved fixed-base sunflower bound makes such a high-density premise vacuously true by choosing D above the true base. Mere assertion of an unspecified threshold is therefore equivalent in logical difficulty, not a free novel proof.
+using monotonicity of unrestricted f_s(j). Thus for intersecting families
+
+    i_s(k) <= max(D^k, B*f_s(k-2)), B=H^(s-2)*2^H/phi.    (11)
+
+**This does NOT immediately close a constant-base induction**, because deleting fixed witness points need not preserve the INTERSECTING property: the right-hand side is f_s, not i_s. The only known elementary link f_s(k)<=(s-1)k*i_s(k) would introduce an unbounded k factor at each iteration. A previous tempting equivalence claim between intersecting-only prevalence and the entire conjecture is therefore UNJUSTIFIED. A stronger rank recurrence with i_s(k-2) on the right (or a global original-family dichotomy with bounded charge) would suffice if noncircularly proved. A density threshold D chosen above the unknown true extremal base is in any case vacuous; do not count it as evidence of progress.
 
 **No positive original-family constant-base rank recurrence has been established.** A possible route must control the central (non-small) trace bulk, pay for many anchors with genuine amortisation, or employ a different certificate entirely. An absent common core and exponential input density ALONE do not create bounded-size opposite-trace mass.
 
