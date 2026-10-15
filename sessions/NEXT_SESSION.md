@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Objective and mandatory negative controls
 
-Prove the full Erdős–Rado Sunflower Conjecture for arbitrary ORIGINAL simple k-uniform families: for each fixed s>=3, an honest finite C_s independent of k and ambient n with f_s(k)<=C_s^k. No full proof has been obtained. Distinct ORIGINAL petals and equal pairwise intersections are essential; empty core permitted, never infer original petals from a full-shift sunflower. The cumulative ancestor step and unrestricted base-two conclusion of Mishra v1 https://arxiv.org/html/2606.02667v1 are invalid (numeric result false for s>=4); v2 https://arxiv.org/html/2606.02667v2 is SHIFTED-only.
+Prove the full Erdős–Rado Sunflower Conjecture for arbitrary ORIGINAL simple k-uniform families: for each fixed s>=3, an honest finite C_s independent of k and ambient n with f_s(k)<=C_s^k. NO complete proof has been obtained. Distinct ORIGINAL petals and equal pairwise intersections are essential; empty core permitted, never infer original petals from a full-shift sunflower. The cumulative ancestor step and unrestricted base-two conclusion of Mishra v1 https://arxiv.org/html/2606.02667v1 are invalid (numeric result false for s>=4); v2 https://arxiv.org/html/2606.02667v2 is SHIFTED-only.
 
 Read main SHA, open PRs, hosted CI, AGENTS.md, research/WORKING_PROOF.md, research/VERSION_BRIDGE.md, research/SOURCE_REGISTER.md, authoritative/STATE.json, research/NONPRODUCT_ORIGINAL_TENSOR_CORRELATION.md, research/HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md and research/GLOBAL_MULTISHIELD_ORIGINAL_OWNERSHIP.md. Read and run scripts/original_nonproduct_tensor_lp_audit.py, tests/test_original_nonproduct_tensor_lp_audit.py, scripts/validate.py.
 
