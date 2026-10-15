@@ -102,3 +102,10 @@ The verified actual-original edge-tuple coordinate LP on classical P(s-1,m) has 
 ## Further original-witness bridge audit — exact packet accounting (15 October 2026)
 
 [Original-owned packet entropy and slack](ORIGINAL_PACKET_KRAFT_AND_ENTROPY.md) proves each actual original edge is owned once by its exact trace relative to a real anchor and shows the rank/entropy/slack ledger is an IDENTITY, not a bridge. In intersecting 3-free pair-private examples the entropy/rank ratio diverges; on classical q-products conditional residue slack exactly balances trace entropy. Any claimed v1-to-unrestricted repair must add a noncircular cross-trace compatible-residue restriction, not merely ensure original edge ownership or shifted witnesses. Original theorem OPEN; shifted v2 separate.
+
+
+## 15 October: cross-trace shielding prevents direct packet-based v1 repair
+
+[CROSS_TRACE_TENSOR_SHIELD_AND_VC_BARRIER.md](CROSS_TRACE_TENSOR_SHIELD_AND_VC_BARRIER.md) gives a source-compatible, ORIGINAL-witness finite shield: s distinct exact traces form a sunflower and each of their residue packets can contain a^m members, yet no compatible original s-tuple exists; a single fixed vertex is sufficient to violate sunflower compatibility regardless of tensor rank. Therefore a cumulative v1 original-source lift cannot be repaired merely by large packet cardinalities, an independent per-block PM1 defect credit, or the PL1 entropy bookkeeping identity. This is **not** a universal high-density no-go or a proof of the conjecture. The restricted v2 shifted theorem is still separate.
+
+The newer bounded-VC sources, Ge et al. arXiv:2609.18995 and Shangguan arXiv:2609.30263, are useful conditional structural upper bounds but do not solve unrestricted high-VC cases: even the classical original binary product P(2,k) has VC dimension k and any fixed-VC original subfamily has polynomial cardinality.
