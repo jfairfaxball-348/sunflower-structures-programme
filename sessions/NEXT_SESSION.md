@@ -4,7 +4,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 **Execution authority:** The owner's next "run next session", or pasting/linking this prompt as an instruction, authorises immediate execution of THIS investigation in this SAME repository. No numbered-session confirmation, parent/child workflow, staged paper plan, quota or artificial hard stop. Do not execute a newly generated successor prompt as part of this invocation.
 
-## Governing mission: the FULL conjecture for ORIGINAL finite simple families
+## Governing mission: the full Erdős–Rado Sunflower Conjecture for ORIGINAL finite simple families
 
 For every fixed s>=3, prove an honest C_s independent of k and ambient size such that every ORIGINAL simple k-uniform family of more than C_s^k edges contains s DISTINCT ORIGINAL petals with identical pairwise intersections (core possibly empty). No full proof exists in this programme. Mishra [v1](https://arxiv.org/html/2606.02667v1) has invalid cumulative original-source transfer and a claimed universal O_s(2^k) which the classical P(s-1,k) disproves for s>=4. [v2](https://arxiv.org/html/2606.02667v2) proves bounds for SHIFTED families only. Never lift shifted petals without genuine compatible original owners. There is NO license for a complete-proof claim.
 
