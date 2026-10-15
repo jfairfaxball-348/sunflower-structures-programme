@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Governing original-family objective
 
-Prove the unrestricted Erdős–Rado Sunflower Conjecture: for every fixed s>=3 find a rank/ambient-independent C_s such that >C_s^k distinct ORIGINAL k-sets force s DISTINCT actual original petals with identical pairwise intersections (possibly empty core). NO complete proof obtained: OPEN. Mishra https://arxiv.org/html/2606.02667v2 proves a SHIFTED-only claim; v1 https://arxiv.org/html/2606.02667v1 has invalid cumulative ancestor transfer and a false O_s(2^k) conclusion for s>=4 (P(s-1,k)). Never substitute image petals or pseudo-coordinates for original witnesses.
+Prove the full Erdős–Rado Sunflower Conjecture for unrestricted original families: for every fixed s>=3 find a rank/ambient-independent C_s such that >C_s^k distinct ORIGINAL k-sets force s DISTINCT actual original petals with identical pairwise intersections (possibly empty core). NO complete proof obtained: OPEN. Mishra https://arxiv.org/html/2606.02667v2 proves a SHIFTED-only claim; v1 https://arxiv.org/html/2606.02667v1 has invalid cumulative ancestor transfer and a false O_s(2^k) conclusion for s>=4 (P(s-1,k)). Never substitute image petals or pseudo-coordinates for original witnesses.
 
 ## Critical verified starting point — READ FIRST
 
