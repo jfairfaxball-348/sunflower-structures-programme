@@ -38,6 +38,9 @@ def main():
         "scripts/correlated_partite_audit.py",
         "research/ORIGINAL_PACKET_KRAFT_AND_ENTROPY.md",
         "scripts/original_packet_entropy_audit.py",
+        "research/CROSS_TRACE_TENSOR_SHIELD_AND_VC_BARRIER.md",
+        "scripts/cross_trace_shield_audit.py",
+        "tests/test_cross_trace_shield_audit.py",
         "tests/test_original_packet_entropy_audit.py",
         "tests/test_correlated_partite_audit.py",
     ]
@@ -99,6 +102,8 @@ def main():
     check_original_pair_budget()
     from original_packet_entropy_audit import main as check_original_packet_entropy
     check_original_packet_entropy()
+    from cross_trace_shield_audit import main as check_cross_trace_shield
+    check_cross_trace_shield()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
