@@ -73,7 +73,7 @@ def audit_seed(s):
         assert defects(choice, s) == want
         tuple_defects.append(want)
     assert set.intersection(*tuple_defects) == set()
-    assert not set.intersection(*edges)
+    assert not frozenset.intersection(*edges)
     assert len(edges) == s + 2 and len(all_combos) == (s+2)*(s+1)//2
     return len(all_combos)
 
