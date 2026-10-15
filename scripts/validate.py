@@ -64,6 +64,9 @@ def main():
         "research/FRACTIONAL_ORIGINAL_LINK_RIGIDITY.md",
         "scripts/fractional_link_lp_audit.py",
         "tests/test_fractional_link_lp_audit.py",
+        "research/NONVACUOUS_WREATH_POINT_LINK_OBSTRUCTION.md",
+        "scripts/original_wreath_density_audit.py",
+        "tests/test_original_wreath_density_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -149,6 +152,10 @@ def main():
     assert "ORIGINAL_FACTOR_TENSOR_CORRELATED_LINK_RIGIDITY" in state["verified_results"]
     from fractional_link_lp_audit import audit as check_fractional_link
     check_fractional_link()
+    from original_wreath_density_audit import audit as check_wreath
+    check_wreath()
+    assert "ALL_NONVACUOUS_HIGH_DENSITY_POINT_LINK_COLLAPSE_FALSE" in state["verified_results"]
+    assert "ALL_NONVACUOUS_BOUNDED_FRACTIONAL_MATCHING_COLLAPSE_FALSE" in state["confirmed_obstructions"]
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
