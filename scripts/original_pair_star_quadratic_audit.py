@@ -41,6 +41,14 @@ def records(F, s):
                 yield i, tuple(j for j, _ in picks), defect
 
 
+
+def disjoint_copies(n, r):
+    """r physical disjoint copies of the same rank-(n-1) family."""
+    return tuple(
+        frozenset((copy, x) for x in E)
+        for copy in range(r) for E in family(n)
+    )
+
 def audit():
     for s in (3, 4, 5, 6):
         for n in range(s + 1, 10):
@@ -82,7 +90,26 @@ def audit():
             print("PASS complete-pair-star", "s", s, "n", n,
                   "rank", n - 1, "records", expected,
                   "V", f"{n*(n-1)}/{s*(s-1)}", "theta", f"2/{n}")
-    print("PASS exact ORIGINAL balanced quadratic LP and vanishing links")
+    for s in (3, 4, 5, 6):
+        n = s + 2
+        for r in (1, s - 1):
+            F = disjoint_copies(n, r)
+            R = tuple(records(F, s))
+            expected = r * (n - s) * comb(n, s)
+            assert len(R) == expected
+            denominator = (n - s) * comb(n - 2, s - 2)
+            vertices = set().union(*F)
+            vertex_loads = {x: 0 for x in vertices}
+            owners = {i: 0 for i in range(len(F))}
+            for anchor, petals, D in R:
+                for x in D: vertex_loads[x] += 1
+                for h in (anchor,) + petals: owners[h] += 1
+            assert set(vertex_loads.values()) == {denominator}
+            assert set(owners.values()) == {(s + 1) * expected // (r * n)}
+            assert expected * comb(s, 2) == len(vertices) * denominator
+            assert len(vertices) == r * comb(n, 2)
+            assert all(sum(x in E for E in F) == 2 for x in vertices)
+    print("PASS exact ORIGINAL balanced quadratic LP, disjoint-copy optimum, vanishing links")
 
 
 if __name__ == "__main__":
