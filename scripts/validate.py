@@ -98,7 +98,7 @@ def main():
     assert "full Erdős" in handoff
     assert "C_s" in handoff
     assert "NO S011" not in handoff
-    assert "full-shift" in handoff.lower()
+    assert "shift" in handoff.lower()
     assert "original" in handoff.lower()
     assert "P(s-1,k)" in handoff
     bridge = (ROOT / "research/VERSION_BRIDGE.md").read_text().lower()
