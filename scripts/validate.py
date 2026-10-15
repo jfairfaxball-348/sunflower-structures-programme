@@ -46,6 +46,9 @@ def main():
         "tests/test_alternating_shield_audit.py",
         "tests/test_original_packet_entropy_audit.py",
         "tests/test_correlated_partite_audit.py",
+        "research/GLOBAL_MULTISHIELD_ORIGINAL_OWNERSHIP.md",
+        "scripts/global_shield_audit.py",
+        "tests/test_global_shield_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -110,6 +113,9 @@ def main():
     check_cross_trace_shield()
     from alternating_shield_audit import main as check_alternating_shield
     check_alternating_shield()
+    from global_shield_audit import main as check_global_shield
+    check_global_shield()
+    assert "GLOBAL_QARY_PRODUCT_EXACT_EQUAL_TRACE_FRACTIONAL_LP" in state["verified_results"]
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
