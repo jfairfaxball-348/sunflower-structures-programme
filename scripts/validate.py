@@ -61,6 +61,9 @@ def main():
         "research/HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md",
         "scripts/heterogeneous_product_dual_audit.py",
         "tests/test_heterogeneous_product_dual_audit.py",
+        "research/FRACTIONAL_ORIGINAL_LINK_RIGIDITY.md",
+        "scripts/fractional_link_lp_audit.py",
+        "tests/test_fractional_link_lp_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -142,6 +145,10 @@ def main():
     check_pair_star()
     assert "ORIGINAL_PAIR_STAR_ALL_ANCHOR_QUADRATIC_OPTIMAL_LP" in state["verified_results"]
     assert "BALANCED_QUADRATIC_ORIGINAL_LP_NO_FIXED_POINT_LINK" in state["confirmed_obstructions"]
+    assert "FRACTIONAL_ORIGINAL_LINK_MINIMAX_DUAL" in state["verified_results"]
+    assert "ORIGINAL_FACTOR_TENSOR_CORRELATED_LINK_RIGIDITY" in state["verified_results"]
+    from fractional_link_lp_audit import audit as check_fractional_link
+    check_fractional_link()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
