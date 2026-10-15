@@ -45,6 +45,25 @@ class OriginalPairStarQuadraticTest(unittest.TestCase):
                 canonical = {(i, tuple(sorted(J)), D) for i, J, D in actual}
                 self.assertEqual(universal, canonical)
 
+    def test_disjoint_union_exact_balance_and_s_freeness(self):
+        for s in (3, 4):
+            n = s + 2
+            r = s - 1
+            F = A.disjoint_copies(n, r)
+            self.assertEqual(len(F), r * n)
+            for J in combinations(range(len(F)), s):
+                intersections = {F[i] & F[j] for i, j in combinations(J, 2)}
+                self.assertNotEqual(len(intersections), 1)
+            R = list(A.records(F, s))
+            self.assertEqual(len(R), r * (n - s) * comb(n, s))
+            vertex_loads = {x: 0 for x in set().union(*F)}
+            owner_loads = {i: 0 for i in range(len(F))}
+            for anchor, petals, defect in R:
+                for x in defect: vertex_loads[x] += 1
+                for h in (anchor,) + petals: owner_loads[h] += 1
+            self.assertEqual(len(set(vertex_loads.values())), 1)
+            self.assertEqual(len(set(owner_loads.values())), 1)
+
     def test_exact_degree_and_primitive_obstruction(self):
         for n in (5, 7, 11):
             F = A.family(n)
