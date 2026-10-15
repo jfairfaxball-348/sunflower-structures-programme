@@ -65,3 +65,8 @@ New internal derivation: research/GLOBAL_MULTISHIELD_ORIGINAL_OWNERSHIP.md, scri
 - Axante et al. https://arxiv.org/abs/2609.06175 — prior finite 39/54/153 lower-factor construction counts; not independently re-enumerated here.
 - Ge–Wang–Xu–Zhao https://arxiv.org/abs/2609.18995 and Shangguan https://arxiv.org/abs/2609.30263 — VC-bounded source claims; large VC~k remains outside a uniform fixed-base inference.
 - New [finite ORIGINAL LP construction](NONPRODUCT_ORIGINAL_TENSOR_CORRELATION.md) checked algebraically and by two complete stdlib enumerators. Literature novelty PRIORITY NOT CHECKED. No full original-family sunflower theorem is claimed.
+
+
+## 15 October 2026 — exact optimal owner-balancing continuation
+
+[OPTIMAL_ORIGINAL_OWNER_BALANCING.md](OPTIMAL_ORIGINAL_OWNER_BALANCING.md) and its stdlib integer certificate establish OB1–OB6 as programme-local proofs: AS3/Q9 exact factor congestion 5/4 and 3/2, AS3×Q9 optimal congestion 1 with an actual 58-record original-edge balanced dual, and symbolic balanced lift on tensor powers. **Literature priority NOT CHECKED; no unrestricted sunflower theorem.** The same contemporary sources were rechecked on 15 October: Mishra [v1](https://arxiv.org/html/2606.02667v1) asserts unrestricted O_s(2^k) (FALSE for s>=4); Mishra [v2](https://arxiv.org/html/2606.02667v2) treats shifted families only. [Bell–Chueluecha–Warnke](https://doi.org/10.1016/j.disc.2021.112367) and [Rao survey](https://doi.org/10.1112/jlms.70380) retain O_s(log k) base. [Axante et al.](https://arxiv.org/abs/2609.06175) owns published lower factors. [Ge–Wang–Xu–Zhao](https://arxiv.org/abs/2609.18995) and [Shangguan](https://arxiv.org/abs/2609.30263) are VC-sensitive; the unrestricted VC~k regime still does not yield C_s independent of k.
