@@ -88,3 +88,8 @@ The local multiwitness Theorem A remains valid, but there is no positive mass pr
 ## 15 October continuation — private defects do not automatically defeat central entropy
 
 [PARTIAL_MULTIPLICITY_DUAL.md](PARTIAL_MULTIPLICITY_DUAL.md) improves the triple-trace CT1 inequality: three distinct original traces forming a sunflower force an outside vertex belonging to exactly two residues, not merely a generic pair collision. For all s>=3, an s-tuple requires occupancy 2,...,s-1 somewhere. This removes a shared-hub false positive but does NOT bridge v2's SHIFTED theorem to ORIGINAL witnesses. A central equal-trace-rank coordinate vector LP on triangle tensor P(s-1,m) has **exact** optimum m/s with explicit dual for every 1<=r<=m-s+1, paid by unavoidable local defects. It refutes this specified coordinate-amortisation mechanism as an exponential-saving proof but leaves correlated multi-anchor original rank reductions open. A correct random k-colouring reduces unrestricted families to ORIGINAL transversal k-partite families losing at most e^k in cardinality; no constant-base partite theorem has been established. No original C_s^k bound and no source-lifting theorem follow.
+
+
+## 15 October 2026: new original-partite information cannot lift shifted v2
+
+The verified actual-original edge-tuple coordinate LP on classical P(s-1,m) has exact m/2 primal/dual optimum and does not price coupled rank drops. The exact k-partite original-family product-support entropy certificate is sharp on P(s-1,k), so it does not replace the invalid cumulative full-shift original-source lifting of Mishra v1 or prove any unrestricted bound. See [CORRELATED_PARTITE_ORIGINAL_DEFECTS.md](CORRELATED_PARTITE_ORIGINAL_DEFECTS.md). Full conjecture OPEN.
