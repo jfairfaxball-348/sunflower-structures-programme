@@ -97,10 +97,12 @@ def audit():
     for s in (3, 4, 6):
         edges = []
         for i in range(s):
-            private = {("private", i, j) for j in range(2)}
             if i < 2:
-                private.add(("shared", 0))
+                private = {("private", i, 0), ("shared", 0)}
+            else:
+                private = {("private", i, 0), ("private", i, 1)}
             edges.append(frozenset(private))
+        assert {len(edge) for edge in edges} == {2}
         assert sunflower_witness(edges, s) is None
         defects = [int((edges[i] & edges[j]) != frozenset())
                    for i, j in combinations(range(s), 2)]
