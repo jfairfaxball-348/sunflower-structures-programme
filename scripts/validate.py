@@ -32,6 +32,9 @@ def main():
         "scripts/partial_multiplicity_audit.py",
         "tests/test_partial_multiplicity_audit.py",
         "research/CORRELATED_PARTITE_ORIGINAL_DEFECTS.md",
+        "research/ORIGINAL_PAIR_BUDGET_AND_TENSOR_ENTROPY.md",
+        "scripts/original_pair_budget_audit.py",
+        "tests/test_original_pair_budget_audit.py",
         "scripts/correlated_partite_audit.py",
         "tests/test_correlated_partite_audit.py",
     ]
@@ -89,6 +92,8 @@ def main():
     from correlated_partite_audit import main as check_partite
     check_partial()
     check_partite()
+    from original_pair_budget_audit import main as check_original_pair_budget
+    check_original_pair_budget()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
