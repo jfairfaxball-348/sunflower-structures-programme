@@ -49,6 +49,9 @@ def main():
         "research/GLOBAL_MULTISHIELD_ORIGINAL_OWNERSHIP.md",
         "scripts/global_shield_audit.py",
         "tests/test_global_shield_audit.py",
+        "research/NONPRODUCT_ORIGINAL_TENSOR_CORRELATION.md",
+        "scripts/original_nonproduct_tensor_lp_audit.py",
+        "tests/test_original_nonproduct_tensor_lp_audit.py",
         "research/HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md",
         "scripts/heterogeneous_product_dual_audit.py",
         "tests/test_heterogeneous_product_dual_audit.py",
@@ -122,6 +125,9 @@ def main():
     check_heterogeneous()
     assert "HETEROGENEOUS_ORIGINAL_PRODUCT_GLOBAL_MULTISHIELD_LP_EXACT" in state["verified_results"]
     assert "GLOBAL_QARY_PRODUCT_EXACT_EQUAL_TRACE_FRACTIONAL_LP" in state["verified_results"]
+    from original_nonproduct_tensor_lp_audit import audit as check_nonproduct
+    check_nonproduct()
+    assert "AS3_Q9_STRICT_TENSOR_SYNERGY_V8_V3_PLUS_V3" in state["verified_results"]
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
