@@ -70,6 +70,9 @@ def main():
         "research/EXACT_WREATH_PACKET_KRAFT_OBSTRUCTION.md",
         "scripts/original_wreath_packet_budget_audit.py",
         "tests/test_original_wreath_packet_budget_audit.py",
+        "research/NESTED_ORIGINAL_WREATH_PACKET_RECURSION.md",
+        "scripts/nested_original_wreath_audit.py",
+        "tests/test_nested_original_wreath_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -163,7 +166,11 @@ def main():
     assert "NO_FIXED_RANK_CAP_ORIGINAL_PACKET_KRAFT_AT_ANY_NONVACUOUS_DENSITY" in state["confirmed_obstructions"]
     from original_wreath_packet_budget_audit import audit as check_packet_budget
     check_packet_budget()
-    print("PASS: active research state, original anchored packet budget, audited source bridge and direct next prompt")
+    from nested_original_wreath_audit import audit as check_nested_wreath
+    check_nested_wreath()
+    assert "NESTED_ORIGINAL_WREATH_EXACT_SHELL_KRAFT_RECURSION" in state["verified_results"]
+    assert "KRAFT_BUDGET_ALONE_NOT_FIXED_BASE_ORIGINAL_INDUCTION" in state["confirmed_obstructions"]
+    print("PASS: original nested wreath shell Kraft recursion, earlier witness audits, source bridge and next prompt")
 
 
 if __name__ == "__main__":
