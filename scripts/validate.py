@@ -52,6 +52,9 @@ def main():
         "research/NONPRODUCT_ORIGINAL_TENSOR_CORRELATION.md",
         "scripts/original_nonproduct_tensor_lp_audit.py",
         "tests/test_original_nonproduct_tensor_lp_audit.py",
+        "research/OPTIMAL_ORIGINAL_OWNER_BALANCING.md",
+        "scripts/original_owner_balancing_audit.py",
+        "tests/test_original_owner_balancing_audit.py",
         "research/HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md",
         "scripts/heterogeneous_product_dual_audit.py",
         "tests/test_heterogeneous_product_dual_audit.py",
@@ -128,6 +131,10 @@ def main():
     from original_nonproduct_tensor_lp_audit import audit as check_nonproduct
     check_nonproduct()
     assert "AS3_Q9_STRICT_TENSOR_SYNERGY_V8_V3_PLUS_V3" in state["verified_results"]
+    from original_owner_balancing_audit import audit as check_balanced_owner
+    check_balanced_owner()
+    assert "AS3_Q9_EXACT_58_TERM_BALANCED_OPTIMAL_DUAL" in state["verified_results"]
+    assert "BALANCED_ORIGINAL_DUAL_TENSOR_LIFT_ALL_M" in state["verified_results"]
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
