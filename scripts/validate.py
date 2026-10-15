@@ -41,6 +41,9 @@ def main():
         "research/CROSS_TRACE_TENSOR_SHIELD_AND_VC_BARRIER.md",
         "scripts/cross_trace_shield_audit.py",
         "tests/test_cross_trace_shield_audit.py",
+        "research/ALTERNATING_SHIELD_RECTANGLE_DUAL.md",
+        "scripts/alternating_shield_audit.py",
+        "tests/test_alternating_shield_audit.py",
         "tests/test_original_packet_entropy_audit.py",
         "tests/test_correlated_partite_audit.py",
     ]
@@ -57,6 +60,7 @@ def main():
     assert state["active_next_prompt"] == "sessions/NEXT_SESSION.md"
     assert "SHIFTED_SUBFAMILY_OF_PRODUCT_AT_MOST_Q" in state["verified_results"]
     assert "SPOKE_TO_STAR_LEX_SHIFT_THEOREM_ALL_Q_K" in state["verified_results"]
+    assert "ALL_S_ALTERNATING_SHIELD_SEED" in state["verified_results"]
     assert "DENSE_TENSOR_LEX_SHIFT_LINEAR_STAR_ALL_S" in state["verified_results"]
     assert "ANCHORED_HIGH_RANK_FACTOR_TENSOR_SHIFT_LEMMA" in state["verified_results"]
     assert "RANK_FOUR_54_FACTOR_SHADOW_INCIDENCE_SATURATION" in state["verified_results"]
@@ -104,6 +108,8 @@ def main():
     check_original_packet_entropy()
     from cross_trace_shield_audit import main as check_cross_trace_shield
     check_cross_trace_shield()
+    from alternating_shield_audit import main as check_alternating_shield
+    check_alternating_shield()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
