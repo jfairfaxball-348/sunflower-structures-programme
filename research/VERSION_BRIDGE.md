@@ -93,3 +93,7 @@ The local multiwitness Theorem A remains valid, but there is no positive mass pr
 ## 15 October 2026: new original-partite information cannot lift shifted v2
 
 The verified actual-original edge-tuple coordinate LP on classical P(s-1,m) has exact m/2 primal/dual optimum and does not price coupled rank drops. The exact k-partite original-family product-support entropy certificate is sharp on P(s-1,k), so it does not replace the invalid cumulative full-shift original-source lifting of Mishra v1 or prove any unrestricted bound. See [CORRELATED_PARTITE_ORIGINAL_DEFECTS.md](CORRELATED_PARTITE_ORIGINAL_DEFECTS.md). Full conjecture OPEN.
+
+## 15 October continuation — actual pair-certificate capacity cannot replace original lift
+
+[ORIGINAL_PAIR_BUDGET_AND_TENSOR_ENTROPY.md](ORIGINAL_PAIR_BUDGET_AND_TENSOR_ENTROPY.md) now proves a global LP that indexes ONLY real original edge pairs and common vertices, with exact no-overcount capacity on distinct original s-tuples. It has a universal quadratic lower bound and, on the full binary product P(2,m), an explicit nonlinear primal giving Lambda_3=Theta(|F|^2). Thus even an actual-edge, multi-anchor pair witness charge normalised by |F|^2 gives no intrinsic exponential rank savings. Anchored trace entropy is exact but not a decrement; nine-point ternary cap tensors make the earlier product-support E3/E5 vacuous. There is still NO legitimate replacement for v1 cumulative original-source lifting from the shifted v2 theorem. Full conjecture OPEN.
