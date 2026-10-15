@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Governing target, still OPEN
 
-Prove the full Erdős–Rado Sunflower Conjecture for ORIGINAL simple k-uniform families: for every fixed s>=3, obtain an honest C_s<infinity independent of k and ambient size n such that |F|>C_s^k forces s DISTINCT ORIGINAL sunflower petals (including empty core). No full proof has been obtained. Mishra v1 https://arxiv.org/html/2606.02667v1 cannot lift all full-shift petals to original witnesses; its alleged universal O_s(2^k) estimate is FALSE for s>=4. Mishra v2 https://arxiv.org/html/2606.02667v2 treats only SHIFTED families. No unsupported original inverse.
+Prove the full Erdős–Rado Sunflower Conjecture for ORIGINAL simple k-uniform families: for every fixed s>=3, obtain an honest C_s<infinity independent of k and ambient size n such that |F|>C_s^k forces s DISTINCT ORIGINAL sunflower petals (including empty core). NO complete proof has been obtained. Mishra v1 https://arxiv.org/html/2606.02667v1 cannot lift all full-shift petals to original witnesses; its alleged universal O_s(2^k) estimate is FALSE for s>=4. Mishra v2 https://arxiv.org/html/2606.02667v2 treats only SHIFTED families. No unsupported original inverse.
 
 ## Live read-first
 
