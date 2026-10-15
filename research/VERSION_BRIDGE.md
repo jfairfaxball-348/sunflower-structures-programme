@@ -119,3 +119,8 @@ The newer bounded-VC sources, Ge et al. arXiv:2609.18995 and Shangguan arXiv:260
 ## Global anchor reuse versus shifted transfer (15 October 2026)
 
 The ORIGINAL all-anchor/equal-trace-rank fractional defect-cover LP has exact value (s-1)k/s on classical P(s-1,k) for k>=s, by a ground-vertex-transitive orbit of a real tight s-petal selection. This is a LINEAR-RANK obstruction to a bounded GLOBAL multishield LP, not merely to a rectangle-local or one-shift argument. It never identifies shifted-image petals as original petals. Original edge participation in canonical distinct anchored box templates is exactly s floor(k/s), exhibiting cross-anchor reuse. See research/GLOBAL_MULTISHIELD_ORIGINAL_OWNERSHIP.md. Mishra v1 full-shift transfer still invalid, its O_s(2^k) full bound false for s>=4; v2 concerns shifted families only. Unrestricted fixed-base rank descent OPEN.
+
+
+## 15 October: density-sensitive heterogeneous ORIGINAL multishield (independently derived, not a full bridge)
+
+[HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md](HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md) proves an exact LP value and explicit actual-original dual for variable-size product alphabets 1<=q_j<=s-1, plus density robustness at delta>s/(s+1), and the all-anchor alternating-seed LP 3. The new density bound is relative to the ENTIRE product box, and cannot be applied to arbitrary original families without a proved box representation. It is a certificate COVER lower bound, NOT a global sunflower cardinality upper bound; tensor factors above the classical product base are counterexamples to naive density-excess lifting. v1 remains INVALID as full-family transfer, v2 remains SHIFTED-ONLY, unrestricted C_s^k OPEN.
