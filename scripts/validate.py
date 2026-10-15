@@ -21,6 +21,8 @@ def main():
         "scripts/high_rank_tensor_audit.py", "tests/test_high_rank_tensor_audit.py",
         "research/SIX_PETAL_INTERSECTING_TENSOR_OBSTRUCTION.md",
         "scripts/six_petal_factor_audit.py", "tests/test_six_petal_factor_audit.py",
+        "research/TRIANGLE_TENSOR_PREVALENCE_OBSTRUCTION.md",
+        "scripts/triangle_tensor_prevalence_audit.py", "tests/test_triangle_tensor_prevalence_audit.py",
         "research/ORIGINAL_MULTIWITNESS_TRACE_RANK_REDUCTION.md",
         "scripts/compatible_trace_audit.py", "tests/test_compatible_trace_audit.py",
     ]
@@ -68,6 +70,8 @@ def main():
     check_dense()
     check_high_rank()
     check_six_petal()
+    from triangle_tensor_prevalence_audit import main as check_triangle_tensor
+    check_triangle_tensor()
     from compatible_trace_audit import main as check_compatible_trace
     check_compatible_trace()
     print("PASS: active research state, audited source bridge and direct next prompt")
