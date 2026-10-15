@@ -53,6 +53,9 @@ def main():
         "scripts/original_nonproduct_tensor_lp_audit.py",
         "tests/test_original_nonproduct_tensor_lp_audit.py",
         "research/OPTIMAL_ORIGINAL_OWNER_BALANCING.md",
+        "research/ORIGINAL_PAIR_STAR_QUADRATIC_LP_OBSTRUCTION.md",
+        "scripts/original_pair_star_quadratic_audit.py",
+        "tests/test_original_pair_star_quadratic_audit.py",
         "scripts/original_owner_balancing_audit.py",
         "tests/test_original_owner_balancing_audit.py",
         "research/HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md",
@@ -135,6 +138,10 @@ def main():
     check_balanced_owner()
     assert "AS3_Q9_EXACT_58_TERM_BALANCED_OPTIMAL_DUAL" in state["verified_results"]
     assert "BALANCED_ORIGINAL_DUAL_TENSOR_LIFT_ALL_M" in state["verified_results"]
+    from original_pair_star_quadratic_audit import audit as check_pair_star
+    check_pair_star()
+    assert "ORIGINAL_PAIR_STAR_ALL_ANCHOR_QUADRATIC_OPTIMAL_LP" in state["verified_results"]
+    assert "BALANCED_QUADRATIC_ORIGINAL_LP_NO_FIXED_POINT_LINK" in state["confirmed_obstructions"]
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
