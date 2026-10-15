@@ -24,6 +24,9 @@ def main():
         "research/TRIANGLE_TENSOR_PREVALENCE_OBSTRUCTION.md",
         "scripts/triangle_tensor_prevalence_audit.py", "tests/test_triangle_tensor_prevalence_audit.py",
         "research/ORIGINAL_MULTIWITNESS_TRACE_RANK_REDUCTION.md",
+        "research/CENTRAL_TRACE_AMORTISATION.md",
+        "scripts/central_trace_amortisation_audit.py",
+        "tests/test_central_trace_amortisation_audit.py",
         "scripts/compatible_trace_audit.py", "tests/test_compatible_trace_audit.py",
     ]
     for name in files:
@@ -72,6 +75,8 @@ def main():
     check_six_petal()
     from triangle_tensor_prevalence_audit import main as check_triangle_tensor
     check_triangle_tensor()
+    from central_trace_amortisation_audit import main as check_central_trace
+    check_central_trace()
     from compatible_trace_audit import main as check_compatible_trace
     check_compatible_trace()
     print("PASS: active research state, audited source bridge and direct next prompt")
