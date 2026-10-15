@@ -49,6 +49,9 @@ def main():
         "research/GLOBAL_MULTISHIELD_ORIGINAL_OWNERSHIP.md",
         "scripts/global_shield_audit.py",
         "tests/test_global_shield_audit.py",
+        "research/HETEROGENEOUS_PRODUCT_DENSITY_DUAL.md",
+        "scripts/heterogeneous_product_dual_audit.py",
+        "tests/test_heterogeneous_product_dual_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -115,6 +118,9 @@ def main():
     check_alternating_shield()
     from global_shield_audit import main as check_global_shield
     check_global_shield()
+    from heterogeneous_product_dual_audit import main as check_heterogeneous
+    check_heterogeneous()
+    assert "HETEROGENEOUS_ORIGINAL_PRODUCT_GLOBAL_MULTISHIELD_LP_EXACT" in state["verified_results"]
     assert "GLOBAL_QARY_PRODUCT_EXACT_EQUAL_TRACE_FRACTIONAL_LP" in state["verified_results"]
     print("PASS: active research state, audited source bridge and direct next prompt")
 
