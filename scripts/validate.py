@@ -67,6 +67,9 @@ def main():
         "research/NONVACUOUS_WREATH_POINT_LINK_OBSTRUCTION.md",
         "scripts/original_wreath_density_audit.py",
         "tests/test_original_wreath_density_audit.py",
+        "research/EXACT_WREATH_PACKET_KRAFT_OBSTRUCTION.md",
+        "scripts/original_wreath_packet_budget_audit.py",
+        "tests/test_original_wreath_packet_budget_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -156,7 +159,11 @@ def main():
     check_wreath()
     assert "ALL_NONVACUOUS_HIGH_DENSITY_POINT_LINK_COLLAPSE_FALSE" in state["verified_results"]
     assert "ALL_NONVACUOUS_BOUNDED_FRACTIONAL_MATCHING_COLLAPSE_FALSE" in state["confirmed_obstructions"]
-    print("PASS: active research state, audited source bridge and direct next prompt")
+    assert "ORIGINAL_WREATH_EXACT_BOUNDED_ANCHOR_PACKET_KRAFT_OPTIMUM" in state["verified_results"]
+    assert "NO_FIXED_RANK_CAP_ORIGINAL_PACKET_KRAFT_AT_ANY_NONVACUOUS_DENSITY" in state["confirmed_obstructions"]
+    from original_wreath_packet_budget_audit import audit as check_packet_budget
+    check_packet_budget()
+    print("PASS: active research state, original anchored packet budget, audited source bridge and direct next prompt")
 
 
 if __name__ == "__main__":
