@@ -28,6 +28,12 @@ def main():
         "scripts/central_trace_amortisation_audit.py",
         "tests/test_central_trace_amortisation_audit.py",
         "scripts/compatible_trace_audit.py", "tests/test_compatible_trace_audit.py",
+        "research/PARTIAL_MULTIPLICITY_DUAL.md",
+        "scripts/partial_multiplicity_audit.py",
+        "tests/test_partial_multiplicity_audit.py",
+        "research/CORRELATED_PARTITE_ORIGINAL_DEFECTS.md",
+        "scripts/correlated_partite_audit.py",
+        "tests/test_correlated_partite_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -79,6 +85,10 @@ def main():
     check_central_trace()
     from compatible_trace_audit import main as check_compatible_trace
     check_compatible_trace()
+    from partial_multiplicity_audit import main as check_partial
+    from correlated_partite_audit import main as check_partite
+    check_partial()
+    check_partite()
     print("PASS: active research state, audited source bridge and direct next prompt")
 
 
