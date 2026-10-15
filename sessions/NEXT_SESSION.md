@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Unchanged central mission (OPEN)
 
-Prove the FULL Erdős–Rado Sunflower Conjecture for ORIGINAL finite simple k-uniform families: for each fixed integer s>=3 find some finite C_s independent of k and n such that |F|>C_s^k forces s DISTINCT ORIGINAL petals with identical pairwise intersections, including empty core. The conjecture remains OPEN. Mishra v1 https://arxiv.org/html/2606.02667v1 has invalid full-shift original-source transfer and its O_s(2^k) universal bound is FALSE for s>=4 by P(s-1,k). Mishra v2 https://arxiv.org/html/2606.02667v2 covers SHIFTED families only. Never lift a shifted sunflower without actual compatible ORIGINAL witnesses.
+Prove the full Erdős–Rado Sunflower Conjecture for ORIGINAL finite simple k-uniform families: for each fixed integer s>=3 find some finite C_s independent of k and n such that |F|>C_s^k forces s DISTINCT ORIGINAL petals with identical pairwise intersections, including empty core. The conjecture remains OPEN. Mishra v1 https://arxiv.org/html/2606.02667v1 has invalid full-shift original-source transfer and its O_s(2^k) universal bound is FALSE for s>=4 by P(s-1,k). Mishra v2 https://arxiv.org/html/2606.02667v2 covers SHIFTED families only. Never lift a shifted sunflower without actual compatible ORIGINAL witnesses.
 
 ## Read-first exact live state
 
