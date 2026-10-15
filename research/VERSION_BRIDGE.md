@@ -68,3 +68,8 @@ An independent original-family reduction gives i_s(k)<=f_s(k)<=(s-1)k*i_s(k), wh
 ## New non-shifting original link route (14 October; local only)
 
 [Multiwitness compatible trace proof](ORIGINAL_MULTIWITNESS_TRACE_RANK_REDUCTION.md): r distinct disjoint-outside original witnesses E=T+V, A_i=T+W_i in an INTERSECTING s-free k-family force each opposite exact trace U subseteq V of size u into at most h^r genuine (k-u-r)-uniform original links (h=|V|, r<=s-2). At h=1, this is coefficient-one rank-(r+1) reduction, sharp in finite families. It is not the missing unrestricted v1/v2 transfer because no theorem establishes a bounded-cost global partition of the original family into those opposite traces. Multi-shift source uniqueness remains false; shifted-only v2 bounds remain restricted.
+
+
+## 15 October 2026 — another original-witness bridge attempt falsified
+
+The local multiwitness Theorem A remains valid, but there is no positive mass prevalence even for large original INTERSECTING s-free families with EMPTY global core: triangle tensor Q^m, for any core-free finite factor Q, has at most an exponentially small fraction of its original members meeting a fixed original anchor E in O_s(1) points. Every opposite trace of an h=O_s(1) compatible witness lies there. The explicit all-rank counterexample and 54-edge factor polynomial appear in [TRIANGLE_TENSOR_PREVALENCE_OBSTRUCTION.md](TRIANGLE_TENSOR_PREVALENCE_OBSTRUCTION.md). Thus no trivial global bounded-anchor cover and no v1/v2 unrestricted bridge. This is a negative result for the local-rank-descent globalisation mechanism, not for original-family exponential upper bounds. The next task is central-trace charging or an independent original recurrence.
