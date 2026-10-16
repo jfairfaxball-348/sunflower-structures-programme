@@ -25,6 +25,7 @@ jobs:
           python3 scripts/original_wreath_packet_budget_audit.py
           python3 scripts/nested_original_wreath_audit.py
           python3 scripts/all_physical_wreath_compatibility_audit.py
+          python3 scripts/physical_core_turan_sharpness_audit.py
       - run: python3 scripts/validate.py
       - run: python3 -m unittest discover -s tests -v
       - name: Report checked commit
