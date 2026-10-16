@@ -76,6 +76,9 @@ def main():
         "research/ALL_PHYSICAL_WREATH_COMPATIBILITY.md",
         "scripts/all_physical_wreath_compatibility_audit.py",
         "tests/test_all_physical_wreath_compatibility_audit.py",
+        "research/PHYSICAL_CORE_TURAN_HIGH_DENSITY_SHARPNESS.md",
+        "scripts/physical_core_turan_sharpness_audit.py",
+        "tests/test_physical_core_turan_sharpness_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -177,7 +180,11 @@ def main():
     assert "ALL_PHYSICAL_BASE_TWO_KRAFT_BUDGET_DOES_NOT_CONTROL_RESIDUAL_CAPACITY" in state["confirmed_obstructions"]
     assert "NESTED_ORIGINAL_WREATH_EXACT_SHELL_KRAFT_RECURSION" in state["verified_results"]
     assert "KRAFT_BUDGET_ALONE_NOT_FIXED_BASE_ORIGINAL_INDUCTION" in state["confirmed_obstructions"]
-    print("PASS: ALL-PHYSICAL original nested wreath Kraft recursion and s-way compatibility, predecessor audits, source bridge and next prompt")
+    from physical_core_turan_sharpness_audit import audit as check_physical_turan
+    check_physical_turan()
+    assert "NONVACUOUS_HIGH_DENSITY_TURAN_SHARPNESS" in state["verified_results"]
+    assert "NO_STRICT_MULTI_PACKET_TURAN_BONUS_AT_NONVACUOUS_DENSITY" in state["confirmed_obstructions"]
+    print("PASS: physical-core Turan high-density sharpness, full original predecessor audits, source bridge and next prompt")
 
 
 if __name__ == "__main__":
