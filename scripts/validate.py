@@ -82,6 +82,9 @@ def main():
         "research/COUPLED_CROSS_CORE_NEAR_TURAN_OBSTRUCTION.md",
         "scripts/coupled_cross_core_audit.py",
         "tests/test_coupled_cross_core_audit.py",
+        "research/ORIGINAL_CORE_STABILITY_MATCHING_CAPACITY.md",
+        "scripts/original_core_stability_matching_audit.py",
+        "tests/test_original_core_stability_matching_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -191,7 +194,11 @@ def main():
     check_coupled_cross_core()
     assert "COUPLED_ORIGINAL_CROSS_CORE_MODAL_CONCENTRATION" in state["verified_results"]
     assert "NEAR_TURAN_NO_NEAR_TOTAL_EXACT_ORIGINAL_OWNER_PURIFICATION" in state["confirmed_obstructions"]
-    print("PASS: coupled physical-core audit, full predecessors, source bridge and next prompt")
+    from original_core_stability_matching_audit import audit as check_original_core_stability
+    check_original_core_stability()
+    assert "ORIGINAL_THREE_PETAL_NEAR_TURAN_NEIGHBOUR_STABILITY" in state["verified_results"]
+    assert "SMALL_RELATIVE_TURAN_DEFICIT_DOES_NOT_CONTROL_BAD_MATCHING_OWNER_LOSS" in state["confirmed_obstructions"]
+    print("PASS: original physical-core stability/matching, full predecessors and next prompt")
 
 
 if __name__ == "__main__":
