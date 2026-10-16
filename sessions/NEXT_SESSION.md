@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Unchanged governing mathematical objective
 
-The full Erdős–Rado Sunflower Conjecture remains the sole objective.
+The full Erdős–Rado Sunflower Conjecture remains the sole objective. NO complete proof has been obtained.
 
 Prove the FULL unrestricted Erdős–Rado Sunflower Conjecture for ORIGINAL simple finite uniform families: for each fixed s>=3, prove some finite C_s independent of rank k and ground-set size such that >C_s^k original k-sets force s DISTINCT ACTUAL original petals with all pairwise intersections identical (including possible EMPTY core). This remains **OPEN**. Mishra v1 https://arxiv.org/html/2606.02667v1 has an INVALID cumulative full-shift ancestor-owner transfer and an impossible universal O_s(2^k) claim for s>=4 (P(s-1,k)); Mishra v2 https://arxiv.org/html/2606.02667v2 is SHIFTED-only. NEVER lift a full-shift sunflower into original owners without a proved compatible original witness map.
 
