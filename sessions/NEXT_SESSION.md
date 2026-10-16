@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Governing objective and status
 
-Prove the FULL unrestricted Erdős–Rado Sunflower Conjecture on finite simple ORIGINAL k-uniform families: for fixed s>=3 find a finite C_s independent of rank k and ambient ground such that |F|>C_s^k forces s DISTINCT ORIGINAL actual edges with all pairwise intersections equal, possibly EMPTY core. **NO complete proof has been obtained: OPEN.** Mishra https://arxiv.org/html/2606.02667v1 has invalid cumulative original-shift ancestor-owner transfer and a universal O_s(2^k) claim false for s>=4 by P(s-1,k); https://arxiv.org/html/2606.02667v2 proves SHIFTED families only. Never lift a shifted sunflower without compatible original source edges.
+Prove the full Erdős–Rado Sunflower Conjecture in the unrestricted setting on finite simple ORIGINAL k-uniform families: for fixed s>=3 find a finite C_s independent of rank k and ambient ground such that |F|>C_s^k forces s DISTINCT ORIGINAL actual edges with all pairwise intersections equal, possibly EMPTY core. **NO complete proof has been obtained: OPEN.** Mishra https://arxiv.org/html/2606.02667v1 has invalid cumulative original-shift ancestor-owner transfer and a universal O_s(2^k) claim false for s>=4 by P(s-1,k); https://arxiv.org/html/2606.02667v2 proves SHIFTED families only. Never lift a shifted sunflower without compatible original source edges.
 
 ## READ FIRST — current proof-grade knowledge
 
