@@ -88,6 +88,9 @@ def main():
         "research/LOGARITHMIC_SHELL_RESIDUAL_CAPACITY.md",
         "scripts/logarithmic_shell_capacity_audit.py",
         "tests/test_logarithmic_shell_capacity_audit.py",
+        "research/TWO_ANCHOR_PRIMITIVE_CAPACITY.md",
+        "scripts/two_anchor_primitive_capacity_audit.py",
+        "tests/test_two_anchor_primitive_capacity_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -100,6 +103,7 @@ def main():
     assert not state["legacy_hierarchy_active"]
     assert not state["legacy_hard_stop_active"]
     assert state["active_next_prompt"] == "sessions/NEXT_SESSION.md"
+    assert "ORIGINAL_MINIMAL_TRANSVERSAL_PRIMITIVE_CAPACITY_EQUIVALENCE" in state["verified_results"]
     assert "SHIFTED_SUBFAMILY_OF_PRODUCT_AT_MOST_Q" in state["verified_results"]
     assert "SPOKE_TO_STAR_LEX_SHIFT_THEOREM_ALL_Q_K" in state["verified_results"]
     assert "ALL_S_ALTERNATING_SHIELD_SEED" in state["verified_results"]
