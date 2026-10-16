@@ -18,6 +18,8 @@ For each fixed integer s>=3 we seek a constant C_s independent of k such that ev
 
 **Primary open problem:** find a mathematically valid route from the special structure of shifted families to the full arbitrary-family bound with a base C_s >= s-1 allowed to depend on s but NOT on k or the ground-set size.
 
+**16 October residual-capacity update:** [Logarithmic original shells and shared-ground recurrence](research/LOGARITHMIC_SHELL_RESIDUAL_CAPACITY.md) strengthens the purification obstruction to exponentially small relative core error, with no common packet point after core removal. It proves core-free intersecting residuals have the same exponential capacity as unrestricted originals, and proves a restricted construction-class bound with independently paid seed capacity. A reconstructed **prior-art** shared-ground attachment produces 21552 rank-ten three-free original sets, exceeding the H54 tensor base; thus the finite-seed private-substitution class cannot be assumed universal. These are scoped results; no unrestricted upper bound or novelty claim. The finite-factor compression diagnostics above are not a claim of the best known unrestricted lower growth rate.
+
 ## Working policy
 
 Explore original mathematics relentlessly within each invoked research task, including repaired shifts, witness-lifting, structured subfamilies, inverse compression, encoding, shadows and other independent techniques. Falsify overstrong lemmas quickly; keep counterexamples. No parent/child folders or stage gates; the single repository is the research notebook. Old `programme/`, `papers/`, `tournament/` and historical `sessions/S*/` are archival evidence only, not binding instructions. There is **no longer any STOP_NO_ACTIVE_CHILD or S011 restriction**.
