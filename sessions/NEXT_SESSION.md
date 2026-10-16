@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Central goal and settled status
 
-Prove the unrestricted **full Erdős–Rado Sunflower Conjecture**: for every fixed s>=3, there exists a finite C_s independent of rank k and ambient ground size such that every finite simple ORIGINAL k-uniform family of >C_s^k distinct actual edges contains s original petals with identical pair intersections (empty core allowed). **The conjecture is OPEN; no complete proof has been obtained.** Do not lift a full-shift sunflower without compatible original owners. Mishra v1 https://arxiv.org/html/2606.02667v1 makes an invalid cumulative source attribution and has a false O_s(2^k) universal consequence for s>=4; v2 https://arxiv.org/html/2606.02667v2 treats shifted families only.
+Prove the unrestricted **full Erdős–Rado Sunflower Conjecture**: for every fixed s>=3, there exists a finite C_s independent of rank k and ambient ground size such that every finite simple ORIGINAL k-uniform family of >C_s^k distinct actual edges contains s original petals with identical pair intersections (empty core allowed). **NO complete proof has been obtained; the unrestricted conjecture is OPEN.** Do not lift a full-shift sunflower without compatible original owners. Mishra v1 https://arxiv.org/html/2606.02667v1 makes an invalid cumulative source attribution and has a false O_s(2^k) universal consequence for s>=4; v2 https://arxiv.org/html/2606.02667v2 treats shifted families only.
 
 ## Read and check CURRENT authoritative material first
 
