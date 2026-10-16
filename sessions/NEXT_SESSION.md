@@ -6,7 +6,7 @@ Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
 ## Mission and critical gap
 
-Prove the full ORIGINAL Erdős–Rado Sunflower Conjecture: for every fixed s>=3 find C_s independent of rank k and ambient n such that any simple rank-k original family of cardinality >C_s^k contains s distinct ORIGINAL sets with equal pairwise intersections, empty core allowed. **NO complete proof has been obtained; the unrestricted conjecture remains OPEN.** Mishra v1 https://arxiv.org/html/2606.02667v1 has invalid cumulative ancestor attribution and false O_s(2^k) for s>=4; v2 https://arxiv.org/html/2606.02667v2 concerns shifted families only.
+Prove the full Erdős–Rado Sunflower Conjecture for ORIGINAL families: for every fixed s>=3 find C_s independent of rank k and ambient n such that any simple rank-k original family of cardinality >C_s^k contains s distinct ORIGINAL sets with equal pairwise intersections, empty core allowed. **NO complete proof has been obtained; the unrestricted conjecture remains OPEN.** Mishra v1 https://arxiv.org/html/2606.02667v1 has invalid cumulative ancestor attribution and false O_s(2^k) for s>=4; v2 https://arxiv.org/html/2606.02667v2 concerns shifted families only.
 
 Read AGENTS.md, README.md, authoritative/STATE.json, research/WORKING_PROOF.md, research/VERSION_BRIDGE.md, research/SOURCE_REGISTER.md, research/LOGARITHMIC_SHELL_RESIDUAL_CAPACITY.md and especially research/TWO_ANCHOR_PRIMITIVE_CAPACITY.md (TAP1–TAP5). Inspect auditor, tests, exact main SHA, preceding PR full logs and open PRs before starting.
 
