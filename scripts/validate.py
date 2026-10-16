@@ -79,6 +79,9 @@ def main():
         "research/PHYSICAL_CORE_TURAN_HIGH_DENSITY_SHARPNESS.md",
         "scripts/physical_core_turan_sharpness_audit.py",
         "tests/test_physical_core_turan_sharpness_audit.py",
+        "research/COUPLED_CROSS_CORE_NEAR_TURAN_OBSTRUCTION.md",
+        "scripts/coupled_cross_core_audit.py",
+        "tests/test_coupled_cross_core_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -184,7 +187,11 @@ def main():
     check_physical_turan()
     assert "NONVACUOUS_HIGH_DENSITY_TURAN_SHARPNESS" in state["verified_results"]
     assert "NO_STRICT_MULTI_PACKET_TURAN_BONUS_AT_NONVACUOUS_DENSITY" in state["confirmed_obstructions"]
-    print("PASS: physical-core Turan high-density sharpness, full original predecessor audits, source bridge and next prompt")
+    from coupled_cross_core_audit import audit as check_coupled_cross_core
+    check_coupled_cross_core()
+    assert "COUPLED_ORIGINAL_CROSS_CORE_MODAL_CONCENTRATION" in state["verified_results"]
+    assert "NEAR_TURAN_NO_NEAR_TOTAL_EXACT_ORIGINAL_OWNER_PURIFICATION" in state["confirmed_obstructions"]
+    print("PASS: coupled physical-core audit, full predecessors, source bridge and next prompt")
 
 
 if __name__ == "__main__":
