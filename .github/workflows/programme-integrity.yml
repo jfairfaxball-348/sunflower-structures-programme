@@ -33,6 +33,7 @@ jobs:
           python3 scripts/physical_core_turan_sharpness_audit.py
           python3 scripts/coupled_cross_core_audit.py
           python3 scripts/original_core_stability_matching_audit.py
+          python3 scripts/logarithmic_shell_capacity_audit.py
       - run: python3 scripts/validate.py
       - run: python3 -m unittest discover -s tests -v
       - name: Report checked commit

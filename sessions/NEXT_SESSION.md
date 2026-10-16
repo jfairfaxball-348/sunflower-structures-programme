@@ -1,53 +1,50 @@
-# NEXT DIRECT RESEARCH INVESTIGATION — NONCIRCULAR ORIGINAL RESIDUAL CAPACITY BEYOND MATCHING PURIFICATION
+# NEXT DIRECT RESEARCH INVESTIGATION — SHARED-GROUND ORIGINAL RANK RECURRENCES BEYOND FINITE-SEED GRAMMARS
 
 Repository: https://github.com/jfairfaxball-348/sunflower-structures-programme
 
-**Owner invocation only:** the next separate request to "run next session" authorises this investigation in the SAME repository. This file is a successor prompt and MUST NOT be executed in the session that writes it. No parent/child, paper quotas, hard stop, autonomous background work, author outreach or submission.
+**Execution authority:** the next separate owner request to “run next session” authorises this investigation immediately in this SAME repository. This successor prompt MUST NOT run in the session writing it. No parent/child workflow, quotas, paper staging, artificial one-lemma stop, autonomous background work, outreach or submission.
 
-## Central goal and settled status
+## Governing target and status
 
-Prove the unrestricted **full Erdős–Rado Sunflower Conjecture**: for every fixed s>=3, there exists a finite C_s independent of rank k and ambient ground size such that every finite simple ORIGINAL k-uniform family of >C_s^k distinct actual edges contains s original petals with identical pair intersections (empty core allowed). **NO complete proof has been obtained; the unrestricted conjecture is OPEN.** Do not lift a full-shift sunflower without compatible original owners. Mishra v1 https://arxiv.org/html/2606.02667v1 makes an invalid cumulative source attribution and has a false O_s(2^k) universal consequence for s>=4; v2 https://arxiv.org/html/2606.02667v2 treats shifted families only.
+Prove the full Erdős–Rado Sunflower Conjecture for every fixed s>=3: a finite C_s independent of rank k and ambient size such that every simple ORIGINAL k-uniform family with >C_s^k actual distinct members contains s original petals with identical pairwise intersections, including empty core. **NO complete proof; unrestricted conjecture OPEN.** Mishra v1 https://arxiv.org/html/2606.02667v1 has invalid cumulative original-source transfer and a false O_s(2^k) consequence for s>=4; v2 https://arxiv.org/html/2606.02667v2 is shifted-only. Never lift a shifted sunflower without compatible original owners.
 
-## Read and check CURRENT authoritative material first
+## Read and verify
 
-Read AGENTS.md, README.md, authoritative/STATE.json, research/WORKING_PROOF.md, research/VERSION_BRIDGE.md, research/SOURCE_REGISTER.md, research/COUPLED_CROSS_CORE_NEAR_TURAN_OBSTRUCTION.md and **research/ORIGINAL_CORE_STABILITY_MATCHING_CAPACITY.md (CSM1–CSM6)**; inspect scripts/original_core_stability_matching_audit.py, tests/test_original_core_stability_matching_audit.py, .github/workflows/programme-integrity.yml, exact main SHA, and open PRs. The last PR should have green exact-head validator and FULL unittests before merge; otherwise repair it rather than assuming.
+Read AGENTS.md, README.md, authoritative/STATE.json, research/WORKING_PROOF.md, research/VERSION_BRIDGE.md, research/SOURCE_REGISTER.md, research/ORIGINAL_CORE_STABILITY_MATCHING_CAPACITY.md, and especially **research/LOGARITHMIC_SHELL_RESIDUAL_CAPACITY.md (LRC1–LRC7)**. Inspect its auditor/tests and the exact-head workflow. Check actual main SHA, open PRs and last PR's complete CI logs; repair a pending failed predecessor before assuming it passed.
 
-### New exact starting results
+Starting facts: triangle-tensor correlated shells have n=3^t, rank k=2t+1+dm, r=(s-1)nM^m, relative Turan deficit 1/n and J=4(n-1)/n². At s=3 the actual bad matching is (n-2)M^m, and exact purification retains r/2. Even exponentially small relative error, nonempty common D and globally core-free residual packets do not pay arbitrary private H^m capacity. Original VC dimension can grow linearly. Core-free intersecting capacity satisfies 3f_s(d)<=i_s^0(d+2), with the SAME exponential rate as f_s: it cannot be assumed independently bounded.
 
-For s=3, given a real physical core D and original pair-equality graph G_D with r owners, e>0 and Delta=r²/4-e, a degree-sum argument chooses actual adjacent original owners u,v. The disjoint independent packets N(u),N(v) contain the physical D, omit at most 4Delta/r owners, have at most 5Delta exceptional actual cross intersections, and ||N(u)|-|N(v)||²<=20Delta. Removing the minimum exceptional owner vertex cover (equal by König to matching number nu) yields genuinely separated physical supports; no fictitious per-pair owner witnesses. These are local rank statements, NOT a fixed-base proof.
+LRC5 proves B^k only for a supplied private-substitution/tensor/correlated construction grammar with independently certified atoms. Its H54-base universality is FALSE: prior-art shared-ground attachment J(A,C) has two marker variants of the SAME actual A and two disjoint C copies behind both markers. It yields c_k=2c_(k-1)+2c_(k-2), c_3=8,c_4=27; two rank-ten copies give 21552 edges and 21552^4>54^10. Admitting J repairs that restricted grammar at base max(B,1+sqrt(3)), not the whole problem. Neither rate is best-known: the literature reports beta_3>=sqrt(10). Source claims, reconstructed proofs and priority must remain distinct.
 
-Original correlated CC3 for q=2 has k=n+1+dm, r=2nM^m, Delta=nM^(2m), canonical leftover 2M^m, bad cross (n-2)M^(2m), matching (n-2)M^m, so exact purification retains only r/2 although Delta/r² and J tend to zero. In a nonvacuous high-density construction n=o(m), residual H^m remains exponentially large and unpaid. Near-Turán nonempty core occurrence is false on P(2,k): e(G_D)=2^(k-|D|-1) for a consistent nonempty physical D, versus r²/4=4^(k-1). Classical graph stability or edge-density-to-cover alone cannot solve the sunflower conjecture.
+## Substantial original-family proof attacks
 
-CC1 all-core J gives modal physical cross intersection concentration; CC2 exact Turán equality gives physical support separation; CC3 refutes near-total owner purification. TC3 gives s-1 physical marker-group shielded copies of arbitrary H^m saturating Turán and AP7 at every nonvacuous density. NW1/AP1 all-anchor s-free rank 3t, size 9^t, Z_2=(3/4)^t invalidates Kraft-budget-only closure. H54/H39/H153 finite tensor seeds PRIOR ART; AS3/Q9 LP only bounds 16<=V_3(T²)<=34 and 11<=V_3(S tensor Q9²)<=26.
+1. **Shared-ground rank payment.** Develop two genuinely different actual-owner decompositions permitting correlated reuse across physical anchors. Derive a complete recurrence with paid ownership, overlap and residual sizes, or a correct explicit counterexample. Test whether a finite system of rank-lowering inequalities admits a fixed spectral-radius bound. Do not assume arbitrary originals have a construction tree or that unknown atoms already satisfy C_s^rank.
 
-## Mandatory aggressive original-family attacks
+2. **Primitive residual capacity.** Try to prove an independent exponential bound for a precisely defined residual class that excludes the known arbitrary-H embeddings. State and prove why the necessary decomposition produces that class. At s=3, explore simultaneous trace-row restrictions and shared-ground compatibility; merely imposing intersectingness, empty common intersection or high density is insufficient by LRC4. A conditional theorem must identify its unproved premise.
 
-1. **Original rank versus bad-matching capacity.** Investigate the full K_s-free physical core graph, starting with CSM1 for s=3. Seek a genuinely new `nu(H)` upper bound that is NOT inferred just from the number/fraction of bad pairs and is quantitatively compensated by an independently proved *rank or residual support restriction*. Give precise hypotheses and constants, use physical points and same ORIGINAL owner tuples, and prove/test a rank saving of order k if claiming a fixed base. Explicitly test CC3 at n=floor(sqrt m), n=Theta(m) and q=s-1 groups. A conditional lemma is acceptable only if the missing hypothesis is identified as such.
+3. **Blockwise high-VC alternative.** Work with actual shattered physical coordinates and block rank, allowing VC dimension proportional to k. Seek a contraction beyond finite-seed closure, or an original obstruction. Test P(s-1,k), two triangles, pair-stars, W/NW/AP1, correlated logarithmic shells, alternating shields, and published H54/H39/H153. Preserve the LP caveats 16<=V_3(T²)<=34 and 11<=V_3(S tensor Q9²)<=26.
 
-2. **Noncircular intersecting residual growth.** Attack the actual original intersecting extremal quantity i_s(k) appearing in CSM4, not by inserting the desired f_s(k)<=C_s^k. Develop a stronger high-density decomposition or entropy inequality with full original owner accounting, proving an independent fixed-base bound on the relevant residual class OR a sharp counterexample. Test s=3 two triangles f_3(2)=6; P(s-1,k), pair-stars, W(N,m), alternating shields, H54/H39/H153 and nested NW1. The known f_s(k)<=(s-1)k i_s(k) cannot be replaced by a false constant-factor link without evidence.
+4. **Source-critical continuation.** Check Axante et al. https://arxiv.org/html/2609.06175v1 sections 2.4/3 and relevant older multiplication/substitution sources. Reconstruct any source result actually used; do not present known lower recurrences as new discoveries or use them as upper bounds. Review bounded-VC Ge et al. https://arxiv.org/abs/2609.18995 and Shangguan https://arxiv.org/abs/2609.30263 without suppressing dimension dependence. No priority claim without a separate audit.
 
-3. **Two distinct fixed-base recurrence constructions.** (A) Exact or approximate physical multi-core partition using a *rank-paid* deletion/exception matching cost: derive r<=C_s^k with no hidden f_s(k) self-assumption, or exhibit exact counterexample. (B) High-VC original tensor decomposition: do not assume VCdim bounded independent of k; fibres H^m shatter m physical vertices. Try blockwise rank amortisation and prove a contraction or show explicit original obstruction. Quantify dependence on k, s, physical anchor ranks, and family size.
+Pursue the central gap across successful and failed attempts; do not stop after another isolated diagnostic. Use literal ORIGINAL sets, exact integer/Fraction audits and symbolic all-rank proofs. Do not equate passing finite checks with a universal theorem.
 
-4. **Adversarial finite and symbolic checks.** Enumerate literal original sets for all manageable cases and use exact integer/Fraction proofs; test CSM1–CSM6 and CC1–CC6, P(q,k), the correlated matching barrier, TC3 q copies, WR/NW shields and existing published seeds. Never infer global compatibility from pairwise coincidences of different owner tuples. If a candidate fails, produce a correct small original counterexample and a proved narrower theorem, not just an inconclusive heuristic.
+## Required records and exact merge gate
 
-5. **Literature and source-critical check.** Review Mishra v1/v2; Axante et al. https://arxiv.org/abs/2609.06175; Bell–Chueluecha–Warnke https://doi.org/10.1016/j.disc.2021.112367; Rao https://doi.org/10.1112/jlms.70380; bounded-VC Ge–Wang–Xu–Zhao https://arxiv.org/abs/2609.18995 and Shangguan https://arxiv.org/abs/2609.30263. None currently certifies the unrestricted theorem here. Mathematical priority NOT CHECKED.
+Write a substantial proof/obstruction note and independent auditor/tests; update working proof, bridge, source register, authoritative state and the FULL successor prompt. Work on a new branch and PR. Execute every script below, then validator and the ENTIRE unittest suite:
 
-## Exact engineering deliverables and merge rule
+    python3 scripts/original_wreath_density_audit.py
+    python3 scripts/original_wreath_packet_budget_audit.py
+    python3 scripts/fractional_link_lp_audit.py
+    python3 scripts/original_pair_star_quadratic_audit.py
+    python3 scripts/original_owner_balancing_audit.py
+    python3 scripts/original_nonproduct_tensor_lp_audit.py
+    python3 scripts/nested_original_wreath_audit.py
+    python3 scripts/all_physical_wreath_compatibility_audit.py
+    python3 scripts/physical_core_turan_sharpness_audit.py
+    python3 scripts/coupled_cross_core_audit.py
+    python3 scripts/original_core_stability_matching_audit.py
+    python3 scripts/logarithmic_shell_capacity_audit.py
+    python3 scripts/validate.py
+    python3 -m unittest discover -s tests -v
 
-Do substantive proof/obstruction work now. Write a substantial new result note with literal original witnesses, exact counts and status of every attempted recurrence; create/extend independent exact auditor and tests. Update research/WORKING_PROOF.md, research/VERSION_BRIDGE.md, research/SOURCE_REGISTER.md, authoritative/STATE.json. Replace sessions/NEXT_SESSION.md with the FULL successor prompt, only to be run upon later owner command. Work on a NEW branch/PR in this repository.
-
-Explicitly execute ALL predecessor scripts:
-scripts/original_wreath_density_audit.py;
-scripts/original_wreath_packet_budget_audit.py;
-scripts/fractional_link_lp_audit.py;
-scripts/original_pair_star_quadratic_audit.py;
-scripts/original_owner_balancing_audit.py;
-scripts/original_nonproduct_tensor_lp_audit.py;
-scripts/nested_original_wreath_audit.py;
-scripts/all_physical_wreath_compatibility_audit.py;
-scripts/physical_core_turan_sharpness_audit.py;
-scripts/coupled_cross_core_audit.py;
-scripts/original_core_stability_matching_audit.py;
-python3 scripts/validate.py;
-FULL python3 -m unittest discover -s tests -v.
-Inspect exact PR HEAD SHA, ALL workflow jobs and COMPLETE logs: MERGE ONLY if full validator and entire unittest suite GREEN on exact head; otherwise leave PR OPEN and identify failures. Conclude with proved/open verdict, actual repository/PR/CI links and full next prompt. No solution, arXiv or priority claims without proof and independent verification.
+Merge ONLY after inspecting exact PR HEAD SHA, ALL jobs and COMPLETE logs showing full validator and entire unittest suite GREEN on that head. Otherwise leave the PR OPEN and report failures. Close with proved/open verdict, real repository/PR/CI links and this session's FULL next prompt. No solution, publication or priority claim without proof and independent verification.

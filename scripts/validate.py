@@ -85,6 +85,9 @@ def main():
         "research/ORIGINAL_CORE_STABILITY_MATCHING_CAPACITY.md",
         "scripts/original_core_stability_matching_audit.py",
         "tests/test_original_core_stability_matching_audit.py",
+        "research/LOGARITHMIC_SHELL_RESIDUAL_CAPACITY.md",
+        "scripts/logarithmic_shell_capacity_audit.py",
+        "tests/test_logarithmic_shell_capacity_audit.py",
     ]
     for name in files:
         assert (ROOT / name).is_file(), name
@@ -198,7 +201,11 @@ def main():
     check_original_core_stability()
     assert "ORIGINAL_THREE_PETAL_NEAR_TURAN_NEIGHBOUR_STABILITY" in state["verified_results"]
     assert "SMALL_RELATIVE_TURAN_DEFICIT_DOES_NOT_CONTROL_BAD_MATCHING_OWNER_LOSS" in state["confirmed_obstructions"]
-    print("PASS: original physical-core stability/matching, full predecessors and next prompt")
+    from logarithmic_shell_capacity_audit import audit as check_logarithmic_capacity
+    check_logarithmic_capacity()
+    assert "LOGARITHMIC_CORE_FREE_ORIGINAL_CORRELATED_SHELL" in state["verified_results"]
+    assert "EXPONENTIALLY_SMALL_CORE_ERROR_NO_SMALL_OWNER_MATCHING_LOSS" in state["confirmed_obstructions"]
+    print("PASS: logarithmic original shells, residual capacity, full predecessors and next prompt")
 
 
 if __name__ == "__main__":
